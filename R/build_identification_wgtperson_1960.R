@@ -1,9 +1,10 @@
 #' Builds a synthetic variable for age - 1960
 #' @param data.frame
 #' @value data.frame
+#' @import data.table
 #' @export
 
-build_identification_wgt_1960 <- function(CensusData){
+build_identification_wgtperson_1960 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -16,9 +17,9 @@ build_identification_wgt_1960 <- function(CensusData){
         }
 
         #Weight
-        CensusData[ , wgt := 1/0.0127]
+        CensusData[ , wgtperson := 1/0.0127]
 
-
+        gc
         CensusData
 
 }

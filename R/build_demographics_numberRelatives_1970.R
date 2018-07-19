@@ -8,17 +8,24 @@ build_demographics_numberRelatives_1970 <- function(CensusData){
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
         }
-
+        
+        check_vars <- check_var_existence(CensusData, c("v007"))
+        if(length(check_vars) > 0){
+                stop("The following variables are missing from the data: ",
+                     paste(check_vars, collapse = ", "))
+        }
+        
+        
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
         }
 
         # Building idhh
         check_vars <- check_var_existence(CensusData, c("idhh"))
-        hhid_just_created <- FALSE
+        idhh_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- build_identification_idhh_1970(CensusData)
-                hhid_just_created <- TRUE
+                idhh_just_created <- TRUE
         }
 
         # Identifying members of the main family of the household
@@ -31,7 +38,18 @@ build_demographics_numberRelatives_1970 <- function(CensusData){
 
 
         CensusData[ , numberRelatives := sum(relative), by = idhh]
-        CensusData[ relative != 1, numberRelatives := NA]
+        CensusData[ v007 == 1, numberRelatives := NA]
+        
+        gc()
+        
+        if(idhh_just_created == TRUE){
+                CensusData[ , idhh := NULL]
+        }
+        
+        if(relative_just_created == TRUE){
+                CensusData[ , relative := NULL]
+        }
+        
 
         gc()
         CensusData

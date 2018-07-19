@@ -68,7 +68,7 @@ build_income_hhIncomeTotNominal_1970 <- function(CensusData){
         CensusData[, indIncomeNominal_tmp := NULL]
 
         if(indIncomeNominal_just_created == TRUE){
-                CensusData[ , househouldParticular := NULL]
+                CensusData[ , indIncomeNominal := NULL]
         }
 
         if(idhh_just_created == TRUE){

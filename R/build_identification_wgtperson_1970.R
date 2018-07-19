@@ -1,15 +1,16 @@
 #' Builds a synthetic variable for age - 1960
 #' @param data.frame
 #' @value data.frame
+#' @import data.table
 #' @export
 
-build_identification_wgt_1991 <- function(CensusData){
+build_identification_wgtperson_1970 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
         }
 
-        check_vars <- check_var_existence(CensusData, c("v7301"))
+        check_vars <- check_var_existence(CensusData, c("v054"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -20,9 +21,9 @@ build_identification_wgt_1991 <- function(CensusData){
         }
 
         #Weight
-        CensusData[ , wgt := v7301]
+        CensusData[ , wgtperson := v054]
 
-
+        gc()
         CensusData
 
 }
