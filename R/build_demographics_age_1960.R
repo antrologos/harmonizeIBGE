@@ -6,7 +6,7 @@
 build_demographics_age_1960 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
+                stop("'CensusData' is not a data.frame") 
         }
 
         check_vars <- check_var_existence(CensusData, c("v204","v204b"))
