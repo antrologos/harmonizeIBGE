@@ -30,53 +30,71 @@ create_householdData_1970 <- function(CensusData,
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
         }
-
+        gc()
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "municipality1970standard")
         if(length(check_vars) > 0){
+                cat("The variable 'municipality1970standard' was missing from your data. Building it now...\n")
                 CensusData <- build_geography_municipality1970standard_1970(CensusData,
                                                                             state_var_name = state_var_name)
         }
-
+        gc()
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "municipality2010standard")
         if(length(check_vars) > 0){
+                cat("The variable 'municipality2010standard' was missing from your data. Building it now...\n")
                 CensusData <- build_geography_municipality2010standard_1970(CensusData,
                                                                             state_var_name = state_var_name)
         }
-
+        gc()
+        
         CensusData[ , state := CensusData[[state_var_name]] ]
 
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "idhh")
         if(length(check_vars) > 0){
+                cat("The variable 'idhh' was missing from your data. Building it now...\n")
                 CensusData <- build_identification_idhh_1970(CensusData)
         }
-
+        gc()
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "relative")
         if(length(check_vars) > 0){
+                cat("The variable 'relative' was missing from your data. Building it now...\n")
                 CensusData <- build_demographics_relative_1970(CensusData)
         }
+        gc()
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "numberRelatives")
         if(length(check_vars) > 0){
+                cat("The variable 'numberRelatives' was missing from your data. Building it now...\n")
                 CensusData <- build_demographics_numberRelatives_1970(CensusData)
         }
-
+        gc()
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "numberDwellers")
         if(length(check_vars) > 0){
+                cat("The variable 'numberDwellers' was missing from your data. Building it now...\n")
                 CensusData <- build_household_numberDwellers_1970(CensusData)
         }
+        gc()
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "hhIncomeTotNominal")
         if(length(check_vars) > 0){
+                cat("The variable 'hhIncomeTotNominal' was missing from your data. Building it now...\n")
                 CensusData <- build_income_hhIncomeTotNominal_1970(CensusData)
         }
-
+        gc()
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "hhIncomePerCapNominal")
         if(length(check_vars) > 0){
+                cat("The variable 'hhIncomePerCapNominal' was missing from your data. Building it now...\n")
                 CensusData <- build_income_hhIncomePerCapNominal_1970(CensusData)
         }
+        gc()
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "wgthh")
         if(length(check_vars) > 0){
+                cat("The variable 'wgthh' was missing from your data. Building it now...\n")
                 CensusData <- build_identification_wgthh_1970(CensusData)
         }
         
@@ -95,6 +113,7 @@ create_householdData_1970 <- function(CensusData,
                        municipality1970standard, municipality2010standard) %>%
                 group_by(idhh) %>% 
                 summarise_all(first)
+        gc()
         
         householdData = data.table(householdData)
         
