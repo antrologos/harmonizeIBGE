@@ -6,6 +6,9 @@
 \usage{
 build_education_attainment_1991(CensusData)
 }
+\arguments{
+\item{data.frame}{}
+}
 \description{
 Builds a synthetic variable for education attainment - 1991
 }

@@ -1,4 +1,4 @@
-#' Builds a synthetic variable for education attainment - 1960
+#' Builds a synthetic variable for education attainment - 1960 
 #' @param data.frame
 #' @value data.frame
 #' @export
@@ -11,7 +11,7 @@ build_education_attainment_1960 <- function(CensusData){
         }
 
 
-        check_vars <- check_var_existence(CensusData, c("v211", "v212", "v213", "v214", "age"))
+        check_vars <- check_var_existence(CensusData, c("v211", "v212", "v213", "v214"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -255,8 +255,7 @@ build_education_attainment_1960 <- function(CensusData){
         if(schoolattnd_just_created == TRUE){
                 CensusData[ , schoolattnd := NULL]
         }
-
-
+        
         #education
         # 1 - Nenhum
         # 2 - Primario incompleto

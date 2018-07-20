@@ -1,5 +1,5 @@
 #' Builds a synthetic variable for education attainment - 1991
-#' @param data.frame
+#' @param data.frame 
 #' @value data.frame
 #' @export
 
@@ -10,7 +10,7 @@ build_education_attainment_1991 <- function(CensusData){
                 stop("'CensusData' is not a data.frame")
         }
 
-        check_vars <- check_var_existence(CensusData, c("v520", "v521", "v522", "v523", "v524", "v525"))
+        check_vars <- check_var_existence(CensusData, c("v0324", "v0325", "v0326", "v0327", "v0328", "v0329"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
