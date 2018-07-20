@@ -3,7 +3,7 @@
 #' @value data.frame
 #' @export
 
-build_demographics_age_1960 <- function(CensusData){
+build_demographics_age_1960 <- function(CensusData){ 
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame") 
