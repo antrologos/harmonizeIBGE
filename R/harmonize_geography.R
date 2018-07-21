@@ -115,7 +115,6 @@ harmonize_geography <- function(CensusData,
                 }
                 gc();Sys.sleep(1);gc()
 
-                CensusData[ , municipality2010 := municcode2010]
 
                 CensusData[state_of_birth %in% 30:98, state_of_birth := 99]
                 gc()
@@ -179,8 +178,6 @@ harmonize_geography <- function(CensusData,
 
                 CensusData[ ,  state_curr := v2]
 
-                CensusData[ , municipality2010 := v2*10^4 + v5]
-
                 CensusData[state_curr == 20, state_harm := 26]
                 CensusData[state_curr == 34, state_harm := 33]
                 CensusData[state_curr == 17, state_harm := 52]
@@ -201,70 +198,6 @@ harmonize_geography <- function(CensusData,
                         CensusData[ , v513 := NULL]
                         gc()
                 }
-
-
-                # Fernando de Noronha
-                CensusData[municipality2010 == 200010, municipality2010 := 260545]
-                gc()
-
-                # De Goias para Tocantins
-                CensusData[municipality2010 == 520040, municipality2010 := 170040]
-                CensusData[municipality2010 == 520070, municipality2010 := 170070]
-                CensusData[municipality2010 == 520100, municipality2010 := 170100]
-                CensusData[municipality2010 == 520190, municipality2010 := 170190]
-                CensusData[municipality2010 == 520200, municipality2010 := 170200]
-                CensusData[municipality2010 == 520210, municipality2010 := 170210]
-                CensusData[municipality2010 == 520220, municipality2010 := 170220]
-                CensusData[municipality2010 == 520230, municipality2010 := 170230]
-                CensusData[municipality2010 == 520240, municipality2010 := 170240]
-                CensusData[municipality2010 == 520270, municipality2010 := 170270]
-                CensusData[municipality2010 == 520290, municipality2010 := 170290]
-                gc()
-                CensusData[municipality2010 == 520300, municipality2010 := 170300]
-                CensusData[municipality2010 == 520370, municipality2010 := 170370]
-                CensusData[municipality2010 == 520550, municipality2010 := 170550]
-                CensusData[municipality2010 == 520560, municipality2010 := 170560]
-                CensusData[municipality2010 == 520600, municipality2010 := 170600]
-                CensusData[municipality2010 == 520610, municipality2010 := 170610]
-                CensusData[municipality2010 == 520700, municipality2010 := 170700]
-                CensusData[municipality2010 == 520720, municipality2010 := 170720]
-                CensusData[municipality2010 == 520730, municipality2010 := 170730]
-                CensusData[municipality2010 == 520770, municipality2010 := 170770]
-                CensusData[municipality2010 == 520820, municipality2010 := 170820]
-                gc()
-                CensusData[municipality2010 == 520900, municipality2010 := 170900]
-                CensusData[municipality2010 == 520930, municipality2010 := 170930]
-                CensusData[municipality2010 == 520950, municipality2010 := 170950]
-                CensusData[municipality2010 == 521050, municipality2010 := 171050]
-                CensusData[municipality2010 == 521070, municipality2010 := 171070]
-                CensusData[municipality2010 == 521110, municipality2010 := 171110]
-                CensusData[municipality2010 == 521240, municipality2010 := 171240]
-                CensusData[municipality2010 == 521320, municipality2010 := 171320]
-                CensusData[municipality2010 == 521330, municipality2010 := 171330]
-                CensusData[municipality2010 == 521360, municipality2010 := 171360]
-                CensusData[municipality2010 == 521420, municipality2010 := 171420]
-                CensusData[municipality2010 == 521430, municipality2010 := 171430]
-                gc()
-                CensusData[municipality2010 == 521510, municipality2010 := 171510]
-                CensusData[municipality2010 == 521610, municipality2010 := 171610]
-                CensusData[municipality2010 == 521620, municipality2010 := 171620]
-                CensusData[municipality2010 == 521650, municipality2010 := 171650]
-                CensusData[municipality2010 == 521660, municipality2010 := 171660]
-                CensusData[municipality2010 == 521670, municipality2010 := 171665]
-                CensusData[municipality2010 == 521700, municipality2010 := 171700]
-                CensusData[municipality2010 == 521750, municipality2010 := 171750]
-                CensusData[municipality2010 == 521780, municipality2010 := 171780]
-                CensusData[municipality2010 == 521790, municipality2010 := 171790]
-                CensusData[municipality2010 == 521820, municipality2010 := 171820]
-                CensusData[municipality2010 == 521840, municipality2010 := 171840]
-                CensusData[municipality2010 == 522030, municipality2010 := 172030]
-                gc()
-                CensusData[municipality2010 == 522080, municipality2010 := 172080]
-                CensusData[municipality2010 == 522090, municipality2010 := 172090]
-                CensusData[municipality2010 == 522110, municipality2010 := 172110]
-                CensusData[municipality2010 == 522120, municipality2010 := 172120]
-                CensusData[municipality2010 == 522210, municipality2010 := 172210]
-                gc()
 
 
         }
@@ -311,7 +244,6 @@ harmonize_geography <- function(CensusData,
                 CensusData[born_same_municipality == 1, born_same_state := 1]
                 CensusData[born_same_municipality == 1, state_of_birth := state_harm]
 
-                CensusData[ , municipality2010 := v1101*10^4 + v1102]
 
                 if(delete_originals == T){
                         CensusData[ , v1102 := NULL]
@@ -321,7 +253,6 @@ harmonize_geography <- function(CensusData,
                         gc()
                 }
         }
-
 
 
         if(year == 2000){
@@ -364,8 +295,7 @@ harmonize_geography <- function(CensusData,
                 CensusData[ born_same_state == 1, state_of_birth := state_harm]
                 CensusData[ state_of_birth == state_harm, born_same_state := 1]
 
-                CensusData[ , municipality2010 := v0103]
-
+                
                 if(delete_originals == T){
                         CensusData[ , v0102 := NULL]
                         CensusData[ , v0103 := NULL]
@@ -403,8 +333,6 @@ harmonize_geography <- function(CensusData,
                 CensusData[state_curr == 50, state_harm := 51]
 
                 CensusData[v0622==2, state_of_birth := 99]
-
-                CensusData[ , municipality2010 := state_curr*10^5 + v0002]
 
                 CensusData[ , born_same_municipality := ifelse(v0618 %in% c(1,2), 1, 0)  ]
                 CensusData[ , born_same_state := as.numeric(born_same_municipality==1 | ifelse(v0619 %in% c(1,2) , T, F))]

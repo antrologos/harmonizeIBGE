@@ -28,22 +28,22 @@ harmonize_education <- function(CensusData,
 
         call <- paste0("build_education_literacy_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.5); gc()
 
 
         call <- paste0("build_education_levelattnd_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.5); gc()
 
 
         call <- paste0("build_education_schoolattnd_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.5); gc()
 
 
         call <- paste0("build_education_attainment_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.5); gc()
 
 
         if(delete_originals == T){
@@ -74,7 +74,7 @@ harmonize_education <- function(CensusData,
 
                 CensusData[, (var_to_exclude) := NULL]
 
-                gc();Sys.sleep(1);gc()
+                gc();Sys.sleep(.5);gc()
 
         }
 

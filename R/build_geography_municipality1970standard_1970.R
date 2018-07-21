@@ -10,6 +10,10 @@ build_geography_municipality1970standard_1970 <- function(CensusData,
                 stop("'CensusData' is not a data.frame")
         }
         
+        if(!(is.character(state_var_name) & (length(state_var_name)==1) )){
+                stop("'state_var_name' must be a single-valued character vector")
+        }
+        
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c(state_var_name, "v001", "v002"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",

@@ -20,6 +20,7 @@ build_income_hhIncomeTotNominal_1970 <- function(CensusData){
                 CensusData <- build_income_indIncomeNominal_1970(CensusData)
                 indIncomeNominal_just_created <- TRUE
         }
+        gc()
 
         # Building idhh
         check_vars <- check_var_existence(CensusData, c("idhh"))
@@ -28,14 +29,16 @@ build_income_hhIncomeTotNominal_1970 <- function(CensusData){
                 CensusData <- build_identification_idhh_1970(CensusData)
                 idhh_just_created <- TRUE
         }
+        gc()
 
         # Building househouldParticular
         check_vars <- check_var_existence(CensusData, c("househouldParticular"))
         househouldParticular_just_created <- FALSE
         if(length(check_vars) > 0) {
-                CensusData <- build_identification_househouldParticular_1970(CensusData)
+                CensusData <- build_househould_househouldParticular_1970(CensusData)
                 househouldParticular_just_created <- TRUE
         }
+        gc()
 
         # Identifying members of the main family of the household
         check_vars <- check_var_existence(CensusData, c("relative"))
@@ -44,6 +47,7 @@ build_income_hhIncomeTotNominal_1970 <- function(CensusData){
                 CensusData <- build_demographics_relative_1970(CensusData)
                 relative_just_created <- TRUE
         }
+        gc()
 
         # Copying the income information
         CensusData[ , indIncomeNominal_tmp := indIncomeNominal]

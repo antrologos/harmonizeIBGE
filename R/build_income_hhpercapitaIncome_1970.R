@@ -22,6 +22,7 @@ build_income_hhIncomePerCapNominal_1970 <- function(CensusData){
                 CensusData <- build_identification_idhh_1970(CensusData)
                 idhh_just_created <- TRUE
         }
+        gc()
 
         # Building hhIncomeTotNominal
         check_vars <- check_var_existence(CensusData, c("hhIncomeTotNominal"))
@@ -30,6 +31,7 @@ build_income_hhIncomePerCapNominal_1970 <- function(CensusData){
                 CensusData <- build_identification_idhh_1970(CensusData)
                 hhIncomeTotNominal_just_created <- TRUE
         }
+        gc()
 
         # Building numberRelatives
         check_vars <- check_var_existence(CensusData, c("numberRelatives"))
@@ -38,11 +40,14 @@ build_income_hhIncomePerCapNominal_1970 <- function(CensusData){
                 CensusData <- build_demographics_numberRelatives_1970(CensusData)
                 numberRelatives_just_created <- TRUE
         }
+        gc()
 
         CensusData[ , hhIncomePerCapNominal := hhIncomeTotNominal/numberRelatives]
+        gc()
 
+        CensusData[is.na(hhIncomePerCapNominal),      hhIncomePerCapNominal := NA]
         CensusData[!is.finite(hhIncomePerCapNominal), hhIncomePerCapNominal := NA]
-        CensusData[is.nan(hhIncomePerCapNominal), hhIncomePerCapNominal := NA]
+        CensusData[is.nan(hhIncomePerCapNominal),     hhIncomePerCapNominal := NA]
 
 
         if(idhh_just_created == TRUE){

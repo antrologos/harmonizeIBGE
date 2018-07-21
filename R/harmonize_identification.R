@@ -16,24 +16,24 @@ harmonize_identification <- function(CensusData,
                 stop("'year' must be a numeric value")
         }
 
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.3); gc()
 
 
         call <- paste0("build_identification_year_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.3); gc()
 
         call <- paste0("build_identification_wgt_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.3); gc()
 
         call <- paste0("build_identification_idperson_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.3); gc()
 
         call <- paste0("build_identification_idhh_",year,"(CensusData)")
         CensusData <- eval(parse(text = call))
-        gc(); Sys.sleep(1); gc()
+        gc(); Sys.sleep(.3); gc()
 
 
         if(delete_originals == T){
@@ -64,7 +64,7 @@ harmonize_identification <- function(CensusData,
 
                 CensusData[, (var_to_exclude) := NULL]
 
-                gc();Sys.sleep(1);gc()
+                gc();Sys.sleep(.3);gc()
         }
 
         CensusData

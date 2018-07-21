@@ -1,7 +1,6 @@
 #' Builds a synthetic variable for age - 1960
 #' @param data.frame
 #' @value data.frame
-#' @import data.table
 #' @export
 
 build_identification_wgtperson_1980 <- function(CensusData){

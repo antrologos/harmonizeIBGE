@@ -1,16 +1,15 @@
-#' Builds a synthetic variable for age - 1970
+#' Harmonize a set of education variables all at once
 #' @param data.frame
 #' @value data.frame
 #' @export
 
-
-build_identification_househouldParticular_1970 <- function(CensusData){
+build_geography_municipality1980standard_1980 <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
         }
         
-        check_vars <- check_var_existence(CensusData, c("v006", "v007"))
+        check_vars <- check_var_existence(CensusData, c(state_var_name, "v2", "v5"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -20,12 +19,10 @@ build_identification_househouldParticular_1970 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData[v007 == 0 ,  househouldParticular := 1]
-        CensusData[v007 == 1 ,  househouldParticular := 0]
-        CensusData[is.na(v007), househouldParticular := 1]
+        
+        CensusData[ , municipality2010 := v2*10^4 + v5]
+        
         gc()
-        
         CensusData
-        
 }
 
