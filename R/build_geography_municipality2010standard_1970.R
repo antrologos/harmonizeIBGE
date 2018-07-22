@@ -14,23 +14,16 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
                 stop("'state_var_name' must be a single-valued character vector")
         }
         
-        check_vars <- check_var_existence(CensusData, c(state_var_name, "v001", "v002"))
-        if(length(check_vars) > 0){
-                stop("The following variables are missing from the data: ",
-                     paste(check_vars, collapse = ", "))
-        }
-        
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
         }
 
-
-        municipality1970standard_just_created = F
-        check_vars <- check_var_existence(CensusData, c("municipality1970standard"))
+        municipalityCurrent_just_created = F
+        check_vars <- check_var_existence(CensusData, c("municipalityCurrent"))
         if(length(check_vars) > 0){
-                CensusData <- build_geography_municipality1970standard_1970(CensusData,
-                                                                            state_var_name = state_var_name)
-                municipality1970standard_just_created = T
+                CensusData <- build_geography_municipalityCurrent_1970(CensusData,
+                                                                       state_var_name = state_var_name)
+                municipalityCurrent_just_created = T
                 gc()
         }
 
@@ -38,11 +31,12 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
 
         crosswalk_munic_1970_to_2010 = data.table(crosswalk_munic_1970_to_2010 %>%
                                                           select(municipality1970standard,
-                                                                 municipality2010standard))
+                                                                 municipality2010standard)) %>%
+                rename(municipalityCurrent = municipality1970standard)
 
         CensusData = data.table:::merge.data.table(x     = CensusData,
                                                    y     = crosswalk_munic_1970_to_2010,
-                                                   by    = "municipality1970standard",
+                                                   by    = "municipalityCurrent",
                                                    all.x = T,
                                                    all.y = F,
                                                    sort  = F)
@@ -54,8 +48,8 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
                 CensusData[ , municipality2010standard := trunc(municipality2010standard/10)]
         }
 
-        if(municipality1970standard_just_created == T){
-                CensusData[ , municipality1970standard := NULL]
+        if(municipalityCurrent_just_created == T){
+                CensusData[ , municipalityCurrent := NULL]
         }
 
         gc()

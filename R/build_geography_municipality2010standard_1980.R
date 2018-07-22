@@ -13,15 +13,15 @@ build_geography_municipality2010standard_1980 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        municipality1980standard_just_created = F
-        check_vars <- check_var_existence(CensusData, c("municipality1980standard"))
+        municipalityCurrent_just_created = F
+        check_vars <- check_var_existence(CensusData, c("municipalityCurrent"))
         if(length(check_vars) > 0){
-                CensusData <- build_geography_municipality1980standard_1980(CensusData)
-                municipality1980standard_just_created = T
+                CensusData <- build_geography_municipalityCurrent_1980(CensusData)
+                municipalityCurrent_just_created = T
                 gc()
         }
         
-        CensusData[ , municipality2010standard := municipality1980standard]
+        CensusData[ , municipality2010standard := municipalityCurrent]
         
         
         # Fernando de Noronha
@@ -92,8 +92,8 @@ build_geography_municipality2010standard_1980 <- function(CensusData){
                 CensusData[ , municipality2010standard := trunc(municipality2010standard/10)]
         }
         
-        if(municipality1980standard_just_created == T){
-                CensusData[ , municipality1980standard := NULL]
+        if(municipalityCurrent_just_created == T){
+                CensusData[ , municipalityCurrent := NULL]
         }        
         
         gc()

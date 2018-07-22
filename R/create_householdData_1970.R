@@ -41,11 +41,11 @@ create_householdData_1970 <- function(CensusData,
         }
         gc()
         
-        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "municipality1970standard")
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "municipalityCurrent")
         if(length(check_vars) > 0){
-                cat("The variable 'municipality1970standard' was missing from your data. Building it now...\n")
-                CensusData <- build_geography_municipality1970standard_1970(CensusData,
-                                                                            state_var_name = state_var_name)
+                cat("The variable 'municipalityCurrent' was missing from your data. Building it now...\n")
+                CensusData <- build_geography_municipalityCurrent_1970(CensusData,
+                                                                       state_var_name = state_var_name)
         }
         gc()
         
@@ -113,7 +113,7 @@ create_householdData_1970 <- function(CensusData,
                        numberDwellers, numberRelatives, 
                        hhIncomeTotNominal, hhIncomePerCapNominal,
                        state,
-                       municipality1970standard, municipality2010standard) 
+                       municipalityCurrent, municipality2010standard) 
         
         rm(CensusData)
         gc();Sys.sleep(1);gc()
@@ -145,7 +145,7 @@ create_householdData_1970 <- function(CensusData,
                                               hhIncomeTotNominal       = first(hhIncomeTotNominal),
                                               hhIncomePerCapNominal    = first(hhIncomePerCapNominal),
                                               state                    = first(state),
-                                              municipality1970standard = first(municipality1970standard),
+                                              municipalityCurrent      = first(municipalityCurrent),
                                               municipality2010standard = first(municipality2010standard)),
                                        by = idhh]
         

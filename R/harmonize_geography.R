@@ -19,10 +19,7 @@ harmonize_geography <- function(CensusData,
         }
         gc(); Sys.sleep(1); gc()
 
-        data("crosswalk_states_tmp")
-        crosswalk =  crosswalk_states_tmp %>%
-                filter(year==year) %>%
-                as.data.table()
+        
 
         if(year %in% c(1960, 1970) ){
                 crosswalk_state <- crosswalk %>%
@@ -39,37 +36,12 @@ harmonize_geography <- function(CensusData,
         y = year
         if(year == 1960){
 
-                crosswalk_state <- crosswalk_state %>%
-                        filter(year == y) %>%
-                        select(-year) %>%
-                        setnames(old = "original_code", new = "uf_pess")
+                
 
-                crosswalk_state_of_birth <- crosswalk_state_of_birth %>%
-                        filter(year == y) %>%
-                        select(-year) %>%
-                        setnames(old = "original_code", new = "v207")
-
-                CensusData <- left_join(x = CensusData,
-                                        y = crosswalk_state,
-                                        by = "uf_pess")
-
-                CensusData <- left_join(x = CensusData,
-                                        y = crosswalk_state_of_birth,
-                                        by = "v207")
-
-                CensusData = data.table(CensusData)
-
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
 
                 CensusData[ , born_same_state := as.numeric(state_of_birth == state_harm)]
-
                 CensusData[ , born_same_municipality := as.numeric(v209==2)]
-
                 CensusData[ , municipality2010 := NA]
-
 
                 if(delete_originals == T){
                         CensusData[ , uf_pess := NULL]
@@ -127,12 +99,6 @@ harmonize_geography <- function(CensusData,
                            state_of_birth := 999]
                 gc()
 
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
-
-                gc()
 
                 CensusData[ , born_same_state := as.numeric(state_of_birth == state_harm)]
                 CensusData[ , born_same_municipality := as.numeric(is.na(v031))]
@@ -176,14 +142,6 @@ harmonize_geography <- function(CensusData,
                            state_of_birth := 999]
                 gc()
 
-                CensusData[ ,  state_curr := v2]
-
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
-
-                gc()
 
                 CensusData[ , born_same_state := as.numeric(state_of_birth == state_harm)]
                 CensusData[ , born_same_municipality := ifelse( v513 == 1, 1, 0)]
@@ -231,13 +189,7 @@ harmonize_geography <- function(CensusData,
                 CensusData[is.na(state_of_birth) | !(state_of_birth %in% values_state_of_birth),
                            state_of_birth := 999]
 
-                CensusData[ ,  state_curr := v1101]
-
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
-
+                
 
                 CensusData[ , born_same_state := as.numeric(state_of_birth == state_harm)]
                 CensusData[ , born_same_municipality := ifelse( v0314 %in% c(1,2), 1, 0)]
@@ -282,13 +234,6 @@ harmonize_geography <- function(CensusData,
                 CensusData[is.na(state_of_birth) | !(state_of_birth %in% values_state_of_birth),
                            state_of_birth := 999]
 
-                CensusData[ ,  state_curr := v0102]
-
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
-
 
                 CensusData[ , born_same_state := as.numeric( v0415==1 | v0417==1 | v0418==1)]
                 CensusData[ , born_same_municipality := as.numeric( v0415==1 | v0417==1)]
@@ -324,13 +269,8 @@ harmonize_geography <- function(CensusData,
                 }
                 gc();Sys.sleep(1);gc()
 
-                CensusData[ ,  state_curr := v0001]
+                
 
-                CensusData[ , state_harm := state_curr]
-                CensusData[state_curr == 20, state_harm := 26]
-                CensusData[state_curr == 34, state_harm := 33]
-                CensusData[state_curr == 17, state_harm := 52]
-                CensusData[state_curr == 50, state_harm := 51]
 
                 CensusData[v0622==2, state_of_birth := 99]
 
@@ -350,16 +290,6 @@ harmonize_geography <- function(CensusData,
                 }
         }
 
-
-        # Convertendo codigo dos municipios para 6 digitos
-        if( year != 1960 & CensusData[ , max(municipality2010, na.rm = T)] > 999999) {
-                CensusData[ , municipality2010 := trunc(municipality2010/10)]
-                CensusData[ , state_2010 := trunc(municipality2010/10000)]
-        }
-
-        if(year == 1960){
-                CensusData[ , state_2010 := NA]
-        }
 
         CensusData[ , region     := trunc(state_harm/10)]
 

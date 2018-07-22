@@ -4,7 +4,7 @@
 \alias{build_geography_minCompAreas1970to2010_1970}
 \title{Builds a synthetic variable for education attainment - 2010}
 \usage{
-build_geography_minCompAreas1970to2010_1970(CensusData)
+build_geography_minCompAreas1970to2010_1970(CensusData, state_var_name = "uf")
 }
 \description{
 Builds a synthetic variable for education attainment - 2010

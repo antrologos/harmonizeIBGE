@@ -3,8 +3,8 @@
 #' @value data.frame
 #' @export
 
-build_geography_municipality1970standard_1970 <- function(CensusData,
-                                                          state_var_name = "uf"){
+build_geography_municipalityCurrent_1970 <- function(CensusData,
+                                                     state_var_name = "uf"){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -77,13 +77,13 @@ build_geography_municipality1970standard_1970 <- function(CensusData,
         CensusData[ , micro_2digit := v001%%100]
         
         # municipality1970standard
-        CensusData[ , municipality1970standard := (state_tmp_for_coding2*100000)+(micro_2digit*1000)+v002]
+        CensusData[ , municipalityCurrent := (state_tmp_for_coding2*100000)+(micro_2digit*1000)+v002]
         
         # Correction for Brasilia
-        CensusData[ state_tmp_for_coding2 == 36, municipality1970standard := 3600000]
+        CensusData[ state_tmp_for_coding2 == 36, municipalityCurrent := 3600000]
         
         # Correction for Rio de Janeiro
-        CensusData[ state_tmp_for_coding2 == 25, municipality1970standard := 2531000]
+        CensusData[ state_tmp_for_coding2 == 25, municipalityCurrent := 2531000]
         
         CensusData[ , c("state_tmp_for_coding", "state_tmp_for_coding2",
                         "micro_2digit") := NULL]
