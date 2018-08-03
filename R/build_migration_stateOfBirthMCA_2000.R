@@ -29,7 +29,7 @@ build_migration_stateOfBirthMCA_2000 <- function(CensusData){
         data("crosswalk_states_tmp")
         crosswalk_states_tmp =  crosswalk_states_tmp %>%
                 filter(year == 2000 & variable == "state_of_birth") %>%
-                select(-year, -variable) %>%
+                select(original_code, semi_harmonized_code) %>%
                 rename(v4210            = original_code,
                        stateOfBirthMCA = semi_harmonized_code) 
         

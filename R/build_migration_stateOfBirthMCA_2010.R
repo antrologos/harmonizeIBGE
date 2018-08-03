@@ -29,7 +29,7 @@ build_migration_stateOfBirthMCA_2010 <- function(CensusData){
         data("crosswalk_states_tmp")
         crosswalk_states_tmp =  crosswalk_states_tmp %>%
                 filter(year == 2010 & variable == "state_of_birth") %>%
-                select(-year, -variable) %>%
+                select(original_code, semi_harmonized_code) %>%
                 rename(v6222            = original_code,
                        stateOfBirthMCA = semi_harmonized_code) 
         
@@ -52,9 +52,6 @@ build_migration_stateOfBirthMCA_2010 <- function(CensusData){
         CensusData[stateOfBirthMCA == 34, stateOfBirthMCA := 33]
         CensusData[stateOfBirthMCA == 17, stateOfBirthMCA := 52]
         CensusData[stateOfBirthMCA == 50, stateOfBirthMCA := 51]
-        
-        # Brazilian, but unspecified state = 99
-        CensusData[v6222 == 9900000, stateOfBirthMCA := 99] 
         
         ## Foreigns  = 999
         CensusData[v0622 == 2, stateOfBirthMCA := 999]

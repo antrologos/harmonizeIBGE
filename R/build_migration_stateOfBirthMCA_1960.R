@@ -19,13 +19,19 @@ build_migration_stateOfBirthMCA_1960 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        bornInBrazil_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("bornInBrazil"))
+        if(length(check_vars) > 0){
+                CensusData <- build_migration_bornInBrazil_1960(CensusData)
+                bornInBrazil_just_created = T
+        }
+        
         data("crosswalk_states_tmp")
         crosswalk_states_tmp =  crosswalk_states_tmp %>%
                 filter(year == 1960 & variable == "state_of_birth") %>%
-                select(-year, -variable) %>%
+                select(original_code, semi_harmonized_code) %>%
                 rename(v207            = original_code,
                        stateOfBirthMCA = semi_harmonized_code) 
-        
         
         CensusData <- data.table:::merge.data.table(x = CensusData,
                                                     y = crosswalk_states_tmp,
@@ -33,16 +39,17 @@ build_migration_stateOfBirthMCA_1960 <- function(CensusData){
                                                     all.x = T, 
                                                     all.y = F, 
                                                     sort = F)
-        CensusData[stateOfBirthMCA == 20, stateOfBirthMCA := 26]
-        CensusData[stateOfBirthMCA == 34, stateOfBirthMCA := 33]
-        CensusData[stateOfBirthMCA == 17, stateOfBirthMCA := 52]
-        CensusData[stateOfBirthMCA == 50, stateOfBirthMCA := 51]
         
-        # Brazilian, but unspecified state = 99
-        CensusData[v207 == 29, stateOfBirthMCA := 99] 
+        gc()
         
         ## Foreigns  = 999
-        CensusData[v207 %in% 30:99, stateOfBirthMCA := 999] 
+        CensusData[ bornInBrazil == 0, stateOfBirthMCA := 999]
+        
+        
+        if(bornInBrazil_just_created == T){
+                CensusData[ , bornInBrazil := NULL]
+        }
+        
         
         gc()
         CensusData
