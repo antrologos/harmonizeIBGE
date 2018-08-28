@@ -1,12 +1,12 @@
 #' Harmonize a set of education variables all at once
 #' @param data.frame
 #' @value data.frame
-#' @export
+#' @export 
 
 build_migration_stateOfBirthMCA_2010 <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
+                stop("'CensusData' is not a data.frame ")
         }
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0618", "v0619", "v0622", "v6222"))
