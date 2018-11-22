@@ -3,26 +3,22 @@
 #' @value data.frame
 #' @export
 
-build_geography_municipality2010standard_1970 <- function(CensusData,
-                                                          state_var_name = "uf"){
+build_geography_municipality2010standard_1970 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
         }
         
-        if(!(is.character(state_var_name) & (length(state_var_name)==1) )){
-                stop("'state_var_name' must be a single-valued character vector")
-        }
-        
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
         }
-
+        
+        metadata <- harmonizeIBGE:::get_metadata(CensusData)
+        
         municipalityCurrent_just_created = F
-        check_vars <- check_var_existence(CensusData, c("municipalityCurrent"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("municipalityCurrent"))
         if(length(check_vars) > 0){
-                CensusData <- build_geography_municipalityCurrent_1970(CensusData,
-                                                                       state_var_name = state_var_name)
+                CensusData <- build_geography_municipalityCurrent_1970(CensusData)
                 municipalityCurrent_just_created = T
                 gc()
         }
@@ -34,6 +30,11 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
                                                                  municipality2010standard)) %>%
                 rename(municipalityCurrent = municipality1970standard)
 
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("municipality2010standard"))
+        if(length(check_vars) == 0){
+                CensusData[ , municipality2010standard := NULL]
+        }
+        
         CensusData = data.table:::merge.data.table(x     = CensusData,
                                                    y     = crosswalk_munic_1970_to_2010,
                                                    by    = "municipalityCurrent",
@@ -43,7 +44,7 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
         gc();Sys.sleep(1);gc()
         
         
-        n_digit <- nchar(min(CensusData[ , municipality2010standard]))
+        n_digit <- nchar(min(CensusData$municipality2010standard))
         if(n_digit == 7){
                 CensusData[ , municipality2010standard := trunc(municipality2010standard/10)]
         }
@@ -53,6 +54,8 @@ build_geography_municipality2010standard_1970 <- function(CensusData,
         }
 
         gc()
+        
+        CensusData <- harmonizeIBGE:::set_metadata(CensusData, metadata = metadata)
 
         CensusData
 }

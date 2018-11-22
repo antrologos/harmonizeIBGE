@@ -21,7 +21,7 @@ build_geography_state2010standard_1970 <- function(CensusData){
                 gc()
         }
         
-        CensusData[ , state2010standard := trunc(municipality2010/10000)]
+        CensusData[ , state2010standard := trunc(municipality2010standard/10000)]
         
         if(municipality2010standard_just_created == TRUE){
                 CensusData[ , municipality2010standard := NULL]

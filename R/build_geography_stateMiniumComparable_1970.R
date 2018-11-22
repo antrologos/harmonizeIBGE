@@ -13,6 +13,8 @@ build_geography_stateMiniumComparable_1970 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
+        
         stateCurrent_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateCurrent"))
         if(length(check_vars) > 0){
@@ -41,6 +43,8 @@ build_geography_stateMiniumComparable_1970 <- function(CensusData){
         if(stateCurrent_just_created == TRUE){
                 CensusData[ , stateCurrent := NULL]
         }
+        
+        CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
         
         gc()
         CensusData

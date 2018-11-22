@@ -13,6 +13,8 @@ build_geography_municipality2010standard_1980 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata <- harmonizeIBGE:::get_metadata(CensusData)
+        
         municipalityCurrent_just_created = F
         check_vars <- check_var_existence(CensusData, c("municipalityCurrent"))
         if(length(check_vars) > 0){
@@ -97,6 +99,9 @@ build_geography_municipality2010standard_1980 <- function(CensusData){
         }        
         
         gc()
+        CensusData <- harmonizeIBGE:::set_metadata(CensusData, metadata = metadata)
+        
+        
         CensusData
 }
 

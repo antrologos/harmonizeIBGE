@@ -24,7 +24,7 @@ build_migration_bornSameStateMCA_2000 <- function(CensusData){
         stateOfBirthMCA_just_created <- F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateOfBirthMCA"))
         if(length(check_vars) > 0){
-                CensusData <- build_geography_stateOfBirthMCA_2000(CensusData)
+                CensusData <- build_migration_stateOfBirthMCA_2000(CensusData)
                 stateOfBirthMCA_just_created <- T
                 gc()
         }

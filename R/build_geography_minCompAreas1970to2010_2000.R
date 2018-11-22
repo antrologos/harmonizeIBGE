@@ -13,6 +13,8 @@ build_geography_minCompAreas1970to2010_2000 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata <- harmonizeIBGE:::get_metadata(CensusData)
+        
         municipality2010standard_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("municipality2010standard"))
         if(length(check_vars) > 0){
@@ -36,7 +38,7 @@ build_geography_minCompAreas1970to2010_2000 <- function(CensusData){
         
         
         setnames(CensusData, old = "mca", new = "minCompAreas1970to2010")
-        
+        CensusData <- harmonizeIBGE:::set_metadata(CensusData, metadata = metadata)
         gc()
         CensusData
 }

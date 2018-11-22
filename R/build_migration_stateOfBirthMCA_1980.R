@@ -19,6 +19,8 @@ build_migration_stateOfBirthMCA_1980 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
+        
         bornInBrazil_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("bornInBrazil"))
         if(length(check_vars) > 0){
@@ -48,6 +50,8 @@ build_migration_stateOfBirthMCA_1980 <- function(CensusData){
         if(bornInBrazil_just_created == T){
                 CensusData[ , bornInBrazil := NULL]
         }
+        
+        CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
         
         gc()
         CensusData

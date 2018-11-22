@@ -38,6 +38,10 @@ get_metadata <- function(Data){
                 }
         }
         
+        if(metadata$type == "census" & metadata$year == 1970){
+                metadata$state_var_name <- attributes(Data)$state_var_name
+        }
+        
         metadata
 }
 

@@ -14,12 +14,12 @@ build_income_labourIncome2010Values <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData     <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
-        metadata <- harmonizeIBGE:::get_metadata(CensusData)
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        metadata   <- harmonizeIBGE:::get_metadata(CensusData)
         
         year = metadata$year
         
-        check_vars <- check_var_existence(CensusData, c("age"))
+        check_vars <-  harmonizeIBGE:::check_var_existence(CensusData, c("age"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -36,7 +36,7 @@ build_income_labourIncome2010Values <- function(CensusData){
         
         if(year == 1980){
                 
-                check_vars <- check_var_existence(CensusData, "v607")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v607")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -52,7 +52,7 @@ build_income_labourIncome2010Values <- function(CensusData){
         
         if(year == 1991){
                 
-                check_vars <- check_var_existence(CensusData, "v0356")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v0356")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -67,7 +67,7 @@ build_income_labourIncome2010Values <- function(CensusData){
         
         if(year == 2000){
                 
-                check_vars <- check_var_existence(CensusData, "v4512")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v4512")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -80,7 +80,7 @@ build_income_labourIncome2010Values <- function(CensusData){
         
         if(year == 2010){
                 
-                check_vars <- check_var_existence(CensusData, "v6513")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v6513")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))

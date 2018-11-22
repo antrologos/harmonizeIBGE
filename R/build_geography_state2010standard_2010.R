@@ -19,7 +19,7 @@ build_geography_state2010standard_2010 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData[ ,  state_curr := v0001]
+        CensusData[ ,  state2010standard := v0001]
         
         gc()
         CensusData

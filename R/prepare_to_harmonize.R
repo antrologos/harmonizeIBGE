@@ -82,13 +82,25 @@ prepare_to_harmonize <- function(Data,
         setnames(x = Data, old = to_remove_VAR, new = VAR_removed)
         
         var_tolower <- names(Data)
-        var_tolower <- var_tolower[grep(x = var_tolower, pattern = "[Vv][Dd]?[[:digit:]]{4,6}")]
+        var_tolower <- var_tolower[grep(x = var_tolower, pattern = "[Vv][Dd]?[[:digit:]]{3,6}")]
         setnames(x = Data, old = var_tolower, new = tolower(var_tolower))
         
         var_tolower2 <- names(Data)
         var_tolower2 <- var_tolower2[grep(x = var_tolower2, pattern = "[P][p]?[[:digit:]]{4,6}")]
         setnames(x = Data, old = var_tolower2, new = tolower(var_tolower2))
         
+        
+        if(year == 1980){
+                var_tolower <- names(Data)
+                var_tolower <- var_tolower[grep(x = var_tolower, pattern = "[V][[:digit:]]{1,4}")]
+                setnames(x = Data, old = var_tolower, new = tolower(var_tolower))
+        }
+        
+        if(year == 2000){
+                var_tolower <- names(Data)
+                var_tolower <- var_tolower[grep(x = var_tolower, pattern = "[P][[:digit:]]{1,4}")]
+                setnames(x = Data, old = var_tolower, new = tolower(var_tolower))
+        }
         
         if(type == "pnad"){
                 
@@ -115,7 +127,7 @@ prepare_to_harmonize <- function(Data,
         if(type == "census" & year == 1970){
                 
                 if(is.null(state_var_name)){
-                        warning("\n1970 Census: For the year 1970, you have to specify 'state_var_name'. The original\ndatabase produced by IBGE do not contains an state variable. So each user may have\ncreated a different name for it. If you do not want to use this variable, inform 'none'")
+                        stop("\n1970 Census: For the year 1970, you have to specify 'state_var_name'. The original\ndatabase produced by IBGE do not contains an state variable. So each user may have\ncreated a different name for it. If you do not want to use this variable, inform 'none'")
                 }else{
                         
                         # Converting to data.table

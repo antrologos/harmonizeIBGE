@@ -35,10 +35,10 @@ year;data;var_sector;var_ocup
 2013;pnad;v9907;v9906
 2014;pnad;v9907;v9906
 2015;pnad;v9907;v9906
-1960;census;v223b;V221
-1970;census;v045;V044
-1980;census;v532;"V530;V542"
-1991;census;v0347;V0346
-2000;census;v4462;V4452
-2010;census;v6471;V6461
+1960;census;v223b;v221
+1970;census;v045;v044
+1980;census;v532;"v530;v542"
+1991;census;v0347;v0346
+2000;census;v4462;v4452
+2010;census;v6471;v6461
 ;pnadc;v4044;

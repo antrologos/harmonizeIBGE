@@ -3,18 +3,15 @@
 #' @value data.frame
 #' @export
 
-build_geography_municipalityCurrent_1970 <- function(CensusData,
-                                                     state_var_name = "uf"){
+build_geography_municipalityCurrent_1970 <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
         }
         
-        if(!(is.character(state_var_name) & (length(state_var_name)==1) )){
-                stop("'state_var_name' must be a single-valued character vector")
-        }
+        metadata <- harmonizeIBGE:::get_metadata(CensusData)
         
-        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c(state_var_name, "v001", "v002"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c(metadata$state_var_name, "v001", "v002"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -24,7 +21,7 @@ build_geography_municipalityCurrent_1970 <- function(CensusData,
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData$state_tmp_for_coding <- CensusData[[state_var_name]]
+        CensusData$state_tmp_for_coding <- CensusData[[metadata$state_var_name]]
         
         # Catches a list of the state codes
         # The Census od 1970 is lacking a variable for states.

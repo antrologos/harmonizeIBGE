@@ -4,7 +4,7 @@
 \alias{build_geography_stateCurrent_1970}
 \title{Builds a synthetic variable for education attainment - 2010}
 \usage{
-build_geography_stateCurrent_1970(CensusData, state_var_name = "uf")
+build_geography_stateCurrent_1970(CensusData)
 }
 \description{
 Builds a synthetic variable for education attainment - 2010

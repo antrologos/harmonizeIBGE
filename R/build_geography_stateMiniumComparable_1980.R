@@ -34,6 +34,8 @@ build_geography_stateMiniumComparable_1980 <- function(CensusData){
                 CensusData[ , stateCurrent := NULL]
         }
         
+        
+        
         gc()
         CensusData
 }
