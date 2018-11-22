@@ -4,7 +4,8 @@
 \alias{build_geography_municipalityCurrent_1970}
 \title{Harmonize a set of education variables all at once}
 \usage{
-build_geography_municipalityCurrent_1970(CensusData, state_var_name = "uf")
+build_geography_municipalityCurrent_1970(CensusData,
+  state_var_name = "uf")
 }
 \description{
 Harmonize a set of education variables all at once

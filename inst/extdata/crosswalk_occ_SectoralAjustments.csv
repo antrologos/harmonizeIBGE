@@ -1,0 +1,193 @@
+year;isic;ISIC_label;sector;sector_label;ibge_code;ibge_label;newISCO_sector;newISCO_sector_label
+1960;10;Agriculture, fishing, and forestry;;;117;Outros proprietários;1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;10;Agriculture, fishing, and forestry;;;124;Outros administradores, diretores e gerentes;1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;30;Manufacturing;;;117;Outros proprietários;1222;Production and operations department managers in manufacturing
+1960;30;Manufacturing;;;124;Outros administradores, diretores e gerentes;1222;Production and operations department managers in manufacturing
+1960;50;Construction;;;114;Industriais;1223;Production and operations department managers in construction
+1960;50;Construction;;;117;Outros proprietários;1223;Production and operations department managers in construction
+1960;50;Construction;;;124;Outros administradores, diretores e gerentes;1223;Production and operations department managers in construction
+1960;60;Wholesale and retail trade;;;117;Outros proprietários;1314;General managers in wholesale and retail trade
+1960;60;Wholesale and retail trade;;;124;Outros administradores, diretores e gerentes;1314;General managers in wholesale and retail trade
+1960;70;Hotels and restaurants;;;115;Comerciantes;1315;General managers of restaurants and hotels
+1960;80;Transportation and communications;;;117;Outros proprietários;1226;Production and operations department managers in transport, storage and communications
+1960;80;Transportation and communications;;;124;Outros administradores, diretores e gerentes;1226;Production and operations department managers in transport, storage and communications
+1960;90;Financial services and insurance;;;117;Outros proprietários;1227;Production and operations department managers in business services
+1960;90;Financial services and insurance;;;124;Outros administradores, diretores e gerentes;1227;Production and operations department managers in business services
+1960;100;Public administration and defense;;;117;Outros proprietários;1120;Senior government officials
+1960;100;Public administration and defense;;;124;Outros administradores, diretores e gerentes;1120;Senior government officials
+1960;20;Mining;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;40;Electricity, gas and water;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;111;Real estate and business services;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;112;Education;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;113;Health and social work;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;114;Other services;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;120;Private household services;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;130;Extra-territorial organizations and bodies;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;999;Unknown;;;117;Outros proprietários;1229;Production and operations department managers not elsewhere classified
+1960;20;Mining;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;40;Electricity, gas and water;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;111;Real estate and business services;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;112;Education;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;113;Health and social work;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;114;Other services;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;120;Private household services;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;130;Extra-territorial organizations and bodies;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1960;999;Unknown;;;124;Outros administradores, diretores e gerentes;1229;Production and operations department managers not elsewhere classified
+1970;10;Agriculture, fishing, and forestry;;;17;outros proprietários;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;10;Agriculture, fishing, and forestry;;;24;outros administradores;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;30;Manufacturing;;;17;outros proprietários;1222;Production and operations department managers in manufacturing
+1970;30;Manufacturing;;;24;outros administradores;1222;Production and operations department managers in manufacturing
+1970;50;Construction;;;14;industriais;1223;Production and operations department managers in construction
+1970;50;Construction;;;17;outros proprietários;1223;Production and operations department managers in construction
+1970;50;Construction;;;24;outros administradores;1223;Production and operations department managers in construction
+1970;60;Wholesale and retail trade;;;17;outros proprietários;1314;General managers in wholesale and retail trade
+1970;60;Wholesale and retail trade;;;24;outros administradores;1314;General managers in wholesale and retail trade
+1970;70;Hotels and restaurants;;;15;comerciantes;1315;General managers of restaurants and hotels
+1970;80;Transportation and communications;;;17;outros proprietários;1226;Production and operations department managers in transport, storage and communications
+1970;80;Transportation and communications;;;24;outros administradores;1226;Production and operations department managers in transport, storage and communications
+1970;90;Financial services and insurance;;;17;outros proprietários;1227;Production and operations department managers in business services
+1970;90;Financial services and insurance;;;24;outros administradores;1227;Production and operations department managers in business services
+1970;100;Public administration and defense;;;17;outros proprietários;1120;Senior government officials
+1970;100;Public administration and defense;;;24;outros administradores;1120;Senior government officials
+1970;20;Mining;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;40;Electricity, gas and water;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;111;Real estate and business services;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;112;Education;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;113;Health and social work;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;114;Other services;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;120;Private household services;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;130;Extra-territorial organizations and bodies;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;999;Unknown;;;17;outros proprietários;1229;Production and operations department managers not elsewhere classified
+1970;20;Mining;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;40;Electricity, gas and water;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;111;Real estate and business services;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;112;Education;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;113;Health and social work;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;114;Other services;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;120;Private household services;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;130;Extra-territorial organizations and bodies;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+1970;999;Unknown;;;24;outros administradores;1229;Production and operations department managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1210;DIRETORES GERAIS;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;30;Manufacturing;;;1210;DIRETORES GERAIS;1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;50;Construction;;;1210;DIRETORES GERAIS;1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1210;DIRETORES GERAIS;1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1210;DIRETORES GERAIS;1225;Production and operations department managers in restaurants and hotels
+2000;80;Transportation and communications;;;1210;DIRETORES GERAIS;1226;Production and operations department managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1210;DIRETORES GERAIS;1227;Production and operations department managers in business services
+2000;100;Public administration and defense;;;1210;DIRETORES GERAIS;1120;Senior government officials
+2000;111;Real estate and business services;;;1210;DIRETORES GERAIS;1227;Production and operations department managers in business services
+2000;112;Education;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;113;Health and social work;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;114;Other services;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;999;Unknown;;;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;30;Manufacturing;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;50;Construction;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1225;Production and operations department managers in restaurants and hotels
+2000;80;Transportation and communications;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1226;Production and operations department managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1227;Production and operations department managers in business services
+2000;111;Real estate and business services;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1227;Production and operations department managers in business services
+2000;112;Education;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;113;Health and social work;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;114;Other services;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;999;Unknown;;;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;30;Manufacturing;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;50;Construction;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1225;Production and operations department managers in restaurants and hotels
+2000;80;Transportation and communications;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1226;Production and operations department managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1227;Production and operations department managers in business services
+2000;100;Public administration and defense;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1120;Senior government officials
+2000;111;Real estate and business services;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1227;Production and operations department managers in business services
+2000;112;Education;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;113;Health and social work;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;114;Other services;;;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1230;DIRETORES DE ÁREAS DE APOIO;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;30;Manufacturing;;;1230;DIRETORES DE ÁREAS DE APOIO;1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;50;Construction;;;1230;DIRETORES DE ÁREAS DE APOIO;1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1230;DIRETORES DE ÁREAS DE APOIO;1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1230;DIRETORES DE ÁREAS DE APOIO;1315;General managers of restaurants and hotels
+2000;80;Transportation and communications;;;1230;DIRETORES DE ÁREAS DE APOIO;1316;General managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1230;DIRETORES DE ÁREAS DE APOIO;1227;Production and operations department managers in business services
+2000;100;Public administration and defense;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;111;Real estate and business services;;;1230;DIRETORES DE ÁREAS DE APOIO;1227;Production and operations department managers in business services
+2000;112;Education;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;113;Health and social work;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;114;Other services;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;130;Extra-territorial organizations and bodies;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;999;Unknown;;;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;30;Manufacturing;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;50;Construction;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1315;General managers of restaurants and hotels
+2000;80;Transportation and communications;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1316;General managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1227;Production and operations department managers in business services
+2000;100;Public administration and defense;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;111;Real estate and business services;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1227;Production and operations department managers in business services
+2000;112;Education;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;113;Health and social work;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;114;Other services;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;130;Extra-territorial organizations and bodies;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;999;Unknown;;;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2000;10;Agriculture, fishing, and forestry;;;1320;GERENTES DE ÁREAS DE APOIO;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;20;Mining;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;30;Manufacturing;;;1320;GERENTES DE ÁREAS DE APOIO;1222;Production and operations department managers in manufacturing
+2000;40;Electricity, gas and water;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;50;Construction;;;1320;GERENTES DE ÁREAS DE APOIO;1223;Production and operations department managers in construction
+2000;60;Wholesale and retail trade;;;1320;GERENTES DE ÁREAS DE APOIO;1314;General managers in wholesale and retail trade
+2000;70;Hotels and restaurants;;;1320;GERENTES DE ÁREAS DE APOIO;1315;General managers of restaurants and hotels
+2000;80;Transportation and communications;;;1320;GERENTES DE ÁREAS DE APOIO;1316;General managers in transport, storage and communications
+2000;90;Financial services and insurance;;;1320;GERENTES DE ÁREAS DE APOIO;1227;Production and operations department managers in business services
+2000;100;Public administration and defense;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;111;Real estate and business services;;;1320;GERENTES DE ÁREAS DE APOIO;1227;Production and operations department managers in business services
+2000;112;Education;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;113;Health and social work;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;114;Other services;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;130;Extra-territorial organizations and bodies;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;999;Unknown;;;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;;;90000;"Limpeza urbana e esgoto; e atividades conexas";5142;TRABALHADORES NOS SERVIÇOS DE MANUTENÇÃO E CONSERVAÇÃO DE EDIFÍCIOS E LOGRADOUROS;9161;Garbage collectors
+2000;;;55030;Outros serviços de alimentação - exceto ambulantes;1210;DIRETORES GERAIS;1229;Production and operations department managers not elsewhere classified
+2000;;;55030;Outros serviços de alimentação - exceto ambulantes;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1229;Production and operations department managers not elsewhere classified
+2000;;;55030;Outros serviços de alimentação - exceto ambulantes;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1229;Production and operations department managers not elsewhere classified
+2000;;;55030;Outros serviços de alimentação - exceto ambulantes;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1319;General managers not elsewhere classified
+2010;;;56011;RESTAURANTES E OUTROS ESTABELECIMENTOS DE SERVIÇOS DE ALIMENTAÇÃO E BEBIDAS;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;;;56012;SERVIÇOS DE CATERING, BUFÊ E OUTROS SERVIÇOS DE COMIDA PREPARADA;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;;;56999;ATIVIDADES DE ALIMENTAÇÃO NÃO ESPECIFICADAS;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;10;Agriculture, fishing, and forestry;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;20;Mining;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;30;Manufacturing;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1222;Production and operations department managers in manufacturing
+2010;40;Electricity, gas and water;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;50;Construction;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1223;Production and operations department managers in construction
+2010;60;Wholesale and retail trade;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1314;General managers in wholesale and retail trade
+2010;70;Hotels and restaurants;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1315;General managers of restaurants and hotels
+2010;80;Transportation and communications;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1226;Production and operations department managers in transport, storage and communications
+2010;90;Financial services and insurance;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1227;Production and operations department managers in business services
+2010;100;Public administration and defense;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1120;Senior government officials
+2010;111;Real estate and business services;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;112;Education;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;113;Health and social work;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;114;Other services;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;120;Private household services;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;130;Extra-territorial organizations and bodies;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;999;Unknown;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+2010;0;;;;1120;DIRETORES GERAIS E GERENTES GERAIS;1229;Production and operations department managers not elsewhere classified
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;

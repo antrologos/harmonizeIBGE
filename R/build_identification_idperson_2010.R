@@ -14,7 +14,8 @@ build_identification_idperson_2010 <- function(CensusData){
         }
 
         # Person ID
-        CensusData[ , idperson := 2010*10^8 + 1:nrow(CensusData)]
+        CensusData[ , idperson := 2010*10^9 + v0300*10^2 + v0504]
 
         CensusData
 }
+

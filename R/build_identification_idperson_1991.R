@@ -12,9 +12,11 @@ build_identification_idperson_1991 <- function(CensusData){
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
         }
-
+        
+        
         # Person ID
-        CensusData[ , idperson := 1991*10^8 + 1:nrow(CensusData)]
+        CensusData[ , idperson := 1991*10^11 + v0102*10^2 + v0098]
 
         CensusData
 }
+

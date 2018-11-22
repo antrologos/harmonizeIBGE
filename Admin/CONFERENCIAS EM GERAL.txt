@@ -1,0 +1,63 @@
+harmonized_person_ids
+demographics
+education
+work
+income
+
+
+
+                #non-relatives
+
+                #race
+
+                # 1 - Brancos e amarelos
+                # 2 - Pardos e indigenas
+                # 3 - Pretos
+
+
+                # residenceStatus (condicao de presenca)
+
+
+                # 1 - Morador
+                # 0 - Nao-morador
+
+
+
+
+label var fam_status "status in family"
+label define fams 1 "head" 2 "spouse" 3 "child" 4 "other", replace
+
+
+
+ERROS NO CÓDIGO DO PEDRO:
+=========================
+
+ID PESSOA 
+	1991
+	CensusData[ , idperson := 1991*10^11 + V0102*10^2 + V0098]
+
+	2000
+	CensusData[ , idperson := 2000*10^9 + V0300*10^2 + V0400]
+
+	2000
+	CensusData[ , idperson := 2010*10^9 + V0300*10^2 + V0504]
+
+
+state_curr é harmonizado? não entendi...
+
+Por que o retrabalho de criar as variáveis geográficas no banco de domicílios E de pessoas?
+
+
+famStatus 
+
+	1960 - Faltando?        
+        CensusData[v203 %in% 7:9,  famStatus := v203 - 6]
+        CensusData[v203 == 6,      famStatus := 1]
+        CensusData[v203 %in% 0:4,  famStatus := 4]
+
+	1991
+        CensusData[ v0303<=3               , famStatus := v0303 ]
+        CensusData[ v0303==20              , famStatus := 1 ]
+        CensusData[ !(v0303<=3 | v0303==20), famStatus := 4 ]
+        
+=========================

@@ -1,0 +1,15 @@
+oldISCO;oldISCO_label;newISCO;newISCO_label;justificativa
+1226;Production and operations department managers in transport, storage and communications;1319;General managers not elsewhere classified;
+1227;Production and operations department managers in business services;1319;General managers not elsewhere classified;
+1228;Production and operations department managers in personal care, cleaning and related services;1319;General managers not elsewhere classified;
+1229;Production and operations department managers not elsewhere classified;1319;General managers not elsewhere classified;
+1315;General managers of restaurants and hotels;1314;General managers in wholesale and retail trade;
+1225;Production and operations department managers in restaurants and hotels;1314;General managers in wholesale and retail trade;
+1316;General managers in transport, storage and communications;1319;General managers not elsewhere classified;
+1317;General managers of business services;1319;General managers not elsewhere classified;
+1318;General managers in personal care, cleaning and related services;1319;General managers not elsewhere classified;
+3417;Appraisers, valuers and auctioneers;3419;Finance and sales associate professionals not elsewhere classified;3417 + 3419 > 3419 (3417 é pequeno: aparece em 1960, some em 1970, aparece de novo. 3419 nao existe em 1960)
+8161;Power-production plant operators;8162;Steam-engine and boiler operators;8161 + 8162 + 8163 > 8162 (8161 E 8163 SÓ EXISTEM A PARTIR DE 1980 e são pequenos)
+8163;Incinerator, water-treatment and related plant operators;8162;Steam-engine and boiler operators;8161 + 8162 + 8163 > 8162 (8161 E 8163 SÓ EXISTEM A PARTIR DE 1980 e são pequenos)
+6141;Forestry workers and loggers;9212;Forestry labourers;
+6152;Inland and coastal waters fishery workers;9213;Fishery, hunting and trapping labourers;

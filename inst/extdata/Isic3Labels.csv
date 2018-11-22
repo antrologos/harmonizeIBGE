@@ -1,0 +1,18 @@
+0;;Not in universe
+10;A + B;Agriculture, fishing, and forestry
+20;C;Mining
+30;D;Manufacturing
+40;E;Electricity, gas and water
+50;F;Construction
+60;G;Wholesale and retail trade
+70;H;Hotels and restaurants
+80;I;Transportation and communications
+90;J;Financial services and insurance
+100;L;Public administration and defense
+111;K;Real estate and business services
+112;M;Education
+113;N;Health and social work
+114;O;Other services
+120;P;Private household services
+130;Q;Extra-territorial organizations and bodies
+999;n/a;Unknown

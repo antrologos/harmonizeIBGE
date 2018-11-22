@@ -1,0 +1,36 @@
+year;class_worker;class_worker_label;ibge_code;ibge_label;oldISCO;oldISCO_label;newISCO_classWorker;newISCO_classWorker_label
+2010;2;employer;6111;AGRICULTORES E TRABALHADORES QUALIFICADOS EM ATIVIDADES DA AGRICULTURA (EXCLUSIVE HORTAS, VIVEIROS E JARDINS);;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6112;AGRICULTORES E TRABALHADORES QUALIFICADOS NO CULTIVO DE HORTAS, VIVEIROS E JARDINS;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6114;AGRICULTORES E TRABALHADORES QUALIFICADOS DE CULTIVOS MISTOS;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6121;CRIADORES DE GADO E TRABALHADORES QUALIFICADOS DA CRIAÇÃO DE GADO;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6122;AVICULTORES E TRABALHADORES QUALIFICADOS DA AVICULTURA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6123;APICULTORES, SERICICULTORES E TRABALHADORES QUALIFICADOS DA APICULTURA E SERICICULTURA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6129;OUTROS CRIADORES E TRABALHADORES QUALIFICADOS DA PECUÁRIA NÃO CLASSIFICADOS ANTERIORMENTE;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6130;PRODUTORES E TRABALHADORES QUALIFICADOS DE EXPLORAÇÃO AGROPECUÁRIA MISTA ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6210;TRABALHADORES FLORESTAIS QUALIFICADOS E AFINS;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6221;TRABALHADORES DA AQUICULTURA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6224;CAÇADORES;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;2;employer;6225;PESCADORES;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6110;PRODUTORES AGROPECUÁRIOS EM GERAL;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6129;PRODUTORES AGRÍCOLAS ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6139;PRODUTORES EM PECUÁRIA ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6201;SUPERVISORES NA EXPLORAÇÃO AGROPECUÁRIA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6210;TRABALHADORES NA EXPLORAÇÃO AGROPECUÁRIA EM GERAL;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6229;TRABALHADORES AGRÍCOLAS ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6239;TRABALHADORES NA PECUÁRIA ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6301;SUPERVISORES NA EXPLORAÇÃO FLORESTAL, CAÇA E PESCA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6319;PESCADORES E CAÇADORES;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6329;EXTRATIVISTAS FLORESTAIS ;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6410;TRABALHADORES DA MECANIZAÇÃO AGROPECUÁRIA;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6420;TRABALHADORES DA MECANIZAÇÃO FLORESTAL;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;6430;TRABALHADORES DA IRRIGAÇÃO E DRENAGEM;;;1311;General managers in agriculture, hunting, forestry/ and fishing
+2000;2;employer;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
+2000;3;self-employed, urban;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
+2000;1;employee;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2000;4;self-employed/unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2000;5;unpaid, urban;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2010;2;employer;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
+2010;3;self-employed, urban;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
+2010;1;employee;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2010;4;self-employed/unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2010;5;unpaid, urban;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators

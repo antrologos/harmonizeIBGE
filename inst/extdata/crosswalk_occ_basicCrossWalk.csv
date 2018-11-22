@@ -1,0 +1,2217 @@
+year;ibge_code;ibge_label;isco88_4digit;isco88_4digit_LABEL
+1960;111;Agricultores (fazendeiros);1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;112;Pecuaristas;1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;113;Avicultores e criadores de pequenos animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;114;Industriais;1222;Production and operations department managers in manufacturing
+1960;115;Comerciantes;1314;General managers in wholesale and retail trade
+1960;116;Hoteleiros e donos de pensão;1315;General managers of restaurants and hotels
+1960;117;Outros proprietários;1319;General managers not elsewhere classified
+1960;121;Administradores, diretores e assistentes no serviço público (inclusive cargos eletivos).;1120;Senior government officials
+1960;122;Diretores e gerentes de bancos e companhias de seguros;1227;Production and operations department managers in business services
+1960;123;Administradores e gerentes na agropecuária;1311;General managers in agriculture, hunting, forestry/ and fishing
+1960;124;Outros administradores, diretores e gerentes;1319;General managers not elsewhere classified
+1960;181;Coletores e exatores;3449;Customs, tax and related government associate professionals not elsewhere classified
+1960;182;Caixas e tesoureiros;4211;Cashiers and ticket clerks
+1960;183;Cobradores;4211;Cashiers and ticket clerks
+1960;184;Contadores e guarda-livros;2419;Business professionals not elsewhere classified
+1960;185;Despachantes (regularização de documentos);4133;Transport clerks
+1960;186;Almoxarifes e armazenistas;4131;Stock clerks
+1960;187;Datilógrafos;4115;Secretaries
+1960;188;Taquígrafos;4115;Secretaries
+1960;189;Operadores de apuração mecânica;4141;Library and filing clerks
+1960;191;Auxiliares de escritório e de administração em geral;4190;Other office clerks
+1960;211;Engenheiros;2142;Civil engineers
+1960;212;Arquitetos;2141;Architects, town and traffic planners
+1960;213;Agrimensores e topógrafos;3118;Draughtspersons
+1960;214;Desenhistas e cartógrafos;3118;Draughtspersons
+1960;215;Químicos;2113;Chemists
+1960;216;Farmacêuticos;2224;Pharmacists
+1960;217;Práticos de farmácia;3228;Pharmaceutical assistants
+1960;218;Laboratoristas;3116;Chemical engineering technicians
+1960;221;Agrônomos;2213;Agronomists and related professionals
+1960;222;Veterinários;2223;Veterinarians
+1960;223;Naturalistas;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1960;231;Médicos;2221;Medical doctors
+1960;232;Dentistas;2222;Dentists
+1960;241;Assistentes sociais;2446;Social work professionals
+1960;242;Parteiras;3231;Nursing associate professionals
+1960;243;Enfermeiros e massagistas;3231;Nursing associate professionals
+1960;244;Protéticos;7311;Precision-instrument makers and repairers
+1960;245;Operadores de Raios X e Ortopedistas práticos;3211;Life science technicians
+1960;251;Matemáticos e Físicos;2122;Statisticians
+1960;252;Professores primários;2331;Primary education teaching professionals
+1960;253;Professores secundários;2320;Secondary education teaching professionals
+1960;254;Professores superiores;2310;College, university and higher education teaching professionals
+1960;255;Professores sem especificação;2359;Other teaching professionals not elsewhere classified
+1960;256;Sociólogos, economistas, atuários e estatísticos;2441;Economists
+1960;257;Inspetores de alunos;3340;Other teaching associate professionals
+1960;261;Magistrados;2422;Judges
+1960;262;Procuradores, Promotores e Curadores públicos;2421;Lawyers
+1960;263;Advogados e defensores públicos;2421;Lawyers
+1960;264;Tabeliães e oficiais de registro;3432;Legal and related business associate professionals
+1960;265;Escrivães e auxiliares de justiça;3432;Legal and related business associate professionals
+1960;271;Religiosos;2460;Religious professionals
+1960;281;Escritores e jornalistas;2451;Authors, journalists and other writers
+1960;291;Escultores e pintores;2452;Sculptors, painters and related artists
+1960;292;Técnicos de publicidade;2451;Authors, journalists and other writers
+1960;293;Decoradores e cenógrafos;3471;Decorators and commercial designers
+1960;294;Cinegrafistas;3132;Broadcasting and telecommunications equipment operators
+1960;295;Fotógrafos;3131;Photographers and image and sound recording equipment operators
+1960;311;Técnicos agrícolas e práticos rurais;3212;Agronomy and forestry technicians
+1960;312;Tratoristas;8331;Motorised farm and forestry plant operators
+1960;313;Aradores;9211;Farm-hands and labourers
+1960;321;Chacareiros, hortelãos e floricultores;9211;Farm-hands and labourers
+1960;322;Jardineiros;9211;Farm-hands and labourers
+1960;323;Trabalhadores agrícolas e de enxada;9211;Farm-hands and labourers
+1960;324;Trabalhadores de pecuária;9211;Farm-hands and labourers
+1960;331;Pescadores;6152;Inland and coastal waters fishery workers
+1960;332;Caçadores;6152;Inland and coastal waters fishery workers
+1960;341;Madeireiros e lenhadores;6141;Forestry workers and loggers
+1960;342;Carvoeiros (fabricantes);6141;Forestry workers and loggers
+1960;343;Seringueiros;6141;Forestry workers and loggers
+1960;344;Ervateiros;9211;Farm-hands and labourers
+1960;345;Apanhadores, descascadores e quebradores de produtos vegetais;6141;Forestry workers and loggers
+1960;411;Mineiros;7111;Miners and quarry workers
+1960;421;Canteiros e marroeiros;7111;Miners and quarry workers
+1960;431;Ocupações relativas à perfuração de poços de petróleo e de gás e trabalhadores afins;8113;Well drillers and borers and related workers
+1960;441;Garimpeiros;7111;Miners and quarry workers
+1960;511;Modeladores e formistas de metais;7211;Metal moulders and coremakers
+1960;512;Fundidores de metais;8211;Machine-tool operators
+1960;513;Laminadores e trefiladores;8211;Machine-tool operators
+1960;514;Afiadores e amoladores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1960;521;Estampadores mecânicos;8211;Machine-tool operators
+1960;522;Fresadores e furadores;8211;Machine-tool operators
+1960;523;Torneiros mecânicos;8211;Machine-tool operators
+1960;524;Mecânicos de motor a explosão;7231;Motor vehicle mechanics and fitters
+1960;525;Mecânicos, sem especificação;8281;Mechanical-machinery assemblers
+1960;526;Galvanizadores e niqueladores;8223;Metal finishing-, plating- and coating-machine operators
+1960;527;Soldadores;7212;Welders and flamecutters
+1960;528;Caldeireiros;8211;Machine-tool operators
+1960;529;Ferreiros e serralheiros;8211;Machine-tool operators
+1960;531;Lanterneiros de veículos;7231;Motor vehicle mechanics and fitters
+1960;532;Rebitadores de metais;8211;Machine-tool operators
+1960;533;Funileiros de metais;8211;Machine-tool operators
+1960;534;Ferradores;8211;Machine-tool operators
+1960;541;Cardadores e penteadores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1960;542;Maçaroqueiros, bobinadores e espuladores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1960;543;Fiandeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1960;544;Rendeiras;7436;Sewers, embroiderers and related workers
+1960;545;Urdidores e remetedores;8262;Weaving- and knitting-machine operators
+1960;546;Cordoeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1960;547;Tecelões;8262;Weaving- and knitting-machine operators
+1960;548;Tapeceiros;7437;Upholsterers and related workers
+1960;549;Redeiros;7436;Sewers, embroiderers and related workers
+1960;551;Alvejadores e tintureiros têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1960;552;Estampadores têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1960;553;Acabadores de pano;7435;Textile, leather and related pattern-makers and cutters
+1960;554;Cerzideiras;7436;Sewers, embroiderers and related workers
+1960;561;Correeiros e seleiros;7442;Shoe-makers and related workers
+1960;562;Curtidores;7441;Pelt dressers, tanners and fellmongers
+1960;571;Alfaiates e costureiras;8263;Sewing-machine operators
+1960;572;Bordadeiras;7436;Sewers, embroiderers and related workers
+1960;573;Chapeleiros (de palha);7331;Handicraft workers in wood and related materials
+1960;574;Chapeleiros, exclusive de palha;7436;Sewers, embroiderers and related workers
+1960;575;Sapateiros;7442;Shoe-makers and related workers
+1960;576;Bolseiros e cinteiros;7442;Shoe-makers and related workers
+1960;581;Marceneiros;7422;Cabinet makers and related workers
+1960;582;Carpinteiros;7124;Carpenters and joiners
+1960;583;Tanoeiros;7124;Carpenters and joiners
+1960;584;Serradores;8141;Wood-processing-plant operators
+1960;585;Estofadores e capoteiros;7437;Upholsterers and related workers
+1960;586;Colchoeiros;7437;Upholsterers and related workers
+1960;587;Lustradores de madeira (inclusive móveis);7421;Wood treaters
+1960;591;Eletricistas;7137;Building and related electricians
+1960;592;Radiotécnicos (consertadores e montadores);7241;Electrical mechanics and fitters
+1960;611;Mestres de obras;7129;Building frame and related trades workers not elsewhere classified
+1960;612;Armadores de concreto;7123;Concrete placers, concrete finishers and related workers
+1960;613;Pedreiros;7122;Bricklayers and stonemasons
+1960;614;Serventes de pedreiro;9313;Building construction labourers
+1960;615;Pintores caiadores;7141;Painters and related workers
+1960;616;Estucadores;7133;Plasterers
+1960;617;Ladrilheiros e taqueiros;7132;Floor layers and tile setters
+1960;618;Encanadores;7136;Plumbers and pipe fitters
+1960;619;Vidraceiros (colocador de vidros);7135;Glaziers
+1960;621;Calceteiros e asfaltadores;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1960;622;Calafates;7132;Floor layers and tile setters
+1960;623;Operadores de máquinas na construção civil;8332;Earth-moving- and related plant operators
+1960;631;Linguiceiros e salsicheiros;8271;Meat- and fish-processing-machine operators
+1960;632;Charqueadores;7411;Butchers, fishmongers and related food preparers
+1960;633;Magarefes;7411;Butchers, fishmongers and related food preparers
+1960;634;Manteigueiros e queijeiros;8272;Dairy-products machine operators
+1960;635;Doceiros e confeiteiros;7412;Bakers, pastry-cooks and confectionery makers
+1960;636;Macarroneiros e pasteleiros;8271;Meat- and fish-processing-machine operators
+1960;637;Padeiros;7412;Bakers, pastry-cooks and confectionery makers
+1960;638;Farinheiros e moleiros;8271;Meat- and fish-processing-machine operators
+1960;639;Ocupações concernentes às usinas e engenhos de açúcar;8271;Meat- and fish-processing-machine operators
+1960;641;Ocupações concernentes às destilarias de bebidas;8271;Meat- and fish-processing-machine operators
+1960;642;Ocupações concernentes à moagem e torrefação de café;8271;Meat- and fish-processing-machine operators
+1960;643;Ocupações concernentes à industrialização do pescado;8271;Meat- and fish-processing-machine operators
+1960;651;Linotipistas;7341;Compositors, typesetters and related workers
+1960;652;Tipógrafos;7341;Compositors, typesetters and related workers
+1960;653;Clicheristas e gravadores;7341;Compositors, typesetters and related workers
+1960;654;Impressores;7341;Compositors, typesetters and related workers
+1960;655;Revisores, na indústria gráfica;7341;Compositors, typesetters and related workers
+1960;656;Encadernadores e cartonadores;7345;Bookbinders and related workers
+1960;657;Outras ocupações específicas da indústria gráfica;7341;Compositors, typesetters and related workers
+1960;661;Vidreiros e ampoleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1960;662;Ceramistas e louceiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1960;663;Pintores cerâmicos;7141;Painters and related workers
+1960;664;Oleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1960;671;Mestres, contramestres e técnicos: industriais;3119;Physical and engineering science technicians not elsewhere classified
+1960;672;Ourives e relojoeiros;7313;Jewellery and precious-metal workers
+1960;673;Lapidadores;7313;Jewellery and precious-metal workers
+1960;674;Vulcanizadores e recauchutadores;8231;Rubber-products machine operators
+1960;675;Fogueteiros;9321;Assembling labourers
+1960;676;Outras ocupações técnicas e semi-técnicas no processo de produção;9321;Assembling labourers
+1960;681;Cesteiros e esteireiros;7331;Handicraft workers in wood and related materials
+1960;682;Vassoureiros;7331;Handicraft workers in wood and related materials
+1960;683;Marmoristas;7111;Miners and quarry workers
+1960;684;Charuteiros e cigarreiros;7416;Tobacco preparers and tobacco products makers
+1960;685;Polidores e esmerilhadores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1960;686;Pintores a pistola;7141;Painters and related workers
+1960;687;Maleiros;7442;Shoe-makers and related workers
+1960;688;Foguistas (exclusive embarcação e trem);8162;Steam-engine and boiler operators
+1960;689;Embaladores e expedidores;9322;Hand packers and other manufacturing labourers
+1960;711;Açougueiros;7411;Butchers, fishmongers and related food preparers
+1960;712;Vendedores ambulantes;9112;Street vendors, non-food products
+1960;713;Balconistas e entregadores;5220;Shop salespersons and demonstrators
+1960;714;Vendedores de jornais e revistas;5230;Stall and market salespersons
+1960;721;Pracistas e viajantes comerciais;3415;Technical and commercial sales representatives
+1960;722;Representantes comerciais;3415;Technical and commercial sales representatives
+1960;723;Propagandistas;3415;Technical and commercial sales representatives
+1960;731;Corretores e agenciadores;3429;Business services agents and trade brokers not elsewhere classified
+1960;732;Compradores;3416;Buyers
+1960;733;Leiloeiros;3417;Appraisers, valuers and auctioneers
+1960;811;Aviadores civis;3143;Aircraft pilots and related associate professionals
+1960;812;Aeromoços;5111;Travel attendants and travel stewards
+1960;821;Oficiais de marinha mercante;3142;Ships' deck officers and pilots
+1960;822;Mestres de embarcação;3142;Ships' deck officers and pilots
+1960;823;Maquinistas de embarcação;8162;Steam-engine and boiler operators
+1960;824;Foguistas de embarcação;8162;Steam-engine and boiler operators
+1960;825;Marinheiros civis;8340;Ships' deck crews and related workers
+1960;826;Taifeiros;8340;Ships' deck crews and related workers
+1960;827;Barqueiros e canoeiros;8340;Ships' deck crews and related workers
+1960;831;Práticos de porto;8340;Ships' deck crews and related workers
+1960;832;Guindasteiros;8333;Crane, hoist and related plant operators
+1960;833;Estivadores;9333;Freight handlers
+1960;841;Agentes de estrada de ferro;4133;Transport clerks
+1960;842;Condutores e chefes de trem;8311;Locomotive-engine drivers
+1960;843;Maquinistas;8311;Locomotive-engine drivers
+1960;844;Foguistas de trem;8162;Steam-engine and boiler operators
+1960;845;Guarda-freios;8312;Railway brakers, signallers and shunters
+1960;846;Manobreiros e sinaleiros;8312;Railway brakers, signallers and shunters
+1960;851;Motoristas;8322;Car, taxi and van drivers
+1960;852;Trocadores;5112;Transport conductors
+1960;853;Motorneiros de bonde;8322;Car, taxi and van drivers
+1960;854;Condutores de bonde;8322;Car, taxi and van drivers
+1960;855;Carroceiros e tropeiros;9332;Drivers of animal-drawn vehicles and machinery
+1960;861;Inspetores e despachantes nos transportes;4133;Transport clerks
+1960;862;Trabalhadores de conservação de rodovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1960;863;Trabalhadores de conservação de ferrovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1960;871;Agentes postais e telegráficos;4142;Mail carriers and sorting clerks
+1960;872;Telegrafistas e radiotelegrafistas;3132;Broadcasting and telecommunications equipment operators
+1960;873;Telefonistas;4223;Telephone switchboard operators
+1960;874;Carteiros;4142;Mail carriers and sorting clerks
+1960;875;Manipuladores nos Correios e Telégrafos;4142;Mail carriers and sorting clerks
+1960;876;Guarda-fios;7245;Electrical line installers, repairers and cable jointers
+1960;911;Cozinheiros;5122;Cooks
+1960;912;Garçons;5123;Waiters, waitresses and bartenders
+1960;913;Amas e copeiras;9131;Domestic helpers and cleaners
+1960;921;Porteiros, faxineiros e ascensoristas de edifícios;9141;Building caretakers
+1960;931;Barbeiros e cabeleireiros;5141;Hairdressers, barbers, beauticians and related workers
+1960;932;Manicuras e pedicuros;5141;Hairdressers, barbers, beauticians and related workers
+1960;933;Lavadeiras e engomadeiras;9133;Hand-launderers and pressers
+1960;934;Engraxates;9333;Freight handlers
+1960;941;Músicos;2453;Composers, musicians and singers
+1960;942;Artistas de cinema, teatro e circo;2455;Film, stage and related actors and directors
+1960;943;Locutores e artistas de rádio e televisão;3472;Radio, television and other announcers
+1960;944;Operadores de radiodifusão;3132;Broadcasting and telecommunications equipment operators
+1960;945;Operadores cinematográficos;3132;Broadcasting and telecommunications equipment operators
+1960;951;Atletas profissionais;3475;Athletes, sportspersons and related associate professionals
+1960;961;Lavadores de carros;9333;Freight handlers
+1960;962;Enceradores;9333;Freight handlers
+1960;971;Oficiais e praças das Forças Armadas;110;Armed forces
+1960;972;Oficiais e praças do Corpo de Bombeiros;5161;Fire-fighters
+1960;973;Delegados e comissários de polícia;2429;Legal professionals not elsewhere classified
+1960;974;Investigadores e peritos policiais;5169;Protective services workers not elsewhere classified
+1960;975;Guardas civis e inspetores de tráfego;5169;Protective services workers not elsewhere classified
+1960;976;Carcereiros e guardas de presídio;5169;Protective services workers not elsewhere classified
+1960;981;Apontadores e capatazes;9211;Farm-hands and labourers
+1960;982;Aprendizes;9321;Assembling labourers
+1960;983;Contínuos, vigias e serventes;9141;Building caretakers
+1960;984;Guardas sanitários;3231;Nursing associate professionals
+1960;985;Inspetores e fiscais;3449;Customs, tax and related government associate professionals not elsewhere classified
+1960;986;Lixeiros;9161;Garbage collectors
+1960;987;Lubrificadores;7231;Motor vehicle mechanics and fitters
+1960;988;Operadores de máquinas, exclusive na construção civil;8290;Other machine operators and assemblers
+1960;989;Trabalhadores braçais, sem especificação;9333;Freight handlers
+1960;998;Outras ocupações ou ocupações mal definidas;9333;Freight handlers
+1960;999;Sem declaração de ocupação.;9333;Freight handlers
+1970;11;agricultores;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;12;pecuaristas;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;13;avicultores e criadores de pequenos animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;14;industriais;1222;Production and operations department managers in manufacturing
+1970;15;comerciantes;1314;General managers in wholesale and retail trade
+1970;16;hoteleiros e donos de pensão;1315;General managers of restaurants and hotels
+1970;17;outros proprietários;1319;General managers not elsewhere classified
+1970;21;administradores, diretores e assistentes no serviço público - inclusive cargos eletivos;1120;Senior government officials
+1970;22;administradores de bancos e companhias de seguros;1227;Production and operations department managers in business services
+1970;23;administradores na agropecuária;1311;General managers in agriculture, hunting, forestry/ and fishing
+1970;24;outros administradores;1319;General managers not elsewhere classified
+1970;31;agentes fiscais no serviço público;3449;Customs, tax and related government associate professionals not elsewhere classified
+1970;32;inspetores de trabalho e fiscais de previdência;3152;Safety, health and quality inspectors
+1970;33;oficiais e técnicos de administração;2419;Business professionals not elsewhere classified
+1970;34;coletores e exatores;3449;Customs, tax and related government associate professionals not elsewhere classified
+1970;35;caixas e tesoureiros;4211;Cashiers and ticket clerks
+1970;36;técnicos de contabilidade;3419;Finance and sales associate professionals not elsewhere classified
+1970;37;almoxarifes e armazenistas;4131;Stock clerks
+1970;38;datilógrafos;4115;Secretaries
+1970;39;taquígrafos;4115;Secretaries
+1970;40;redatores;2451;Authors, journalists and other writers
+1970;41;intérpretes e tradutores;2444;Philologists, translators and interpreters
+1970;42;bibliotecários e documentarístas;2432;Librarians and related information professionals
+1970;43;programadores;2132;Computer programmers
+1970;44;operadores de apuração mecânica;4141;Library and filing clerks
+1970;45;auxiliares de escritório e de administração em geral;4190;Other office clerks
+1970;101;engenheiros;2142;Civil engineers
+1970;102;arquitetos;2141;Architects, town and traffic planners
+1970;103;agrimensores e topógrafos;3118;Draughtspersons
+1970;104;desenhistas e Cartógrafos;3118;Draughtspersons
+1970;111;químicos;2113;Chemists
+1970;112;Farmacêuticos;2224;Pharmacists
+1970;113;físicos;2111;Physicists and astronomers
+1970;114;geólogos;2114;Geologists and geophysicists
+1970;115;astrônomos;2111;Physicists and astronomers
+1970;116;meteorologistas;2111;Physicists and astronomers
+1970;121;agrônomos;2213;Agronomists and related professionals
+1970;122;veterinários;2223;Veterinarians
+1970;123;naturalistas;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1970;130;médicos;2221;Medical doctors
+1970;131;dentistas;2222;Dentists
+1970;132;parteiras;3231;Nursing associate professionals
+1970;133;enfermeiros diplomados;2230;Nursing and midwifery professionals
+1970;134;enfermeiros não diplomados;3231;Nursing associate professionals
+1970;135;fisioterapistas e massagistas;3226;Physiotherapists and related associate professionals
+1970;136;protéticos;7311;Precision-instrument makers and repairers
+1970;137;operadores de Raios X;3211;Life science technicians
+1970;138;Práticos de farmácia;3228;Pharmaceutical assistants
+1970;139;laboratoristas;3116;Chemical engineering technicians
+1970;141;matemáticos;2122;Statisticians
+1970;142;estatísticos e Atuários;2122;Statisticians
+1970;143;economistas;2441;Economists
+1970;144;contadores;2419;Business professionals not elsewhere classified
+1970;145;sociólogos, antropólogos e arqueólogos;2442;Sociologists, anthropologists and related professionals
+1970;151;professores primários;2331;Primary education teaching professionals
+1970;152;professores secundários;2320;Secondary education teaching professionals
+1970;153;professores superiores;2310;College, university and higher education teaching professionals
+1970;154;professores sem especificação;2359;Other teaching professionals not elsewhere classified
+1970;155;inspetores de ensino técnico de educação;2359;Other teaching professionals not elsewhere classified
+1970;156;inspetores de alunos;3340;Other teaching associate professionals
+1970;161;magistrados;2422;Judges
+1970;162;procuradores, promotores e curadores públicos;2421;Lawyers
+1970;163;advogados e defensores públicos;2421;Lawyers
+1970;164;Tabeliões e oficiais de registro;3432;Legal and related business associate professionals
+1970;165;Escrivães e auxiliares de justiça;3432;Legal and related business associate professionals
+1970;171;religiosos;2460;Religious professionals
+1970;172;assistentes sociais;2446;Social work professionals
+1970;173;agentes sociais;2446;Social work professionals
+1970;181;escritores e jornalistas;2451;Authors, journalists and other writers
+1970;191;escultores e pintores;2452;Sculptors, painters and related artists
+1970;192;Músicos;2453;Composers, musicians and singers
+1970;193;artistas de cinema, teatro, circo, rádio e televisão;2455;Film, stage and related actors and directors
+1970;194;locutores;3472;Radio, television and other announcers
+1970;195;decoradores e cenógrafos;3471;Decorators and commercial designers
+1970;196;cinegrafistas e operadores de câmara;3132;Broadcasting and telecommunications equipment operators
+1970;197;fotógrafos;3131;Photographers and image and sound recording equipment operators
+1970;198;outros técnicos de cinema, teatro, rádio e televisão;3132;Broadcasting and telecommunications equipment operators
+1970;211;técnicos agrícolas e Práticos rurais;3212;Agronomy and forestry technicians
+1970;212;aradores;9211;Farm-hands and labourers
+1970;213;tratoristas;8331;Motorised farm and forestry plant operators
+1970;221;chacareiros, hortelãos e floriculturas;9211;Farm-hands and labourers
+1970;222;jardineiros;9211;Farm-hands and labourers
+1970;223;trabalhadores de enxada;9211;Farm-hands and labourers
+1970;224;trabalhadores na pecuária;9211;Farm-hands and labourers
+1970;231;Caçadores;6152;Inland and coastal waters fishery workers
+1970;232;pescadores;6152;Inland and coastal waters fishery workers
+1970;241;madeireiros e lenhadores;6141;Forestry workers and loggers
+1970;242;carvoeiros fabricantes;6141;Forestry workers and loggers
+1970;243;seringueiros;6141;Forestry workers and loggers
+1970;244;ervateiros;9211;Farm-hands and labourers
+1970;245;apanhadores, descascadores e quebradores de produtos vegetais;6141;Forestry workers and loggers
+1970;311;mineiros;7111;Miners and quarry workers
+1970;321;canteiros e marroeiros;7111;Miners and quarry workers
+1970;331;trabalhadores extração petróleo e gás;8113;Well drillers and borers and related workers
+1970;341;garimpeiros;7111;Miners and quarry workers
+1970;411;modeladores e formistas de metais;7211;Metal moulders and coremakers
+1970;412;fundidores de metais;8211;Machine-tool operators
+1970;413;laminadores e trefiladores;8211;Machine-tool operators
+1970;414;afiadores e amoladores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1970;421;estampadores mecânicos;8211;Machine-tool operators
+1970;422;frezadores e furadores;8211;Machine-tool operators
+1970;423;torneiros mecânicos;8211;Machine-tool operators
+1970;424;mecânicos de motor a explosão;7231;Motor vehicle mechanics and fitters
+1970;425;mecânicos sem especificação;8281;Mechanical-machinery assemblers
+1970;426;galvanizadores e niqueladores;8223;Metal finishing-, plating- and coating-machine operators
+1970;427;soldadores;7212;Welders and flamecutters
+1970;428;caldeireiros;8211;Machine-tool operators
+1970;429;ferreiros e serralheiros;8211;Machine-tool operators
+1970;430;lanterneiros de veículos;7231;Motor vehicle mechanics and fitters
+1970;431;rebitadores de metais;8211;Machine-tool operators
+1970;432;funileiros de metais;8211;Machine-tool operators
+1970;433;ferradores;8211;Machine-tool operators
+1970;441;cardadores e penteadores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1970;442;maçaroqueiros, bobinadores e espuladores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1970;443;fiandeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1970;444;rendeiros;7436;Sewers, embroiderers and related workers
+1970;445;urdidores e remetedores;8262;Weaving- and knitting-machine operators
+1970;446;cordoeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1970;447;Tecelões;8262;Weaving- and knitting-machine operators
+1970;448;tapeceiros;7437;Upholsterers and related workers
+1970;449;redeiros;7436;Sewers, embroiderers and related workers
+1970;450;alvejadores e tintureiros têxtil;8264;Bleaching-, dyeing- and cleaning-machine operators
+1970;451;estampadores têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1970;452;acabadores de pano;7435;Textile, leather and related pattern-makers and cutters
+1970;461;correeiros e seleiros;7442;Shoe-makers and related workers
+1970;462;curtidores;7441;Pelt dressers, tanners and fellmongers
+1970;471;alfaiates e costureiros;8263;Sewing-machine operators
+1970;472;bordadeiras e cerzideiras;7436;Sewers, embroiderers and related workers
+1970;473;chapeleiros de palha;7331;Handicraft workers in wood and related materials
+1970;474;chapeleiros - exclusive de palha;7436;Sewers, embroiderers and related workers
+1970;475;sapateiros;7442;Shoe-makers and related workers
+1970;476;bolseiros e cinteiros;7442;Shoe-makers and related workers
+1970;481;marceneiros;7422;Cabinet makers and related workers
+1970;482;carpinteiros;7124;Carpenters and joiners
+1970;483;tanoeiros;7124;Carpenters and joiners
+1970;484;serradores;8141;Wood-processing-plant operators
+1970;485;estofadores e capoteiros;7437;Upholsterers and related workers
+1970;486;colchoeiros;7437;Upholsterers and related workers
+1970;487;lustradores de madeira;7421;Wood treaters
+1970;491;eletricistas;7137;Building and related electricians
+1970;492;radiotécnicos consertadores e montadores;7241;Electrical mechanics and fitters
+1970;511;mestres de obra;7129;Building frame and related trades workers not elsewhere classified
+1970;512;armadores de concreto;7123;Concrete placers, concrete finishers and related workers
+1970;513;pedreiros;7122;Bricklayers and stonemasons
+1970;514;serventes de pedreiros;9313;Building construction labourers
+1970;515;pintores e caiadores;7141;Painters and related workers
+1970;516;estucadores;7133;Plasterers
+1970;517;ladrilheiros e taqueiros;7132;Floor layers and tile setters
+1970;518;encanadores;7136;Plumbers and pipe fitters
+1970;519;vidraceiros colocadores de vidros;7135;Glaziers
+1970;520;calceteiros e asfaltadores;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1970;521;calafates;7132;Floor layers and tile setters
+1970;522;operadores máquinas na construção civil;8332;Earth-moving- and related plant operators
+1970;531;linguiceiros e salsicheiros;8271;Meat- and fish-processing-machine operators
+1970;532;charqueadores;7411;Butchers, fishmongers and related food preparers
+1970;533;magarefes;7411;Butchers, fishmongers and related food preparers
+1970;534;manteigueiros e queijeiros;8272;Dairy-products machine operators
+1970;535;doceiros e confeiteiros;7412;Bakers, pastry-cooks and confectionery makers
+1970;536;macarroneiros e pasteleiros;8271;Meat- and fish-processing-machine operators
+1970;537;padeiros;7412;Bakers, pastry-cooks and confectionery makers
+1970;538;farinheiros e moleiros;8271;Meat- and fish-processing-machine operators
+1970;539;ocupações das usinas e engenhos de açúcar;8271;Meat- and fish-processing-machine operators
+1970;540;ocupações das destilarias de bebidas;8271;Meat- and fish-processing-machine operators
+1970;541;ocupações da moagem e torrefação de café;8271;Meat- and fish-processing-machine operators
+1970;542;ocupações da industrialização do pescado;8271;Meat- and fish-processing-machine operators
+1970;551;linotipistas;7341;Compositors, typesetters and related workers
+1970;552;tipógrafos;7341;Compositors, typesetters and related workers
+1970;553;clicheristas e gravadores;7341;Compositors, typesetters and related workers
+1970;554;impressores;7341;Compositors, typesetters and related workers
+1970;555;revisores, na indústria gráfica;7341;Compositors, typesetters and related workers
+1970;556;encanadores e cartonadores;7345;Bookbinders and related workers
+1970;557;outras ocupações específicas da indústria gráfica;7341;Compositors, typesetters and related workers
+1970;561;vidreiros e ampoleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1970;562;ceramistas e louceiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1970;563;pintores cerâmicos;7141;Painters and related workers
+1970;564;oleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1970;571;mestres, contramestres e técnicos industriais;3119;Physical and engineering science technicians not elsewhere classified
+1970;572;ourives e relojoeiros;7313;Jewellery and precious-metal workers
+1970;573;lapidadores;7313;Jewellery and precious-metal workers
+1970;574;vulcanizadores e recauchutadores;8231;Rubber-products machine operators
+1970;575;fogueteiros;9321;Assembling labourers
+1970;576;cesteiros e esteireiros;7331;Handicraft workers in wood and related materials
+1970;577;vassoureiros;7331;Handicraft workers in wood and related materials
+1970;578;marmoristas;7111;Miners and quarry workers
+1970;579;charuteiros e cigarreiros;7416;Tobacco preparers and tobacco products makers
+1970;580;polidores e esmerilhadores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1970;581;pintores a pistola;7141;Painters and related workers
+1970;582;operários de reparos e construção naval;8281;Mechanical-machinery assemblers
+1970;583;artífices sem especificação;7331;Handicraft workers in wood and related materials
+1970;584;foguistas - exclusive de embarcação e de trem;8162;Steam-engine and boiler operators
+1970;585;embaladores e expedidores;9322;Hand packers and other manufacturing labourers
+1970;586;outras ocupações das indústrias de transformação;9321;Assembling labourers
+1970;611;açougueiros;7411;Butchers, fishmongers and related food preparers
+1970;612;vendedores ambulantes;9112;Street vendors, non-food products
+1970;613;balconistas e entregadores;5220;Shop salespersons and demonstrators
+1970;614;vendedores de jornais e revistas;5230;Stall and market salespersons
+1970;621;pracistas e viajantes comerciais;3415;Technical and commercial sales representatives
+1970;622;representantes comerciais;3415;Technical and commercial sales representatives
+1970;623;propagandistas;3415;Technical and commercial sales representatives
+1970;631;corretores de seguros;3429;Business services agents and trade brokers not elsewhere classified
+1970;632;corretores de imóveis;3429;Business services agents and trade brokers not elsewhere classified
+1970;633;corretores de títulos e valores;3429;Business services agents and trade brokers not elsewhere classified
+1970;634;outros agentes e corretores;3429;Business services agents and trade brokers not elsewhere classified
+1970;635;compradores;3416;Buyers
+1970;711;aviadores civis;3143;Aircraft pilots and related associate professionals
+1970;712;aeromoços;5111;Travel attendants and travel stewards
+1970;721;oficiais de marinha mercante;3142;Ships' deck officers and pilots
+1970;722;mestres de embarcação;3142;Ships' deck officers and pilots
+1970;723;maquinistas de embarcação;8162;Steam-engine and boiler operators
+1970;724;foguistas de embarcação;8162;Steam-engine and boiler operators
+1970;725;marinheiros civis;8340;Ships' deck crews and related workers
+1970;726;taifeiros;8340;Ships' deck crews and related workers
+1970;727;barqueiros e canoeiros;8340;Ships' deck crews and related workers
+1970;731;guindasteiros;8333;Crane, hoist and related plant operators
+1970;732;estivadores;9333;Freight handlers
+1970;741;agentes de estradas de ferro;4133;Transport clerks
+1970;742;condutores e chefes de trem;8311;Locomotive-engine drivers
+1970;743;maquinistas;8311;Locomotive-engine drivers
+1970;744;foguistas de trem;8162;Steam-engine and boiler operators
+1970;745;guarda-freios;8312;Railway brakers, signallers and shunters
+1970;746;manobreiros e sinaleiros;8312;Railway brakers, signallers and shunters
+1970;751;motoristas;8322;Car, taxi and van drivers
+1970;752;trocadores;5112;Transport conductors
+1970;753;carroceiros e tropeiros;9332;Drivers of animal-drawn vehicles and machinery
+1970;761;inspetores e despachantes nos transportes;4133;Transport clerks
+1970;762;trabalhadores na conservação de rodovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1970;763;trabalhadores na conservação de ferrovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1970;771;agentes postais e telegraficos;4142;Mail carriers and sorting clerks
+1970;772;postalistas;4142;Mail carriers and sorting clerks
+1970;773;telegrafistas e rádiotelegrafistas;3132;Broadcasting and telecommunications equipment operators
+1970;774;telefonistas;4223;Telephone switchboard operators
+1970;775;carteiros;4142;Mail carriers and sorting clerks
+1970;776;vendedores de selos;4142;Mail carriers and sorting clerks
+1970;777;guarda-fios;7245;Electrical line installers, repairers and cable jointers
+1970;811;cozinheiros;5122;Cooks
+1970;812;Garçons;5123;Waiters, waitresses and bartenders
+1970;813;empregados domésticos;9131;Domestic helpers and cleaners
+1970;821;barbeiros e cabeleireiros;5141;Hairdressers, barbers, beauticians and related workers
+1970;822;manicuras e pedicuros;5141;Hairdressers, barbers, beauticians and related workers
+1970;823;lavadeiras e engomadeiras;9133;Hand-launderers and pressers
+1970;824;engraxates;9333;Freight handlers
+1970;831;jogadores de futebol;3475;Athletes, sportspersons and related associate professionals
+1970;832;lutadores e outros atletas profissionais;3475;Athletes, sportspersons and related associate professionals
+1970;833;juizes de esporte;3475;Athletes, sportspersons and related associate professionals
+1970;834;técnicos de esporte;3475;Athletes, sportspersons and related associate professionals
+1970;841;oficiais e Praças das Forças armadas;110;Armed forces
+1970;842;oficiais e Praças do Corpo de Bombeiro;5161;Fire-fighters
+1970;843;delegados e Comissários de polícia;2429;Legal professionals not elsewhere classified
+1970;844;investigadores de polícia;5169;Protective services workers not elsewhere classified
+1970;845;guardas civis e inspetores de tráfego;5169;Protective services workers not elsewhere classified
+1970;846;carcereiros e guardas de presídio;5169;Protective services workers not elsewhere classified
+1970;847;datiloscopistas;5169;Protective services workers not elsewhere classified
+1970;911;ascensoristas;9141;Building caretakers
+1970;912;aprendizes;9321;Assembling labourers
+1970;913;capatazes;9211;Farm-hands and labourers
+1970;914;guardas Sanitários;3231;Nursing associate professionals
+1970;915;inspetores e fiscais;3449;Customs, tax and related government associate professionals not elsewhere classified
+1970;916;lixeiros;9161;Garbage collectors
+1970;917;lubrificadores;7231;Motor vehicle mechanics and fitters
+1970;918;observadores meteorológicos;3116;Chemical engineering technicians
+1970;919;operadores cinematográficos;3132;Broadcasting and telecommunications equipment operators
+1970;920;operadores de máquinas - exclusive da construção civil;8290;Other machine operators and assemblers
+1970;921;porteiros, vigias e serventes;9141;Building caretakers
+1970;922;trabalhadores braçais sem especificação;9333;Freight handlers
+1970;923;outras ocupações ou ocupações mal definidas;9333;Freight handlers
+1970;925;sem declaração de ocupação;9333;Freight handlers
+1980;0;;-9999;Undefined
+1980;1; Agricultores;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;2; Criadores de gado bovino;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;3; Avicultores e criadores de pequenos animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;4; Criadores de outros animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;5; proprietários na agropecuária, sem especificação;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;6; Empresários da extração vegetal e pesca;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;7; Empresários da extração mineral;1319;General managers not elsewhere classified
+1980;8; Empresários da indústria de transformação;1222;Production and operations department managers in manufacturing
+1980;9; Empresários da construção civil;1223;Production and operations department managers in construction
+1980;10; Comerciantes;1314;General managers in wholesale and retail trade
+1980;11; Hoteleiros e donos de pensão;1315;General managers of restaurants and hotels
+1980;12; Empresários nos transportes;1226;Production and operations department managers in transport, storage and communications
+1980;13; Outros proprietários;1319;General managers not elsewhere classified
+1980;20; Ministros de estado, governadores, prefeitos, membros do Poder Legislativo e do Corpo Diplomático Nacional;1120;Senior government officials
+1980;21; Diretores, assessores e chefes no serviço público;1120;Senior government officials
+1980;30; Administradores e gerentes na agropecuária;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;31; Administradores e gerentes na extração vegetal e pesca;1311;General managers in agriculture, hunting, forestry/ and fishing
+1980;32; Administradores e gerentes na extração mineral;1319;General managers not elsewhere classified
+1980;33; Administradores e gerentes na indústria de transformação;1222;Production and operations department managers in manufacturing
+1980;34; Administradores e gerentes na indústria de construção civil;1223;Production and operations department managers in construction
+1980;35; Administradores e gerentes no comércio de mercadorias;1314;General managers in wholesale and retail trade
+1980;36; Administradores e gerentes de hotéis e estabelecimentos similares;1315;General managers of restaurants and hotels
+1980;37; Administradores e gerentes nos transportes;1226;Production and operations department managers in transport, storage and communications
+1980;38; Administradores e gerentes empresas financeiras, imobiliárias e securitárias;1227;Production and operations department managers in business services
+1980;39; Outros administradores e gerentes não classificados anteriormente;1319;General managers not elsewhere classified
+1980;40;Chefes e encarregados de seção de serviços administrativos de empresas;3419;Finance and sales associate professionals not elsewhere classified
+1980;50; técnicos e fiscais de tributação e arrecadação;3449;Customs, tax and related government associate professionals not elsewhere classified
+1980;51; Inspetores do trabalho;3152;Safety, health and quality inspectors
+1980;52;Assistentes administrativos;4190;Other office clerks
+1980;53; Pagadores e caixas (exclusive nos serviços e comércio de mercadorias);4211;Cashiers and ticket clerks
+1980;54; Almoxarifes e armazenistas;4131;Stock clerks
+1980;55; Expedidores e conferentes de materiais;4131;Stock clerks
+1980;56;datilógrafos;4115;Secretaries
+1980;57;Operadores de teleimpressoras;4190;Other office clerks
+1980;58;Operadores de máquinas de processamento automático de dados;3419;Finance and sales associate professionals not elsewhere classified
+1980;59;Secretárias;4115;Secretaries
+1980;60;Auxiliares de contabilidade;4190;Other office clerks
+1980;61;Operadores de máquinas copiadoras;4141;Library and filing clerks
+1980;62;Arquivistas;4141;Library and filing clerks
+1980;63; Recepcionistas;4222;Receptionists and information clerks
+1980;64;Auxiliares administrativos;4190;Other office clerks
+1980;65;Auxiliares de escritório;4190;Other office clerks
+1980;101; Engenheiros;2142;Civil engineers
+1980;102; Arquitetos;2141;Architects, town and traffic planners
+1980;103; Agrimensores;3118;Draughtspersons
+1980;104; Cartógrafos;3118;Draughtspersons
+1980;111; Desenhistas;3118;Draughtspersons
+1980;112; técnicos de edificações, agrimensura, estradas e saneamento;3118;Draughtspersons
+1980;113; Outras ocupações auxiliares da engenharia e arquitetura;3119;Physical and engineering science technicians not elsewhere classified
+1980;121; Químicos;2113;Chemists
+1980;122; Farmacêuticos;2224;Pharmacists
+1980;123; físicos;2111;Physicists and astronomers
+1980;124; Geólogos e mineralogistas;2114;Geologists and geophysicists
+1980;125; Outros especialistas em química e física;2111;Physicists and astronomers
+1980;131; técnicos químicos;3116;Chemical engineering technicians
+1980;132; Práticos de farmácia;3228;Pharmaceutical assistants
+1980;133; técnicos de meteorologia;3116;Chemical engineering technicians
+1980;141; Agrônomos;2213;Agronomists and related professionals
+1980;142; Biologistas;2211;Biologists, botanists, zoologists and related professionals
+1980;143; Farmacologistas;2224;Pharmacists
+1980;144; Veterinários;2223;Veterinarians
+1980;151; médicos ;2221;Medical doctors
+1980;152; Dentistas;2222;Dentists
+1980;153; Enfermeiros diplomados;2230;Nursing and midwifery professionals
+1980;154; Outros especialistas em medicina;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1980;161; acadêmicos de hospital;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1980;162; enfermeiros não diplomados;3231;Nursing associate professionals
+1980;163; massagistas;3226;Physiotherapists and related associate professionals
+1980;164; ortoptistas e óticos;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1980;165; operadores de equipamentos médicos e odontológicos;3211;Life science technicians
+1980;166; parteiras;3231;Nursing associate professionals
+1980;167; protéticos;7311;Precision-instrument makers and repairers
+1980;168; técnicos em análises clínicas;3211;Life science technicians
+1980;171; Matemáticos e Atuários;2122;Statisticians
+1980;172; Estatísticos;2122;Statisticians
+1980;173; Analistas de sistemas;2132;Computer programmers
+1980;181; economistas;2441;Economists
+1980;182;contadores;2419;Business professionals not elsewhere classified
+1980;183;técnicos de administração;2419;Business professionals not elsewhere classified
+1980;191;técnicos de contabilidade;3419;Finance and sales associate professionals not elsewhere classified
+1980;192;técnicos de estatística;3419;Finance and sales associate professionals not elsewhere classified
+1980;193; Programadores de computadores;2132;Computer programmers
+1980;201; Sociólogos, antropólogos e arqueólogos;2442;Sociologists, anthropologists and related professionals
+1980;202; Psicólogos;2445;Psychologists
+1980;203; Geógrafos e demógrafos;2442;Sociologists, anthropologists and related professionals
+1980;204; Assistentes sociais;2446;Social work professionals
+1980;205; Outros cientistas sociais;2442;Sociologists, anthropologists and related professionals
+1980;211; Professores pesquisadores ;2310;College, university and higher education teaching professionals
+1980;212; Professores de ensino superior;2310;College, university and higher education teaching professionals
+1980;213; Professores de ensino do 2º grau;2320;Secondary education teaching professionals
+1980;214; Professores de ensino do 1º grau (5ª a 8ª série);2331;Primary education teaching professionals
+1980;215; Professores de ensino do 1º grau (1ª a 4ª série);2331;Primary education teaching professionals
+1980;216; Professores de ensino do 1º grau (sem especificação de série);2331;Primary education teaching professionals
+1980;217; Professores de ensino pré-primário;2331;Primary education teaching professionals
+1980;218; Professores e instrutores de formação profissional;2359;Other teaching professionals not elsewhere classified
+1980;219; Professores de ensino não especificado;2359;Other teaching professionals not elsewhere classified
+1980;221; Orientadores e técnicos de ensino;2359;Other teaching professionals not elsewhere classified
+1980;222; Inspetores de alunos;3340;Other teaching associate professionals
+1980;231; Magistrados;2422;Judges
+1980;232; Procuradores, promotores e curadores públicos;2421;Lawyers
+1980;233; Advogados e defensores públicos;2421;Lawyers
+1980;241;Tabeliões e oficiais de registro;3432;Legal and related business associate professionals
+1980;242;Escrivães de cartório;3432;Legal and related business associate professionals
+1980;243;Oficiais de justiça;3432;Legal and related business associate professionals
+1980;244;Outras ocupações auxiliares da justiça;3432;Legal and related business associate professionals
+1980;251; Religiosos ;2460;Religious professionals
+1980;261; Escritores e jornalistas;2451;Authors, journalists and other writers
+1980;271; Escultores e pintores;2452;Sculptors, painters and related artists
+1980;272; Artesãos de objetos de cerâmica, couro, madeira e metal;7331;Handicraft workers in wood and related materials
+1980;273; Decoradores e cenógrafos;3471;Decorators and commercial designers
+1980;274; Fotógrafos;3131;Photographers and image and sound recording equipment operators
+1980;275; Músicos e compositores;2453;Composers, musicians and singers
+1980;276; Artistas de cinema, teatro, rádio e televisão;2455;Film, stage and related actors and directors
+1980;277; Artistas de circo;2455;Film, stage and related actors and directors
+1980;278; Locutores e comentaristas;3472;Radio, television and other announcers
+1980;279; Produtores e diretores de espetáculos;2455;Film, stage and related actors and directors
+1980;280; Cinegrafistas e operadores de câmaras;3132;Broadcasting and telecommunications equipment operators
+1980;281; Operadores de equipamentos de som e cenografia;3132;Broadcasting and telecommunications equipment operators
+1980;282; Outros operadores de estações de rádio e televisão, exclusive operadores de câmaras, som e cenografia;3132;Broadcasting and telecommunications equipment operators
+1980;283; Operadores de projetos cinematográficos;3132;Broadcasting and telecommunications equipment operators
+1980;291;Bibliotecários;2432;Librarians and related information professionals
+1980;292;Arquivologistas e museólogos;2432;Librarians and related information professionals
+1980;293; Outras ocupações técnicas e científicas não enquadradas anteriormente;2444;Philologists, translators and interpreters
+1980;301; Produtores agropecuários autônomos;9211;Farm-hands and labourers
+1980;302; técnicos de agropecuária;3212;Agronomy and forestry technicians
+1980;303; Tratoristas agrícolas e outros operadores de máquinas e implementos de agropecuária;8331;Motorised farm and forestry plant operators
+1980;304; Outros trabalhadores na agropecuária;9211;Farm-hands and labourers
+1980;321; Caçadores;6152;Inland and coastal waters fishery workers
+1980;322; Pescadores;6152;Inland and coastal waters fishery workers
+1980;331; Madereiros;6141;Forestry workers and loggers
+1980;332; Lenhadores;6141;Forestry workers and loggers
+1980;333; Carvoeiros (fabricantes);6141;Forestry workers and loggers
+1980;334; Seringueiros;6141;Forestry workers and loggers
+1980;335; Ervateiros;9211;Farm-hands and labourers
+1980;336; Apanhadores, quebradores e descascadores de produtos vegetais;6141;Forestry workers and loggers
+1980;341; Mineiros;7111;Miners and quarry workers
+1980;345; Canteiros e Marroeiros ;7111;Miners and quarry workers
+1980;351; Operadores de máquinas de extração e beneficiamento de minérios e pedras;8113;Well drillers and borers and related workers
+1980;361; Trabalhadores de extração de petróleo e gás;8113;Well drillers and borers and related workers
+1980;371; Garimpeiros ;7111;Miners and quarry workers
+1980;381; Salineiros;7111;Miners and quarry workers
+1980;391; Sondadores de poços, exclusive de petróleo e gás;8113;Well drillers and borers and related workers
+1980;401; Mestres e técnicos de empresas de extração mineral;3119;Physical and engineering science technicians not elsewhere classified
+1980;402; Mestres, contramestres e técnicos de indústrias de transformação, exclusive têxteis;3119;Physical and engineering science technicians not elsewhere classified
+1980;403; Mestres, contramestres e técnicos de indústrias têxteis;3119;Physical and engineering science technicians not elsewhere classified
+1980;404; Mestres de construção civil;7129;Building frame and related trades workers not elsewhere classified
+1980;405; Mestres e técnicos de empresas de energia elétrica, gás, água e esgoto;3119;Physical and engineering science technicians not elsewhere classified
+1980;406; Outros mestres, contramestres e técnicos;3119;Physical and engineering science technicians not elsewhere classified
+1980;411; Forneiros metalúrgicos;8211;Machine-tool operators
+1980;412; Laminadores;8211;Machine-tool operators
+1980;413; Trefiladores;8211;Machine-tool operators
+1980;414; Modeladores e macheiros;7211;Metal moulders and coremakers
+1980;415; Galvanizadores e recobridores de metais;8223;Metal finishing-, plating- and coating-machine operators
+1980;416; Afiadores e amoladores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1980;417; Polidores e esmerilhadores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1980;418; Ferramenteiros;8211;Machine-tool operators
+1980;419; Estampadores mecânicos;8211;Machine-tool operators
+1980;420; Operadores de prensa mecânica de metais;8211;Machine-tool operators
+1980;421; Fresadores e furadores;8211;Machine-tool operators
+1980;422; Torneiros mecânicos;8211;Machine-tool operators
+1980;423; Ajustadores e montadores mecânicos;8281;Mechanical-machinery assemblers
+1980;424; mecânicos de veículos automotores;7231;Motor vehicle mechanics and fitters
+1980;425; mecânicos sem especificação;8281;Mechanical-machinery assemblers
+1980;426; Soldadores;7212;Welders and flamecutters
+1980;427; Rebitadores e montadores de estruturas metálicas;8211;Machine-tool operators
+1980;428; Caldeireiros;8211;Machine-tool operators
+1980;429; Ferreiros e serralheiros;8211;Machine-tool operators
+1980;430; Funileiros;8211;Machine-tool operators
+1980;431; Lanterneiros de veículos;7231;Motor vehicle mechanics and fitters
+1980;441; Cardadores e penteadores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1980;442; Maçaroqueiros, bobinadores e espuladores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1980;443; Fiandeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1980;444; Rendeiros;7436;Sewers, embroiderers and related workers
+1980;445; Urdidores e remetedores;8262;Weaving- and knitting-machine operators
+1980;446; Cordoeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1980;447; Tecelões;8262;Weaving- and knitting-machine operators
+1980;448; Tapeceiros;7437;Upholsterers and related workers
+1980;449; Redeiros;7436;Sewers, embroiderers and related workers
+1980;450; Alvejadores e tintureiros têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1980;451; Estampadores têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1980;452; Acabadores de pano;7435;Textile, leather and related pattern-makers and cutters
+1980;461; Correeiros e seleiros;7442;Shoe-makers and related workers
+1980;462; Curtidores;7441;Pelt dressers, tanners and fellmongers
+1980;470; Alfaiates e costureiros;8263;Sewing-machine operators
+1980;471; Auxiliares de costura;7436;Sewers, embroiderers and related workers
+1980;472; Calceiros e camiseiros;8263;Sewing-machine operators
+1980;473; Modelistas e cortadores;7435;Textile, leather and related pattern-makers and cutters
+1980;474; Bordadeiras e cerzideiras;7436;Sewers, embroiderers and related workers
+1980;475; Chapeleiros de palha;7331;Handicraft workers in wood and related materials
+1980;476; Chapeleiros, exclusive de palha;7436;Sewers, embroiderers and related workers
+1980;477; Sapateiros;7442;Shoe-makers and related workers
+1980;478; Trabalhadores na fabricação de calçados;7442;Shoe-makers and related workers
+1980;479; Bolseiros e cinteiros;7442;Shoe-makers and related workers
+1980;481; Marceneiros;7422;Cabinet makers and related workers
+1980;482; Carpinteiros;7124;Carpenters and joiners
+1980;483; Tanoeiros;7124;Carpenters and joiners
+1980;484; Operadores de máquinas de marcenaria;8141;Wood-processing-plant operators
+1980;485; Serradores;8141;Wood-processing-plant operators
+1980;486; Preparadores de compensados e aglomerados;8141;Wood-processing-plant operators
+1980;487; Estofadores e capoteiros;7437;Upholsterers and related workers
+1980;488; Colchoeiros;7437;Upholsterers and related workers
+1980;489; Lustradores de madeira;7421;Wood treaters
+1980;490; Cesteiros e esteireiros;7331;Handicraft workers in wood and related materials
+1980;491; Montadores de equipamentos elétricos;7241;Electrical mechanics and fitters
+1980;492; Montadores de equipamentos eletrônicos (exceto rádio e televisão);7241;Electrical mechanics and fitters
+1980;493; Reparadores de equipamentos elétricos e eletrônicos (exceto rádio e televisão);7241;Electrical mechanics and fitters
+1980;494; Montadores de rádio e televisão;7241;Electrical mechanics and fitters
+1980;495; Reparadores de rádio e televisão;7241;Electrical mechanics and fitters
+1980;496; Eletricistas de instalações;7137;Building and related electricians
+1980;497; Instaladores e reparadores de equipamentos e aparelhos de telecomunicação;7241;Electrical mechanics and fitters
+1980;498; Instaladores e reparadores de linhas elétricas e de telecomunicação;7245;Electrical line installers, repairers and cable jointers
+1980;499; Operadores de instalação de produção de energia elétrica;8161;Power-production plant operators
+1980;511; Armadores de concreto;7123;Concrete placers, concrete finishers and related workers
+1980;512; Pedreiros ;7122;Bricklayers and stonemasons
+1980;513; Serventes de pedreiros;9313;Building construction labourers
+1980;514; Pintores e caiadores;7141;Painters and related workers
+1980;515; Estucadores;7133;Plasterers
+1980;516; Ladrilheiros e taqueiros;7132;Floor layers and tile setters
+1980;517; Encanadores;7136;Plumbers and pipe fitters
+1980;518; Vidraceiros (colocadores de vidro);7135;Glaziers
+1980;519; Calceteiros e asfaltadores;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1980;520; Calafates;7132;Floor layers and tile setters
+1980;521; Operadores de máquinas de construção civil, tratoristas, exclusive na agropecuária;8332;Earth-moving- and related plant operators
+1980;531; Linguiceiros e salsicheiros;8271;Meat- and fish-processing-machine operators
+1980;532; Charqueadores;7411;Butchers, fishmongers and related food preparers
+1980;533; Magarefes;7411;Butchers, fishmongers and related food preparers
+1980;534; ocupações da indústria de laticínios;8272;Dairy-products machine operators
+1980;535; Doceiros e confeiteiros;7412;Bakers, pastry-cooks and confectionery makers
+1980;536; Macarroneiros e pasteleiros;8271;Meat- and fish-processing-machine operators
+1980;537; Padeiros ;7412;Bakers, pastry-cooks and confectionery makers
+1980;538; Farinheiros e moleiros;8271;Meat- and fish-processing-machine operators
+1980;539; ocupações da indústria do açúcar;8271;Meat- and fish-processing-machine operators
+1980;540; ocupações da indústria de bebidas;8271;Meat- and fish-processing-machine operators
+1980;541; ocupações da indústria do café;8271;Meat- and fish-processing-machine operators
+1980;542; ocupações da indústria do pescado;8271;Meat- and fish-processing-machine operators
+1980;543; ocupações da indústria de chá, mate e cacau;8271;Meat- and fish-processing-machine operators
+1980;544; ocupações da indústria de oleaginosos;8271;Meat- and fish-processing-machine operators
+1980;545; ocupações de outras indústrias alimentares;8271;Meat- and fish-processing-machine operators
+1980;551; Linotipistas;7341;Compositors, typesetters and related workers
+1980;552; Tipógrafos;7341;Compositors, typesetters and related workers
+1980;553; Clicheristas e gravadores;7341;Compositors, typesetters and related workers
+1980;554; Impressores;7341;Compositors, typesetters and related workers
+1980;555; Revisores na indústria gráfica;7341;Compositors, typesetters and related workers
+1980;556;Encadernadores e cartonadores;7345;Bookbinders and related workers
+1980;557; Outras ocupações da indústria gráfica;7341;Compositors, typesetters and related workers
+1980;561; Vidreiros e ampoleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1980;562; Ceramistas e louceiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1980;563; Pintores e cerâmicos;7141;Painters and related workers
+1980;564; Oleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1980;571; Inspetores de qualidade;3152;Safety, health and quality inspectors
+1980;572; Ourives e relojoeiros;7313;Jewellery and precious-metal workers
+1980;573; Lapidadores;7313;Jewellery and precious-metal workers
+1980;574; Borracheiros;8231;Rubber-products machine operators
+1980;575; Vulcanizadores e recauchutadores;8231;Rubber-products machine operators
+1980;576; Fogueteiros;9321;Assembling labourers
+1980;577; Vassoureiros;7331;Handicraft workers in wood and related materials
+1980;578; Marmoristas;7111;Miners and quarry workers
+1980;579; Preparadores de fumo;7416;Tobacco preparers and tobacco products makers
+1980;580; Charuteiros e cigarreiros;7416;Tobacco preparers and tobacco products makers
+1980;581; Pintores a pistola;7141;Painters and related workers
+1980;582; Operadores de empilhadeira;8290;Other machine operators and assemblers
+1980;583; Foguistas (exclusive de embarcações e de trens);8162;Steam-engine and boiler operators
+1980;584; Embaladores de mercadorias;9322;Hand packers and other manufacturing labourers
+1980;585; ocupações da indústria do papel e papelão;8141;Wood-processing-plant operators
+1980;586; ocupações da indústria de artefatos de borracha e plástico, exclusive pneumáticos;8231;Rubber-products machine operators
+1980;587; ocupações da indústria de artefatos de cimento e fibrocimento;8139;Glass, ceramics and related plant operators not elsewhere classified
+1980;588; Supervisores de segurança no trabalho ;3152;Safety, health and quality inspectors
+1980;589; Outras ocupações das indústrias de transformação;9321;Assembling labourers
+1980;601; Comerciantes por conta própria;1314;General managers in wholesale and retail trade
+1980;602; Vendedores;5220;Shop salespersons and demonstrators
+1980;603; Operadores de caixa;4211;Cashiers and ticket clerks
+1980;604; Repositores de mercadorias;9333;Freight handlers
+1980;605; Demonstradores;5220;Shop salespersons and demonstrators
+1980;611; Feirantes;5230;Stall and market salespersons
+1980;612; Aguadeiros;9112;Street vendors, non-food products
+1980;613; Doceiros, sorveteiros e baleiros;9112;Street vendors, non-food products
+1980;614; Quitandeiros e fruteiros;5230;Stall and market salespersons
+1980;615; Tripeiros, peixeiros e leiteiros;9112;Street vendors, non-food products
+1980;616; Bilheteiros;4211;Cashiers and ticket clerks
+1980;617; Outras ocupações no comércio ambulante;9112;Street vendors, non-food products
+1980;621; Vendedores de jornais e revistas;5230;Stall and market salespersons
+1980;631; Pracistas e viajantes comerciais;3415;Technical and commercial sales representatives
+1980;632; Representantes comerciais;3415;Technical and commercial sales representatives
+1980;633; Propagandistas;3415;Technical and commercial sales representatives
+1980;641; Corretores de seguros;3429;Business services agents and trade brokers not elsewhere classified
+1980;642; Corretores de imóveis;3429;Business services agents and trade brokers not elsewhere classified
+1980;643; Corretores títulos e valores;3429;Business services agents and trade brokers not elsewhere classified
+1980;644; Avaliadores e leiloeiros;3417;Appraisers, valuers and auctioneers
+1980;645; Outros agentes e corretores;3429;Business services agents and trade brokers not elsewhere classified
+1980;646; Compradores;3416;Buyers
+1980;711; Aviadores civis;3143;Aircraft pilots and related associate professionals
+1980;712; Comissários de bordo;5111;Travel attendants and travel stewards
+1980;721; Oficiais de Marinha Mercante;3142;Ships' deck officers and pilots
+1980;722; Mestres de embarcação;3142;Ships' deck officers and pilots
+1980;723; Maquinistas de embarcação;8162;Steam-engine and boiler operators
+1980;724; Foguistas de embarcação;8162;Steam-engine and boiler operators
+1980;725; Marinheiros civis;8340;Ships' deck crews and related workers
+1980;726; Taifeiros;8340;Ships' deck crews and related workers
+1980;727; Barqueiros e canoeiros;8340;Ships' deck crews and related workers
+1980;731; Guindasteiros;8333;Crane, hoist and related plant operators
+1980;732; Estivadores;9333;Freight handlers
+1980;741; Agentes de estradas de ferro;4133;Transport clerks
+1980;742; Condutores e chefes de trem;8311;Locomotive-engine drivers
+1980;743; Maquinistas de trem;8311;Locomotive-engine drivers
+1980;744; Foguistas de trem;8162;Steam-engine and boiler operators
+1980;745; Guarda-freios;8312;Railway brakers, signallers and shunters
+1980;746; Manobreiros e sinaleiros;8312;Railway brakers, signallers and shunters
+1980;751; Motoristas;8322;Car, taxi and van drivers
+1980;752; Trocadores;5112;Transport conductors
+1980;753; Carroceiros e tropeiros;9332;Drivers of animal-drawn vehicles and machinery
+1980;761; Inspetores e despachantes nos transportes;4133;Transport clerks
+1980;762; Trabalhadores de conservação de ferrovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1980;771; Agentes postais e telegráficos;4142;Mail carriers and sorting clerks
+1980;772; Postalistas;4142;Mail carriers and sorting clerks
+1980;773; Telegrafistas e radiotelegrafistas;3132;Broadcasting and telecommunications equipment operators
+1980;774; Telefonistas;4223;Telephone switchboard operators
+1980;775; Carteiros;4142;Mail carriers and sorting clerks
+1980;776; Guarda-fios;7245;Electrical line installers, repairers and cable jointers
+1980;801; proprietários nos serviços, conta própria ;1314;General managers in wholesale and retail trade
+1980;805; Empregados domésticos;9131;Domestic helpers and cleaners
+1980;811; Hoteleiros e donos de pensão por conta própria;1315;General managers of restaurants and hotels
+1980;812; Camareiros;9141;Building caretakers
+1980;813; Cozinheiros;5122;Cooks
+1980;814; Garçons;5123;Waiters, waitresses and bartenders
+1980;815; Atendentes de bar e lanchonete;5123;Waiters, waitresses and bartenders
+1980;821; Cabeleireiros;5141;Hairdressers, barbers, beauticians and related workers
+1980;822; Barbeiros;5141;Hairdressers, barbers, beauticians and related workers
+1980;823; Maquiladores, depiladores e esteticistas;5141;Hairdressers, barbers, beauticians and related workers
+1980;824; Manicuros e pedicuros;5141;Hairdressers, barbers, beauticians and related workers
+1980;825; Lavadeiras e passadeiras;9133;Hand-launderers and pressers
+1980;826; Engraxates;9333;Freight handlers
+1980;831; Jogadores de futebol;3475;Athletes, sportspersons and related associate professionals
+1980;832; Lutadores e outros atletas profissionais;3475;Athletes, sportspersons and related associate professionals
+1980;833; Juizes de esportes;3475;Athletes, sportspersons and related associate professionals
+1980;834; técnicos de esportes;3475;Athletes, sportspersons and related associate professionals
+1980;841; Porteiros;9141;Building caretakers
+1980;842; Ascensoristas;9141;Building caretakers
+1980;843; Vigias;5169;Protective services workers not elsewhere classified
+1980;844; Serventes;9141;Building caretakers
+1980;845; Contínuos;9141;Building caretakers
+1980;851; Oficiais das Forças Armadas;110;Armed forces
+1980;852; Praças das Forças Armadas;110;Armed forces
+1980;853; Oficiais e Praças do Corpo de Bombeiros;5161;Fire-fighters
+1980;854; Delegados e Comissários de polícia;2429;Legal professionals not elsewhere classified
+1980;855; Investigadores de polícia;5169;Protective services workers not elsewhere classified
+1980;856; Guarda;5169;Protective services workers not elsewhere classified
+1980;857; Carcereiros e guardas de presídio;5169;Protective services workers not elsewhere classified
+1980;858; Datiloscopistas;5169;Protective services workers not elsewhere classified
+1980;859; Guardas;5169;Protective services workers not elsewhere classified
+1980;911; Aprendizes;9321;Assembling labourers
+1980;912; Bilheteiros, no serviço de diversões;4211;Cashiers and ticket clerks
+1980;913; Bombeiros, exclusive do Corpo de Bombeiros;7136;Plumbers and pipe fitters
+1980;914; Capatazes;9211;Farm-hands and labourers
+1980;915; Dedetizadores;9141;Building caretakers
+1980;916; Guardadores de automóveis;9333;Freight handlers
+1980;917; Guardas Sanitários;3231;Nursing associate professionals
+1980;918; Inspetores e fiscais;3449;Customs, tax and related government associate professionals not elsewhere classified
+1980;919; Jardineiros, exclusive na lavoura;9211;Farm-hands and labourers
+1980;920; Lixeiros;9161;Garbage collectors
+1980;921; Lubrificadores;7231;Motor vehicle mechanics and fitters
+1980;922; Operadores de tratamento e bombeamento d água;8163;Incinerator, water-treatment and related plant operators
+1980;923; Operadores de máquinas, exclusive de agropecuária e construção civil;8290;Other machine operators and assemblers
+1980;924; Trabalhadores braçais;9333;Freight handlers
+1980;925; Trabalhadores de conservação de rodovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1980;926; Outras ocupações ou ocupações mal definidas;9333;Freight handlers
+1980;927; Sem declaração de ocupação;9333;Freight handlers
+1991;1;Agricultores;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;2;Criadores de gado bovino;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;3;Avicultores e criadores de pequenos animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;4;Criadores de outros animais;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;5;proprietários em atividade agropecuária não especificada;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;6;Empresários da extração vegetal e pesca;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;7;Empresários da extração mineral;1319;General managers not elsewhere classified
+1991;8;Empresários da indústria de transformação;1222;Production and operations department managers in manufacturing
+1991;9;Empresários da construção civil;1223;Production and operations department managers in construction
+1991;10;Comerciantes;1314;General managers in wholesale and retail trade
+1991;11;Hoteleiros e donos de pensão;1315;General managers of restaurants and hotels
+1991;12;Empresários nos transportes;1226;Production and operations department managers in transport, storage and communications
+1991;13;Vendedores ambulantes;9112;Street vendors, non-food products
+1991;14;Feirantes;5230;Stall and market salespersons
+1991;15;Outros proprietários;1319;General managers not elsewhere classified
+1991;20;Ministros de Estado, Governadores, Prefeitos, Membros do Poder Legislativo e do Corpo Diplomático Nacional;1120;Senior government officials
+1991;21;Diretores, assessores e chefes no serviço público;1120;Senior government officials
+1991;30;Administradores e gerentes na agropecuária;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;31;Administradores e gerentes na extração vegetal e pesca;1311;General managers in agriculture, hunting, forestry/ and fishing
+1991;32;Administradores e gerentes na extração mineral;1319;General managers not elsewhere classified
+1991;33;Administradores e gerentes na indústria da transformação;1222;Production and operations department managers in manufacturing
+1991;34;Administradores e gerentes na indústria da construção civil;1223;Production and operations department managers in construction
+1991;35;Administradores e gerentes no comércio de mercadorias;1314;General managers in wholesale and retail trade
+1991;36;Administradores e gerentes hotéis e estabelecimentos similares;1315;General managers of restaurants and hotels
+1991;37;Administradores e gerentes nos transportes;1226;Production and operations department managers in transport, storage and communications
+1991;38;Administradores e gerentes de empresas financeiras, imobiliárias e securitárias;1227;Production and operations department managers in business services
+1991;39;Outros administradores e gerentes não classificados anteriormente;1319;General managers not elsewhere classified
+1991;40;Chefes e encarregados de seção de serviços administrativos de empresas;3419;Finance and sales associate professionals not elsewhere classified
+1991;50;técnicos e fiscais de tributação e arrecadação;3449;Customs, tax and related government associate professionals not elsewhere classified
+1991;51;Inspetores do trabalho;3152;Safety, health and quality inspectors
+1991;52;Assistentes administrativos;4190;Other office clerks
+1991;53;Pagadores e caixas (exclusive nos serviços e comércio de mercadorias);4211;Cashiers and ticket clerks
+1991;54;Almoxarifes e armazenistas;4131;Stock clerks
+1991;55;Expedidores e conferentes de materiais;4131;Stock clerks
+1991;56;datilógrafos;4115;Secretaries
+1991;57;Operadores de teleimpressoras;4190;Other office clerks
+1991;58;Operadores de máquinas de processamento automático de dados;3419;Finance and sales associate professionals not elsewhere classified
+1991;59;Secretárias;4115;Secretaries
+1991;60;Auxiliares de contabilidade;4190;Other office clerks
+1991;61;Operadores de máquinas copiadoras;4141;Library and filing clerks
+1991;62;Arquivistas;4141;Library and filing clerks
+1991;63;Recepcionistas;4222;Receptionists and information clerks
+1991;64;Auxiliares administrativos e de escritório;4190;Other office clerks
+1991;101;Engenheiros;2142;Civil engineers
+1991;102;Arquitetos;2141;Architects, town and traffic planners
+1991;103;Agrimensores;3118;Draughtspersons
+1991;104;Cartógrafos;3118;Draughtspersons
+1991;111;Desenhistas;3118;Draughtspersons
+1991;112;técnicos de edificações, agrimensura, estradas e saneamento;3118;Draughtspersons
+1991;113;Outras ocupações auxiliares da engenharia e arquitetura;3119;Physical and engineering science technicians not elsewhere classified
+1991;121;Químicos;2113;Chemists
+1991;122;Farmacêuticos;2224;Pharmacists
+1991;123;físicos;2111;Physicists and astronomers
+1991;124;Geólogos mineralogistas;2114;Geologists and geophysicists
+1991;125;Outros especialistas em química e física;2111;Physicists and astronomers
+1991;131;técnicos químicos;3116;Chemical engineering technicians
+1991;132;Práticos de farmácia;3228;Pharmaceutical assistants
+1991;133;técnicos de meteorologia;3116;Chemical engineering technicians
+1991;141;Agrônomos;2213;Agronomists and related professionals
+1991;142;Biologistas;2211;Biologists, botanists, zoologists and related professionals
+1991;143;Farmacologistas;2224;Pharmacists
+1991;144;Veterinários;2223;Veterinarians
+1991;151;médicos;2221;Medical doctors
+1991;152;Dentistas;2222;Dentists
+1991;153;Enfermeiros diplomados;2230;Nursing and midwifery professionals
+1991;154;Outros especialistas em medicina;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1991;161;Acadêmicos de hospital;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1991;162;Enfermeiros não diplomados;3231;Nursing associate professionals
+1991;163;técnicos de reabilitação;3226;Physiotherapists and related associate professionals
+1991;164;Ortoptistas e óticos;3229;Modern health associate professionals (except nursing) not elsewhere classified
+1991;165;Operadores de equipamentos médicos e odontológicos;3211;Life science technicians
+1991;166;Parteiras;3231;Nursing associate professionals
+1991;167;Protéticos;7311;Precision-instrument makers and repairers
+1991;168;técnicos em análise clínica;3211;Life science technicians
+1991;171;Matemáticos e Atuários;2122;Statisticians
+1991;172;Estatísticos;2122;Statisticians
+1991;173;Analistas de Sistemas;2132;Computer programmers
+1991;181;Economistas;2441;Economists
+1991;182;Contadores;2419;Business professionals not elsewhere classified
+1991;183;técnicos de administração;2419;Business professionals not elsewhere classified
+1991;191;técnicos de contabilidade;3419;Finance and sales associate professionals not elsewhere classified
+1991;192;técnicos de estatística;3419;Finance and sales associate professionals not elsewhere classified
+1991;193;Agentes Censitários;3419;Finance and sales associate professionals not elsewhere classified
+1991;194;Programadores de computador;2132;Computer programmers
+1991;201;Sociólogos, antropólogos e arqueólogos;2442;Sociologists, anthropologists and related professionals
+1991;202;Psicólogos;2445;Psychologists
+1991;203;Geógrafos e demógrafos;2442;Sociologists, anthropologists and related professionals
+1991;204;Assistentes sociais;2446;Social work professionals
+1991;205;Outros cientistas sociais;2442;Sociologists, anthropologists and related professionals
+1991;211;Professores Pesquisadores;2310;College, university and higher education teaching professionals
+1991;212;Professores de ensino superior;2310;College, university and higher education teaching professionals
+1991;213;Professores de ensino do 2º grau;2320;Secondary education teaching professionals
+1991;214;Professores de ensino do 1º grau (5ª a 8ª série);2331;Primary education teaching professionals
+1991;215;Professores de ensino do 1º grau (1ª a 4ª série);2331;Primary education teaching professionals
+1991;216;Professores de ensino do 1º grau (sem especificação de série);2331;Primary education teaching professionals
+1991;217;Professores de ensino pré-escolar;2331;Primary education teaching professionals
+1991;218;Professores e instrutores de formação profissional;2359;Other teaching professionals not elsewhere classified
+1991;219;Professores de ensino não especificado;2359;Other teaching professionals not elsewhere classified
+1991;221;Orientadores e técnicos de ensino;2359;Other teaching professionals not elsewhere classified
+1991;222;Inspetores de alunos;3340;Other teaching associate professionals
+1991;231;Magistrados;2422;Judges
+1991;232;Procuradores, promotores e curadores públicos;2421;Lawyers
+1991;233;Advogados e defensores públicos;2421;Lawyers
+1991;241;Tabeliões e oficiais de registro;3432;Legal and related business associate professionals
+1991;242;Escrivães de cartório;3432;Legal and related business associate professionals
+1991;243;Oficiais de justiça;3432;Legal and related business associate professionals
+1991;244;Outras ocupações auxiliares da justiça;3432;Legal and related business associate professionals
+1991;251;Sacerdotes;2460;Religious professionals
+1991;252;Religiosos por conta própria;2460;Religious professionals
+1991;261;Escritores e jornalistas;2451;Authors, journalists and other writers
+1991;271;Escultores e pintores;2452;Sculptors, painters and related artists
+1991;272;Artesãos de objetos de cerâmica, couro, madeira e metal;7331;Handicraft workers in wood and related materials
+1991;273;Decoradores e cenógrafos;3471;Decorators and commercial designers
+1991;274;Fotógrafos;3131;Photographers and image and sound recording equipment operators
+1991;275;Músicos e compositores;2453;Composers, musicians and singers
+1991;276;Artistas de cinema, teatro, rádio e televisão;2455;Film, stage and related actors and directors
+1991;277;Artistas de circo;2455;Film, stage and related actors and directors
+1991;278;Locutores e comentaristas;3472;Radio, television and other announcers
+1991;279;Produtores e diretores de espetáculos;2455;Film, stage and related actors and directors
+1991;280;Cinegrafistas e operadores de câmaras;3132;Broadcasting and telecommunications equipment operators
+1991;281;Operadores de equipamentos de som e cenografia;3132;Broadcasting and telecommunications equipment operators
+1991;282;Outros operadores de estações de rádio e televisão (exclusive operadores de câmaras, som e cenografia);3132;Broadcasting and telecommunications equipment operators
+1991;283;Operadores projetores cinematográficos;3132;Broadcasting and telecommunications equipment operators
+1991;291;Bibliotecários;2432;Librarians and related information professionals
+1991;292;Arquivologistas e museólogos;2432;Librarians and related information professionals
+1991;293;Outras ocupações técnicas e científicas não enquadradas anteriormente;2444;Philologists, translators and interpreters
+1991;301;Produtores agropecuários autônomos;9211;Farm-hands and labourers
+1991;302;técnicos de agropecuária;3212;Agronomy and forestry technicians
+1991;303;Tratoristas agrícolas e outros operadores de máquinas e implementos de agropecuária;8331;Motorised farm and forestry plant operators
+1991;304;Outros trabalhadores na agropecuária;9211;Farm-hands and labourers
+1991;305;Trabalhadores na agricultura;9211;Farm-hands and labourers
+1991;321;Caçadores;6152;Inland and coastal waters fishery workers
+1991;322;Pescadores;6152;Inland and coastal waters fishery workers
+1991;331;Madeireiros;6141;Forestry workers and loggers
+1991;332;Lenhadores;6141;Forestry workers and loggers
+1991;333;Carvoeiros (fabricantes);6141;Forestry workers and loggers
+1991;334;Seringueiros;6141;Forestry workers and loggers
+1991;335;Ervateiros;9211;Farm-hands and labourers
+1991;336;Apanhadores, quebradores e descascadores de produtos vegetais;6141;Forestry workers and loggers
+1991;341;Mineiros;7111;Miners and quarry workers
+1991;345;Canteiros e marroeiros;7111;Miners and quarry workers
+1991;351;Operadores de máquinas de extração e beneficiamento de minérios e pedras;8113;Well drillers and borers and related workers
+1991;361;Trabalhadores de extração de petróleo e gás;8113;Well drillers and borers and related workers
+1991;371;Garimpeiros;7111;Miners and quarry workers
+1991;381;Salineiros;7111;Miners and quarry workers
+1991;391;Sondadores de poços (exclusive de petróleo e gás);8113;Well drillers and borers and related workers
+1991;401;Mestres e técnicos de empresas de extração mineral;3119;Physical and engineering science technicians not elsewhere classified
+1991;402;Mestres, contramestres e técnicos de indústrias de transformação (exclusive têxteis);3119;Physical and engineering science technicians not elsewhere classified
+1991;403;Mestres, contramestres e técnicos de indústrias têxteis;3119;Physical and engineering science technicians not elsewhere classified
+1991;404;Mestres de construção civil;7129;Building frame and related trades workers not elsewhere classified
+1991;405;Mestres e técnicos de empresas de energia elétrica, gás, água e esgoto;3119;Physical and engineering science technicians not elsewhere classified
+1991;406;Outros mestres, contramestres e técnicos;3119;Physical and engineering science technicians not elsewhere classified
+1991;411;Forneiros metalúrgicos;8211;Machine-tool operators
+1991;412;Laminadores;8211;Machine-tool operators
+1991;413;Trefiladores;8211;Machine-tool operators
+1991;414;Modeladores e macheiros;7211;Metal moulders and coremakers
+1991;415;Galvanizadores e recobridores de metais;8223;Metal finishing-, plating- and coating-machine operators
+1991;416;Afiadores e amoladores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1991;417;Polidores e esmerilhadores;7224;Metal wheel-grinders, polishers and tool sharpeners
+1991;418;Ferramenteiros;8211;Machine-tool operators
+1991;419;Estampadores mecânicos;8211;Machine-tool operators
+1991;420;Operadores de prensa mecânica de metais;8211;Machine-tool operators
+1991;421;Fresadores e furadores;8211;Machine-tool operators
+1991;422;Torneiros mecânicos;8211;Machine-tool operators
+1991;423;Ajustadores e montadores mecânicos;8281;Mechanical-machinery assemblers
+1991;424;mecânicos de veículos automotores;7231;Motor vehicle mechanics and fitters
+1991;425;mecânicos sem especificação;8281;Mechanical-machinery assemblers
+1991;426;Soldadores;7212;Welders and flamecutters
+1991;427;Rebitadores e montadores de estruturas metálicas;8211;Machine-tool operators
+1991;428;Caldeireiros;8211;Machine-tool operators
+1991;429;Ferreiros e serralheiros;8211;Machine-tool operators
+1991;430;Funileiros;8211;Machine-tool operators
+1991;431;Lanterneiros de veículos;7231;Motor vehicle mechanics and fitters
+1991;441;Cardadores e penteadores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1991;442;Maçaroqueiros, bobinadores e espuladores;8261;Fibre-preparing-, spinning- and winding-machine operators
+1991;443;Fiandeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1991;444;Rendeiros;7436;Sewers, embroiderers and related workers
+1991;445;Urdidores e remetedores;8262;Weaving- and knitting-machine operators
+1991;446;Cordoeiros;8261;Fibre-preparing-, spinning- and winding-machine operators
+1991;447;Tecelões;8262;Weaving- and knitting-machine operators
+1991;448;Tapeceiros;7437;Upholsterers and related workers
+1991;449;Redeiros;7436;Sewers, embroiderers and related workers
+1991;450;Alvejadores e tintureiros têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1991;451;Estampadores têxteis;8264;Bleaching-, dyeing- and cleaning-machine operators
+1991;452;Acabadores de pano;7435;Textile, leather and related pattern-makers and cutters
+1991;461;Correeiros e seleiros;7442;Shoe-makers and related workers
+1991;462;Curtidores;7441;Pelt dressers, tanners and fellmongers
+1991;470;Alfaiates e costureiros;8263;Sewing-machine operators
+1991;471;Auxiliares de costuras;7436;Sewers, embroiderers and related workers
+1991;472;Calceiros e camiseiros;8263;Sewing-machine operators
+1991;473;Modelistas e cortadores;7435;Textile, leather and related pattern-makers and cutters
+1991;474;Bordadeiras e cerzideiras;7436;Sewers, embroiderers and related workers
+1991;475;Chapaleiros de palha;7331;Handicraft workers in wood and related materials
+1991;476;Chapeleiros (exclusive de palha);7436;Sewers, embroiderers and related workers
+1991;477;Sapateiros;7442;Shoe-makers and related workers
+1991;478;Trabalhadores na fabricação de calçados;7442;Shoe-makers and related workers
+1991;479;Bolseiros e cinteiros;7442;Shoe-makers and related workers
+1991;481;Marceneiros;7422;Cabinet makers and related workers
+1991;482;Carpinteiros;7124;Carpenters and joiners
+1991;483;Tanoeiros;7124;Carpenters and joiners
+1991;484;Operadores de máquinas de marcenaria;8141;Wood-processing-plant operators
+1991;485;Serradores;8141;Wood-processing-plant operators
+1991;486;Preparadores de compensados e aglomerados;8141;Wood-processing-plant operators
+1991;487;Estofadores e capoteiros;7437;Upholsterers and related workers
+1991;488;Colchoeiros;7437;Upholsterers and related workers
+1991;489;Lustradores de madeira;7421;Wood treaters
+1991;490;Cesteiros e esteireiros;7331;Handicraft workers in wood and related materials
+1991;501;Montadores de equipamentos elétricos;7241;Electrical mechanics and fitters
+1991;502;Montadores de equipamentos eletrônicos (exceto aparelhos de áudio e vídeo);7241;Electrical mechanics and fitters
+1991;503;Repararadores de equipamentos elétricos e eletrônicos (exceto aparelhos de áudio e vídeo);7241;Electrical mechanics and fitters
+1991;504;Montadores de aparelhos de áudio e vídeo;7241;Electrical mechanics and fitters
+1991;505;Repararadores de aparelhos de áudio e vídeo;7241;Electrical mechanics and fitters
+1991;506;Eletricistas de instalações;7137;Building and related electricians
+1991;507;Instaladores e reparadores de equipamentos e aparelhos de telecomunicações;7241;Electrical mechanics and fitters
+1991;508;Instaladores e repadores de linhas elétricas e de telecomunicações;7245;Electrical line installers, repairers and cable jointers
+1991;509;Operadores de instalações de produção de energia elétrica;8161;Power-production plant operators
+1991;511;Armadores de concreto;7123;Concrete placers, concrete finishers and related workers
+1991;512;Pedreiros;7122;Bricklayers and stonemasons
+1991;513;Serventes de pedreiro;9313;Building construction labourers
+1991;514;Pintores e caiadores;7141;Painters and related workers
+1991;515;Estucadores;7133;Plasterers
+1991;516;Ladrilheiros e taqueiros;7132;Floor layers and tile setters
+1991;517;Encanadores;7136;Plumbers and pipe fitters
+1991;518;Vidraceiros (colocadores de vidro);7135;Glaziers
+1991;519;Calceteiros e asfaltadores;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1991;520;Calafates;7132;Floor layers and tile setters
+1991;521;Operadores de máquinas de construção civil e tratoristas (exclusive da agropecuária);8332;Earth-moving- and related plant operators
+1991;531;Linguiceiros e salsicheiros;8271;Meat- and fish-processing-machine operators
+1991;532;Charqueadores;7411;Butchers, fishmongers and related food preparers
+1991;533;Magarefes;7411;Butchers, fishmongers and related food preparers
+1991;534;ocupações da indústria de laticínios;8272;Dairy-products machine operators
+1991;535;Doceiros e confeiteiros;7412;Bakers, pastry-cooks and confectionery makers
+1991;536;Macarroneiros e pasteleiros;8271;Meat- and fish-processing-machine operators
+1991;537;Padeiros;7412;Bakers, pastry-cooks and confectionery makers
+1991;538;Farinheiros e moleiros;8271;Meat- and fish-processing-machine operators
+1991;539;ocupações da indústria de açúcar;8271;Meat- and fish-processing-machine operators
+1991;540;ocupações da indústria de bebidas;8271;Meat- and fish-processing-machine operators
+1991;541;ocupações da indústria do café;8271;Meat- and fish-processing-machine operators
+1991;542;ocupações da indústria do pescado;8271;Meat- and fish-processing-machine operators
+1991;543;ocupações da indústria de chá, mate e cacau;8271;Meat- and fish-processing-machine operators
+1991;544;ocupações da indústria de oleaginosos;8271;Meat- and fish-processing-machine operators
+1991;545;ocupações de outras indústrias alimentares;8271;Meat- and fish-processing-machine operators
+1991;551;Linotipistas;7341;Compositors, typesetters and related workers
+1991;552;Tipógrafos;7341;Compositors, typesetters and related workers
+1991;553;Clicheristas e gravadores;7341;Compositors, typesetters and related workers
+1991;554;Impressores;7341;Compositors, typesetters and related workers
+1991;555;Revisores na indústria gráfica;7341;Compositors, typesetters and related workers
+1991;556;Encadernadores e cartonadores;7345;Bookbinders and related workers
+1991;557;Outras ocupações da indústria gráfica;7341;Compositors, typesetters and related workers
+1991;561;Vidreiros e ampoleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1991;562;Ceramistas e louceiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1991;563;Pintores cerâmicos;7141;Painters and related workers
+1991;564;Oleiros;8139;Glass, ceramics and related plant operators not elsewhere classified
+1991;571;Inspetores de qualidade;3152;Safety, health and quality inspectors
+1991;572;Ourives e relojoeiros;7313;Jewellery and precious-metal workers
+1991;573;Lapidadores;7313;Jewellery and precious-metal workers
+1991;574;Borracheiros;8231;Rubber-products machine operators
+1991;575;Vulcanizadores e recauchutadores;8231;Rubber-products machine operators
+1991;576;Fogueteiros;9321;Assembling labourers
+1991;577;Vassoureiros;7331;Handicraft workers in wood and related materials
+1991;578;Marmoristas;7111;Miners and quarry workers
+1991;579;Preparadores de fumo;7416;Tobacco preparers and tobacco products makers
+1991;580;Charuteiros e cigarreiros;7416;Tobacco preparers and tobacco products makers
+1991;581;Pintores à pistola;7141;Painters and related workers
+1991;582;Operadores de empilhadeira;8290;Other machine operators and assemblers
+1991;583;Foguistas (exclusive de embarcações e de trens);8162;Steam-engine and boiler operators
+1991;584;Embaladores de mercadorias;9322;Hand packers and other manufacturing labourers
+1991;585;ocupações da indústria do papel e papelão;8141;Wood-processing-plant operators
+1991;586;ocupações da indústria de artefatos de borracha e plástico (exclusive pneumáticos);8231;Rubber-products machine operators
+1991;587;ocupações da indústria artefatos de cimento e fibrocimento;8139;Glass, ceramics and related plant operators not elsewhere classified
+1991;588;Supervisores de segurança no trabalho;3152;Safety, health and quality inspectors
+1991;589;Outras ocupações das indústrias de transformação;9321;Assembling labourers
+1991;601;Comerciantes por conta própria;1314;General managers in wholesale and retail trade
+1991;602;Vendedores;5220;Shop salespersons and demonstrators
+1991;603;Operadores de caixa;4211;Cashiers and ticket clerks
+1991;604;Repositores de mercadorias;9333;Freight handlers
+1991;605;Demonstradores;5220;Shop salespersons and demonstrators
+1991;611;Feirantes;5230;Stall and market salespersons
+1991;612;Aguadeiros;9112;Street vendors, non-food products
+1991;613;Doceiros, sorveteiros e baleiros;9112;Street vendors, non-food products
+1991;614;Quitandeiros e fruteiros;5230;Stall and market salespersons
+1991;615;Tripeiros, peixeiros e leiteiros;9112;Street vendors, non-food products
+1991;616;Bilheteiros;4211;Cashiers and ticket clerks
+1991;617;Outras ocupações no comércio ambulante;9112;Street vendors, non-food products
+1991;621;Vendedores de jornais e revistas;5230;Stall and market salespersons
+1991;631;Pracistas e viajantes comerciais;3415;Technical and commercial sales representatives
+1991;632;Representantes comerciais;3415;Technical and commercial sales representatives
+1991;633;Propagandistas;3415;Technical and commercial sales representatives
+1991;641;Corretores de seguros;3429;Business services agents and trade brokers not elsewhere classified
+1991;642;Corretores de imóveis;3429;Business services agents and trade brokers not elsewhere classified
+1991;643;Corretores de títulos e valores;3429;Business services agents and trade brokers not elsewhere classified
+1991;644;Avaliadores e leiloeiros;3417;Appraisers, valuers and auctioneers
+1991;645;Outros agentes e corretores;3429;Business services agents and trade brokers not elsewhere classified
+1991;646;Compradores;3416;Buyers
+1991;711;Aviadores civis;3143;Aircraft pilots and related associate professionals
+1991;712;Comissários de bordo;5111;Travel attendants and travel stewards
+1991;721;Oficias de marinha mercante;3142;Ships' deck officers and pilots
+1991;722;Mestres de embarcação;3142;Ships' deck officers and pilots
+1991;723;Maquinistas de embarcação;8162;Steam-engine and boiler operators
+1991;724;Foguistas de embarcação;8162;Steam-engine and boiler operators
+1991;725;Marinheiros civis;8340;Ships' deck crews and related workers
+1991;726;Taifeiros;8340;Ships' deck crews and related workers
+1991;727;Barqueiros e canoeiros;8340;Ships' deck crews and related workers
+1991;731;Guindasteiros;8333;Crane, hoist and related plant operators
+1991;732;Estivadores;9333;Freight handlers
+1991;741;Agentes de estrada de ferro;4133;Transport clerks
+1991;742;Condutores e chefes de trem;8311;Locomotive-engine drivers
+1991;743;Maquinistas de trem;8311;Locomotive-engine drivers
+1991;744;Foguistas de trem;8162;Steam-engine and boiler operators
+1991;745;Guarda-freios;8312;Railway brakers, signallers and shunters
+1991;746;Manobreiros e sinaleiros;8312;Railway brakers, signallers and shunters
+1991;751;Motoristas;8322;Car, taxi and van drivers
+1991;752;Trocadores;5112;Transport conductors
+1991;753;Carroceiros e tropeiros;9332;Drivers of animal-drawn vehicles and machinery
+1991;761;Inspetores e despachantes nos transportes;4133;Transport clerks
+1991;762;Trabalhadores de conservação de ferrovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1991;771;Agentes postais e telegráficos;4142;Mail carriers and sorting clerks
+1991;772;Postalistas;4142;Mail carriers and sorting clerks
+1991;773;Telegrafistas e radiotelegrafistas;3132;Broadcasting and telecommunications equipment operators
+1991;774;Telefonistas;4223;Telephone switchboard operators
+1991;775;Carteiros;4142;Mail carriers and sorting clerks
+1991;801;Arrumadeiras;9131;Domestic helpers and cleaners
+1991;802;Babás;5131;Child-care workers
+1991;803;Cozinheiras;5122;Cooks
+1991;804;Faxineiras;9131;Domestic helpers and cleaners
+1991;805;Lavadeiras;9133;Hand-launderers and pressers
+1991;806;Governantas e Mordomos;9131;Domestic helpers and cleaners
+1991;807;Empregados domésticos não especializados;9131;Domestic helpers and cleaners
+1991;808;Outras ocupações do serviço doméstico;9131;Domestic helpers and cleaners
+1991;811;Hoteleiros e donos de pensão por conta própria;1315;General managers of restaurants and hotels
+1991;812;Camareiros(exclusive no serviço doméstico);9141;Building caretakers
+1991;813;Cozinheiros(exclusive no serviço doméstico);5122;Cooks
+1991;814;Garçons;5123;Waiters, waitresses and bartenders
+1991;815;Atendentes de bar e lanchonete;5123;Waiters, waitresses and bartenders
+1991;816;Governantas e Mordomos (exclusive no serviço doméstico);5123;Waiters, waitresses and bartenders
+1991;817;Maitre de hotel;5123;Waiters, waitresses and bartenders
+1991;818;Maitre no serviço de alimentação;5123;Waiters, waitresses and bartenders
+1991;821;Cabelereiros;5141;Hairdressers, barbers, beauticians and related workers
+1991;822;Barbeiros;5141;Hairdressers, barbers, beauticians and related workers
+1991;823;Maquiladores, depiladores e esteticistas;5141;Hairdressers, barbers, beauticians and related workers
+1991;824;Manicuros e pedicuros;5141;Hairdressers, barbers, beauticians and related workers
+1991;825;Lavadeiras e passadeiras;9133;Hand-launderers and pressers
+1991;826;Engraxates;9333;Freight handlers
+1991;831;Jogadores de futebol;3475;Athletes, sportspersons and related associate professionals
+1991;832;Lutadores e outros atletas profissionais;3475;Athletes, sportspersons and related associate professionals
+1991;833;Juizes de esportes;3475;Athletes, sportspersons and related associate professionals
+1991;834;técnicos de esportes;3475;Athletes, sportspersons and related associate professionals
+1991;841;Porteiros;9141;Building caretakers
+1991;842;Ascensoristas;9141;Building caretakers
+1991;843;Vigias;5169;Protective services workers not elsewhere classified
+1991;844;Serventes;9141;Building caretakers
+1991;845;Contínuos;9141;Building caretakers
+1991;851;proprietários nos serviços agropecuários conta própria não classificados anteriormente;9211;Farm-hands and labourers
+1991;852;proprietários nos serviços conta própria não classificados anteriormente;1315;General managers of restaurants and hotels
+1991;861;Oficiais das Forças Armadas;110;Armed forces
+1991;862;Praças das Forças Armadas;110;Armed forces
+1991;863;Oficiais e Praças do Corpo de Bombeiros;5161;Fire-fighters
+1991;864;Delegados e Comissários de polícia;2429;Legal professionals not elsewhere classified
+1991;865;Investigadores de polícia;5169;Protective services workers not elsewhere classified
+1991;866;Guardas-Civis e Inspetores de tráfego;5169;Protective services workers not elsewhere classified
+1991;867;Carcereiros e Guardas de presídio;5169;Protective services workers not elsewhere classified
+1991;868;Datiloscopistas;5169;Protective services workers not elsewhere classified
+1991;869;Guardas-Vigias de organizações particulares;5169;Protective services workers not elsewhere classified
+1991;911;Aprendizes;9321;Assembling labourers
+1991;912;Bilheteiros no serviço de diversões;4211;Cashiers and ticket clerks
+1991;913;Bombeiros (exclusive do Corpo de Bombeiros);7136;Plumbers and pipe fitters
+1991;914;Capatazes;9211;Farm-hands and labourers
+1991;915;Dedetizadores;9141;Building caretakers
+1991;916;Guardadores de automóveis;9333;Freight handlers
+1991;917;Guardas Sanitário;3231;Nursing associate professionals
+1991;918;Inspetores e Fiscais;3449;Customs, tax and related government associate professionals not elsewhere classified
+1991;919;Jardineiros (exclusive na lavoura);9211;Farm-hands and labourers
+1991;920;Lixeiros;9161;Garbage collectors
+1991;921;Lubrificadores;7231;Motor vehicle mechanics and fitters
+1991;922;Operadores de tratamento e bombeamento de água;8163;Incinerator, water-treatment and related plant operators
+1991;923;Operadores de máquinas (exclusive de agropecuária e construção civil);8290;Other machine operators and assemblers
+1991;924;Trabalhadores braçais, sem especificação;9333;Freight handlers
+1991;925;Trabalhadores de conservação de Rodovias;9312;Construction and maintenance labourers: roads, dams and similar constructions
+1991;926;Babás (exclusive no serviço doméstico);5131;Child-care workers
+1991;927;Outras ocupações ou ocupações mal definidas;9333;Freight handlers
+1991;928;Sem declaração de ocupação;9333;Freight handlers
+2000;0;-;-9999;Undefined
+2000;100;MILITARES DA AERONÁUTICA;110;Armed forces
+2000;200;MILITARES DO EXÉRCITO;110;Armed forces
+2000;300;MILITARES DA MARINHA;110;Armed forces
+2000;401;CORONÉIS, TENENTES-CORONÉIS E MAJORES DA POLÍCIA MILITAR;110;Armed forces
+2000;402;CAPITÃES DA POLÍCIA MILITAR;110;Armed forces
+2000;403;TENENTES DA POLÍCIA MILITAR;110;Armed forces
+2000;411;PRAÇAS ESPECIAIS DE POLÍCIA MILITAR;110;Armed forces
+2000;412;SUBTENENTES E SARGENTOS DA POLÍCIA MILITAR;110;Armed forces
+2000;413;CABOS E SOLDADOS DA POLÍCIA MILITAR;110;Armed forces
+2000;501;CORONÉIS, TENENTES-CORONÉIS E MAJORES DE BOMBEIRO MILITAR;5161;Fire-fighters
+2000;502;CAPITÃES DO CORPO DE BOMBEIROS;5161;Fire-fighters
+2000;503;TENENTES DO CORPO DE BOMBEIROS;5161;Fire-fighters
+2000;511;PRAÇAS ESPECIAIS DE BOMBEIRO;5161;Fire-fighters
+2000;512;SUBTENENTES E SARGENTOS DO CORPO DE BOMBEIROS;5161;Fire-fighters
+2000;513;CABOS E SOLDADOS DO CORPO DE BOMBEIROS;5161;Fire-fighters
+2000;1111;LEGISLADORES ;1120;Senior government officials
+2000;1112;DIRIGENTES GERAIS DA ADMINISTRAÇÃO PÚBLICA;1120;Senior government officials
+2000;1113;MINISTROS DE TRIBUNAIS;1120;Senior government officials
+2000;1122;DIRIGENTES DE PRODUÇÃO E OPERAÇÕES DA ADMINISTRAÇÃO PÚBLICA;1120;Senior government officials
+2000;1123;DIRIGENTES DAS ÁREAS DE APOIO DA ADMINISTRAÇÃO PÚBLICA;1120;Senior government officials
+2000;1130;CHEFES DE PEQUENAS POPULAÇÕES;1120;Senior government officials
+2000;1140;DIRIGENTES E ADMINISTRADORES DE ORGANIZAÇÃO DE INTERESSE PÚBLICO;1120;Senior government officials
+2000;1210;DIRETORES GERAIS  ;1210;Directors and chief executives
+2000;1219;DIRIGENTES DE EMPRESAS - EMPREGADORES COM MAIS DE 5 EMPREGADOS;1210;Directors and chief executives
+2000;1220;DIRETORES DE ÁREAS DE PRODUÇÃO E OPERAÇÕES (DPO);1226;Production and operations department managers in transport, storage and communications
+2000;1230;DIRETORES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;1310;GERENTES DE PRODUÇÃO E OPERAÇÕES;1226;Production and operations department managers in transport, storage and communications
+2000;1320;GERENTES DE ÁREAS DE APOIO;1319;General managers not elsewhere classified
+2000;2011;PROFISSIONAIS DA BIOENGENHARIA, BIOTECNOLOGIA E ENGENHARIA GENÉTICA;2211;Biologists, botanists, zoologists and related professionals
+2000;2012;PROFISSIONAIS DA METROLOGIA;2142;Civil engineers
+2000;2021;ENGENHEIROS MECATRÔNICOS;2142;Civil engineers
+2000;2111;PROFISSIONAIS DA MATEMÁTICA;2122;Statisticians
+2000;2112;PROFISSIONAIS DA ESTATÍSTICA;2122;Statisticians
+2000;2121;ESPECIALISTA EM COMPUTAÇÃO;2132;Computer programmers
+2000;2122;ENGENHEIROS EM COMPUTAÇÃO - DESENVOLVEDORES DE SOFTWARE;2132;Computer programmers
+2000;2123;ESPECIALISTA EM INFORMÁTICA;2132;Computer programmers
+2000;2124;ANALISTAS DE SISTEMAS;2132;Computer programmers
+2000;2125;PROGRAMADORES DE INFORMÁTICA;2132;Computer programmers
+2000;2131;FÍSICOS;2111;Physicists and astronomers
+2000;2132;QUÍMICOS;2113;Chemists
+2000;2133;PROFISSIONAIS DO ESPAÇO E DA ATMOSFERA;2111;Physicists and astronomers
+2000;2134;GEÓLOGOS E GEOFÍSICOS;2114;Geologists and geophysicists
+2000;2140;ENGENHEIROS DE MATERIAIS;2142;Civil engineers
+2000;2141;ARQUITETOS;2141;Architects, town and traffic planners
+2000;2142;ENGENHEIROS CIVIS E AFINS;2142;Civil engineers
+2000;2143;ENGENHEIROS ELETROELETRÔNICOS E AFINS;2142;Civil engineers
+2000;2144;ENGENHEIROS MECÂNICOS;2142;Civil engineers
+2000;2145;ENGENHEIROS QUÍMICOS;2142;Civil engineers
+2000;2146;ENGENHEIROS METALÚRGICOS ;2142;Civil engineers
+2000;2147;ENGENHEIROS DE MINAS;2142;Civil engineers
+2000;2148;ENGENHEIROS AGRIMENSORES E DE CARTOGRAFIA;3118;Draughtspersons
+2000;2149;OUTROS ENGENHEIROS, ARQUITETOS E AFINS;2142;Civil engineers
+2000;2151;OFICIAIS DE CONVÉS;3142;Ships' deck officers and pilots
+2000;2152;OFICIAIS DE MÁQUINAS;3142;Ships' deck officers and pilots
+2000;2153;PROFISSIONAIS DA NAVEGAÇÃO AÉREA;3143;Aircraft pilots and related associate professionals
+2000;2211;BIÓLOGOS E AFINS;2211;Biologists, botanists, zoologists and related professionals
+2000;2221;AGRÔNOMOS E AFINS;2213;Agronomists and related professionals
+2000;2231;MÉDICOS;2221;Medical doctors
+2000;2232;CIRURGIÕES-DENTISTAS;2222;Dentists
+2000;2233;VETERINÁRIOS;2223;Veterinarians
+2000;2234;FARMACÊUTICOS;2224;Pharmacists
+2000;2235;ENFERMEIROS DE NÍVEL SUPERIOR E AFINS;2230;Nursing and midwifery professionals
+2000;2236;FISIOTERAPEUTAS E AFINS;3226;Physiotherapists and related associate professionals
+2000;2237;NUTRICIONISTAS ;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2000;2311;PROFESSORES DA EDUCAÇÃO INFANTIL (nível superior);2331;Primary education teaching professionals
+2000;2312;PROFESSORES DE DISCIPLINAS DA EDUCAÇÃO GERAL DE 1ª A 4ª SÉRIES DO ENSINO FUNDAMENTAL (nível superior);2331;Primary education teaching professionals
+2000;2313;PROFESSORES DE DISCIPLINAS DA EDUCAÇÃO GERAL DE 5ª A 8ª SÉRIES DO ENSINO FUNDAMENTAL;2331;Primary education teaching professionals
+2000;2321;PROFESSORES DE DISCIPLINAS DA EDUCAÇÃO GERAL DO ENSINO MÉDIO;2320;Secondary education teaching professionals
+2000;2330;PROFESSORES E INSTRUTORES DO ENSINO PROFISSIONAL;2359;Other teaching professionals not elsewhere classified
+2000;2340;PROFESSORES DO ENSINO SUPERIOR;2310;College, university and higher education teaching professionals
+2000;2391;PROFESSORES DE EDUCAÇÃO FÍSICA;2359;Other teaching professionals not elsewhere classified
+2000;2392;PROFESSORES DE ALUNOS COM DEFICIÊNCIAS FÍSICAS E MENTAIS;2359;Other teaching professionals not elsewhere classified
+2000;2394;PROGRAMADORES, AVALIADORES E ORIENTADORES DE ENSINO;2359;Other teaching professionals not elsewhere classified
+2000;2410;ADVOGADOS;2421;Lawyers
+2000;2412;PROCURADORES DE EMPRESAS E AUTARQUIAS;2421;Lawyers
+2000;2419;OUTROS ADVOGADOS AUTÔNOMOS E DE EMPRESAS;2421;Lawyers
+2000;2421;JUÍZES E DESEMBARGADORES;2422;Judges
+2000;2422;PROMOTORES, DEFENSORES PÚBLICOS E AFINS;2421;Lawyers
+2000;2423;DELEGADOS DE POLÍCIA;2429;Legal professionals not elsewhere classified
+2000;2511;PROFISSIONAIS EM PESQUISA E ANÁLISE ANTROPOLÓGICA E SOCIOLÓGICA;2442;Sociologists, anthropologists and related professionals
+2000;2512;PROFISSIONAIS EM PESQUISA E ANÁLISE ECONÔMICA;2441;Economists
+2000;2513;PROFISSIONAIS EM PESQUISA E ANÁLISE HISTÓRICA E GEOGRÁFICA;2442;Sociologists, anthropologists and related professionals
+2000;2514;FILÓSOFOS E CIENTISTAS POLÍTICOS;2442;Sociologists, anthropologists and related professionals
+2000;2515;PSICÓLOGOS E PSICANALISTAS;2445;Psychologists
+2000;2516;ASSISTENTES SOCIAIS E ECONOMISTAS DOMÉSTICOS;2446;Social work professionals
+2000;2521;ADMINISTRADORES;2419;Business professionals not elsewhere classified
+2000;2522;CONTADORES E AUDITORES;2419;Business professionals not elsewhere classified
+2000;2523;SECRETÁRIAS EXECUTIVAS E BILINGÜES;2419;Business professionals not elsewhere classified
+2000;2524;PROFISSIONAIS DE RECURSOS HUMANOS;2419;Business professionals not elsewhere classified
+2000;2525;PROFISSIONAIS DA ADMINISTRAÇÃO ECONÔMICO-FINANCEIRA;2419;Business professionals not elsewhere classified
+2000;2531;PROFISSIONAIS DE MARKETING, PUBLICIDADE E COMERCIALIZAÇÃO;2451;Authors, journalists and other writers
+2000;2611;PROFISSIONAIS DO JORNALISMO;2451;Authors, journalists and other writers
+2000;2612;PROFISSIONAIS DA INFORMAÇÃO;2432;Librarians and related information professionals
+2000;2613;ARQUIVOLOGISTAS E MUSEÓLOGOS;2432;Librarians and related information professionals
+2000;2614;FILÓLOGOS, TRADUTORES E INTÉRPRETES;2444;Philologists, translators and interpreters
+2000;2615;ESCRITORES E REDATORES;2451;Authors, journalists and other writers
+2000;2616;ESPECIALISTAS EM EDITORAÇÃO;2451;Authors, journalists and other writers
+2000;2617;LOCUTORES E COMENTARISTAS;3472;Radio, television and other announcers
+2000;2621;PRODUTORES DE ESPETÁCULOS;2455;Film, stage and related actors and directors
+2000;2622;COREÓGRAFOS E BAILARINOS;2455;Film, stage and related actors and directors
+2000;2623;ATORES, DIRETORES DE ESPETÁCULOS  E AFINS;2455;Film, stage and related actors and directors
+2000;2624;COMPOSITORES, MÚSICOS E CANTORES;2453;Composers, musicians and singers
+2000;2625;DESENHISTAS INDUSTRIAIS (DESIGNER), ESCULTORES, PINTORES E AFINS;2452;Sculptors, painters and related artists
+2000;2627;DECORADORES DE INTERIORES E CENÓGRAFOS;3471;Decorators and commercial designers
+2000;2631;MINISTROS DE CULTOS RELIGIOSOS, MISSIONÁRIOS E AFINS;2460;Religious professionals
+2000;3001;TÉCNICOS EM MECATRÔNICA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3003;TÉCNICOS EM ELETROMECÂNICA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3011;LABORATORISTA INDUSTRIAL;3116;Chemical engineering technicians
+2000;3012;TÉCNICOS DE APOIO À BIOENGENHARIA;3116;Chemical engineering technicians
+2000;3111;TÉCNICOS QUÍMICOS;3116;Chemical engineering technicians
+2000;3112;TÉCNICOS PETROQUÍMICOS;3116;Chemical engineering technicians
+2000;3113;TÉCNICOS EM MATERIAIS DE CERÂMICAS E VIDROS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3114;TÉCNICOS EM FABRICAÇÃO DE PRODUTOS PLÁSTICOS E DE BORRACHA;3116;Chemical engineering technicians
+2000;3115;TÉCNICOS EM CONTROLE AMBIENTAL, UTILIDADES E TRATAMENTO DE EFLUENTES ;3116;Chemical engineering technicians
+2000;3116;TÉCNICOS TÊXTEIS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3117;COLORISTAS;8264;Bleaching-, dyeing- and cleaning-machine operators
+2000;3121;TÉCNICOS EM CONSTRUÇÃO CIVIL - EDIFICAÇÕES;3119;Physical and engineering science technicians not elsewhere classified
+2000;3122;TÉCNICOS EM CONSTRUÇÃO CIVIL - OBRAS DE INFRAESTRUTURA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3123;TÉCNICOS EM TOPOGRAFIA, AGRIMENSURA E HIDROGRAFIA;3118;Draughtspersons
+2000;3131;TÉCNICOS EM ELETRICIDADE E ELETROTÉCNICOS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3132;ELETROTÉCNICOS NA MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3134;TÉCNICOS EM ELETRÔNICA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3135;TÉCNICOS EM TELECOMUNICAÇÕES E TELEFONIA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3136;TÉCNICOS EM CALIBRAÇÃO E INSTRUMENTAÇÃO;3119;Physical and engineering science technicians not elsewhere classified
+2000;3141;TÉCNICOS MECÂNICOS NA FABRICAÇÃO E MONTAGEM DE MÁQUINAS, SISTEMAS E INSTRUMENTOS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3142;TÉCNICOS MECÂNICOS (FERRAMENTAS);8211;Machine-tool operators
+2000;3143;TÉCNICOS EM MECÂNICA VEICULAR;7231;Motor vehicle mechanics and fitters
+2000;3144;TÉCNICOS MECÂNICOS NA MANUTENÇÃO DE MÁQUINAS, SISTEMAS E INSTRUMENTOS;8281;Mechanical-machinery assemblers
+2000;3146;TÉCNICOS EM METALURGIA (ESTRUTURAS METÁLICAS);3119;Physical and engineering science technicians not elsewhere classified
+2000;3147;TÉCNICOS EM SIDERURGIA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3161;TÉCNICOS EM GEOLOGIA, GEOTECNOLOGIA E GEOFÍSICA;3119;Physical and engineering science technicians not elsewhere classified
+2000;3162;TÉCNICOS EM GEODÉSIA E CARTOGRAFIA;3118;Draughtspersons
+2000;3163;TÉCNICOS EM MINERAÇÃO;3119;Physical and engineering science technicians not elsewhere classified
+2000;3171;TÉCNICOS EM PROGRAMAÇÃO;3121;Computer assistants
+2000;3172;TÉCNICOS EM OPERAÇÃO DE COMPUTADORES;3121;Computer assistants
+2000;3189;DESENHISTAS TÉCNICOS E MODELISTAS;3118;Draughtspersons
+2000;3191;TÉCNICOS DO VESTUÁRIO;3119;Physical and engineering science technicians not elsewhere classified
+2000;3192;TÉCNICOS DO MOBILIÁRIO E AFINS;3119;Physical and engineering science technicians not elsewhere classified
+2000;3201;TÉCNICOS EM BIOLOGIA ;3116;Chemical engineering technicians
+2000;3210;TÉCNICOS AGROPECUÁRIOS;3212;Agronomy and forestry technicians
+2000;3211;TÉCNICOS AGRÍCOLAS;3212;Agronomy and forestry technicians
+2000;3212;TÉCNICOS DA PECUÁRIA;3212;Agronomy and forestry technicians
+2000;3213;TÉCNICOS FLORESTAIS;3212;Agronomy and forestry technicians
+2000;3214;TÉCNICOS DA PISCICULTURA;3212;Agronomy and forestry technicians
+2000;3221;TÉCNICOS EM FISIOTERAPIA E AFINS;3226;Physiotherapists and related associate professionals
+2000;3222;TÉCNICOS E AUXILIARES DE ENFERMAGEM;3231;Nursing associate professionals
+2000;3223;ORTOPTISTAS E ÓTICOS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2000;3224;TÉCNICOS DE ODONTOLOGIA;7311;Precision-instrument makers and repairers
+2000;3225;TÉCNICOS DA FABRICAÇÃO DE APARELHOS LOCOMOTORES;7311;Precision-instrument makers and repairers
+2000;3231;TÉCNICOS EM VETERINÁRIA;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2000;3232;TÉCNICOS ZOOTECNISTAS;3212;Agronomy and forestry technicians
+2000;3241;OPERADORES DE EQUIPAMENTOS MÉDICOS E ODONTOLÓGICOS;3211;Life science technicians
+2000;3242;TÉCNICOS DE LABORATÓRIO DE ANÁLISES CLÍNICAS;3211;Life science technicians
+2000;3250;TESTADORES SENSORIAIS;8271;Meat- and fish-processing-machine operators
+2000;3251;TÉCNICOS EM FARMÁCIA;3228;Pharmaceutical assistants
+2000;3252;TÉCNICOS EM PRODUÇÃO E CONSERVAÇÃO DE ALIMENTOS;3116;Chemical engineering technicians
+2000;3253;TÉCNICOS DE APOIO A BIOTECNOLOGIA;3116;Chemical engineering technicians
+2000;3281;EMBALSAMADORES E TAXIDERMISTAS;9333;Freight handlers
+2000;3311;PROFESSORES DE NÍVEL MÉDIO NA EDUCAÇÃO INFANTIL;2331;Primary education teaching professionals
+2000;3312;PROFESSORES DE NÍVEL MÉDIO NO ENSINO FUNDAMENTAL;2331;Primary education teaching professionals
+2000;3313;PROFESSORES DE NÍVEL MÉDIO NO ENSINO PROFISSIONALIZANTE;2359;Other teaching professionals not elsewhere classified
+2000;3321;PROFESSORES LEIGOS NO ENSINO FUNDAMENTAL;2331;Primary education teaching professionals
+2000;3322;PROFESSORES LEIGOS NO ENSINO PROFISSIONALIZANTE;2359;Other teaching professionals not elsewhere classified
+2000;3331;INSTRUTORES E PROFESSORES DE ESCOLAS LIVRES;2359;Other teaching professionals not elsewhere classified
+2000;3341;INSPETORES DE ALUNOS E AFINS;3340;Other teaching associate professionals
+2000;3411;PILOTOS DE AVIAÇÃO COMERCIAL, NAVEGADORES, MECÂNICOS DE VÔO E AFINS;3143;Aircraft pilots and related associate professionals
+2000;3412;TÉCNICOS MARÍTIMOS, FLUVIÁRIOS E REGIONAIS DE CONVÉS;3142;Ships' deck officers and pilots
+2000;3413;TÉCNICOS MARÍTIMOS, FLUVIÁRIOS E REGIONAIS DE MÁQUINAS;3142;Ships' deck officers and pilots
+2000;3421;TÉCNICOS EM TRANSPORTES INTERMODAIS;4133;Transport clerks
+2000;3422;TÉCNICOS EM TRANSPORTES (ADUANEIROS);3449;Customs, tax and related government associate professionals not elsewhere classified
+2000;3423;TÉCNICOS EM TRANSPORTES RODOVIÁRIOS;4133;Transport clerks
+2000;3424;TÉCNICOS EM TRANSPORTES METROFERROVIÁRIOS;4133;Transport clerks
+2000;3425;TÉCNICOS EM TRANSPORTES AEROVIÁRIOS;4133;Transport clerks
+2000;3426;TÉCNICOS EM TRANSPORTES DE VIAS NAVEGÁVEIS;4133;Transport clerks
+2000;3511;TÉCNICOS EM CONTABILIDADE;3419;Finance and sales associate professionals not elsewhere classified
+2000;3512;TÉCNICOS EM ESTATÍSTICA;3419;Finance and sales associate professionals not elsewhere classified
+2000;3513;TÉCNICOS EM ADMINISTRAÇÃO;2419;Business professionals not elsewhere classified
+2000;3514;SERVENTUÁRIOS DA JUSTIÇA E AFINS;3432;Legal and related business associate professionals
+2000;3515;TÉCNICOS E FISCAIS DE TRIBUTAÇÃO E ARRECADAÇÃO;3449;Customs, tax and related government associate professionals not elsewhere classified
+2000;3516;TÉCNICOS DE SEGURANÇA DE TRABALHO;3152;Safety, health and quality inspectors
+2000;3517;TÉCNICOS E ANALISTAS DE SEGUROS E AFINS;3419;Finance and sales associate professionals not elsewhere classified
+2000;3518;INSPETORES DE POLÍCIA E DETETIVES;5169;Protective services workers not elsewhere classified
+2000;3522;AGENTES DA SAÚDE E DO MEIO AMBIENTE;3231;Nursing associate professionals
+2000;3523;AGENTES DE INSPEÇÃO DE PESOS E MEDIDAS;3152;Safety, health and quality inspectors
+2000;3524;AGENTES DE FISCALIZAÇÃO DE ESPETÁCULOS E MEIOS DE COMUNICAÇÃO;3152;Safety, health and quality inspectors
+2000;3525;AGENTES SINDICAIS E DE INSPEÇÃO DO TRABALHO;3152;Safety, health and quality inspectors
+2000;3531;AGENTES DE BOLSA, CÂMBIO E OUTROS SERVIÇOS FINANCEIROS;3429;Business services agents and trade brokers not elsewhere classified
+2000;3532;TÉCNICOS DE OPERAÇÕES E SERVIÇOS BANCÁRIOS;4190;Other office clerks
+2000;3541;REPRESENTANTES COMERCIAIS E TÉCNICOS DE VENDAS;3415;Technical and commercial sales representatives
+2000;3542;COMPRADORES;3416;Buyers
+2000;3543;TÉCNICOS EM EXPORTAÇÃO E IMPORTAÇÃO;2419;Business professionals not elsewhere classified
+2000;3544;LEILOEIROS E AVALIADORES;3417;Appraisers, valuers and auctioneers
+2000;3545;CORRETORES DE SEGUROS;3429;Business services agents and trade brokers not elsewhere classified
+2000;3546;CORRETORES DE IMÓVEIS;3429;Business services agents and trade brokers not elsewhere classified
+2000;3547;CORRETORES DE TÍTULOS E VALORES;3429;Business services agents and trade brokers not elsewhere classified
+2000;3548;TÉCNICOS EM TURISMO;3429;Business services agents and trade brokers not elsewhere classified
+2000;3711;TÉCNICOS EM BIBLIOTECONOMIA;3419;Finance and sales associate professionals not elsewhere classified
+2000;3712;TÉCNICOS EM MUSEOLOGIA;3419;Finance and sales associate professionals not elsewhere classified
+2000;3713;TÉCNICOS EM ARTES GRÁFICAS;3118;Draughtspersons
+2000;3721;CINEGRAFISTAS;3132;Broadcasting and telecommunications equipment operators
+2000;3722;FOTÓGRAFOS;3131;Photographers and image and sound recording equipment operators
+2000;3723;TÉCNICOS EM OPERAÇÃO DE MÁQUINAS DE TRANSMISSÃO DE DADOS;3132;Broadcasting and telecommunications equipment operators
+2000;3731;TÉCNICOS EM OPERAÇÃO DE ESTAÇÃO DE RÁDIO;3132;Broadcasting and telecommunications equipment operators
+2000;3732;TÉCNICOS EM OPERAÇÃO DE ESTAÇÃO DE TELEVISÃO;3132;Broadcasting and telecommunications equipment operators
+2000;3741;TÉCNICOS EM OPERAÇÃO DE APARELHOS DE SONORIZAÇÃO;3132;Broadcasting and telecommunications equipment operators
+2000;3742;TÉCNICOS EM OPERAÇÃO DE APARELHOS DE CENOGRAFIA;3132;Broadcasting and telecommunications equipment operators
+2000;3743;TÉCNICOS EM OPERAÇÃO DE APARELHOS DE PROJEÇÃO;3132;Broadcasting and telecommunications equipment operators
+2000;3751;DECORADORES E VITRINISTAS DE NÍVEL MÉDIO;3471;Decorators and commercial designers
+2000;3761;BAILARINOS DE DANÇAS POPULARES;2455;Film, stage and related actors and directors
+2000;3762;MÚSICOS E CANTORES POPULARES;2453;Composers, musicians and singers
+2000;3763;PALHAÇOS, ACROBATAS E AFINS;2455;Film, stage and related actors and directors
+2000;3764;APRESENTADORES DE ESPETÁCULOS;2455;Film, stage and related actors and directors
+2000;3765;MODELOS;2455;Film, stage and related actors and directors
+2000;3771;TÉCNICOS ESPORTIVOS;3475;Athletes, sportspersons and related associate professionals
+2000;3772;ATLETAS PROFISSIONAIS;3475;Athletes, sportspersons and related associate professionals
+2000;3773;ÁRBITROS DESPORTIVOS;3475;Athletes, sportspersons and related associate professionals
+2000;3911;TÉCNICOS DE PLANEJAMENTO DE PRODUÇÃO;3119;Physical and engineering science technicians not elsewhere classified
+2000;3912;TÉCNICOS DE CONTROLE DA PRODUÇÃO;3152;Safety, health and quality inspectors
+2000;4101;SUPERVISORES DE SERVIÇOS ADMINISTRATIVOS (Exceto Contabilidade e Controle);4190;Other office clerks
+2000;4102;SUPERVISORES DE SERVIÇOS CONTÁBEIS, FINANCEIROS E DE CONTROLE;4190;Other office clerks
+2000;4110;ESCRITURÁRIOS EM GERAL, AGENTES, ASSISTENTES E AUXILIARES ADMINISTRATIVOS;4190;Other office clerks
+2000;4121;SECRETÁRIOS DE EXPEDIENTE E ESTENÓGRAFOS;4115;Secretaries
+2000;4122;OPERADORES DE MÁQUINAS DE ESCRITÓRIO;4190;Other office clerks
+2000;4123;CONTÍNUOS;9141;Building caretakers
+2000;4131;ESCRITURÁRIOS DE CONTABILIDADE;4190;Other office clerks
+2000;4132;ESCRITURÁRIOS DE FINANÇAS;4190;Other office clerks
+2000;4141;ALMOXARIFES E ARMAZENISTAS;4131;Stock clerks
+2000;4142;ESCRITURÁRIOS DE APOIO A PRODUÇÃO;4190;Other office clerks
+2000;4151;ESCRITURÁRIOS DE SERVIÇOS DE BIBLIOTECA E DOCUMENTAÇÃO;4141;Library and filing clerks
+2000;4152;CARTEIROS E AFINS;4142;Mail carriers and sorting clerks
+2000;4201;SUPERVISORES DE TRABALHADORES DE ATENDIMENTO AO PÚBLICO;4222;Receptionists and information clerks
+2000;4211;CAIXAS E BILHETEIROS (EXCETO CAIXA DE BANCO);4211;Cashiers and ticket clerks
+2000;4212;CAIXAS DE BANCO E OPERADORES DE CÂMBIO;4211;Cashiers and ticket clerks
+2000;4213;COLETADORES DE APOSTAS E DE JOGOS;4211;Cashiers and ticket clerks
+2000;4214;COBRADORES E AFINS;4211;Cashiers and ticket clerks
+2000;4221;RECEPCIONISTAS;4222;Receptionists and information clerks
+2000;4222;TELEFONISTAS;4223;Telephone switchboard operators
+2000;4223;OPERADORES DE TELEMARKETING;4223;Telephone switchboard operators
+2000;4231;DESPACHANTES DE DOCUMENTOS;4133;Transport clerks
+2000;4241;ENTREVISTADORES, RECENSEADORES E AFINS;4190;Other office clerks
+2000;5101;SUPERVISORES DOS SERVIÇOS DE TRANSPORTE, TURISMO, HOTELARIA E ADMINISTRAÇÃO DE EDIFÍCIOS;5123;Waiters, waitresses and bartenders
+2000;5102;SUPERVISORES DOS SERVIÇOS DE SAÚDE E CUIDADOS PESSOAIS;3231;Nursing associate professionals
+2000;5103;SUPERVISORES DOS SERVIÇOS DE PROTEÇÃO, SEGURANÇA E OUTROS SERVIÇOS;5169;Protective services workers not elsewhere classified
+2000;5111;TRABALHADORES DOS SERVIÇOS DIRETO AOS PASSAGEIROS;5111;Travel attendants and travel stewards
+2000;5112;FISCAIS E COBRADORES DOS TRANSPORTES PÚBLICOS;5112;Transport conductors
+2000;5114;GUIAS DE TURISMO;5112;Transport conductors
+2000;5121;TRABALHADORES DOS SERVIÇOS DOMÉSTICO EM GERAL;9131;Domestic helpers and cleaners
+2000;5131;MORDOMOS E GOVERNANTAS;9131;Domestic helpers and cleaners
+2000;5132;COZINHEIROS;5122;Cooks
+2000;5133;CAMAREIROS, ROUPEIROS E AFINS;9141;Building caretakers
+2000;5134;GARÇONS, BARMEN E COPEIROS;5123;Waiters, waitresses and bartenders
+2000;5141;TRABALHADORES NOS SERVIÇOS DE ADMINISTRAÇÃO DE EDIFÍCIOS;9141;Building caretakers
+2000;5142;TRABALHADORES NOS SERVIÇOS DE MANUTENÇÃO E CONSERVAÇÃO DE EDIFÍCIOS E LOGRADOUROS;9141;Building caretakers
+2000;5151;ATENDENTES DE ENFERMAGEM, PARTEIRAS PRÁTICAS E AFINS;3231;Nursing associate professionals
+2000;5152;AUXILIARES DE LABORATÓRIO DA SAÚDE;3211;Life science technicians
+2000;5161;TRABALHADORES NOS SERVIÇOS DE HIGIENE E EMBELEZAMENTO;5141;Hairdressers, barbers, beauticians and related workers
+2000;5162;ATENDENTES DE CRECHE E ACOMPANHANTES DE IDOSOS;5131;Child-care workers
+2000;5165;TRABALHADORES DOS SERVIÇOS FUNERAIS;9333;Freight handlers
+2000;5166;TRABALHADORES AUXILIARES DOS SERVIÇOS FUNERAIS;9333;Freight handlers
+2000;5167;ASTRÓLOGOS E ADIVINHOS;2460;Religious professionals
+2000;5169;TINTUREIROS, LAVADEIROS E AFINS, À MÁQUINA E À MÃO;9133;Hand-launderers and pressers
+2000;5171;BOMBEIROS;5161;Fire-fighters
+2000;5172;POLICIAIS E GUARDAS DE TRÂNSITO;5169;Protective services workers not elsewhere classified
+2000;5173;VIGILANTES E GUARDAS DE SEGURANÇA;5169;Protective services workers not elsewhere classified
+2000;5174;GUARDAS E VIGIAS;5169;Protective services workers not elsewhere classified
+2000;5191;ENTREGADORES EXTERNOS (Exceto carteiros);9141;Building caretakers
+2000;5192;CATADORES DE SUCATA;9161;Garbage collectors
+2000;5198;TRABALHADORES DO SEXO;9333;Freight handlers
+2000;5199;OUTROS TRABALHADORES DOS SERVIÇOS;9333;Freight handlers
+2000;5201;SUPERVISORES DE VENDAS E DE PRESTAÇÃO DE SERVIÇOS DO COMÉRCIO;5220;Shop salespersons and demonstrators
+2000;5211;VENDEDORES E DEMONSTRADORES EM LOJAS OU MERCADOS;1314;General managers in wholesale and retail trade
+2000;5221;REPOSITORES, REMARCADORES DO COMÉRCIO;9333;Freight handlers
+2000;5231;INSTALADORES DE PRODUTOS E ACESSÓRIOS;7241;Electrical mechanics and fitters
+2000;5241;VENDEDORES A DOMICÍLIO;3415;Technical and commercial sales representatives
+2000;5242;VENDEDORES EM QUIOSQUES E BARRACAS;5230;Stall and market salespersons
+2000;5243;VENDEDORES AMBULANTES;9112;Street vendors, non-food products
+2000;6110;PRODUTORES AGROPECUÁRIOS EM GERAL;9211;Farm-hands and labourers
+2000;6129;PRODUTORES AGRÍCOLAS ;9211;Farm-hands and labourers
+2000;6139;PRODUTORES EM PECUÁRIA ;9211;Farm-hands and labourers
+2000;6201;SUPERVISORES NA EXPLORAÇÃO AGROPECUÁRIA;9211;Farm-hands and labourers
+2000;6210;TRABALHADORES NA EXPLORAÇÃO AGROPECUÁRIA EM GERAL;9211;Farm-hands and labourers
+2000;6229;TRABALHADORES AGRÍCOLAS ;9211;Farm-hands and labourers
+2000;6239;TRABALHADORES NA PECUÁRIA ;9211;Farm-hands and labourers
+2000;6301;SUPERVISORES NA EXPLORAÇÃO FLORESTAL, CAÇA E PESCA;6141;Forestry workers and loggers
+2000;6319;PESCADORES E CAÇADORES;6152;Inland and coastal waters fishery workers
+2000;6329;EXTRATIVISTAS FLORESTAIS ;6141;Forestry workers and loggers
+2000;6410;TRABALHADORES DA MECANIZAÇÃO AGROPECUÁRIA;8331;Motorised farm and forestry plant operators
+2000;6420;TRABALHADORES DA MECANIZAÇÃO FLORESTAL;8331;Motorised farm and forestry plant operators
+2000;6430;TRABALHADORES DA IRRIGAÇÃO E DRENAGEM;8331;Motorised farm and forestry plant operators
+2000;7101;SUPERVISORES DA EXTRAÇÃO MINERAL ;3119;Physical and engineering science technicians not elsewhere classified
+2000;7102;SUPERVISORES DA CONSTRUÇÃO CIVIL;7129;Building frame and related trades workers not elsewhere classified
+2000;7111;TRABALHADORES DA EXTRAÇÃO DE MINERAIS SÓLIDOS - MINEIROS E AFINS;7111;Miners and quarry workers
+2000;7112;TRABALHADORES DA EXTRAÇÃO DE MINERAIS SÓLIDOS - OPERADORES DE MÁQUINA;8113;Well drillers and borers and related workers
+2000;7113;TRABALHADORES DA EXTRAÇÃO DE MINERAIS LÍQUIDOS E GASOSOS;8113;Well drillers and borers and related workers
+2000;7114;GARIMPEIROS E OPERADORES DE SALINAS;7111;Miners and quarry workers
+2000;7121;TRABALHADORES DE BENEFICIAMENTO DE MINÉRIOS;8113;Well drillers and borers and related workers
+2000;7122;TRABALHADORES DE BENEFICIAMENTO DE PEDRAS;7111;Miners and quarry workers
+2000;7151;TRABALHADORES DE TERRAPLENAGEM E FUNDAÇÕES;8332;Earth-moving- and related plant operators
+2000;7152;TRABALHADORES DE ESTRUTURAS DE ALVENARIA;7122;Bricklayers and stonemasons
+2000;7153;TRABALHADORES DE ESTRUTURAS DE CONCRETO ARMADO;7123;Concrete placers, concrete finishers and related workers
+2000;7154;TRABALHADORES NA OPERAÇÃO DE MÁQUINAS DE CONCRETO ARMADO;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7155;TRABALHADORES DE MONTAGEM DE ESTRUTURAS DE MADEIRA, METAL E COMPÓSITOS (OBRAS CIVIS E AFINS);7124;Carpenters and joiners
+2000;7156;TRABALHADORES DE INSTALAÇÕES ELÉTRICAS;7137;Building and related electricians
+2000;7157;TRABALHADORES DE INSTALAÇÕES DE MATERIAIS ISOLANTES;7133;Plasterers
+2000;7161;REVESTIDORES DE CONCRETO ARMADO (REVESTIMENTOS RÍGIDOS);7123;Concrete placers, concrete finishers and related workers
+2000;7162;TELHADORES (REVESTIMENTOS RÍGIDOS);7132;Floor layers and tile setters
+2000;7163;VIDRACEIROS (REVESTIMENTOS RÍGIDOS);7135;Glaziers
+2000;7164;ESTUCADORES E GESSEIROS;7133;Plasterers
+2000;7165;APLICADORES DE REVESTIMENTOS CERÂMICOS, PASTILHAS, PEDRAS E MADEIRAS;7132;Floor layers and tile setters
+2000;7166;PINTORES DE OBRAS E REVESTIDORES DE INTERIORES (REVESTIMENTOS FLEXÍVEIS);7141;Painters and related workers
+2000;7170;AJUDANTES DE OBRAS CIVIS;9313;Building construction labourers
+2000;7201;SUPERVISORES DE USINAGEM, CONFORMAÇÃO E TRATAMENTO DE METAIS;8211;Machine-tool operators
+2000;7202;SUPERVISORES DE MONTAGEM METALMECÂNICA;8281;Mechanical-machinery assemblers
+2000;7211;FERRAMENTEIROS E AFINS;8211;Machine-tool operators
+2000;7212;PREPARADORES E OPERADORES DE MÁQUINAS - FERRAMENTA CONVENCIONAL;8211;Machine-tool operators
+2000;7213;OPERADORES DE USINAGEM CONVENCIONAL (PRODUÇÃO EM SÉRIE);8211;Machine-tool operators
+2000;7214;AFIADORES E POLIDORES DE METAIS;7224;Metal wheel-grinders, polishers and tool sharpeners
+2000;7215;OPERADORES DE MÁQUINAS E CENTROS DE USINAGEM CNC ;8211;Machine-tool operators
+2000;7221;TRABALHADORES DE FORJAMENTO DE METAIS;8211;Machine-tool operators
+2000;7222;TRABALHADORES DE FUNDIÇÃO DE METAIS E DE COMPÓSITOS;8211;Machine-tool operators
+2000;7223;TRABALHADORES DE MOLDAGEM DE METAIS E DE COMPÓSITOS;7211;Metal moulders and coremakers
+2000;7224;TRABALHADORES DE TREFILAÇÃO, ESTIRAMENTO E EXTRUSÃO DE METAIS E DE COMPÓSITOS;8211;Machine-tool operators
+2000;7231;TRABALHADORES DE TRATAMENTO TÉRMICO DE METAIS E DE COMPÓSITOS;8223;Metal finishing-, plating- and coating-machine operators
+2000;7232;TRABALHADORES DE TRATAMENTO DE SUPERFÍCIES DE METAIS E DE COMPÓSITOS (TERMOQUÍMICOS);8223;Metal finishing-, plating- and coating-machine operators
+2000;7233;TRABALHADORES DA PINTURA DE EQUIPAMENTOS, VEÍCULOS, ESTRUTURAS METÁLICAS E DE COMPÓSITOS;7141;Painters and related workers
+2000;7241;ENCANADORES E INSTALADORES DE TUBULAÇÕES;7136;Plumbers and pipe fitters
+2000;7242;TRABALHADORES DE TRAÇAGEM E MONTAGEM DE ESTRUTURA METÁLICA E DE COMPÓSITOS;8211;Machine-tool operators
+2000;7243;TRABALHADORES DE SOLDAGEM E CORTE DE METAIS E DE COMPÓSITOS;7212;Welders and flamecutters
+2000;7244;TRABALHADORES DE CALDEIRARIA E SERRALHERIA;8211;Machine-tool operators
+2000;7245;OPERADORES DE MÁQUINAS DE CONFORMAÇÃO DE METAIS;8211;Machine-tool operators
+2000;7246;APARELHADORES E EMENDADORES DE CABOS (EXCETO CABOS ELÉTRICOS E DE TELECOMUNICAÇÕES);7245;Electrical line installers, repairers and cable jointers
+2000;7250;AJUSTADORES MECÂNICOS POLIVALENTES;8281;Mechanical-machinery assemblers
+2000;7251;MONTADORES DE APARELHOS E ACESSÓRIOS MECÂNICOS EM LINHAS DE MONTAGEM ;8281;Mechanical-machinery assemblers
+2000;7252;MONTADORES DE MÁQUINAS INDUSTRIAIS;8281;Mechanical-machinery assemblers
+2000;7253;MONTADORES DE MÁQUINAS PESADAS;8281;Mechanical-machinery assemblers
+2000;7254;MONTADORES DE MOTORES E TURBINAS;8281;Mechanical-machinery assemblers
+2000;7255;MONTADORES DE VEÍCULOS AUTOMOTORES (LINHA DE MONTAGEM);8281;Mechanical-machinery assemblers
+2000;7256;MONTADORES DE SISTEMAS E ESTRUTURAS DE AERONAVES;8281;Mechanical-machinery assemblers
+2000;7257;MONTADORES DE INSTALAÇÕES DE VENTILAÇÃO E REFRIGERAÇÃO;7241;Electrical mechanics and fitters
+2000;7301;SUPERVISORES DE MONTAGENS E INSTALAÇÕES ELETROELETRÔNICAS;7241;Electrical mechanics and fitters
+2000;7311;MONTADORES DE EQUIPAMENTOS ELETRO-ELETRÔNICOS;7241;Electrical mechanics and fitters
+2000;7312;MONTADORES DE APARELHOS DE TELECOMUNICAÇÕES;7241;Electrical mechanics and fitters
+2000;7313;INSTALADORES-REPARADORES DE APARELHOS DE TELECOMUNICAÇÕES;7241;Electrical mechanics and fitters
+2000;7321;INSTALADORES E REPARADORES DE LINHAS E CABOS ELÉTRICOS, TELEFÔNICOS E DE COMUNICAÇÃO DE DADOS;7245;Electrical line installers, repairers and cable jointers
+2000;7401;SUPERVISORES DA MECÂNICA DE PRECISÃO E INSTRUMENTOS MUSICAIS;7311;Precision-instrument makers and repairers
+2000;7411;MECÂNICOS DE INSTRUMENTOS DE PRECISÃO (EXCETO TÉCNICOS);7311;Precision-instrument makers and repairers
+2000;7421;CONFECCIONADORES DE INSTRUMENTOS MUSICAIS;7311;Precision-instrument makers and repairers
+2000;7501;SUPERVISORES DE JOALHERIA E AFINS;7313;Jewellery and precious-metal workers
+2000;7502;SUPERVISORES DE VIDRARIA, CERÂMICA E AFINS;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7519;JOALHEIROS E ARTESÃOS DE METAIS PRECIOSOS E SEMI-PRECIOSOS;7313;Jewellery and precious-metal workers
+2000;7521;SOPRADORES E MOLDADORES DE VIDROS E AFINS;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7522;CORTADORES, POLIDORES, JATEADORES E GRAVADORES DE VIDROS E AFINS;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7523;CERAMISTAS (PREPARAÇÃO E FABRICAÇÃO);8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7524;VIDREIROS E CERAMISTAS (ACABAMENTO E DECORAÇÃO);8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;7601;SUPERVISORES DA INDÚSTRIA TÊXTIL;8262;Weaving- and knitting-machine operators
+2000;7602;SUPERVISORES DA INDÚSTRIA DO CURTIMENTO;7441;Pelt dressers, tanners and fellmongers
+2000;7603;SUPERVISORES DA INDÚSTRIA DE CONFECÇÃO DE ROUPAS;8263;Sewing-machine operators
+2000;7604;SUPERVISORES DA INDÚSTRIA DE CONFECÇÃO DE CALÇADOS;7442;Shoe-makers and related workers
+2000;7605;SUPERVISORES DA CONFECÇÃO DE ARTEFATOS DE TECIDOS, COUROS E AFINS;7441;Pelt dressers, tanners and fellmongers
+2000;7606;SUPERVISORES DAS ARTES GRÁFICAS;7341;Compositors, typesetters and related workers
+2000;7610;TRABALHADORES POLIVALENTES DAS INDÚSTRIAS TÊXTEIS;8262;Weaving- and knitting-machine operators
+2000;7611;TRABALHADORES DA PREPARAÇÃO DA TECELAGEM;8261;Fibre-preparing-, spinning- and winding-machine operators
+2000;7612;OPERADORES DA PREPARAÇÃO DA TECELAGEM;8261;Fibre-preparing-, spinning- and winding-machine operators
+2000;7613;OPERADORES DE TEAR E MÁQUINAS SIMILARES;8262;Weaving- and knitting-machine operators
+2000;7614;TRABALHADORES DE ACABAMENTO, TINGIMENTO E ESTAMPARIA DAS INDÚSTRIAS TÊXTEIS;8264;Bleaching-, dyeing- and cleaning-machine operators
+2000;7618;INSPETORES E REVISORES DE PRODUÇÃO TÊXTIL;3152;Safety, health and quality inspectors
+2000;7620;TRABALHADORES POLIVALENTES DO CURTIMENTO DE COUROS E PELES;7441;Pelt dressers, tanners and fellmongers
+2000;7621;TRABALHADORES DA PREPARAÇÃO DE PELES;7441;Pelt dressers, tanners and fellmongers
+2000;7622;TRABALHADORES DO CURTIMENTO DE COUROS E PELES;7441;Pelt dressers, tanners and fellmongers
+2000;7623;TRABALHADORES DO ACABAMENTO DE COUROS E PELES;7441;Pelt dressers, tanners and fellmongers
+2000;7630;TRABALHADORES POLIVALENTES DAS INDÚSTRIAS DA CONFECÇÃO DE ROUPAS;7436;Sewers, embroiderers and related workers
+2000;7631;TRABALHADORES DA PREPARAÇÃO DA CONFECÇÃO DE ROUPAS;7435;Textile, leather and related pattern-makers and cutters
+2000;7632;OPERADORES DE MÁQUINAS DE COSTURA DE ROUPAS;8263;Sewing-machine operators
+2000;7633;OPERADORES DE MÁQUINAS DE COSTURAS - ACABAMENTO DE ROUPAS;7436;Sewers, embroiderers and related workers
+2000;7640;TRABALHADORES POLIVALENTES DA CONFECÇÃO DE CALÇADOS;7442;Shoe-makers and related workers
+2000;7641;TRABALHADORES DA PREPARAÇÃO DA CONFECÇÃO DE CALÇADOS;7442;Shoe-makers and related workers
+2000;7642;OPERADORES DE MÁQUINAS DE COSTURAR CALÇADOS;7442;Shoe-makers and related workers
+2000;7643;OPERADORES DE ACABAMENTO DE CALÇADOS;7442;Shoe-makers and related workers
+2000;7650;TRABALHADORES POLIVALENTES DA CONFECÇÃO DE ARTEFATOS DE TECIDOS E COUROS;7331;Handicraft workers in wood and related materials
+2000;7651;TRABALHADORES DA PREPARAÇÃO DE ARTEFATOS DE TECIDOS E COUROS;7442;Shoe-makers and related workers
+2000;7652;TRABALHADORES DA FABRICAÇÃO E INSTALAÇÃO DE ARTEFATOS DE TECIDOS E COUROS;7437;Upholsterers and related workers
+2000;7653;OPERADORES DE MÁQUINAS NA FABRICAÇÃO DE ARTEFATOS DE TECIDOS E COUROS;7442;Shoe-makers and related workers
+2000;7654;TRABALHADORES DO ACABAMENTO DE ARTEFATOS DE TECIDOS E COUROS;7435;Textile, leather and related pattern-makers and cutters
+2000;7660;TRABALHADORES POLIVALENTES DAS ARTES GRÁFICAS;7341;Compositors, typesetters and related workers
+2000;7661;TRABALHADORES DA PRÉ-IMPRESSÃO GRÁFICA;7341;Compositors, typesetters and related workers
+2000;7662;TRABALHADORES DA IMPRESSÃO GRÁFICA;7341;Compositors, typesetters and related workers
+2000;7663;TRABALHADORES DO ACABAMENTO GRÁFICO ;7345;Bookbinders and related workers
+2000;7664;TRABALHADORES DE LABORATÓRIO FOTOGRÁFICO;3116;Chemical engineering technicians
+2000;7681;TRABALHADORES ARTESANAIS DA TECELAGEM ;7331;Handicraft workers in wood and related materials
+2000;7682;TRABALHADORES ARTESANAIS DA CONFECÇÃO DE ROUPAS;7331;Handicraft workers in wood and related materials
+2000;7683;TRABALHADORES ARTESANAIS DA CONFECÇÃO DE CALÇADOS E ARTEFATOS DE COUROS E PELES;7442;Shoe-makers and related workers
+2000;7686;TRABALHADORES TIPOGRÁFICOS, LINOTIPISTAS E AFINS;7341;Compositors, typesetters and related workers
+2000;7687;ENCADERNADORES E RECUPERADORES DE LIVROS (PEQUENOS LOTES OU A UNIDADE);7345;Bookbinders and related workers
+2000;7701;SUPERVISORES DA INDÚSTRIA DA MADEIRA, MOBILIÁRIO E DA CARPINTARIA VEICULAR;7422;Cabinet makers and related workers
+2000;7711;MARCENEIROS E AFINS;7422;Cabinet makers and related workers
+2000;7721;TRABALHADORES DE TRATAMENTO E PREPARAÇÃO DE MADEIRAS;7421;Wood treaters
+2000;7731;OPERADORES DE MÁQUINAS DE DESDOBRAMENTO DE MADEIRAS;8141;Wood-processing-plant operators
+2000;7732;OPERADORES DE LAMINAÇÃO, AGLOMERAÇÃO E PRENSAGEM DE CHAPAS;8141;Wood-processing-plant operators
+2000;7733;PREPARADORES E OPERADORES DE USINAGEM DE MADEIRAS CONVENCIONAL;8141;Wood-processing-plant operators
+2000;7734;OPERADORES DE MÁQUINAS DE MADEIRA (PRODUÇÃO EM SÉRIE);8141;Wood-processing-plant operators
+2000;7735;OPERADORES DE MÁQUINAS E CENTROS DE USINAGEM DE MADEIRA CNC;8141;Wood-processing-plant operators
+2000;7741;MONTADORES DE MÓVEIS E ARTEFATOS DE MADEIRA;7422;Cabinet makers and related workers
+2000;7751;TRABALHADORES DO ACABAMENTO DE MADEIRA E DO MOBILIÁRIO;7421;Wood treaters
+2000;7764;C0NFECCIONADORES DE ARTEFATOS DE MADEIRA, MÓVEIS DE VIME E AFINS;7331;Handicraft workers in wood and related materials
+2000;7771;CARPINTEIROS NAVAIS E DE AERONAVES;7124;Carpenters and joiners
+2000;7772;CARPINTEIROS DE CARROCERIAS E CARRETAS;7124;Carpenters and joiners
+2000;7801;SUPERVISORES DE EMBALAGEM E ETIQUETAGEM;9322;Hand packers and other manufacturing labourers
+2000;7811;OPERADORES DE ROBÔS INDUSTRIAIS;8290;Other machine operators and assemblers
+2000;7813;OPERADORES DE VEÍCULOS OPERADOS E CONTROLADOS REMOTAMENTE (ROV, RCV);8290;Other machine operators and assemblers
+2000;7817;TRABALHADORES SUBAQUÁTICOS;5161;Fire-fighters
+2000;7820;CONDUTORES E OPERADORES POLIVALENTES;8322;Car, taxi and van drivers
+2000;7821;OPERADORES DE EQUIPAMENTOS DE ELEVAÇÃO;8333;Crane, hoist and related plant operators
+2000;7822;OPERADORES DE EQUIPAMENTOS DE MOVIMENTAÇÃO DE CARGAS;8290;Other machine operators and assemblers
+2000;7823;CONDUTORES DE VEÍCULOS SOBRE RODAS (TRANSPORTE PARTICULAR);8322;Car, taxi and van drivers
+2000;7824;CONDUTORES DE VEÍCULOS SOBRE RODAS (TRANSPORTE COLETIVO);8322;Car, taxi and van drivers
+2000;7825;CONDUTORES DE VEÍCULOS SOBRE RODAS (DISTRIBUIDOR DE MERCADORIAS);8322;Car, taxi and van drivers
+2000;7826;CONDUTORES DE VEÍCULOS SOBRE TRILHOS;8311;Locomotive-engine drivers
+2000;7827; TRABALHADORES NA NAVEGAÇÃO MARÍTIMA FLUVIAL E REGIONAL;8340;Ships' deck crews and related workers
+2000;7828;CONDUTORES DE VEÍCULOS DE TRAÇÃO ANIMAL E DE PEDAIS;9332;Drivers of animal-drawn vehicles and machinery
+2000;7831;TRABALHADORES DE MANOBRAS DE TRANSPORTE SOBRE TRILHOS;8312;Railway brakers, signallers and shunters
+2000;7832;TRABALHADORES DE CARGAS E DESCARGAS DE MERCADORIAS;9333;Freight handlers
+2000;7841;TRABALHADORES DE EMBALAGEM E DE ETIQUETAGEM;9322;Hand packers and other manufacturing labourers
+2000;7842;ALIMENTADORES DE LINHAS DE PRODUÇÃO;9321;Assembling labourers
+2000;8101;SUPERVISORES DAS INDÚSTRIAS QUÍMICAS, PETROQUÍMICAS E AFINS;3116;Chemical engineering technicians
+2000;8102;SUPERVISORES DA INDÚSTRIA DE PLÁSTICOS E BORRACHA ;8231;Rubber-products machine operators
+2000;8103;SUPERVISORES DA INDÚSTRIA DE PRODUTOS FARMACÊUTICOS, COSMÉTICOS E AFINS;3116;Chemical engineering technicians
+2000;8110;OPERADORES POLIVALENTES DE INSTALAÇÕES QUÍMICAS, PETROQUÍMICAS, E AFINS;8113;Well drillers and borers and related workers
+2000;8111;OPERADORES DE MOAGEM E MISTURA DE MATERIAIS (TRATAMENTOS QUÍMICOS E AFINS);8113;Well drillers and borers and related workers
+2000;8112;OPERADORES DE PROCESSO TERMOQUÍMICOS E AFINS;8113;Well drillers and borers and related workers
+2000;8113;OPERADORES DE FILTRAGEM E SEPARAÇÃO;8113;Well drillers and borers and related workers
+2000;8114;OPERADORES DE DESTILAÇÃO E REAÇÃO;8113;Well drillers and borers and related workers
+2000;8115;OPERADORES DE PRODUÇÃO E REFINO DE PETRÓLEO E GÁS;8113;Well drillers and borers and related workers
+2000;8116;OPERADORES DE COQUEIFICAÇÃO;8113;Well drillers and borers and related workers
+2000;8117;OPERADORES DE INSTALAÇÃOES E MÁQUINAS DE PRODUTOS PLÁSTICOS, DE BORRACHA E PARAFINAS;8231;Rubber-products machine operators
+2000;8118;OPERADORES DE  MÁQUINAS E INSTALAÇÕES DE PRODUTOS FARMACÊUTICOS, COSMÉSTICOS E AFINS;8290;Other machine operators and assemblers
+2000;8121;TRABALHADORES DA FABRICAÇÃO  DE MUNIÇÃO E EXPLOSIVOS QUÍMICOS;9321;Assembling labourers
+2000;8131;OPERADORES DE OUTRAS INSTALAÇÕES QUÍMICAS, PETROQUÍMICAS E AFINS;8113;Well drillers and borers and related workers
+2000;8181;LABORATORISTAS INDUSTRIAIS AUXILIARES;3116;Chemical engineering technicians
+2000;8201;SUPERVISORES DA SIDERURGIA;8211;Machine-tool operators
+2000;8202;SUPERVISORES DE MATERIAIS DE CONSTRUÇÃO (VIDRO, CERÂMICA E COMPÓSITOS);8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;8211;OPERADORES DE INSTALAÇÕES DE SINTERIZAÇÃO;8211;Machine-tool operators
+2000;8212;OPERADORES DE FORNOS DE 1ª FUSÃO E ACIARIA;8211;Machine-tool operators
+2000;8213;OPERADORES DE LAMINAÇÃO;8211;Machine-tool operators
+2000;8214;OPERADORES DE ACABAMENTO DE CHAPAS E METAIS;8223;Metal finishing-, plating- and coating-machine operators
+2000;8221;FORNEIROS METALÚRGICOS (2ª FUSÃO E REAQUECIMENTO);8211;Machine-tool operators
+2000;8231;OPERADORES DE PREPARAÇÃO DE MASSAS PARA VIDRO,CERÂMICA, PORCELANA E MATERIAIS DE CONSTRUÇÃO;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;8232;OPERADORES DE INSTALAÇÕES E EQUIPAMENTOS DE FABRICAÇÃO DE  CERÂMICAS, VIDROS E PORCELANAS;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;8233;OPERADORES DE INSTALAÇÕES E EQUIPAMENTOS DE FABRICAÇÃO DE MATERIAIS DE CONSTRUÇÃO;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;8281;TRABALHADORES ARTESANAIS DE MATERIAIS DE CONSTRUÇÃO;8139;Glass, ceramics and related plant operators not elsewhere classified
+2000;8301;SUPERVISORES DA FABRICAÇÃO DE CELULOSE E PAPEL;8141;Wood-processing-plant operators
+2000;8311;PREPARADORES DE PASTA PARA A FABRICAÇÃO DE PAPEL;8141;Wood-processing-plant operators
+2000;8321;OPERADORES DE MÁQUINAS DE FABRICAR PAPEL E PAPELÃO;8141;Wood-processing-plant operators
+2000;8339;CONFECCIONADORES DE PRODUTOS DE PAPEL E PAPELÃO;8141;Wood-processing-plant operators
+2000;8401;SUPERVISORES DA FABRICAÇÃO DE ALIMENTOS, BEBIDAS E FUMO ;8271;Meat- and fish-processing-machine operators
+2000;8411;MOLEIROS;8271;Meat- and fish-processing-machine operators
+2000;8412;TRABALHADORES DO REFINO DE SAL;8271;Meat- and fish-processing-machine operators
+2000;8413;TRABALHADORES DA FABRICAÇÃO E REFINO DE AÇÚCAR;8271;Meat- and fish-processing-machine operators
+2000;8416;TRABALHADORES DA PREPARAÇÃO DE CAFÉ, CACAU E PRODUTOS AFINS;8271;Meat- and fish-processing-machine operators
+2000;8417;TRABALHADORES DA FABRICAÇÃO DE CACHAÇA, CERVEJA, VINHOS E OUTRAS BEBIDAS;8271;Meat- and fish-processing-machine operators
+2000;8421;PREPARADORES DE FUMO;7416;Tobacco preparers and tobacco products makers
+2000;8423;CIGARREIROS;7416;Tobacco preparers and tobacco products makers
+2000;8429;CHARUTEIROS E TRABALHADORES ARTESANAIS DA INDÚSTRIA DO FUMO;7416;Tobacco preparers and tobacco products makers
+2000;8484;DEGUSTADORES;8271;Meat- and fish-processing-machine operators
+2000;8485;MAGAREFES E AFINS;7411;Butchers, fishmongers and related food preparers
+2000;8491;TRABALHADORES DE FABRICAÇÃO E CONSERVAÇÃO DE ALIMENTOS ( INCLUSIVE ARTESANAIS);8271;Meat- and fish-processing-machine operators
+2000;8492;TRABALHADORES DA PASTEURIZAÇÃO DO LEITE, FABRICAÇÃO DE LATICÍNIOS E AFINS ( INCLUSIVE ARTESANAIS);8272;Dairy-products machine operators
+2000;8493;PADEIROS, CONFEITEIROS E AFINS E OPERADORES NA FABRICAÇÃO DE PÃES, MASSAS E DOCES;7412;Bakers, pastry-cooks and confectionery makers
+2000;8601;SUPERVISORES DE INSTALAÇÕES DE PRODUÇÃO E DISTRIBUIÇÃO DE ENERGIA, UTILIDADES, CAPTAÇÃO, TRATAMENTO E DISTRIBUIÇÃO DE ÁGUA;8161;Power-production plant operators
+2000;8611;OPERADORES DE INSTALAÇÕES DE GERAÇÃO DE ENERGIA TÉRMICA, ELÉTRICA E NUCLEAR;8161;Power-production plant operators
+2000;8612;OPERADORES DE INSTALAÇÕES DE DISTRIBUIÇÃO DE ENERGIA TÉRMICA, ELÉTRICA E NUCLEAR;8161;Power-production plant operators
+2000;8621;OPERADORES DE MÁQUINAS A VAPOR E CALDEIRAS;8162;Steam-engine and boiler operators
+2000;8622;OPERADORES DE INSTALAÇÕES DE CAPTAÇÃO E DISTRIBUIÇÃO DE ÁGUAS;8163;Incinerator, water-treatment and related plant operators
+2000;8623;OPERADORES DE INSTALAÇÕES DE CAPTAÇÃO E TRATAMENTO DE ESGOTOS;8163;Incinerator, water-treatment and related plant operators
+2000;8624;OPERADORES DE INSTALAÇÕES DE CAPTAÇÃO, ENGARRAFAMENTO E DISTRIBUIÇÃO DE GASES;8163;Incinerator, water-treatment and related plant operators
+2000;8625;OPERADORES DE INSTALAÇÕES DE REFRIGERAÇÃO E AR CONDICIONADO;8163;Incinerator, water-treatment and related plant operators
+2000;8711;OUTROS TRABALHADORES ELEMENTARES INDUSTRIAIS ;9321;Assembling labourers
+2000;9101;SUPERVISORES DA REPARAÇÃO E MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS INDUSTRIAIS, COMERCIAIS E RESIDENCIAIS;8281;Mechanical-machinery assemblers
+2000;9102;SUPERVISORES DA REPARAÇÃO E MANUTENÇÃO VEICULAR;7231;Motor vehicle mechanics and fitters
+2000;9109;SUPERVISORES DE OUTROS TRABALHADORES DA REPARAÇÃO, CONSERVAÇÃO E MANUTENÇÃO;8312;Railway brakers, signallers and shunters
+2000;9111;MECÂNICOS DE MANUTENÇÃO DE BOMBAS, MOTORES, COMPRESSORES  E EQUIPAMENTOS DE TRANSMISSÃO;8281;Mechanical-machinery assemblers
+2000;9112;MECÂNICOS DE MANUTENÇÃO DE APARELHOS TÉRMICOS, DE CLIMATIZAÇÃO E DE REFRIGERAÇÃO(EXCETO TÉCNICOS);8281;Mechanical-machinery assemblers
+2000;9113;MECÂNICOS DE MANUTENÇÃO DE MÁQUINAS INDUSTRIAIS;8281;Mechanical-machinery assemblers
+2000;9131;MECÂNICOS DE MANUTENÇÃO DE MÁQUINAS PESADAS E EQUIPAMENTOS AGRÍCOLAS ;8281;Mechanical-machinery assemblers
+2000;9141;MECÂNICOS DE MANUTENÇÃO AERONÁUTICA;8281;Mechanical-machinery assemblers
+2000;9142;MECÂNICOS DE MANUTENÇÃO NAVAL (EM TERRA);8281;Mechanical-machinery assemblers
+2000;9143;MECÂNICOS DE MANUTENÇÃO METROFERROVIÁRIA;8281;Mechanical-machinery assemblers
+2000;9144;MECÂNICOS DE MANUTENÇÃO DE VEÍCULOS AUTOMOTORES;7231;Motor vehicle mechanics and fitters
+2000;9151;REPARADORES DE INSTRUMENTOS DE MEDIÇÃO;7311;Precision-instrument makers and repairers
+2000;9152;REPARADORES DE INSTRUMENTOS MUSICAIS;7311;Precision-instrument makers and repairers
+2000;9153;REPARADORES DE EQUIPAMENTOS E INSTRUMENTOS MÉDICO-HOSPITALARES;7311;Precision-instrument makers and repairers
+2000;9154;REPARADORES DE EQUIPAMENTOS FOTOGRÁFICOS ;7311;Precision-instrument makers and repairers
+2000;9191;LUBRIFICADORES;7231;Motor vehicle mechanics and fitters
+2000;9192;TRABALHADORES DE MANUTENÇÃO DE MÁQUINAS PEQUENAS;8281;Mechanical-machinery assemblers
+2000;9193;MECÂNICOS DE MANUTENÇÃO DE BICICLETAS E EQUIPAMENTOS ESPORTIVOS E DE GINÁSTICA;8281;Mechanical-machinery assemblers
+2000;9501;SUPERVISORES DE MANUTENÇÃO ELETROELETRÔNICA INDUSTRIAL, COMERCIAL E RESIDENCIAL;7241;Electrical mechanics and fitters
+2000;9502;SUPERVISORES DE MANUTENÇÃO ELETROELETRÔNICA VEICULAR;7241;Electrical mechanics and fitters
+2000;9503;SUPERVISORES DE MANUTENÇÃO ELETROMECÂNICA;7241;Electrical mechanics and fitters
+2000;9511;ELETRICISTAS-ELETRÔNICOS DE MANUTENÇÃO INDUSTRIAL;7241;Electrical mechanics and fitters
+2000;9513;INSTALADORES E MANTENEDORES DE SISTEMAS DE ALARMES DE SEGURANÇA E DE INCÊNDIO ;7241;Electrical mechanics and fitters
+2000;9531;ELETRICISTAS-ELETRÔNICOS DE MANUTENÇÃO VEICULAR (AÉREA, TERRESTRE E NAVAL) ;7241;Electrical mechanics and fitters
+2000;9541;MANTENEDORES DE ELEVADORES, ESCADAS E PORTAS AUTOMÁTICAS;7241;Electrical mechanics and fitters
+2000;9542;REPARADORES DE APARELHOS ELETRODOMÉSTICOS;7241;Electrical mechanics and fitters
+2000;9543;REPARADORES DE EQUIPAMENTOS DE ESCRITÓRIO;7241;Electrical mechanics and fitters
+2000;9911;CONSERVADORES DE VIAS PERMANENTES (TRILHOS);9312;Construction and maintenance labourers: roads, dams and similar constructions
+2000;9912;MANTENEDORES DE EQUIPAMENTOS DE LAZER ;7241;Electrical mechanics and fitters
+2000;9913;MANTENEDORES DE CARROÇARIAS DE VEÍCULOS ;7231;Motor vehicle mechanics and fitters
+2000;9914;MANTENEDORES DE EDIFICAÇÕES;9141;Building caretakers
+2000;9921;TRABALHADORES ELEMENTARES DE SERVIÇOS DE MANUTENÇÃO;8231;Rubber-products machine operators
+2000;9922;TRABALHADORES ELEMENTARES DE CONSERVAÇÃO DE VIAS PERMANENTES ;9312;Construction and maintenance labourers: roads, dams and similar constructions
+2000;9988;-;9333;Freight handlers
+2000;9998;-;9333;Freight handlers
+2000;9999;-;9333;Freight handlers
+2010;0;OCUPAÇÕES MALDEFINIDAS;-9999;Undefined
+2010;110;OFICIAIS DAS FORÇAS ARMADAS;110;Armed forces
+2010;210;GRADUADOS E PRAÇAS DAS FORÇAS ARMADAS;110;Armed forces
+2010;299; MILITAR DAS FORÇAS ARMADAS NÃO ESPECIFICADOS;110;Armed forces
+2010;411;OFICIAIS DE POLÍCIA MILITAR;110;Armed forces
+2010;412;GRADUADOS E PRAÇAS DA POLÍCIA MILITAR;110;Armed forces
+2010;511;OFICIAIS DE BOMBEIRO MILITAR;5161;Fire-fighters
+2010;512;GRADUADOS E PRAÇAS DO CORPO DE BOMBEIROS;5161;Fire-fighters
+2010;599;BOMBEIROS E POLICIAIS MILITARES NÃO ESPECIFICADOS;110;Armed forces
+2010;999;MEMBROS DAS FORÇAS ARMADAS, POLICIAIS E BOMBEIROS MILITARES NÃO ESPECIFICADOS;110;Armed forces
+2010;1111;LEGISLADORES ;1120;Senior government officials
+2010;1112;DIRIGENTES SUPERIORES DA ADMINISTRAÇÃO PÚBLICA;1120;Senior government officials
+2010;1113;CHEFES DE PEQUENAS POPULAÇÕES;1120;Senior government officials
+2010;1114;DIRIGENTES DE ORGANIZAÇÕES QUE APRESENTAM UM INTERESSE ESPECIAL;1120;Senior government officials
+2010;1120;DIRETORES GERAIS E GERENTES GERAIS;1210;Directors and chief executives
+2010;1211;DIRIGENTES FINANCEIROS;1227;Production and operations department managers in business services
+2010;1212;DIRIGENTES DE RECURSOS HUMANOS;1319;General managers not elsewhere classified
+2010;1213;DIRIGENTES DE POLÍTICAS E PLANEJAMENTO;1319;General managers not elsewhere classified
+2010;1219;DIRIGENTES DE ADMINISTRAÇÃO E DE SERVIÇOS NÃO CLASSIFICADOS ANTERIORMENTE;1319;General managers not elsewhere classified
+2010;1221;DIRIGENTES DE VENDAS E  COMERCIALIZAÇÃO ;1319;General managers not elsewhere classified
+2010;1222;DIRIGENTES DE PUBLICIDADE E RELAÇÕES PÚBLICAS;1319;General managers not elsewhere classified
+2010;1223;DIRIGENTES DE PESQUISA E DESENVOLVIMENTO;1319;General managers not elsewhere classified
+2010;1311;DIRIGENTES DE PRODUÇÃO AGROPECUÁRIA E SILVICULTURA;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;1312;DIRIGENTES DE PRODUÇÃO DA AQUICULTURA E PESCA;1311;General managers in agriculture, hunting, forestry/ and fishing
+2010;1321;DIRIGENTES DE INDÚSTRIA DE TRANSFORMAÇÃO;1222;Production and operations department managers in manufacturing
+2010;1322;DIRIGENTES DE EXPLORAÇÕES DE MINERAÇÃO;1319;General managers not elsewhere classified
+2010;1323;DIRIGENTES DE EMPRESAS DE CONSTRUÇÃO;1223;Production and operations department managers in construction
+2010;1324;DIRIGENTES DE EMPRESAS DE ABASTECIMENTO, DISTRIBUIÇÃO E AFINS;1226;Production and operations department managers in transport, storage and communications
+2010;1330;DIRIGENTES DE SERVIÇOS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES;1319;General managers not elsewhere classified
+2010;1341;DIRIGENTES DE SERVIÇOS DE CUIDADOS INFANTIS;1319;General managers not elsewhere classified
+2010;1342;DIRIGENTES DE SERVIÇOS DE SAÚDE;1319;General managers not elsewhere classified
+2010;1343;DIRIGENTES DE SERVIÇOS DE CUIDADO A PESSOAS IDOSAS;1319;General managers not elsewhere classified
+2010;1344;DIRIGENTES DE SERVIÇOS DE BEM-ESTAR SOCIAL;1319;General managers not elsewhere classified
+2010;1345;DIRIGENTES DE SERVIÇOS DE EDUCAÇÃO;1319;General managers not elsewhere classified
+2010;1346;GERENTES DE SUCURSAIS DE BANCOS, DE SERVIÇOS FINANCEIROS E DE SEGUROS;1227;Production and operations department managers in business services
+2010;1349;DIRIGENTES E GERENTES DE SERVIÇOS PROFISSIONAIS NÃO CLASSIFICADOS ANTERIORMENTE;1319;General managers not elsewhere classified
+2010;1411;GERENTES DE HOTÉIS;1315;General managers of restaurants and hotels
+2010;1412;GERENTES DE RESTAURANTES;1319;General managers not elsewhere classified
+2010;1420;GERENTES DE COMÉRCIOS ATACADISTAS E VAREJISTAS;1314;General managers in wholesale and retail trade
+2010;1431;GERENTES DE CENTROS ESPORTIVOS,  DE DIVERSÃO E CULTURAIS;1319;General managers not elsewhere classified
+2010;1439;GERENTES DE SERVIÇOS NÃO CLASSIFICADOS ANTERIORMENTE;1319;General managers not elsewhere classified
+2010;2111;FÍSICOS E ASTRÔNOMOS;2111;Physicists and astronomers
+2010;2112;METEOROLOGISTAS;2111;Physicists and astronomers
+2010;2113;QUÍMICOS;2113;Chemists
+2010;2114;GEÓLOGOS E GEOFÍSICOS;2114;Geologists and geophysicists
+2010;2120;MATEMÁTICOS, ATUÁRIOS E ESTATÍSTICOS;2122;Statisticians
+2010;2131;BIÓLOGOS, BOTÂNICOS, ZOÓLOGOS E AFINS;2211;Biologists, botanists, zoologists and related professionals
+2010;2132;AGRÔNOMOS E AFINS;2213;Agronomists and related professionals
+2010;2133;PROFISSIONAIS DA PROTEÇÃO DO MEIO AMBIENTE;2211;Biologists, botanists, zoologists and related professionals
+2010;2141;ENGENHEIROS INDUSTRIAIS E DE PRODUÇÃO;2142;Civil engineers
+2010;2142;ENGENHEIROS CIVIS ;2142;Civil engineers
+2010;2143;ENGENHEIROS DE MEIO AMBIENTE;2142;Civil engineers
+2010;2144;ENGENHEIROS MECÂNICOS;2142;Civil engineers
+2010;2145;ENGENHEIROS QUÍMICOS;2142;Civil engineers
+2010;2146;ENGENHEIROS DE MINAS, METALÚRGICOS E AFINS;2142;Civil engineers
+2010;2149;ENGENHEIROS NÃO CLASSIFICADOS ANTERIORMENTE;2142;Civil engineers
+2010;2151;ENGENHEIROS ELETRICISTAS;2142;Civil engineers
+2010;2152;ENGENHEIROS ELETRÔNICOS;2142;Civil engineers
+2010;2153;ENGENHEIROS EM TELECOMUNICAÇÕES;2142;Civil engineers
+2010;2161;ARQUITETOS DE EDIFICAÇÕES;2141;Architects, town and traffic planners
+2010;2162;ARQUITETOS PAISAGISTAS;2141;Architects, town and traffic planners
+2010;2163;DESENHISTAS DE PRODUTOS E  VESTUÁRIO;3118;Draughtspersons
+2010;2164;URBANISTAS E ENGENHEIROS DE TRÂNSITO;2141;Architects, town and traffic planners
+2010;2165;CARTÓGRAFOS E AGRIMENSORES;3118;Draughtspersons
+2010;2166;DESENHISTAS GRÁFICOS E DE MULTIMÍDIA;3118;Draughtspersons
+2010;2211;MÉDICOS GERAIS;2221;Medical doctors
+2010;2212;MÉDICOS ESPECIALISTAS;2221;Medical doctors
+2010;2221;PROFISSIONAIS DE ENFERMAGEM ;2230;Nursing and midwifery professionals
+2010;2222;PROFISSIONAIS DE PARTOS  ;2230;Nursing and midwifery professionals
+2010;2230;PROFISSIONAIS DA MEDICINA TRADICIONAL E ALTERNATIVA;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2240;PARAMÉDICOS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2250;VETERINÁRIOS;2223;Veterinarians
+2010;2261;DENTISTAS;2222;Dentists
+2010;2262;FARMACÊUTICOS;2224;Pharmacists
+2010;2263;PROFISSIONAIS DA SAÚDE E DA HIGIENE LABORAL E AMBIENTAL;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2264;FISIOTERAPEUTAS;3226;Physiotherapists and related associate professionals
+2010;2265;DIETISTAS E NUTRICIONISTAS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2266;FONOAUDIÓLOGOS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2267;OPTOMETRISTAS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2269;PROFISSIONAIS DA SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;2310;PROFESSORES DE UNIVERSIDADES E DO ENSINO SUPERIOR;2310;College, university and higher education teaching professionals
+2010;2320;PROFESSORES DE FORMAÇÃO PROFISSIONAL;2359;Other teaching professionals not elsewhere classified
+2010;2330;PROFESSORES DO ENSINO MÉDIO;2320;Secondary education teaching professionals
+2010;2341;PROFESSORES DO ENSINO FUNDAMENTAL;2331;Primary education teaching professionals
+2010;2342;PROFESSORES DO ENSINO PRÉ-ESCOLAR;2331;Primary education teaching professionals
+2010;2351;ESPECIALISTAS EM MÉTODOS PEDAGÓGICOS;2359;Other teaching professionals not elsewhere classified
+2010;2352;EDUCADORES PARA NECESSIDADES ESPECIAIS;2359;Other teaching professionals not elsewhere classified
+2010;2353;OUTROS PROFESSORES DE IDIOMAS;2359;Other teaching professionals not elsewhere classified
+2010;2354;OUTROS PROFESSORES DE MÚSICA;2359;Other teaching professionals not elsewhere classified
+2010;2355;OUTROS PROFESSORES DE ARTES;2359;Other teaching professionals not elsewhere classified
+2010;2356;INSTRUTORES EM TECNOLOGIAS DA INFORMAÇÃO;2359;Other teaching professionals not elsewhere classified
+2010;2359;PROFISSIONAIS DE ENSINO NÃO CLASSIFICADOS ANTERIORMENTE;2359;Other teaching professionals not elsewhere classified
+2010;2411;CONTADORES;2419;Business professionals not elsewhere classified
+2010;2412;ASSESSORES FINANCEIROS E EM INVESTIMENTOS;2419;Business professionals not elsewhere classified
+2010;2413;ANALISTAS FINANCEIROS;2419;Business professionals not elsewhere classified
+2010;2421;ANALISTAS DE GESTÃO E ADMINISTRAÇÃO;2419;Business professionals not elsewhere classified
+2010;2422;ESPECIALISTAS EM POLÍTICAS DE ADMINISTRAÇÃO;2419;Business professionals not elsewhere classified
+2010;2423;ESPECIALISTAS EM POLÍTICAS E SERVIÇOS DE PESSOAL E AFINS;2419;Business professionals not elsewhere classified
+2010;2424;ESPECIALISTAS EM FORMAÇÃO DE PESSOAL;2419;Business professionals not elsewhere classified
+2010;2431;PROFISSIONAIS DA PUBLICIDADE E DA COMERCIALIZAÇÃO;2451;Authors, journalists and other writers
+2010;2432;PROFISSIONAIS DE RELAÇÕES PÚBLICAS;2419;Business professionals not elsewhere classified
+2010;2433;PROFISSIONAIS DE VENDAS TÉCNICAS E MÉDICAS (EXCLUSIVE DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES);3415;Technical and commercial sales representatives
+2010;2434;PROFISSIONAIS DE VENDAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES;3415;Technical and commercial sales representatives
+2010;2511;ANALISTAS DE SISTEMAS;2132;Computer programmers
+2010;2512;DESENVOLVEDORES DE PROGRAMAS E APLICATIVOS (SOFTWARE) ;2132;Computer programmers
+2010;2513;DESENVOLVEDORES DE PÁGINAS DE INTERNET (WEB) E MULTIMÍDIA;2132;Computer programmers
+2010;2514;PROGRAMADORES DE APLICAÇÕES;2132;Computer programmers
+2010;2519;DESENVOLVEDORES E ANALISTAS DE PROGRAMAS E APLICATIVOS (SOFTWARE) E MULTIMÍDIA NÃO CLASSIFICADOS ANTERIORMENTE;2132;Computer programmers
+2010;2521;DESENHISTAS E ADMINISTRADORES DE BASES DE DADOS;2132;Computer programmers
+2010;2522;ADMINISTRADORES DE SISTEMAS;2132;Computer programmers
+2010;2523;PROFISSIONAIS EM REDE DE COMPUTADORES;2132;Computer programmers
+2010;2529;ESPECIALISTAS EM BASE DE DADOS E EM REDES DE COMPUTADORES NÃO CLASSIFICADOS ANTERIORMENTE;2132;Computer programmers
+2010;2611;ADVOGADOS E JURISTAS;2421;Lawyers
+2010;2612;JUÍZES;2422;Judges
+2010;2619;PROFISSIONAIS EM DIREITO NÃO CLASSIFICADOS ANTERIORMENTE;2429;Legal professionals not elsewhere classified
+2010;2621;ARQUIVOLOGISTAS E CURADORES DE MUSEUS;2432;Librarians and related information professionals
+2010;2622;BIBLIOTECÁRIOS, DOCUMENTARISTAS E AFINS;2432;Librarians and related information professionals
+2010;2631;ECONOMISTAS;2441;Economists
+2010;2632;SOCIÓLOGOS, ANTROPÓLOGOS E AFINS;2442;Sociologists, anthropologists and related professionals
+2010;2633;FILÓSOFOS, HISTORIADORES E ESPECIALISTAS EM CIÊNCIA POLÍTICA;2442;Sociologists, anthropologists and related professionals
+2010;2634;PSICÓLOGOS;2445;Psychologists
+2010;2635;ASSISTENTES SOCIAIS;2446;Social work professionals
+2010;2636;MINISTROS DE CULTOS RELIGIOSOS, MISSIONÁRIOS E AFINS;2460;Religious professionals
+2010;2641;ESCRITORES;2451;Authors, journalists and other writers
+2010;2642;JORNALISTAS;2451;Authors, journalists and other writers
+2010;2643;TRADUTORES, INTÉRPRETES E LINGUISTAS;2444;Philologists, translators and interpreters
+2010;2651;ARTISTAS PLÁSTICOS;2452;Sculptors, painters and related artists
+2010;2652;MÚSICOS, CANTORES E COMPOSITORES;2453;Composers, musicians and singers
+2010;2653;BAILARINOS E COREÓGRAFOS;2455;Film, stage and related actors and directors
+2010;2654;DIRETORES DE CINEMA, DE TEATRO E AFINS;2455;Film, stage and related actors and directors
+2010;2655;ATORES;2455;Film, stage and related actors and directors
+2010;2656;LOCUTORES DE RÁDIO, TELEVISÃO E OUTROS MEIOS DE COMUNICAÇÃO;3472;Radio, television and other announcers
+2010;2659;ARTISTAS CRIATIVOS E INTERPRETATIVOS NÃO CLASSIFICADOS ANTERIORMENTE;2455;Film, stage and related actors and directors
+2010;3111;TÉCNICOS EM CIÊNCIAS FÍSICAS E QUÍMICAS;3116;Chemical engineering technicians
+2010;3112;TÉCNICOS EM ENGENHARIA CIVIL;3119;Physical and engineering science technicians not elsewhere classified
+2010;3113;ELETROTÉCNICOS;3119;Physical and engineering science technicians not elsewhere classified
+2010;3114;TÉCNICOS EM ELETRÔNICA;3119;Physical and engineering science technicians not elsewhere classified
+2010;3115;TÉCNICOS EM ENGENHARIA MECÂNICA;3119;Physical and engineering science technicians not elsewhere classified
+2010;3116;TÉCNICOS EM QUÍMICA INDUSTRIAL;3116;Chemical engineering technicians
+2010;3117;TÉCNICOS EM ENGENHARIA DE MINAS E METALURGIA;3119;Physical and engineering science technicians not elsewhere classified
+2010;3118;DESENHISTAS E PROJETISTAS TÉCNICOS;3118;Draughtspersons
+2010;3119;TÉCNICOS EM CIÊNCIAS FÍSICAS E DA ENGENHARIA NÃO CLASSIFICADOS ANTERIORMENTE;3119;Physical and engineering science technicians not elsewhere classified
+2010;3121;SUPERVISORES DA MINERAÇÃO;3119;Physical and engineering science technicians not elsewhere classified
+2010;3122;SUPERVISORES DE INDÚSTRIAS DE TRANSFORMAÇÃO;8211;Machine-tool operators
+2010;3123;SUPERVISORES DA CONSTRUÇÃO;7129;Building frame and related trades workers not elsewhere classified
+2010;3131;OPERADORES DE INSTALAÇÕES DE PRODUÇÃO DE ENERGIA;8161;Power-production plant operators
+2010;3132;OPERADORES DE INCINERADORES, INSTALAÇÕES DE TRATAMENTO DE ÁGUA E AFINS;8163;Incinerator, water-treatment and related plant operators
+2010;3133;CONTROLADORES DE INSTALAÇÕES DE PROCESSAMENTO DE PRODUTOS QUÍMICOS;8113;Well drillers and borers and related workers
+2010;3134;OPERADORES DE INSTALAÇÕES DE REFINO DE PETRÓLEO E GÁS NATURAL;8113;Well drillers and borers and related workers
+2010;3135;CONTROLADORES DE PROCESSOS DE PRODUÇÃO DE METAIS;8211;Machine-tool operators
+2010;3139;TÉCNICOS EM CONTROLE DE PROCESSOS NÃO CLASSIFICADOS ANTERIORMENTE;3119;Physical and engineering science technicians not elsewhere classified
+2010;3141;TÉCNICOS E PROFISSIONAIS DE NÍVEL MÉDIO EM CIÊNCIAS BIOLÓGICAS (EXCLUSIVE DA MEDICINA);3116;Chemical engineering technicians
+2010;3142;TÉCNICOS AGROPECUÁRIOS;3212;Agronomy and forestry technicians
+2010;3143;TÉCNICOS FLORESTAIS;3212;Agronomy and forestry technicians
+2010;3151;OFICIAIS MAQUINISTAS EM NAVEGAÇÃO;3142;Ships' deck officers and pilots
+2010;3152;CAPITÃES, OFICIAIS DE COBERTA E PRÁTICOS;3142;Ships' deck officers and pilots
+2010;3153;PILOTOS DE AVIAÇÃO E AFINS;3143;Aircraft pilots and related associate professionals
+2010;3154;CONTROLADORES DE TRÁFEGO AÉREO;4133;Transport clerks
+2010;3155;TÉCNICOS EM SEGURANÇA AERONÁUTICA;4133;Transport clerks
+2010;3211;TÉCNICOS EM APARELHOS DE DIAGNÓSTICO E TRATAMENTO MÉDICO;3211;Life science technicians
+2010;3212;TÉCNICOS DE LABORATÓRIOS MÉDICOS;3211;Life science technicians
+2010;3213;TÉCNICOS E ASSISTENTES FARMACÊUTICOS;3228;Pharmaceutical assistants
+2010;3214;TÉCNICOS DE PRÓTESES MÉDICAS E DENTÁRIAS;7311;Precision-instrument makers and repairers
+2010;3221;PROFISSIONAIS DE NÍVEL MÉDIO DE ENFERMAGEM ;3231;Nursing associate professionals
+2010;3222;PROFISSIONAIS DE NÍVEL MÉDIO DE PARTOS;3231;Nursing associate professionals
+2010;3230;PROFISSIONAIS DE NÍVEL MÉDIO DE MEDICINA TRADICIONAL E ALTERNATIVA;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3240;TÉCNICOS E ASSISTENTES VETERINÁRIOS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3251;DENTISTAS AUXILIARES E AJUDANTES DE ODONTOLOGIA;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3252;TÉCNICOS EM DOCUMENTAÇÃO SANITÁRIA;3152;Safety, health and quality inspectors
+2010;3253;TRABALHADORES COMUNITÁRIOS DA SAÚDE;3231;Nursing associate professionals
+2010;3254;TÉCNICOS EM OPTOMETRIA E ÓPTICOS;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3255;TÉCNICOS E ASSISTENTES FISIOTERAPEUTAS;3226;Physiotherapists and related associate professionals
+2010;3256; ASSISTENTES DE MEDICINA;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3257;INSPETORES DE SAÚDE LABORAL, AMBIENTAL E AFINS;3152;Safety, health and quality inspectors
+2010;3258;AJUDANTES DE AMBULÂNCIAS;3231;Nursing associate professionals
+2010;3259;PROFISSIONAIS DE NÍVEL MÉDIO DA SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE ;3229;Modern health associate professionals (except nursing) not elsewhere classified
+2010;3311;AGENTES E CORRETORES DE BOLSA, CÂMBIO E OUTROS SERVIÇOS FINANCEIROS;3429;Business services agents and trade brokers not elsewhere classified
+2010;3312;AGENTES DE EMPRÉSTIMOS E FINANCIAMENTO;3429;Business services agents and trade brokers not elsewhere classified
+2010;3313;CONTABILISTAS E GUARDA LIVROS;3419;Finance and sales associate professionals not elsewhere classified
+2010;3314;PROFISSIONAIS DE NÍVEL MÉDIO DE SERVIÇOS ESTATÍSTICOS, MATEMÁTICOS E AFINS;3419;Finance and sales associate professionals not elsewhere classified
+2010;3315;AVALIADORES;3417;Appraisers, valuers and auctioneers
+2010;3321;AGENTES DE SEGUROS;3429;Business services agents and trade brokers not elsewhere classified
+2010;3322;REPRESENTANTES COMERCIAIS;3415;Technical and commercial sales representatives
+2010;3323;AGENTES DE COMPRAS;3416;Buyers
+2010;3324;CORRETORES DE COMERCIALIZAÇÃO;3429;Business services agents and trade brokers not elsewhere classified
+2010;3331;DESPACHANTES ADUANEIROS;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3332;ORGANIZADORES DE CONFERÊNCIAS E EVENTOS;3419;Finance and sales associate professionals not elsewhere classified
+2010;3333;AGENTES DE EMPREGO E AGENCIADORES DE MÃO DE OBRA;3419;Finance and sales associate professionals not elsewhere classified
+2010;3334;AGENTES IMOBILIÁRIOS;3429;Business services agents and trade brokers not elsewhere classified
+2010;3339;AGENTES DE SERVIÇOS COMERCIAIS NÃO CLASSIFICADOS ANTERIORMENTE;3429;Business services agents and trade brokers not elsewhere classified
+2010;3341;SUPERVISORES DE SECRETARIA;4115;Secretaries
+2010;3342;SECRETÁRIOS JURÍDICOS;3432;Legal and related business associate professionals
+2010;3343;SECRETÁRIOS EXECUTIVOS E ADMINISTRATIVOS;2419;Business professionals not elsewhere classified
+2010;3344;SECRETÁRIOS DE MEDICINA;4115;Secretaries
+2010;3351;AGENTES ADUANEIROS E INSPETORES DE FRONTEIRAS;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3352;AGENTES DA ADMINISTRAÇÃO TRIBUTÁRIA;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3353;AGENTES DE SERVIÇOS DE SEGURIDADE SOCIAL;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3354;AGENTES DE SERVIÇOS DE EXPEDIÇÃO DE LICENÇAS E PERMISSÕES;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3355;INSPETORES DE POLÍCIA E DETETIVES;5169;Protective services workers not elsewhere classified
+2010;3359;AGENTES DA ADMINISTRAÇÃO PÚBLICA PARA APLICAÇÃO DA LEI E AFINS NÃO CLASSIFICADOS ANTERIORMENTE;3449;Customs, tax and related government associate professionals not elsewhere classified
+2010;3411;PROFISSIONAIS DE NÍVEL MÉDIO DO DIREITO E SERVIÇOS LEGAIS E AFINS;3432;Legal and related business associate professionals
+2010;3412;TRABALHADORES E ASSISTENTES SOCIAIS DE NÍVEL MÉDIO;2446;Social work professionals
+2010;3413;AUXILIARES LEIGOS DE RELIGIÃO;2460;Religious professionals
+2010;3421;ATLETAS E ESPORTISTAS;3475;Athletes, sportspersons and related associate professionals
+2010;3422;TREINADORES, INSTRUTORES E ÁRBITROS DE ATIVIDADES ESPORTIVAS;3475;Athletes, sportspersons and related associate professionals
+2010;3423;INSTRUTORES DE EDUCAÇÃO FÍSICA E ATIVIDADES RECREATIVAS;2359;Other teaching professionals not elsewhere classified
+2010;3431;FOTÓGRAFOS;3131;Photographers and image and sound recording equipment operators
+2010;3432;DESENHISTAS E DECORADORES DE INTERIORES;3471;Decorators and commercial designers
+2010;3433;TÉCNICOS EM GALERIAS DE ARTE, MUSEUS E BIBLIOTECAS;3419;Finance and sales associate professionals not elsewhere classified
+2010;3434;CHEFES DE COZINHA;5122;Cooks
+2010;3435;OUTROS PROFISSIONAIS DE NÍVEL MÉDIO EM ATIVIDADES CULTURAIS E ARTÍSTICAS;3471;Decorators and commercial designers
+2010;3511;TÉCNICOS EM OPERAÇÕES DE TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES ;3121;Computer assistants
+2010;3512;TÉCNICOS EM ASSISTÊNCIA AO USUÁRIO DE TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES;3121;Computer assistants
+2010;3513;TÉCNICOS DE REDES E SISTEMAS DE COMPUTADORES;3121;Computer assistants
+2010;3514;TÉCNICOS DA WEB;3121;Computer assistants
+2010;3521;TÉCNICOS DE RADIODIFUSÃO E GRAVAÇÃO AUDIOVISUAL;3132;Broadcasting and telecommunications equipment operators
+2010;3522;TÉCNICOS DE ENGENHARIA DE TELECOMUNICAÇÕES;3119;Physical and engineering science technicians not elsewhere classified
+2010;4110;ESCRITURÁRIOS GERAIS;4190;Other office clerks
+2010;4120;SECRETÁRIOS (GERAL);4115;Secretaries
+2010;4131;OPERADORES DE MÁQUINAS DE PROCESSAMENTO DE TEXTO E MECANÓGRAFOS;4141;Library and filing clerks
+2010;4132;OPERADORES DE ENTRADA DE DADOS;4141;Library and filing clerks
+2010;4211;CAIXAS DE BANCO E AFINS;4211;Cashiers and ticket clerks
+2010;4212;COLETORES DE APOSTAS E DE JOGOS;4211;Cashiers and ticket clerks
+2010;4213;TRABALHADORES EM ESCRITÓRIOS DE EMPRÉSTIMOS E PENHOR;4190;Other office clerks
+2010;4214;COBRADORES E AFINS;4211;Cashiers and ticket clerks
+2010;4221;TRABALHADORES DE AGÊNCIAS DE VIAGEM;3429;Business services agents and trade brokers not elsewhere classified
+2010;4222;TRABALHADORES DE CENTRAIS DE ATENDIMENTO;4222;Receptionists and information clerks
+2010;4223;TELEFONISTAS;4223;Telephone switchboard operators
+2010;4224;RECEPCIONISTAS DE HOTÉIS;4222;Receptionists and information clerks
+2010;4225;TRABALHADORES DOS SERVIÇOS DE INFORMAÇÕES;4222;Receptionists and information clerks
+2010;4226;RECEPCIONISTAS EM GERAL;4222;Receptionists and information clerks
+2010;4227;ENTREVISTADORES DE PESQUISAS DE MERCADO;4190;Other office clerks
+2010;4229;TRABALHADORES DE SERVIÇOS DE INFORMAÇÃO AO CLIENTE NÃO CLASSIFICADOS ANTERIORMENTE;4222;Receptionists and information clerks
+2010;4311;TRABALHADORES DE CONTABILIDADE E CÁLCULO DE CUSTOS;4190;Other office clerks
+2010;4312;TRABALHADORES DE SERVIÇOS ESTATÍSTICOS, FINANCEIROS E DE SEGUROS;4190;Other office clerks
+2010;4313;TRABALHADORES ENCARREGADOS DE FOLHA DE PAGAMENTO;4190;Other office clerks
+2010;4321;TRABALHADORES DE CONTROLE DE ABASTECIMENTO E ESTOQUES;4131;Stock clerks
+2010;4322;TRABALHADORES DE SERVIÇOS DE APOIO À PRODUÇÃO;4190;Other office clerks
+2010;4323;TRABALHADORES DE SERVIÇOS DE TRANSPORTE;4133;Transport clerks
+2010;4411;TRABALHADORES DE BIBLIOTECAS;4141;Library and filing clerks
+2010;4412;TRABALHADORES DE SERVIÇOS DE CORREIOS;4142;Mail carriers and sorting clerks
+2010;4413;CODIFICADORES DE DADOS, REVISORES DE PROVAS DE IMPRESSÃO E AFINS;7341;Compositors, typesetters and related workers
+2010;4414;OUTROS ESCREVENTES;4141;Library and filing clerks
+2010;4415;TRABALHADORES DE ARQUIVOS;4141;Library and filing clerks
+2010;4416;TRABALHADORES DO SERVIÇO DE PESSOAL;4190;Other office clerks
+2010;4419;TRABALHADORES DE APOIO ADMINISTRATIVO NÃO CLASSIFICADOS ANTERIORMENTE;4190;Other office clerks
+2010;5111;AUXILIARES DE SERVIÇO DE BORDO;5111;Travel attendants and travel stewards
+2010;5112;FISCAIS E COBRADORES DE TRANSPORTES PÚBLICOS;5112;Transport conductors
+2010;5113;GUIAS DE TURISMO;5112;Transport conductors
+2010;5120;COZINHEIROS;5122;Cooks
+2010;5131;GARÇONS ;5123;Waiters, waitresses and bartenders
+2010;5132; ATENDENTES DE BAR;5123;Waiters, waitresses and bartenders
+2010;5141;CABELEIREIROS;5141;Hairdressers, barbers, beauticians and related workers
+2010;5142;ESPECIALISTAS EM TRATAMENTO DE BELEZA E AFINS;5141;Hairdressers, barbers, beauticians and related workers
+2010;5151;SUPERVISORES DE MANUTENÇÃO E LIMPEZA DE EDIFÍCIOS EM ESCRITÓRIOS, HOTÉIS E ESTABELECIMENTOS;9141;Building caretakers
+2010;5152;GOVERNANTAS E MORDOMOS DOMÉSTICOS ;9131;Domestic helpers and cleaners
+2010;5153;PORTEIROS E ZELADORES;9141;Building caretakers
+2010;5161;ASTRÓLOGOS, ADIVINHOS E AFINS;2460;Religious professionals
+2010;5162;ACOMPANHANTES E CRIADOS PARTICULARES;5131;Child-care workers
+2010;5163;TRABALHADORES DE FUNERÁRIAS E EMBALSAMADORES;9333;Freight handlers
+2010;5164;CUIDADORES DE ANIMAIS;5131;Child-care workers
+2010;5165;INSTRUTORES DE AUTOESCOLA;2359;Other teaching professionals not elsewhere classified
+2010;5168;TRABALHADORES DO SEXO;9333;Freight handlers
+2010;5169;TRABALHADORES DE SERVIÇOS PESSOAIS NÃO CLASSIFICADOS ANTERIORMENTE;9333;Freight handlers
+2010;5211;VENDEDORES DE QUIOSQUES E POSTOS DE MERCADOS;5230;Stall and market salespersons
+2010;5212;VENDEDORES AMBULANTES DE SERVIÇOS DE ALIMENTAÇÃO;9112;Street vendors, non-food products
+2010;5221;COMERCIANTES DE LOJAS;1314;General managers in wholesale and retail trade
+2010;5222;SUPERVISORES DE LOJAS;1314;General managers in wholesale and retail trade
+2010;5223;BALCONISTAS E VENDEDORES DE LOJAS;1314;General managers in wholesale and retail trade
+2010;5230;CAIXAS E EXPEDIDORES DE BILHETES;4211;Cashiers and ticket clerks
+2010;5241;MODELOS DE MODA, ARTE E PUBLICIDADE;2455;Film, stage and related actors and directors
+2010;5242;DEMONSTRADORES DE LOJAS;1314;General managers in wholesale and retail trade
+2010;5243;VENDEDORES A DOMICILIO;3415;Technical and commercial sales representatives
+2010;5244;VENDEDORES POR TELEFONE;4223;Telephone switchboard operators
+2010;5245;FRENTISTAS DE POSTO DE GASOLINA;1314;General managers in wholesale and retail trade
+2010;5246;BALCONISTAS DOS SERVIÇOS DE ALIMENTAÇÃO;5123;Waiters, waitresses and bartenders
+2010;5249;VENDEDORES NÃO CLASSIFICADOS ANTERIORMENTE;1314;General managers in wholesale and retail trade
+2010;5311;CUIDADORES DE CRIANÇAS ;5131;Child-care workers
+2010;5312;AJUDANTES DE PROFESSORES;3340;Other teaching associate professionals
+2010;5321;TRABALHADORES DE CUIDADOS PESSOAIS EM INSTITUIÇÕES;3231;Nursing associate professionals
+2010;5322;TRABALHADORES DE CUIDADOS PESSOAIS A DOMICÍLIOS;5131;Child-care workers
+2010;5329;TRABALHADORES DE CUIDADOS PESSOAIS NOS SERVIÇOS DE SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE;3231;Nursing associate professionals
+2010;5411;BOMBEIROS;5161;Fire-fighters
+2010;5412;POLICIAIS;5169;Protective services workers not elsewhere classified
+2010;5413;GUARDIÕES DE PRESÍDIOS;5169;Protective services workers not elsewhere classified
+2010;5414;GUARDAS DE SEGURANÇA;5169;Protective services workers not elsewhere classified
+2010;5419;TRABALHADORES DOS SERVIÇOS DE PROTEÇÃO E SEGURANÇA NÃO CLASSIFICADOS ANTERIORMENTE;5169;Protective services workers not elsewhere classified
+2010;6111;AGRICULTORES E TRABALHADORES QUALIFICADOS EM ATIVIDADES DA AGRICULTURA (EXCLUSIVE HORTAS, VIVEIROS E JARDINS);9211;Farm-hands and labourers
+2010;6112;AGRICULTORES E TRABALHADORES QUALIFICADOS NO CULTIVO DE HORTAS, VIVEIROS E JARDINS;9211;Farm-hands and labourers
+2010;6114;AGRICULTORES E TRABALHADORES QUALIFICADOS DE CULTIVOS MISTOS;9211;Farm-hands and labourers
+2010;6121;CRIADORES DE GADO E TRABALHADORES QUALIFICADOS DA CRIAÇÃO DE GADO;9211;Farm-hands and labourers
+2010;6122;AVICULTORES E TRABALHADORES QUALIFICADOS DA AVICULTURA;9211;Farm-hands and labourers
+2010;6123;APICULTORES, SERICICULTORES E TRABALHADORES QUALIFICADOS DA APICULTURA E SERICICULTURA;9211;Farm-hands and labourers
+2010;6129;OUTROS CRIADORES E TRABALHADORES QUALIFICADOS DA PECUÁRIA NÃO CLASSIFICADOS ANTERIORMENTE;9211;Farm-hands and labourers
+2010;6130;PRODUTORES E TRABALHADORES QUALIFICADOS DE EXPLORAÇÃO AGROPECUÁRIA MISTA ;9211;Farm-hands and labourers
+2010;6210;TRABALHADORES FLORESTAIS QUALIFICADOS E AFINS;6141;Forestry workers and loggers
+2010;6221;TRABALHADORES DA AQUICULTURA;9211;Farm-hands and labourers
+2010;6224;CAÇADORES;6152;Inland and coastal waters fishery workers
+2010;6225;PESCADORES;6152;Inland and coastal waters fishery workers
+2010;7111;CONSTRUTORES DE CASAS;7129;Building frame and related trades workers not elsewhere classified
+2010;7112;PEDREIROS;7122;Bricklayers and stonemasons
+2010;7113;CANTEIROS, CORTADORES E GRAVADORES DE PEDRAS;7111;Miners and quarry workers
+2010;7114;TRABALHADORES EM CIMENTO E CONCRETO ARMADO;7123;Concrete placers, concrete finishers and related workers
+2010;7115;CARPINTEIROS;7124;Carpenters and joiners
+2010;7119;OUTROS TRABALHADORES QUALIFICADOS E OPERÁRIOS DA CONSTRUÇÃO NÃO CLASSIFICADOS ANTERIORMENTE;7129;Building frame and related trades workers not elsewhere classified
+2010;7121;TELHADORES;7132;Floor layers and tile setters
+2010;7122;APLICADORES DE REVESTIMENTOS CERÂMICOS, PASTILHAS, PEDRAS E MADEIRAS;7132;Floor layers and tile setters
+2010;7123;GESSEIROS;7133;Plasterers
+2010;7124;INSTALADORES DE MATERIAL ISOLANTE TÉRMICO E ACÚSTICO;7133;Plasterers
+2010;7125;VIDRACEIROS;7135;Glaziers
+2010;7126;BOMBEIROS E ENCANADORES;7136;Plumbers and pipe fitters
+2010;7127;MECÂNICOS-INSTALADORES DE SISTEMAS DE REFRIGERAÇÃO E CLIMATIZAÇÃO;7241;Electrical mechanics and fitters
+2010;7131;PINTORES E EMPAPELADORES;7141;Painters and related workers
+2010;7132;LUSTRADORES;7141;Painters and related workers
+2010;7133;LIMPADORES DE FACHADAS ;9141;Building caretakers
+2010;7211;MOLDADORES DE METAL E MACHEIROS;7211;Metal moulders and coremakers
+2010;7212;SOLDADORES E OXICORTADORES;7212;Welders and flamecutters
+2010;7213;CHAPISTAS E CALDEIREIROS;8211;Machine-tool operators
+2010;7214;MONTADORES DE ESTRUTURAS METÁLICAS;8211;Machine-tool operators
+2010;7215;APARELHADORES E EMENDADORES DE CABOS;7245;Electrical line installers, repairers and cable jointers
+2010;7221;FERREIROS E FORJADORES;8211;Machine-tool operators
+2010;7222;FERRAMENTEIROS E AFINS;8211;Machine-tool operators
+2010;7223;REGULADORES E OPERADORES DE MÁQUINAS-FERRAMENTAS;8211;Machine-tool operators
+2010;7224;POLIDORES DE METAIS E AFIADORES DE FERRAMENTAS;7224;Metal wheel-grinders, polishers and tool sharpeners
+2010;7231;MECÂNICOS E REPARADORES DE VEÍCULOS A MOTOR;7231;Motor vehicle mechanics and fitters
+2010;7232;MECÂNICOS E REPARADORES DE MOTORES DE AVIÃO;8281;Mechanical-machinery assemblers
+2010;7233;MECÂNICOS E REPARADORES DE MÁQUINAS AGRÍCOLAS E INDUSTRIAIS;8281;Mechanical-machinery assemblers
+2010;7234;REPARADORES DE BICICLETAS E AFINS;7231;Motor vehicle mechanics and fitters
+2010;7311;MECÂNICOS E REPARADORES DE INSTRUMENTOS DE PRECISÃO;7311;Precision-instrument makers and repairers
+2010;7312;CONFECCIONADORES E AFINADORES DE INSTRUMENTOS MUSICAIS;7311;Precision-instrument makers and repairers
+2010;7313;JOALHEIROS E LAPIDADORES DE GEMAS, ARTESÃOS DE METAIS PRECIOSOS E SEMIPRECIOSOS ;7313;Jewellery and precious-metal workers
+2010;7314;CERAMISTAS E AFINS (PREPARAÇÃO E FABRICAÇÃO);8139;Glass, ceramics and related plant operators not elsewhere classified
+2010;7315;CORTADORES, POLIDORES, JATEADORES E GRAVADORES DE VIDROS E AFINS ;8139;Glass, ceramics and related plant operators not elsewhere classified
+2010;7316;REDATORES DE CARTAZES, PINTORES DECORATIVOS E GRAVADORES ;9333;Freight handlers
+2010;7317;ARTESÃOS DE PEDRA, MADEIRA, VIME E MATERIAIS SEMELHANTES;7331;Handicraft workers in wood and related materials
+2010;7318;ARTESÃOS DE TECIDOS, COUROS E MATERIAIS SEMELHANTES;7331;Handicraft workers in wood and related materials
+2010;7319;ARTESÃOS NÃO CLASSIFICADOS ANTERIORMENTE;7331;Handicraft workers in wood and related materials
+2010;7321;TRABALHADORES DA PRÉ-IMPRESSÃO GRÁFICA ;7341;Compositors, typesetters and related workers
+2010;7322;IMPRESSORES;7341;Compositors, typesetters and related workers
+2010;7323;ENCADERNADORES E AFINS;7345;Bookbinders and related workers
+2010;7411;ELETRICISTAS DE OBRAS E AFINS;7137;Building and related electricians
+2010;7412;MECÂNICOS E AJUSTADORES ELETRICISTAS;7241;Electrical mechanics and fitters
+2010;7413;INSTALADORES E REPARADORES DE LINHAS ELÉTRICAS;7245;Electrical line installers, repairers and cable jointers
+2010;7421;MECÂNICOS E REPARADORES EM ELETRÔNICA;7241;Electrical mechanics and fitters
+2010;7422;INSTALADORES E REPARADORES EM TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÕES;7245;Electrical line installers, repairers and cable jointers
+2010;7511;MAGAREFES E AFINS ;7411;Butchers, fishmongers and related food preparers
+2010;7512;PADEIROS, CONFEITEIROS E AFINS ;7412;Bakers, pastry-cooks and confectionery makers
+2010;7513;TRABALHADORES DA PASTEURIZAÇÃO DO LEITE E FABRICAÇÃO DE LATICÍNIOS E AFINS ;8272;Dairy-products machine operators
+2010;7514;TRABALHADORES DA CONSERVAÇÃO DE FRUTAS, LEGUMES E SIMILARES ;8271;Meat- and fish-processing-machine operators
+2010;7515;TRABALHADORES DA DEGUSTAÇÃO E CLASSIFICAÇÃO DE ALIMENTOS E BEBIDAS;8271;Meat- and fish-processing-machine operators
+2010;7516;TRABALHADORES QUALIFICADOS DA PREPARAÇÃO DO FUMO E SEUS PRODUTOS ;7416;Tobacco preparers and tobacco products makers
+2010;7521;TRABALHADORES DE TRATAMENTO E PREPARAÇÃO DA MADEIRA ;7421;Wood treaters
+2010;7522;MARCENEIROS E AFINS ;7422;Cabinet makers and related workers
+2010;7523;OPERADORES DE MÁQUINAS DE LAVRAR MADEIRA ;8141;Wood-processing-plant operators
+2010;7531;ALFAIATES, MODISTAS, CHAPELEIROS E PELETEIROS;8263;Sewing-machine operators
+2010;7532;TRABALHADORES QUALIFICADOS DA PREPARAÇÃO DA CONFECÇÃO DE ROUPAS;7435;Textile, leather and related pattern-makers and cutters
+2010;7533;COSTUREIROS, BORDADEIROS E AFINS;7436;Sewers, embroiderers and related workers
+2010;7534;TAPECEIROS, COLCHOEIROS E AFINS;7437;Upholsterers and related workers
+2010;7535;TRABALHADORES QUALIFICADOS DO TRATAMENTO DE COUROS E PELES;7441;Pelt dressers, tanners and fellmongers
+2010;7536;SAPATEIROS E AFINS;7442;Shoe-makers and related workers
+2010;7541;TRABALHADORES SUBAQUÁTICOS ;5161;Fire-fighters
+2010;7542;DINAMITADORES E DETONADORES;7111;Miners and quarry workers
+2010;7543;CLASSIFICADORES E PROVADORES DE PRODUTOS (EXCETO DE BEBIDAS E ALIMENTOS);3152;Safety, health and quality inspectors
+2010;7544;FUMIGADORES E OUTROS CONTROLADORES DE PRAGAS E ERVAS DANINHAS;9141;Building caretakers
+2010;7549;OUTROS TRABALHADORES QUALIFICADOS E OPERÁRIOS DA INDÚSTRIA E DO ARTESANATO NÃO CLASSIFICADOS ANTERIORMENTE;7331;Handicraft workers in wood and related materials
+2010;8111;MINEIROS E OPERADORES DE MÁQUINAS E DE INSTALAÇÕES EM MINAS E PEDREIRAS;7111;Miners and quarry workers
+2010;8112;OPERADORES DE INSTALAÇÕES DE PROCESSAMENTO DE MINERAIS E ROCHAS;8113;Well drillers and borers and related workers
+2010;8113;PERFURADORES E SONDADORES DE POÇOS E AFINS ;8113;Well drillers and borers and related workers
+2010;8114;OPERADORES DE MÁQUINAS PARA FABRICAR CIMENTO, PEDRAS E OUTROS PRODUTOS MINERAIS;8139;Glass, ceramics and related plant operators not elsewhere classified
+2010;8121;OPERADORES DE INSTALAÇÕES DE PROCESSAMENTO DE METAIS;8211;Machine-tool operators
+2010;8122;OPERADORES DE MÁQUINAS POLIDORAS, GALVANIZADORAS E RECOBRIDORAS DE METAIS;8223;Metal finishing-, plating- and coating-machine operators
+2010;8131;OPERADORES DE INSTALAÇÕES E MÁQUINAS DE PRODUTOS QUÍMICOS ;8113;Well drillers and borers and related workers
+2010;8132;OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS FOTOGRÁFICOS ;8290;Other machine operators and assemblers
+2010;8141;OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE BORRACHA;8231;Rubber-products machine operators
+2010;8142;OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE MATERIAL PLÁSTICO;8231;Rubber-products machine operators
+2010;8143;OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE PAPEL ;8141;Wood-processing-plant operators
+2010;8151;OPERADORES DE MÁQUINAS DE PREPARAÇÃO DE FIBRAS, FIAÇÃO E BOBINAMENTO DE FIOS;8261;Fibre-preparing-, spinning- and winding-machine operators
+2010;8152;OPERADORES DE TEARES E OUTRAS MÁQUINAS DE TECELAGEM;8262;Weaving- and knitting-machine operators
+2010;8153;OPERADORES DE MÁQUINAS DE COSTURA;8263;Sewing-machine operators
+2010;8154;OPERADORES DE MÁQUINAS DE BRANQUEAMENTO, TINGIMENTO E LIMPEZA DE TECIDOS;8264;Bleaching-, dyeing- and cleaning-machine operators
+2010;8155;OPERADORES DE MÁQUINAS DE PROCESSAMENTO DE COUROS E PELES;7442;Shoe-makers and related workers
+2010;8156;OPERADORES DE MÁQUINAS PARA FABRICAÇÃO DE CALÇADOS E AFINS;7442;Shoe-makers and related workers
+2010;8157;OPERADORES DE MÁQUINAS DE LAVAR, TINGIR E PASSAR ROUPAS;8264;Bleaching-, dyeing- and cleaning-machine operators
+2010;8159;OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS TÊXTEIS E ARTIGOS DE COURO E PELE NÃO CLASSIFICADOS ANTERIORMENTE;7442;Shoe-makers and related workers
+2010;8160;OPERADORES DE MÁQUINAS PARA ELABORAR ALIMENTOS E PRODUTOS AFINS;8271;Meat- and fish-processing-machine operators
+2010;8171;OPERADORES DE INSTALAÇÕES PARA A PREPARAÇÃO DE PASTA DE PAPEL E PAPEL;8141;Wood-processing-plant operators
+2010;8172;OPERADORES DE INSTALAÇÕES PARA PROCESSAMENTO DE MADEIRA;8141;Wood-processing-plant operators
+2010;8181;OPERADORES DE INSTALAÇÕES DE VIDRARIA E CERÂMICA   ;8139;Glass, ceramics and related plant operators not elsewhere classified
+2010;8182;OPERADORES DE MÁQUINAS DE VAPOR E CALDEIRAS;8162;Steam-engine and boiler operators
+2010;8183;OPERADORES DE MÁQUINAS DE EMBALAGEM, ENGARRAFAMENTO E ETIQUETAGEM;9322;Hand packers and other manufacturing labourers
+2010;8189;OPERADORES DE MÁQUINAS E DE INSTALAÇÕES FIXAS NÃO CLASSIFICADOS ANTERIORMENTE;8290;Other machine operators and assemblers
+2010;8211;MECÂNICOS MONTADORES DE MAQUINARIA MECÂNICA;8281;Mechanical-machinery assemblers
+2010;8212;MONTADORES DE EQUIPAMENTOS ELÉTRICOS E ELETRÔNICOS;7241;Electrical mechanics and fitters
+2010;8219;MONTADORES NÃO CLASSIFICADOS ANTERIORMENTE;8281;Mechanical-machinery assemblers
+2010;8311;MAQUINISTAS DE LOCOMOTIVAS ;8311;Locomotive-engine drivers
+2010;8312;GUARDA-FREIOS E AGENTES DE MANOBRAS;8312;Railway brakers, signallers and shunters
+2010;8321;CONDUTORES DE MOTOCICLETAS;8322;Car, taxi and van drivers
+2010;8322;CONDUTORES DE AUTOMÓVEIS, TAXIS E CAMINHONETES;8322;Car, taxi and van drivers
+2010;8331;CONDUTORES DE ÔNIBUS E BONDES;8322;Car, taxi and van drivers
+2010;8332;CONDUTORES DE CAMINHÕES PESADOS;8322;Car, taxi and van drivers
+2010;8341;OPERADORES DE MÁQUINAS AGRÍCOLAS E FLORESTAIS MÓVEIS;8331;Motorised farm and forestry plant operators
+2010;8342;OPERADORES DE MÁQUINAS DE MOVIMENTAÇÃO DE TERRAS E AFINS;8332;Earth-moving- and related plant operators
+2010;8343;OPERADORES DE GUINDASTES, GRUAS, APARATOS DE ELEVAÇÃO E AFINS;8333;Crane, hoist and related plant operators
+2010;8344;OPERADORES DE EMPILHADEIRAS;8290;Other machine operators and assemblers
+2010;8350;MARINHEIROS DE COBERTA E AFINS;8340;Ships' deck crews and related workers
+2010;9111;TRABALHADORES DOS SERVIÇOS DOMÉSTICOS EM GERAL ;9131;Domestic helpers and cleaners
+2010;9112;TRABALHADORES DE LIMPEZA DE INTERIOR DE EDIFÍCIOS, ESCRITÓRIOS, HOTÉIS E OUTROS ESTABELECIMENTOS;9141;Building caretakers
+2010;9121;LAVADEIROS DE ROUPAS E PASSADEIROS MANUAIS;9133;Hand-launderers and pressers
+2010;9122;LAVADORES DE VEÍCULOS;9333;Freight handlers
+2010;9123;LIMPADORES DE JANELAS;9141;Building caretakers
+2010;9129;OUTROS TRABALHADORES DE LIMPEZA;9141;Building caretakers
+2010;9211;TRABALHADORES ELEMENTARES DA AGRICULTURA ;9211;Farm-hands and labourers
+2010;9212;TRABALHADORES ELEMENTARES DA PECUÁRIA ;9211;Farm-hands and labourers
+2010;9213;TRABALHADORES ELEMENTARES DA AGROPECUÁRIA;9211;Farm-hands and labourers
+2010;9214;TRABALHADORES ELEMENTARES DA JARDINAGEM E HORTICULTURA ;9211;Farm-hands and labourers
+2010;9215;TRABALHADORES FLORESTAIS ELEMENTARES;6141;Forestry workers and loggers
+2010;9216;TRABALHADORES ELEMENTARES DA CAÇA, PESCA E AQUICULTURA ;6152;Inland and coastal waters fishery workers
+2010;9311;TRABALHADORES ELEMENTARES DE MINAS E PEDREIRAS ;7111;Miners and quarry workers
+2010;9312;TRABALHADORES ELEMENTARES DE OBRAS PÚBLICAS E DA MANUTENÇÃO DE ESTRADAS, REPRESAS E SIMILARES;9312;Construction and maintenance labourers: roads, dams and similar constructions
+2010;9313;TRABALHADORES ELEMENTARES DA CONSTRUÇÃO DE EDIFÍCIOS;9313;Building construction labourers
+2010;9321; EMPACOTADORES MANUAIS;9322;Hand packers and other manufacturing labourers
+2010;9329;TRABALHADORES ELEMENTARES DA INDÚSTRIA DE TRANSFORMAÇÃO NÃO CLASSIFICADOS ANTERIORMENTE;9321;Assembling labourers
+2010;9331;CONDUTORES DE VEÍCULOS ACIONADOS A PEDAL OU A BRAÇOS;9332;Drivers of animal-drawn vehicles and machinery
+2010;9332;CONDUTORES DE VEÍCULOS E MÁQUINAS DE TRAÇÃO ANIMAL;9332;Drivers of animal-drawn vehicles and machinery
+2010;9333;CARREGADORES;9333;Freight handlers
+2010;9334;REPOSITORES DE PRATELEIRAS;9333;Freight handlers
+2010;9411;PREPARADORES DE COMIDAS RÁPIDAS;5122;Cooks
+2010;9412;AJUDANTES DE COZINHA;5122;Cooks
+2010;9510;TRABALHADORES AMBULANTES DOS SERVIÇOS E AFINS;9112;Street vendors, non-food products
+2010;9520;VENDEDORES AMBULANTES (EXCLUSIVE DE SERVIÇOS DE ALIMENTAÇÃO);9112;Street vendors, non-food products
+2010;9611;COLETORES DE LIXO E MATERIAL RECICLÁVEL;9161;Garbage collectors
+2010;9612;CLASSIFICADORES DE RESÍDUOS;9161;Garbage collectors
+2010;9613;VARREDORES E AFINS;9161;Garbage collectors
+2010;9621;MENSAGEIROS, CARREGADORES DE BAGAGENS E ENTREGADORES DE ENCOMENDAS;9141;Building caretakers
+2010;9622;PESSOAS QUE REALIZAM VÁRIAS TAREFAS;9333;Freight handlers
+2010;9623;COLETORES DE DINHEIRO EM MÁQUINAS AUTOMÁTICAS DE VENDA E LEITORES DE MEDIDORES;9333;Freight handlers
+2010;9624;CARREGADORES DE ÁGUA E COLETORES DE LENHA;9333;Freight handlers
+2010;9629;OUTRAS OCUPAÇÕES ELEMENTARES NÃO CLASSIFICADAS ANTERIORMENTE;9333;Freight handlers
+2010;9988;;9333;Freight handlers
+2010;9998;;9333;Freight handlers
+2010;9999;;9333;Freight handlers
