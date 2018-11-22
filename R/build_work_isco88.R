@@ -3,9 +3,9 @@
 
 build_work_isco88 <- function(CensusData){
         
-        Data     <- harmonizeIBGE:::check_prepared_to_harmonize(Data)
-        metadata <- harmonizeIBGE:::get_metadata(Data)
-        sulfix   <- harmonizeIBGE:::find_sulfixforOccSectors(Data)
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        metadata   <- harmonizeIBGE:::get_metadata(CensusData)
+        sulfix     <- harmonizeIBGE:::find_sulfixforOccSectors(CensusData)
         
         just_created_vars_list_existedBefore <- exists(x = "just_created_vars", where = .GlobalEnv)
         
@@ -35,41 +35,56 @@ build_work_isco88 <- function(CensusData){
         sectoral_adjustments     <- read.csv2(SectoralAjustments_location, stringsAsFactors = F) 
         class_worker_adjustments <- read.csv2(ClassWorkerAdjustments_location, stringsAsFactors = F) 
         further_adjustments      <- read.csv2(FurtherAdjustments_location, stringsAsFactors = F) 
-        var_list                 <- read.csv2(varList_location, stringsAsFactors = F)
+        varList                  <- read.csv2(varList_location, stringsAsFactors = F)
         
         type <- metadata$type
         year <- metadata$year
         
-        
         if(metadata$type != "pnadc"){
                 var_sector <- varList %>%
                         filter(data == metadata$type & year == metadata$year) %>%
-                        .$var_sector
+                        .$var_sector %>% 
+                        tolower()
                 
                 var_ocup <- varList %>%
                         filter(data == metadata$type & year == metadata$year) %>%
-                        .$var_ocup
+                        .$var_ocup %>% 
+                        tolower()
         }else{
                 var_sector <- varList %>%
                         filter(data == metadata$type) %>%
-                        .$var_sector
+                        .$var_sector %>% 
+                        tolower()
                 
                 var_ocup <- varList %>%
                         filter(data == metadata$type) %>%
-                        .$var_ocup
+                        .$var_ocup %>% 
+                        tolower()
         }
         
-        harmonizeIBGE:::check_necessary_vars(Data, var_ocup, var_sector, "sectorISIC3", "classWorker")
+        harmonizeIBGE:::check_necessary_vars(CensusData, c(var_ocup, var_sector)) 
         
-        banco_tmp <- CensusData[, c(var_ocup,
-                                    var_sector,
-                                    sectorISIC3,
-                                    classWorker), drop = T]
+        sectorISIC3_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("sectorISIC3"))
+        if(length(check_vars) > 0){
+                CensusData <- build_work_sectorISIC3(CensusData)
+                sectorISIC3_just_created = T
+        }
+        
+        classWorker_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("classWorker"))
+        if(length(check_vars) > 0){
+                CensusData <- build_work_classWorker(CensusData)
+                classWorker_just_created = T
+        }
+        
+        banco_tmp <- CensusData %>% 
+                select(var_ocup, var_sector, "sectorISIC3", "classWorker")
         
         setnames(banco_tmp, old = names(banco_tmp), new = c("ibge_code", "sector", "isic", "class_worker"))
         
         
-        if(type == "censo"){
+        if(type == "census"){
                 y = year
         }
         
@@ -206,6 +221,14 @@ build_work_isco88 <- function(CensusData){
         
         CensusData[, isco88 := banco_tmp$isco88_4digit]
         gc()
+        
+        if(sectorISIC3_just_created == T){
+                CensusData[, sectorISIC3 := NULL]
+        }
+        
+        if(classWorker_just_created == T){
+                CensusData[, classWorker := NULL]
+        }
         
         
         CensusData

@@ -13,10 +13,32 @@ build_income_hhIncome2010Values <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
 
-        check_vars <- check_var_existence(CensusData, c("idhh", "totalIncome2010Values", "hhType", "nonrelative"))
+        idhh_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("idhh"))
         if(length(check_vars) > 0){
-                stop("The following variables are missing from the data: ",
-                     paste(check_vars, collapse = ", "))
+                CensusData <- eval(parse(text = paste0("build_indentification_idhh", metadata$year, "(CensusData)")))
+                idhh_just_created = T
+        }
+        
+        hhType_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("hhType"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_household_hhType", metadata$year, "(CensusData)")))
+                hhType_just_created = T
+        }
+        
+        nonrelative_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("nonrelative"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_demographics_nonrelative", metadata$year, "(CensusData)")))
+                nonrelative_just_created = T
+        }
+        
+        totalIncome2010Values_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("totalIncome2010Values"))
+        if(length(check_vars) > 0){
+                CensusData <- build_income_totalIncome2010Values(CensusData)
+                hhIncome2010Values_just_created = T
         }
 
         # Copying the income information
@@ -32,7 +54,7 @@ build_income_hhIncome2010Values <- function(CensusData){
         CensusData[, hhIncome2010Values := sum(totalIncome2010Values_tmp), by=idhh]
 
         # Non-relatives will be NAs:
-        CensusData[relative != 1, hhIncome2010Values := NA]
+        CensusData[nonrelative == 1, hhIncome2010Values := NA]
 
         # Collective households will be NAs:
         # 0 "private permanent" 
@@ -43,6 +65,28 @@ build_income_hhIncome2010Values <- function(CensusData){
         gc()
         
         CensusData[, totalIncome2010Values_tmp := NULL]
+        
+        metadata = harmonizeIBGE:::get_metadata(CensusData)
+        if(metadata$year == 1960){
+                CensusData[, hhIncome2010Values := NA]
+        }
+        
+        if(idhh_just_created == T){
+                CensusData[, idhh := NULL] 
+        }
+        
+        if(hhType_just_created == T){
+                CensusData[, hhType := NULL] 
+        }
+        
+        if(nonrelative_just_created == T){
+                CensusData[, nonrelative := NULL] 
+        }
+        
+        if(totalIncome2010Values_just_created == T){
+                CensusData[, totalIncome2010Values := NULL] 
+        }
+        
         
         gc()
         CensusData

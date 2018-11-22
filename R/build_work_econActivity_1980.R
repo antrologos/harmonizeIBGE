@@ -24,7 +24,7 @@ build_work_econActivity_1980 <- function(CensusData){
         CensusData[ v529 %in% 3:9 , econActivity := 0]
         CensusData[ v541 %in% 1:4 , econActivity := 1]
         
-        CensusData[age < 10, econ_active := NA]
+        CensusData[age < 10, econActivity := NA]
         gc()
         
         CensusData

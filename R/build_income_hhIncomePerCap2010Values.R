@@ -15,11 +15,29 @@ build_income_hhIncomePerCap2010Values <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        check_vars <- check_var_existence(CensusData, c("idhh", "hhIncome2010Values", "nonrelative"))
+        metadata = harmonizeIBGE:::get_metadata(CensusData)
+        
+        idhh_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("idhh"))
         if(length(check_vars) > 0){
-                stop("The following variables are missing from the data: ",
-                     paste(check_vars, collapse = ", "))
+                CensusData <- eval(parse(text = paste0("build_indentification_idhh", metadata$year, "(CensusData)")))
+                idhh_just_created = T
         }
+        
+        nonrelative_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("nonrelative"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_demographics_nonrelative", metadata$year, "(CensusData)")))
+                nonrelative_just_created = T
+        }
+        
+        hhIncome2010Values_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("hhIncome2010Values"))
+        if(length(check_vars) > 0){
+                CensusData <- build_income_hhIncome2010Values(CensusData)
+                hhIncome2010Values_just_created = T
+        }
+        
         
         gc()
 
@@ -39,7 +57,26 @@ build_income_hhIncomePerCap2010Values <- function(CensusData){
 
         CensusData[ , numberRelatives_tmp := NULL]
         
+        
+        if(metadata$year == 1960){
+                CensusData[, hhIncomePerCap2010Values := NA]
+        }
+        
+        
 
+        if(idhh_just_created == T){
+                CensusData[, idhh := NULL] 
+        }
+
+        if(nonrelative_just_created == T){
+                CensusData[, nonrelative := NULL] 
+        }
+       
+        
+        if(hhIncome2010Values_just_created == T){
+                CensusData[, hhIncome2010Values := NULL] 
+        }
+        
         gc()
         CensusData
 }

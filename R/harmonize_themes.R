@@ -42,11 +42,17 @@ harmonize_themes <- function(CensusData, themes = "all"){
                                           paste0(paste(function_i, collapse = "_"), "(CensusData)"))
         }
         
+        
         for(function_to_execute_i in functions_to_execute){
+                #i = 1
+                #function_to_execute_i <- functions_to_execute[i]
                 print(paste("Executing", function_to_execute_i))
                 
-                CensusData <- eval(parse(text = functions_to_execute))
+                CensusData <- eval(parse(text = function_to_execute_i))
+                #names(CensusData)
+                #i = i+1
         }
-             
+        
+        
         CensusData
 }

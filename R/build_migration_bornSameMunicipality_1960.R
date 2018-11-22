@@ -13,6 +13,7 @@ build_migration_bornSameMunicipality_1960 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v209"))
         if(length(check_vars) > 0){
@@ -21,7 +22,7 @@ build_migration_bornSameMunicipality_1960 <- function(CensusData){
         }
         
         # Building dweller
-        check_vars <- check_var_existence(CensusData, c("dweller"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("dweller"))
         dweller_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- build_identification_dweller_1960(CensusData)
@@ -30,7 +31,7 @@ build_migration_bornSameMunicipality_1960 <- function(CensusData){
         gc()
         
         # Building stateMiniumComparable
-        check_vars <- check_var_existence(CensusData, c("stateOfBirthMCA"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateOfBirthMCA"))
         stateOfBirthMCA_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- build_migration_stateOfBirthMCA_1960(CensusData)
@@ -54,10 +55,12 @@ build_migration_bornSameMunicipality_1960 <- function(CensusData){
         }
         
         if(stateOfBirthMCA_just_created == T){
-                CensusData[ , stateOfBirthMCA_just_created := NULL]
+                CensusData[ , stateOfBirthMCA := NULL]
         }
         
         warning("This result is still wrong. There inconsistency between the variables bornSameMunicipality and bornSameStateMCA")
+        
+        CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata)
         
         gc()
         CensusData

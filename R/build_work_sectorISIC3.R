@@ -1,12 +1,13 @@
 #' @export
 
-build_work_sectorISIC3 <- function(Data){
+build_work_sectorISIC3 <- function(CensusData){
         
-        Data     <- harmonizeIBGE:::check_prepared_to_harmonize(Data)
-        metadata <- harmonizeIBGE:::get_metadata(Data)
-        sulfix   <- harmonizeIBGE:::find_sulfixforOccSectors(Data)
+        CensusData     <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        metadata <- harmonizeIBGE:::get_metadata(CensusData)
+        sulfix   <- harmonizeIBGE:::find_sulfixforOccSectors(CensusData)
         
         just_created_vars_list_existedBefore <- exists(x = "just_created_vars", where = .GlobalEnv)
+        
         
         crosswalk_location <- system.file("extdata",
                                           "crosswalk_sector_isic3.csv",
@@ -33,33 +34,55 @@ build_work_sectorISIC3 <- function(Data){
                         .$var_sector
         }
         
-        harmonizeIBGE:::check_necessary_vars(Data, varName, "occupationalStatus", "econActivity")
+        harmonizeIBGE:::check_necessary_vars(CensusData, varName)
         
-        Data[ , sector_code := Data[[varName]] ]
+        econActivity_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("econActivity"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_work_econActivity_", metadata$year,"(CensusData)")))
+                econActivity_just_created = T
+        }
         
-        # efficient join using data.table sintax:
-        Data = crosswalk[Data, on = "sector_code"] # this causes loss of the metadata
+        occupationalStatus_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("occupationalStatus"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_work_occupationalStatus_", metadata$year,"(CensusData)")))
+                occupationalStatus_just_created = T
+        }
         
-        Data = harmonizeIBGE:::set_metadata(Data, metadata) #recovering metadata...
+        CensusData[ , sector_code := CensusData[[varName]] ]
+        
+        # efficient join using CensusData.table sintax:
+        CensusData = crosswalk[CensusData, on = "sector_code"] # this causes loss of the metadata
+        
+        CensusData = harmonizeIBGE:::set_metadata(CensusData, metadata) #recovering metadata...
         
         gc(); Sys.sleep(.3);gc()
         
-        Data <- Data %>%
+        CensusData <- CensusData %>%
                 select(-sectorISIC3, everything(), sectorISIC3, -sector_code)
         
-        Data[sectorISIC3 == 0, sectorISIC3 := NA]
+        CensusData[sectorISIC3 == 0, sectorISIC3 := NA]
         
-        Data[is.na(occupationalStatus) | occupationalStatus == 0, sectorISIC3 := NA]
-        Data[is.na(econActivity)       | econActivity == 0      , sectorISIC3 := NA]
+        CensusData[is.na(occupationalStatus) | occupationalStatus == 0, sectorISIC3 := NA]
+        CensusData[is.na(econActivity)       | econActivity == 0      , sectorISIC3 := NA]
         
-        Data[ occupationalStatus == 1 & is.na(sectorISIC3), sectorISIC3 := 999]
+        CensusData[ occupationalStatus == 1 & is.na(sectorISIC3), sectorISIC3 := 999]
         
-        if(just_created_vars_list_existedBefore == F){
-                Data <- harmonizeIBGE:::erase_just_created_vars(Data)
+        #if(just_created_vars_list_existedBefore == F){
+        #        CensusData <- harmonizeIBGE:::erase_just_created_vars(CensusData)
+        #}
+        
+        if(econActivity_just_created == T){
+                CensusData[ ,econActivity := NULL]
         }
+        
+        if(occupationalStatus_just_created == T){
+                CensusData[ , occupationalStatus := NULL]
+        } 
         
         gc()
         
-        Data
+        CensusData
 }
 

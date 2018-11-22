@@ -13,6 +13,8 @@ build_geography_stateMiniumComparable_1960 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
+        
         stateCurrent_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateCurrent"))
         if(length(check_vars) > 0){
@@ -29,20 +31,31 @@ build_geography_stateMiniumComparable_1960 <- function(CensusData){
                 rename(stateCurrent          = original_code,
                        stateMiniumComparable = semi_harmonized_code)
         
-        CensusData <- data.table:::merge.data.table(x = CensusData,
-                                                    y = crosswalk_states_tmp,
-                                                    by = "stateCurrent", 
-                                                    all.x = T, 
-                                                    all.y = F, 
-                                                    sort = F)
         
-        gc()
         
-        if(stateCurrent_just_created == TRUE){
-                CensusData[ , stateCurrent := NULL]
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMiniumComparable"))
+        
+        if(length(check_vars) == 0){
+                if(stateCurrent_just_created == TRUE){
+                        CensusData[ , stateCurrent := NULL]
+                }
+                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata)
+                return(CensusData)
+        }else{
+                CensusData <- data.table:::merge.data.table(x  = CensusData,
+                                                            y  = crosswalk_states_tmp,
+                                                            by = "stateCurrent", 
+                                                            all.x = T, 
+                                                            all.y = F, 
+                                                            sort  = F)
+                
+                gc()
+                if(stateCurrent_just_created == TRUE){
+                        CensusData[ , stateCurrent := NULL]
+                }
+                
+                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
+                gc()
+                return(CensusData)
         }
-        
-        
-        gc()
-        CensusData
 }

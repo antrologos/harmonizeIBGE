@@ -19,6 +19,8 @@ build_migration_stateOfBirthMCA_1960 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
+        
         bornInBrazil_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("bornInBrazil"))
         if(length(check_vars) > 0){
@@ -33,26 +35,39 @@ build_migration_stateOfBirthMCA_1960 <- function(CensusData){
                 rename(v207            = original_code,
                        stateOfBirthMCA = semi_harmonized_code) 
         
-        CensusData <- data.table:::merge.data.table(x = CensusData,
-                                                    y = crosswalk_states_tmp,
-                                                    by = "v207", 
-                                                    all.x = T, 
-                                                    all.y = F, 
-                                                    sort = F)
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateOfBirthMCA"))
         
-        gc()
+        if(length(check_vars) == 0){
+                
+                if(bornInBrazil_just_created == T){
+                        CensusData[ , bornInBrazil := NULL]
+                }
+                
+                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata)
+                return(CensusData)
         
-        ## Foreigns  = 999
-        CensusData[ bornInBrazil == 0, stateOfBirthMCA := 999]
-        
-        
-        if(bornInBrazil_just_created == T){
-                CensusData[ , bornInBrazil := NULL]
+        }else{
+                
+                CensusData <- data.table:::merge.data.table(x = CensusData,
+                                                            y = crosswalk_states_tmp,
+                                                            by = "v207", 
+                                                            all.x = T, 
+                                                            all.y = F, 
+                                                            sort = F)
+                
+                gc()
+                
+                ## Foreigns  = 999
+                CensusData[ bornInBrazil == 0, stateOfBirthMCA := 999]
+                
+                if(bornInBrazil_just_created == T){
+                        CensusData[ , bornInBrazil := NULL]
+                }
+                
+                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
+                gc()
+                return(CensusData)
         }
-        
-        
-        gc()
-        CensusData
 }
 
 

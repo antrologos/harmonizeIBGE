@@ -14,10 +14,10 @@ build_income_totalIncome2010Values <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        Data     <- harmonizeIBGE:::check_prepared_to_harmonize(Data)
-        metadata <- harmonizeIBGE:::get_metadata(Data)
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        metadata   <- harmonizeIBGE:::get_metadata(CensusData)
         
-        year == metadata$year
+        year = metadata$year
         
         check_vars <- check_var_existence(CensusData, c("age"))
         if(length(check_vars) > 0){
