@@ -3,150 +3,148 @@
 #' @value data.frame
 #' @export
 
+#CensusData <- censo
 
 build_work_classWorker <- function(CensusData){
-
-        CensusData <- check_prepared_to_harmonize(CensusData)
         
-        metadata    <- get_metadata(CensusData)
+        CensusData  <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        
+        metadata    <- harmonizeIBGE:::get_metadata(CensusData)
         year        <- metadata$year
-
+        
         if(year == 1960){
                 
-                var_setor   = CensusData$v223b
-                var_posOcup = CensusData$v224
+                CensusData[ ,var_setor   := v223b]
+                CensusData[ ,var_posOcup := v224]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% c(111:219,291,292)] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[ var_setor %in% c(111:219,291,292), setor_primario := 1]
+                CensusData[ is.na(var_setor),                  setor_primario := NA]
                 
-                posOcup <- rep(NA, length(var_posOcup))
+                CensusData[ var_posOcup==1, classWorker := as.numeric(NA)]
                 
-                posOcup[var_posOcup==1] <- NA
-                posOcup[var_posOcup %in% 5:6] <- 1
-                posOcup[var_posOcup==9] <- 2
-                posOcup[var_posOcup==7 &  setor_primario == 0] <- 3
-                posOcup[var_posOcup==7 &  setor_primario == 1] <- 4
-                posOcup[var_posOcup==8] <- 4
-                posOcup[var_posOcup==0 & setor_primario == 0] <- 5
-                posOcup[var_posOcup==0 & setor_primario == 1] <- 6
+                CensusData[ var_posOcup %in% 5:6, classWorker := 1]
+                CensusData[ var_posOcup==9, classWorker := 2]
+                CensusData[ var_posOcup==7 &  setor_primario == 0, classWorker := 3]
+                CensusData[ var_posOcup==7 &  setor_primario == 1, classWorker := 4]
+                CensusData[ var_posOcup==8, classWorker := 4]
+                CensusData[ var_posOcup==0 & setor_primario == 0, classWorker := 5]
+                CensusData[ var_posOcup==0 & setor_primario == 1, classWorker := 6]
                 
                 message("Esta variavel de posicao na ocupacao refere-se ao trabalho 'habitual' do individuo")
         }
         
         if(year == 1970){
                 
-                var_setor   = CensusData$v045
-                var_posOcup = CensusData$v046
+                CensusData[ ,var_setor   := v045]
+                CensusData[ ,var_posOcup := v046]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% 111:223] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[var_setor %in% 111:223 ,setor_primario := 1]
+                CensusData[is.na(var_setor) ,setor_primario := NA]
                 
                 
-                posOcup <- rep(NA, length(var_posOcup))
-                
-                posOcup[var_posOcup == 0] <- NA
-                posOcup[var_posOcup %in% 1:2] <- 1
-                posOcup[var_posOcup == 5] <- 2
-                posOcup[var_posOcup == 3 & setor_primario == 0] <- 3
-                posOcup[var_posOcup == 3 & setor_primario == 1] <- 4
-                posOcup[var_posOcup == 4] <- 4
-                posOcup[var_posOcup == 6 & setor_primario == 0] <- 5
-                posOcup[var_posOcup == 6 & setor_primario == 1] <- 6
+                CensusData[var_posOcup == 0 ,classWorker := as.numeric(NA)]
+                CensusData[var_posOcup %in% 1:2 ,classWorker := 1]
+                CensusData[var_posOcup == 5 ,classWorker := 2]
+                CensusData[var_posOcup == 3 & setor_primario == 0 ,classWorker := 3]
+                CensusData[var_posOcup == 3 & setor_primario == 1 ,classWorker := 4]
+                CensusData[var_posOcup == 4 ,classWorker := 4]
+                CensusData[var_posOcup == 6 & setor_primario == 0 ,classWorker := 5]
+                CensusData[var_posOcup == 6 & setor_primario == 1 ,classWorker := 6]
                 
                 message("Esta variavel de posicao na ocupacao refere-se ao trabalho 'habitual' do indiv??duo")
         }
         
         if(year == 1980){
                 
-                var_setor   = CensusData$v532
-                var_posOcup_1 = CensusData$v533
-                var_posOcup_2 = CensusData$v545
+                CensusData[ ,var_setor     := v532]
+                CensusData[ ,var_posOcup := ifelse(!is.na(v545) & v545 != 0, v545, v533)]
                 
-                var_posOcup = ifelse(!is.na(var_posOcup_2) & var_posOcup_2 != 0, var_posOcup_2, var_posOcup_1)
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[var_setor %in% 11:42 ,setor_primario := 1]
+                CensusData[is.na(var_setor),setor_primario := NA]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% 11:42] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[var_posOcup == 9 , classWorker := as.numeric(NA)]
                 
-                posOcup <- rep(NA, length(var_posOcup))
-                
-                posOcup[var_posOcup == 9] <- NA
-                
-                posOcup[var_posOcup %in% c(1:2,6)] <- 1
-                posOcup[var_posOcup %in% c(4,7) ] <- 2
-                posOcup[var_posOcup == 8 & setor_primario == 0] <- 3
-                posOcup[var_posOcup == 8 & setor_primario == 1] <- 4
-                posOcup[var_posOcup %in% c(3,5)] <- 4
-                posOcup[var_posOcup == 0 & setor_primario == 0] <- 5
-                posOcup[var_posOcup == 0 & setor_primario == 1] <- 6
+                CensusData[var_posOcup %in% c(1:2,6) ,classWorker := 1]
+                CensusData[var_posOcup %in% c(4,7)  ,classWorker := 2]
+                CensusData[var_posOcup == 8 & setor_primario == 0 ,classWorker := 3]
+                CensusData[var_posOcup == 8 & setor_primario == 1 ,classWorker := 4]
+                CensusData[var_posOcup %in% c(3,5) ,classWorker := 4]
+                CensusData[var_posOcup == 0 & setor_primario == 0 ,classWorker := 5]
+                CensusData[var_posOcup == 0 & setor_primario == 1 ,classWorker := 6]
                 
                 
         }
         
         if(year == 1991){
                 
-                var_setor   = CensusData$v0347
-                var_posOcup = CensusData$v0349
+                CensusData[ ,var_setor   := v0347]
+                CensusData[ ,var_posOcup := v0349]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% 11:42] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[var_setor %in% 11:42 ,setor_primario := 1]
+                CensusData[is.na(var_setor) ,setor_primario := NA]
                 
-                posOcup <- rep(NA, length(var_posOcup))
                 
-                posOcup[var_posOcup %in% c(1,4,6:8)] <- 1
-                posOcup[var_posOcup == 10] <- 2
-                posOcup[var_posOcup == 5] <- 3
-                posOcup[var_posOcup == 9 & setor_primario == 0] <- 3
-                posOcup[var_posOcup == 9 & setor_primario == 1] <- 4
-                posOcup[var_posOcup %in% c(2,3)] <- 4
-                posOcup[var_posOcup == 11 & setor_primario == 0] <- 5
-                posOcup[var_posOcup == 11 & setor_primario == 1] <- 6
+                CensusData[var_posOcup %in% c(1,4,6:8) ,classWorker := 1]
+                CensusData[var_posOcup == 10 ,classWorker := 2]
+                CensusData[var_posOcup == 5 ,classWorker := 3]
+                CensusData[var_posOcup == 9 & setor_primario == 0 ,classWorker := 3]
+                CensusData[var_posOcup == 9 & setor_primario == 1 ,classWorker := 4]
+                CensusData[var_posOcup %in% c(2,3) ,classWorker := 4]
+                CensusData[var_posOcup == 11 & setor_primario == 0 ,classWorker := 5]
+                CensusData[var_posOcup == 11 & setor_primario == 1 ,classWorker := 6]
                 
         }
         
         if(year == 2000){
                 
-                var_setor   = CensusData$v4462
-                var_posOcup = CensusData$v0447
+                CensusData[ ,var_setor   := v4462]
+                CensusData[ ,var_posOcup := v0447]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% 1101:5002] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[var_setor %in% 1101:5002 ,setor_primario := 1]
+                CensusData[is.na(var_setor) ,setor_primario := NA]
                 
-                posOcup <- rep(NA, length(var_posOcup))
-                
-                posOcup[var_posOcup %in% 1:4] <- 1
-                posOcup[var_posOcup == 5] <- 2
-                posOcup[var_posOcup == 6 & setor_primario == 0] <- 3
-                posOcup[var_posOcup == 6 & setor_primario == 1] <- 4
-                posOcup[var_posOcup %in% c(7,8) & setor_primario == 0] <- 5
-                posOcup[var_posOcup %in% c(7,8) & setor_primario == 1] <- 6
-                posOcup[var_posOcup == 9] <- 6
+                CensusData[var_posOcup %in% 1:4 ,classWorker := 1]
+                CensusData[var_posOcup == 5 ,classWorker := 2]
+                CensusData[var_posOcup == 6 & setor_primario == 0 ,classWorker := 3]
+                CensusData[var_posOcup == 6 & setor_primario == 1 ,classWorker := 4]
+                CensusData[var_posOcup %in% c(7,8) & setor_primario == 0 ,classWorker := 5]
+                CensusData[var_posOcup %in% c(7,8) & setor_primario == 1 ,classWorker := 6]
+                CensusData[var_posOcup == 9 ,classWorker := 6]
         }
         
         if(year == 2010){
                 
-                var_setor   = CensusData$v6471
-                var_posOcup = CensusData$v6930
+                CensusData[ ,var_setor   := v6471]
+                CensusData[ ,var_posOcup := v6930]
                 
-                setor_primario <- rep(0, length(var_posOcup))
-                setor_primario[var_setor %in% 1101:3002] <- 1
-                setor_primario[is.na(var_setor)] <- NA
+                CensusData[ ,setor_primario := rep(0, length(var_posOcup))]
+                CensusData[var_setor %in% 1101:3002 ,setor_primario := 1]
+                CensusData[is.na(var_setor) ,setor_primario := NA]
                 
-                posOcup <- rep(NA, length(var_posOcup))
-                
-                posOcup[var_posOcup %in% 1:3] <- 1
-                posOcup[var_posOcup == 5] <- 2
-                posOcup[var_posOcup == 4 & setor_primario == 0] <- 3
-                posOcup[var_posOcup == 4 & setor_primario == 1] <- 4
-                posOcup[var_posOcup == 6 & setor_primario == 0] <- 5
-                posOcup[var_posOcup == 6 & setor_primario == 1] <- 6
-                posOcup[var_posOcup == 7] <- 6
+                CensusData[var_posOcup %in% 1:3 ,classWorker := 1]
+                CensusData[var_posOcup == 5 ,classWorker := 2]
+                CensusData[var_posOcup == 4 & setor_primario == 0 ,classWorker := 3]
+                CensusData[var_posOcup == 4 & setor_primario == 1 ,classWorker := 4]
+                CensusData[var_posOcup == 6 & setor_primario == 0 ,classWorker := 5]
+                CensusData[var_posOcup == 6 & setor_primario == 1 ,classWorker := 6]
+                CensusData[var_posOcup == 7 ,classWorker := 6]
         }
         gc()
+        
+        CensusData[ ,var_setor   := NULL]
+        gc(); Sys.sleep(.5);gc()
+        
+        CensusData[ ,var_posOcup := NULL]
+        gc(); Sys.sleep(.5);gc()
+        
+        CensusData[ ,setor_primario := NULL]
+        gc(); Sys.sleep(.5);gc()
+        
         
         # 1 "employee"
         # 2 "employer"
@@ -154,10 +152,9 @@ build_work_classWorker <- function(CensusData){
         # 4 "self-employed/unpaid, rural"
         # 5 "unpaid, urban"
         
-        posOcup[posOcup == 6] <- 4
+        CensusData[classWorker == 6, classWorker := 4]
         
-        CensusData[ , classWorker := posOcup]
-        gc()
+        gc(); Sys.sleep(.5);gc()
         
         return(CensusData)
         

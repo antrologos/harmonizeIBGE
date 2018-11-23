@@ -30,9 +30,10 @@ getVarNames <- function(y){
 
 i= 3
 
+#n = 30000
 n = 30000000
 
-for(i in 1:6){
+for(i in 4:6){
         
         ano = variaveis$year[i]
         print(paste("===================================================================================", ano))
@@ -67,6 +68,11 @@ for(i in 1:6){
         censo <- censo %>%
                 harmonize_themes(themes = "all") %>%
                 drop_originalVariables()
+        
+        #censo <- censo %>%
+        #        build_work_classWorker() %>%
+        #        drop_originalVariables()
+        
         Sys.sleep(.5);gc()
         
         write_fst(censo, path = paste0("e:/censos_tmp/censo_harmonizado_", ano, ".fst"))
@@ -75,17 +81,4 @@ for(i in 1:6){
         gc();Sys.sleep(.5);gc()
 }        
 
-
-
-
-censo <- build_demographics_age_1970(censo)
-censo <- build_demographics_famStatus_1970(censo)
-censo <- build_demographics_male_1970(censo)
-censo <- build_demographics_nonrelative_1970(censo)
-censo <- build_demographics_residenceStatus_1970(censo)
-censo <- build_education_attainment_1970(censo)
-censo <- build_education_levelattnd_1970(censo)
-censo <- build_education_literacy_1970(censo)
-censo <- build_education_schoolattnd_1970(censo)
-censo <- build_geography_minCompAreas1970to2010(censo)
 

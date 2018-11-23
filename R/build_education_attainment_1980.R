@@ -10,7 +10,7 @@ build_education_attainment_1980 <- function(CensusData){
                 stop("'CensusData' is not a data.frame")
         }
 
-        check_vars <- check_var_existence(CensusData, c("v520", "v521", "v522", "v523", "v524", "v525"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v520", "v521", "v522", "v523", "v524", "v525"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -26,7 +26,7 @@ build_education_attainment_1980 <- function(CensusData){
         # ============================================================================================================================
 
         # Building age
-        check_vars <- check_var_existence(CensusData, c("age"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
         age_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- build_demographics_age_1980(CensusData)
@@ -222,20 +222,19 @@ build_education_attainment_1980 <- function(CensusData){
         CensusData[is.na(education_tmp2), education_tmp2 := -1]
         CensusData[is.na(education_tmp3), education_tmp3 := -1]
         CensusData[is.na(education_tmp4), education_tmp4 := -1]
-
-        CensusData[, education := as.numeric(NA)]
-
+        gc(); Sys.sleep(1); gc()
+        
+        educVars <- which(names(CensusData) %in% c("education_tmp1", "education_tmp2",
+                                                   "education_tmp3", "education_tmp4"))
+        
         # Regra de desambiguacao: o sujeito tera o maior nivel de ensino
         # dentre os captados pelas 4 variaveis auxiliares.
-        CensusData[, education := apply(cbind(education_tmp1,
-                                              education_tmp2,
-                                              education_tmp3,
-                                              education_tmp4),
-                                        1, max)]
-
+        CensusData[, education := do.call(pmax,.SD) , .SDcols=educVars]
+        gc(); Sys.sleep(1); gc()
+        
+        
         # Levando os valores -1 de volta para NA
         CensusData[education < 1,  education := NA]
-
 
         # Ajuste para idade
         CensusData[age <= 4,  education := NA]
@@ -249,7 +248,7 @@ build_education_attainment_1980 <- function(CensusData){
         CensusData[ , education_tmp4 := NULL]
 
 
-        gc()
+        gc(); Sys.sleep(1); gc()
 
         # ============================================================================================================================
 

@@ -169,25 +169,17 @@ build_education_attainment_1991 <- function(CensusData){
         CensusData[is.na(education_tmp4), education_tmp4 := -1]
         gc()
 
-        CensusData[, education := as.numeric(NA)]
-
+        educVars <- which(names(CensusData) %in% c("education_tmp1", "education_tmp2",
+                                                   "education_tmp3", "education_tmp4"))
+        
         # Regra de desambiguacao: o sujeito tera o maior nivel de ensino
         # dentre os captados pelas 4 variaveis auxiliares.
-        education_tmp <- cbind(CensusData[ , education_tmp1],
-                               CensusData[ , education_tmp2],
-                               CensusData[ , education_tmp3],
-                               CensusData[ , education_tmp4])
-
-        education_tmp <-  apply(education_tmp, 1, max)
-
-        CensusData[, education := education_tmp]
-        gc()
-
-
+        CensusData[, education := do.call(pmax,.SD) , .SDcols=educVars]
+        gc(); Sys.sleep(1); gc()
+        
         # Levando os valores -1 de volta para NA
         CensusData[education < 1,  education := NA]
-        gc()
-
+        
         # Ajuste para idade
         CensusData[age <= 4,  education := NA]
         if(age_just_created == TRUE){
