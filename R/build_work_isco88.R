@@ -63,6 +63,13 @@ build_work_isco88 <- function(CensusData){
         }
         
         harmonizeIBGE:::check_necessary_vars(CensusData, c(var_ocup, var_sector)) 
+
+        age_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_demographics_age_",metadata$year,"(CensusData)")))
+                age_just_created = T
+        }
         
         sectorISIC3_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("sectorISIC3"))
@@ -83,7 +90,8 @@ build_work_isco88 <- function(CensusData){
                         select(v530, v542, var_sector, "sectorISIC3", "classWorker") %>%
                         mutate(ibge_code = ifelse(!is.na(v542) & v542 != 0, v542, v530)) %>%
                         select(-v530, -v542) %>%
-                        select(ibge_code, everything())
+                        select(ibge_code, everything()) %>%
+                        as.data.table()
         }else{
                 banco_tmp <- CensusData %>% 
                         select(var_ocup, var_sector, "sectorISIC3", "classWorker")
@@ -123,14 +131,15 @@ build_work_isco88 <- function(CensusData){
         }
 
         # Selecionando o ano 
-        occ_conversao = occ_conversao %>% filter(year == y)
+        occ_conversao = occ_conversao %>% filter(year == y) %>% as.data.table()
         
         # Importando informacoes sobre o ano especifico
-        banco_tmp <- left_join(banco_tmp, 
-                               occ_conversao, 
-                               by = "ibge_code", 
-                               all.x = T)
+        banco_tmp[  , ordem := 1:nrow(banco_tmp)]
         
+        setkey(banco_tmp, "ibge_code")
+        setkey(occ_conversao, "ibge_code")
+        
+        banco_tmp[occ_conversao, isco88_4digit := isco88_4digit]
         
         banco_tmp$isco88_4digit[banco_tmp$isco88_4digit == 0]     <- NA
         banco_tmp$isco88_4digit[banco_tmp$isco88_4digit == -9999] <- NA
@@ -142,67 +151,84 @@ build_work_isco88 <- function(CensusData){
         sectoral_adjustments1 <- sectoral_adjustments %>%
                 select(year, isic, ibge_code, newISCO_sector) %>%   # por ISIC
                 rename(newISCO_sector1 = newISCO_sector) %>%
-                filter(year == y & !is.na(isic))
+                filter(year == y & !is.na(isic)) %>%
+                select(-year) %>%
+                as.data.table()
                 
         sectoral_adjustments2 <- sectoral_adjustments %>%
                 select(year, sector, ibge_code, newISCO_sector) %>% # por setores na classificacao original
                 rename(newISCO_sector2 = newISCO_sector) %>%
-                filter(year == y & !is.na(sector))
+                filter(year == y & !is.na(sector))%>%
+                select(-year) %>%
+                as.data.table()
         
         class_worker_adjustments1 <- class_worker_adjustments %>%
                 select(year, class_worker, ibge_code, newISCO_classWorker) %>% # gera um ISCO a partir dos c?digos de ocupacao do IBGE
                 rename(newISCO_classWorker1 = newISCO_classWorker) %>%
-                filter(year == y & !is.na(ibge_code))
+                filter(year == y & !is.na(ibge_code)) %>%
+                select(-year) %>%
+                as.data.table()
         
         class_worker_adjustments2 <- class_worker_adjustments %>%
                 select(year, class_worker, oldISCO, newISCO_classWorker) %>% # corrige/gera um novo ISCO, corrigindo a conversao anterior
                 rename(newISCO_classWorker2 = newISCO_classWorker) %>%
-                filter(year == y & !is.na(oldISCO))
+                filter(year == y & !is.na(oldISCO)) %>%
+                select(-year) %>%
+                as.data.table()
+        
         
         
         if(nrow(sectoral_adjustments1) > 0){
-                banco_tmp <- left_join(x = banco_tmp, 
-                                       y = sectoral_adjustments1 %>% select(-year), 
-                                       by = c("isic", "ibge_code"))
+                setkey(banco_tmp, "isic", "ibge_code")
+                setkey(sectoral_adjustments1, "isic", "ibge_code")
+                
+                banco_tmp[sectoral_adjustments1, newISCO_sector1 := newISCO_sector1]
+                
         }
-        gc()
+        gc();Sys.sleep(.1);gc()
         
         if(nrow(sectoral_adjustments2) > 0){
-                banco_tmp <- left_join(x = banco_tmp, 
-                                       y = sectoral_adjustments2 %>% select(-year), 
-                                       by = c("sector", "ibge_code"))
+                setkey(banco_tmp, "sector", "ibge_code")
+                setkey(sectoral_adjustments2, "sector", "ibge_code")
+                
+                banco_tmp[sectoral_adjustments2, newISCO_sector2 := newISCO_sector2]
         }
-        gc()
+        gc();Sys.sleep(.1);gc()
         
         if(nrow(class_worker_adjustments1) > 0){
-                banco_tmp <- left_join(x = banco_tmp, 
-                                       y = class_worker_adjustments1 %>% select(-year), 
-                                       by = c("class_worker", "ibge_code"))
+                setkey(banco_tmp, "class_worker", "ibge_code")
+                setkey(class_worker_adjustments1, "class_worker", "ibge_code")
+                
+                banco_tmp[class_worker_adjustments1, newISCO_classWorker1 := newISCO_classWorker1]
+                
         }
-        gc()
+        gc();Sys.sleep(.1);gc()
         
         if(nrow(class_worker_adjustments2) > 0){
-                banco_tmp <- left_join(x = banco_tmp, 
-                                       y = class_worker_adjustments2 %>% select(-year), 
-                                       by = c("class_worker", "isco88_4digit" = "oldISCO"))
+                setkey(banco_tmp, "class_worker", "isco88_4digit")
+                
+                setnames(class_worker_adjustments2, old = "oldISCO", new = "isco88_4digit")
+                setkey(class_worker_adjustments2, "class_worker", "isco88_4digit")
+                
+                banco_tmp[class_worker_adjustments2, newISCO_classWorker2 := newISCO_classWorker2]
+                
         }
-        gc()
-        
+        gc();Sys.sleep(.1);gc()        
         
         if(is.null(banco_tmp$newISCO_sector1)){
-                banco_tmp$newISCO_sector1 = as.numeric(NA)
+                banco_tmp[ , newISCO_sector1 := as.numeric(NA)]
         }
         
         if(is.null(banco_tmp$newISCO_sector2)){
-                banco_tmp$newISCO_sector2 = as.numeric(NA)
+                banco_tmp[ , newISCO_sector2 := as.numeric(NA)]
         }
         
         if(is.null(banco_tmp$newISCO_classWorker1)){
-                banco_tmp$newISCO_classWorker1 = as.numeric(NA)
+                banco_tmp[ , newISCO_classWorker1 := as.numeric(NA)]
         }
         
         if(is.null(banco_tmp$newISCO_classWorker2)){
-                banco_tmp$newISCO_classWorker2 = as.numeric(NA)
+                banco_tmp[ , newISCO_classWorker2 := as.numeric(NA)]
         }
         
         banco_tmp = data.table(banco_tmp)
@@ -218,19 +244,33 @@ build_work_isco88 <- function(CensusData){
       
         further_adjustments <- further_adjustments %>%
                 filter(!is.na(newISCO)) %>%
-                rename(newISCO_further = newISCO)
-                
-        banco_tmp <- left_join(x = banco_tmp, 
-                               y = further_adjustments, 
-                               by = c("isco88_4digit" = "oldISCO")) %>%
-                as.data.table()
+                rename(newISCO_further = newISCO,
+                       isco88_4digit   = oldISCO) %>%
+                as.data.table() 
+        
+        setkey(banco_tmp, "isco88_4digit")
+        setkey(further_adjustments, "isco88_4digit")
+        
+        banco_tmp[further_adjustments, newISCO_further := newISCO_further]
+        gc();Sys.sleep(.5);gc()
         
         banco_tmp[!is.na(newISCO_further), isco88_4digit := newISCO_further]
+        
+        banco_tmp <- banco_tmp[, list(ordem, isco88_4digit)]
+        gc();Sys.sleep(.5);gc()
+        
+        banco_tmp <- banco_tmp[order(ordem)]
         
         ######################################################
         
         CensusData[, isco88 := banco_tmp$isco88_4digit]
-        gc()
+        CensusData[ age < 10 , isco88 := NA]
+        
+        rm(banco_tmp);gc();Sys.sleep(.5);gc()
+        
+        if(age_just_created == T){
+                CensusData[, age := NULL]
+        }
         
         if(sectorISIC3_just_created == T){
                 CensusData[, sectorISIC3 := NULL]

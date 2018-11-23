@@ -29,16 +29,17 @@ build_geography_stateMiniumComparable_1970 <- function(CensusData){
                 filter(year == 1970 & variable == "state") %>%
                 select(original_code, semi_harmonized_code) %>%
                 rename(stateCurrent          = original_code,
-                       stateMiniumComparable = semi_harmonized_code)
+                       stateMiniumComparable = semi_harmonized_code)%>%
+                as.data.table() %>%
+                setkey("stateCurrent")
         
-        CensusData <- data.table:::merge.data.table(x = CensusData,
-                                                    y = crosswalk_states_tmp,
-                                                    by = "stateCurrent", 
-                                                    all.x = T, 
-                                                    all.y = F, 
-                                                    sort = F)
+        setkey(CensusData, "stateCurrent")
+        gc(); Sys.sleep(.5); gc()
         
-        gc()
+        CensusData[crosswalk_states_tmp, stateMiniumComparable:= stateMiniumComparable]
+
+        Sys.sleep(.5);gc()
+        
         
         if(stateCurrent_just_created == TRUE){
                 CensusData[ , stateCurrent := NULL]

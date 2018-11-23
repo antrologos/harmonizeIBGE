@@ -23,39 +23,31 @@ build_geography_stateMiniumComparable_1960 <- function(CensusData){
                 gc()
         }
         
+        CensusData[ , stateMiniumComparable := NULL]
+        
         data("crosswalk_states_tmp")
         
         crosswalk_states_tmp <- crosswalk_states_tmp %>%
                 filter(year == 1960 & variable == "state") %>%
                 select(original_code, semi_harmonized_code) %>%
                 rename(stateCurrent          = original_code,
-                       stateMiniumComparable = semi_harmonized_code)
+                       stateMiniumComparable = semi_harmonized_code) %>%
+                as.data.table() %>%
+                setkey("stateCurrent")
         
+        setkey(CensusData, "stateCurrent")
+        gc(); Sys.sleep(.5); gc()
         
+        CensusData[crosswalk_states_tmp, stateMiniumComparable:= stateMiniumComparable]
         
-        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMiniumComparable"))
+        Sys.sleep(.5);gc()
         
-        if(length(check_vars) == 0){
-                if(stateCurrent_just_created == TRUE){
-                        CensusData[ , stateCurrent := NULL]
-                }
-                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata)
-                return(CensusData)
-        }else{
-                CensusData <- data.table:::merge.data.table(x  = CensusData,
-                                                            y  = crosswalk_states_tmp,
-                                                            by = "stateCurrent", 
-                                                            all.x = T, 
-                                                            all.y = F, 
-                                                            sort  = F)
-                
-                gc()
-                if(stateCurrent_just_created == TRUE){
-                        CensusData[ , stateCurrent := NULL]
-                }
-                
-                CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
-                gc()
-                return(CensusData)
+        if(stateCurrent_just_created == TRUE){
+                CensusData[ , stateCurrent := NULL]
         }
+        
+        CensusData <- harmonizeIBGE:::set_metadata(Data = CensusData, metadata = metadata) 
+        gc()
+        CensusData
+       
 }

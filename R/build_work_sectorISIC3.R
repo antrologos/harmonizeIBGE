@@ -36,6 +36,13 @@ build_work_sectorISIC3 <- function(CensusData){
         
         harmonizeIBGE:::check_necessary_vars(CensusData, varName)
         
+        age_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
+        if(length(check_vars) > 0){
+                CensusData <- eval(parse(text = paste0("build_demographics_age_",metadata$year,"(CensusData)")))
+                age_just_created = T
+        }
+        
         econActivity_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("econActivity"))
         if(length(check_vars) > 0){
@@ -52,8 +59,11 @@ build_work_sectorISIC3 <- function(CensusData){
         
         CensusData[ , sector_code := CensusData[[varName]] ]
         
+        setkey(CensusData, "sector_code")
+        setkey(crosswalk, "sector_code")
+        
         # efficient join using CensusData.table sintax:
-        CensusData = crosswalk[CensusData, on = "sector_code"] # this causes loss of the metadata
+        CensusData = CensusData[crosswalk, sectorISIC3 := sectorISIC3] # this causes loss of the metadata
         
         CensusData = harmonizeIBGE:::set_metadata(CensusData, metadata) #recovering metadata...
         
@@ -68,10 +78,15 @@ build_work_sectorISIC3 <- function(CensusData){
         CensusData[is.na(econActivity)       | econActivity == 0      , sectorISIC3 := NA]
         
         CensusData[ occupationalStatus == 1 & is.na(sectorISIC3), sectorISIC3 := 999]
+        CensusData[ age < 10, sectorISIC3 := NA]
         
         #if(just_created_vars_list_existedBefore == F){
         #        CensusData <- harmonizeIBGE:::erase_just_created_vars(CensusData)
         #}
+        
+        if(age_just_created == T){
+                CensusData[ ,age := NULL]
+        }
         
         if(econActivity_just_created == T){
                 CensusData[ ,econActivity := NULL]
@@ -81,7 +96,7 @@ build_work_sectorISIC3 <- function(CensusData){
                 CensusData[ , occupationalStatus := NULL]
         } 
         
-        gc()
+        gc();Sys.sleep(.5);gc()
         
         CensusData
 }

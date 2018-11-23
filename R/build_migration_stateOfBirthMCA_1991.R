@@ -33,16 +33,16 @@ build_migration_stateOfBirthMCA_1991 <- function(CensusData){
                 filter(year == 1991 & variable == "state_of_birth") %>%
                 select(original_code, semi_harmonized_code) %>%
                 rename(v0316            = original_code,
-                       stateOfBirthMCA = semi_harmonized_code) 
+                       stateOfBirthMCA = semi_harmonized_code) %>%
+                as.data.table() %>%
+                setkey("v0316")
         
+        setkey(CensusData, "v0316")
         
-        CensusData <- data.table:::merge.data.table(x = CensusData,
-                                                    y = crosswalk_states_tmp,
-                                                    by = "v0316", 
-                                                    all.x = T, 
-                                                    all.y = F, 
-                                                    sort = F)
-        gc()
+        CensusData[crosswalk_states_tmp, stateOfBirthMCA := stateOfBirthMCA]
+        
+        gc(); Sys.sleep(.5);gc()
+        
         
         CensusData[v0314 %in% c(1,2), stateOfBirthMCA := stateCurrent]
         

@@ -51,6 +51,7 @@ harmonize_themes <- function(CensusData, themes = "all"){
                 CensusData <- eval(parse(text = function_to_execute_i))
                 #names(CensusData)
                 #i = i+1
+                gc();Sys.sleep(.5);gc()
         }
         
         

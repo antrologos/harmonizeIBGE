@@ -1,14 +1,17 @@
-rm(list=ls());gc()
+rm(list=ls());gc();Sys.sleep(.5);gc()
 options(scipen=999)
 library(tidyverse)
 library(stringr)
 library(Hmisc)
 library(data.table)
 library(harmonizeIBGE)
+library(fst)
+#install.packages("fst")
 
-setwd("E:/Dropbox-Ro/Dropbox/Rogerio/Bancos_Dados/Censos/Censo 2010")
+setwd("E:/Dropbox-Ro/Dropbox/Rogerio/Bancos_Dados/Censos")
 
 variaveis <- fread("E:/Google Drive/RCodes/PacotesR/harmonizeIBGE/Admin/variaveis_CENSOS.csv")
+
 
 
 getVarNames <- function(y){
@@ -25,61 +28,64 @@ getVarNames <- function(y){
                 .[!duplicated(.)]
 }
 
+i= 3
 
-#c60 <- fread("Censo.1960.brasil.pessoas.amostra.1.27porcento.csv", 
-#             select = getVarNames(1960),
-#             nrows = 30000000) %>%
-#        prepare_to_harmonize(type = "census", year = 1960)
+n = 30000000
 
-#c70 <- fread("Censo.1970.brasil.pessoas.amostra.25porcento.csv", 
-#             select = getVarNames(1970),
-#             nrows = 100000) %>%
-#        prepare_to_harmonize(type = "census", year = 1970, state_var_name = "CEM005")
-
-#c80 <- fread("Censo.1980.brasil.pessoas.amostra.25porcento.csv", 
-#             select = getVarNames(1980),
-#             nrows = 100000) %>%
-#        prepare_to_harmonize(type = "census", year = 1980)
-
-
-#c91 <- fread("Censo.1991.brasil.pessoas.amostra.10porcento.csv", 
-#             select = getVarNames(1991),
-#             nrows = 100000) %>%
-#        prepare_to_harmonize(type = "census", year = 1991)
-
-
-#c00_pes <- fread("Censo.2000.brasil.pessoas.amostra.10porcento.csv", 
-#             select = getVarNames(2000),
-#             nrows = 100000) 
-#c00_dom <- fread("Censo.2000.brasil.domicilios.amostra.10porcento.csv", 
-#             select = getVarNames(2000),
-#             nrows = 100000)
-#repeated_vars <- tolower(names(c00_dom)) %in% tolower(names(c00_pes))
-#repeated_vars[which(names(c00_dom) == "V0300")] = F
-#c00_dom <- c00_dom %>% select(names(c00_dom)[!repeated_vars])
-#c00 <- data.table:::merge.data.table(x = c00_pes,
-#                                     y = c00_dom,
-#                                     by = "V0300",
-#                                     all.x = TRUE, 
-#                                     all.y = FALSE, 
-#                                     sort = FALSE) %>%
-#        prepare_to_harmonize(type = "census", year = 2000)
-#rm(c00_pes, c00_dom);gc()
-
-
-c10 <- fread("Censo.2010.brasil.pessoas.amostra.10porcento.csv", 
-             select = getVarNames(2010),
-             nrows = 100000) %>%
-        prepare_to_harmonize(type = "census", year = 2010)
-
-CensusData <- harmonize_themes(c10,  themes = "identification")
-CensusData <- harmonize_themes(CensusData, themes = "household")
-CensusData <- harmonize_themes(CensusData, themes = "demographics")
-CensusData <- harmonize_themes(CensusData, themes = "geography") 
-CensusData <- harmonize_themes(CensusData, themes = "migration") 
-CensusData <- harmonize_themes(CensusData, themes = "education")
-CensusData <- harmonize_themes(CensusData, themes = "work")
-CensusData <- harmonize_themes(CensusData, themes = "income")
+for(i in 1:6){
+        
+        ano = variaveis$year[i]
+        print(paste("===================================================================================", ano))
+        
+        if(ano != 2000){
+                censo <- fread(paste0("Censo ", ano, "/", variaveis$file_person[i]), 
+                               select = getVarNames(ano),
+                               nrows = n) %>%
+                        prepare_to_harmonize(type = "census", year = ano, state_var_name = ifelse(ano == 1970, "CEM005", ""))
+                Sys.sleep(.5);gc()
+        }else{
+                
+                c00_pes <- fread(paste0("Censo ", ano, "/", variaveis$file_person[i]), 
+                                 select = getVarNames(ano),
+                                 nrows = n) 
+                c00_dom <- fread(paste0("Censo ", ano, "/", variaveis$file_household[i]), 
+                                 select = getVarNames(ano),
+                                 nrows = n) 
+                repeated_vars <- tolower(names(c00_dom)) %in% tolower(names(c00_pes))
+                repeated_vars[which(names(c00_dom) == "V0300")] = F
+                c00_dom <- c00_dom %>% select(names(c00_dom)[!repeated_vars])
+                censo <- data.table:::merge.data.table(x = c00_pes,
+                                                     y = c00_dom,
+                                                     by = "V0300",
+                                                     all.x = TRUE, 
+                                                     all.y = FALSE, 
+                                                     sort = FALSE) %>%
+                        prepare_to_harmonize(type = "census", year = 2000)
+                rm(c00_pes, c00_dom);gc();Sys.sleep(.5);gc()
+        }
+        
+        censo <- censo %>%
+                harmonize_themes(themes = "all") %>%
+                drop_originalVariables()
+        Sys.sleep(.5);gc()
+        
+        write_fst(censo, path = paste0("e:/censos_tmp/censo_harmonizado_", ano, ".fst"))
+        
+        rm(censo)
+        gc();Sys.sleep(.5);gc()
+}        
 
 
+
+
+censo <- build_demographics_age_1970(censo)
+censo <- build_demographics_famStatus_1970(censo)
+censo <- build_demographics_male_1970(censo)
+censo <- build_demographics_nonrelative_1970(censo)
+censo <- build_demographics_residenceStatus_1970(censo)
+censo <- build_education_attainment_1970(censo)
+censo <- build_education_levelattnd_1970(censo)
+censo <- build_education_literacy_1970(censo)
+censo <- build_education_schoolattnd_1970(censo)
+censo <- build_geography_minCompAreas1970to2010(censo)
 

@@ -23,6 +23,7 @@ build_geography_regionMiniumComparable <- function(CensusData){
                 stateCurrent_just_created = T
                 gc()
         }
+        gc();Sys.sleep(.5);gc()
         
         
         stateMiniumComparable_just_created = F
@@ -32,6 +33,8 @@ build_geography_regionMiniumComparable <- function(CensusData){
                 stateMiniumComparable_just_created = T
                 gc()
         }
+        gc();Sys.sleep(.5);gc()
+        
         
         CensusData[ , regionMiniumComparable := trunc(stateMiniumComparable/10)]
         

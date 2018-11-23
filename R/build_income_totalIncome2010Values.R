@@ -19,10 +19,12 @@ build_income_totalIncome2010Values <- function(CensusData){
         
         year = metadata$year
         
-        check_vars <- check_var_existence(CensusData, c("age"))
+        age_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
         if(length(check_vars) > 0){
-                stop("The following variables are missing from the data: ",
-                     paste(check_vars, collapse = ", "))
+                CensusData <- eval(parse(text = paste0("build_demographics_age_", metadata$year, "(CensusData)")))
+                age_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         
@@ -31,7 +33,7 @@ build_income_totalIncome2010Values <- function(CensusData){
         }
         
         if(year == 1970){
-                check_vars <- check_var_existence(CensusData, "v041")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v041")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -47,40 +49,45 @@ build_income_totalIncome2010Values <- function(CensusData){
         if(year == 1980){
                 varlist = c("v607", "v608", "v609", "v610", "v611", "v612", "v613")
                 
-                check_vars <- check_var_existence(CensusData, varlist)
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, varlist)
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
                 }
                 
-                for(var in varlist){
-                        print(var)
-                        CensusData[[var]][is.na(CensusData[[var]])] <- 0
-                        CensusData[[var]][CensusData[[var]] == 9999999] <- NA
+                identify_NA = function(x){
+                        x == 9999999
                 }
+                
+                replace_NA_and_zeros = function(x){
+                        x[is.na(x)] <- 0
+                        x[x == 9999999] <- NA
+                        x
+                }
+                
+                colNumbers = which(names(CensusData) %in% varlist)
+                
+                CensusData[ , income_NAs := rowSums(
+                        CensusData[, lapply(.SD, identify_NA), .SDcols=colNumbers], 
+                        na.rm = TRUE)]
                 gc(); Sys.sleep(1); gc()
                 
-                income_matrix <-
-                        CensusData[, (varlist), with=F] %>%
-                        as.matrix()
+                CensusData[ , totalIncome2010Values := rowSums(
+                        CensusData[, lapply(.SD, replace_NA_and_zeros), .SDcols=colNumbers], 
+                        na.rm = TRUE)/9.091145084]
                 gc(); Sys.sleep(1); gc()
                 
-                missing_values <- apply(income_matrix, 1, function(x) all(is.na(x)))
-                income <-  rowSums(income_matrix)
+                CensusData[income_NAs == length(colNumbers), income := NA ]
+                gc(); Sys.sleep(.5); gc()
                 
-                rm(income_matrix)
-                gc(); Sys.sleep(1); gc()
+                CensusData[, income_NAs := NULL]
+                gc(); Sys.sleep(.5); gc()
                 
-                income[missing_values] <- NA
-                gc(); Sys.sleep(1); gc()
-                
-                CensusData[ , `:=`("totalIncome2010Values", income/9.091145084)]
-                gc(); Sys.sleep(1); gc()
         }
         
         if(year == 1991){
                 
-                check_vars <- check_var_existence(CensusData, "v3561")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v3561")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -96,7 +103,7 @@ build_income_totalIncome2010Values <- function(CensusData){
         
         if(year == 2000){
                 
-                check_vars <- check_var_existence(CensusData, "v4614")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v4614")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -109,7 +116,7 @@ build_income_totalIncome2010Values <- function(CensusData){
         
         if(year == 2010){
                 
-                check_vars <- check_var_existence(CensusData, "v6527")
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, "v6527")
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -120,7 +127,15 @@ build_income_totalIncome2010Values <- function(CensusData){
         }
         gc(); Sys.sleep(1); gc()
         
+        
         CensusData[age  < 10 , totalIncome2010Values := NA]
+        gc(); Sys.sleep(.5); gc()
+        
+        if(age_just_created == T){
+                CensusData[ , age := NULL] 
+        }
+        
+        gc(); Sys.sleep(.5); gc()
         
         CensusData
         

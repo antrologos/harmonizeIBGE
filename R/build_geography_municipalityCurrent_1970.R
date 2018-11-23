@@ -21,13 +21,14 @@ build_geography_municipalityCurrent_1970 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData$state_tmp_for_coding <- CensusData[[metadata$state_var_name]]
+        setnames(CensusData, old = metadata$state_var_name, new = "state_tmp_for_coding")
+        #CensusData$state_tmp_for_coding <- CensusData[[metadata$state_var_name]]
         
         # Catches a list of the state codes
         # The Census od 1970 is lacking a variable for states.
         # Often, users attribute to the state code the number which comes in the data file name
         # But those numbers are not the official codes
-        state_values <- unique(CensusData$state_tmp_for_coding) %>% sort()
+        state_values <- CensusData[ , unique(state_tmp_for_coding)] %>% sort()
         
         # Builds up a list of the official codes
         census1970_official_stateCode = c(1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 16, 17,
@@ -39,6 +40,7 @@ build_geography_municipalityCurrent_1970 <- function(CensusData){
         
         if(test_state_code == T){
                 CensusData[ , state_tmp_for_coding2 := state_tmp_for_coding]
+                gc();Sys.sleep(1);gc()
         }else{
                 CensusData[ state_tmp_for_coding == 2 , state_tmp_for_coding2 := 2]
                 CensusData[ state_tmp_for_coding == 13, state_tmp_for_coding2 := 15]
@@ -52,6 +54,8 @@ build_geography_municipalityCurrent_1970 <- function(CensusData){
                 CensusData[ state_tmp_for_coding == 20, state_tmp_for_coding2 := 25]
                 CensusData[ state_tmp_for_coding == 26, state_tmp_for_coding2 := 35]
                 CensusData[ state_tmp_for_coding == 7 , state_tmp_for_coding2 := 8]
+                gc();Sys.sleep(1);gc()
+                
                 CensusData[ state_tmp_for_coding == 17, state_tmp_for_coding2 := 21]
                 CensusData[ state_tmp_for_coding == 25, state_tmp_for_coding2 := 34]
                 CensusData[ state_tmp_for_coding == 5 , state_tmp_for_coding2 := 5]
@@ -67,14 +71,17 @@ build_geography_municipalityCurrent_1970 <- function(CensusData){
                 CensusData[ state_tmp_for_coding == 23, state_tmp_for_coding2 := 31]
                 CensusData[ state_tmp_for_coding == 15, state_tmp_for_coding2 := 17]
                 CensusData[ state_tmp_for_coding == 21, state_tmp_for_coding2 := 27]
+                gc();Sys.sleep(1);gc()
         }
         gc();Sys.sleep(1);gc()
         
         # 2-digit microrregion.
         CensusData[ , micro_2digit := v001%%100]
+        gc();Sys.sleep(.5);gc()
         
         # municipality1970standard
         CensusData[ , municipalityCurrent := (state_tmp_for_coding2*100000)+(micro_2digit*1000)+v002]
+        gc();Sys.sleep(.5);gc()
         
         # Correction for Brasilia
         CensusData[ state_tmp_for_coding2 == 36, municipalityCurrent := 3600000]
@@ -82,8 +89,14 @@ build_geography_municipalityCurrent_1970 <- function(CensusData){
         # Correction for Rio de Janeiro
         CensusData[ state_tmp_for_coding2 == 25, municipalityCurrent := 2531000]
         
-        CensusData[ , c("state_tmp_for_coding", "state_tmp_for_coding2",
+        CensusData[ , c("state_tmp_for_coding2",
                         "micro_2digit") := NULL]
+        
+        gc();Sys.sleep(.5);gc()
+        
+        setnames(CensusData, old = "state_tmp_for_coding", new = metadata$state_var_name)
+        CensusData <- metadata <- harmonizeIBGE:::set_metadata(CensusData, metadata = metadata)        
+        
         gc()
         
         CensusData

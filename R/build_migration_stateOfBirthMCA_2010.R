@@ -33,16 +33,14 @@ build_migration_stateOfBirthMCA_2010 <- function(CensusData){
                 filter(year == 2010 & variable == "state_of_birth") %>%
                 select(original_code, semi_harmonized_code) %>%
                 rename(v6222            = original_code,
-                       stateOfBirthMCA = semi_harmonized_code) 
+                       stateOfBirthMCA = semi_harmonized_code) %>%
+                as.data.table() %>%
+                setkey("v6222")
         
+        setkey(CensusData, "v6222")
+        CensusData[crosswalk_states_tmp, stateOfBirthMCA := stateOfBirthMCA]
         
-        CensusData <- data.table:::merge.data.table(x = CensusData,
-                                                    y = crosswalk_states_tmp,
-                                                    by = "v6222", 
-                                                    all.x = T, 
-                                                    all.y = F, 
-                                                    sort = F)
-        gc()
+        gc(); Sys.sleep(.5);gc()
         
         # Se nasceu no mesmo município em que reside
         CensusData[v0618 %in% c(1,2), stateOfBirthMCA := stateCurrent]
