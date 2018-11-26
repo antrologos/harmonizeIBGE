@@ -21,6 +21,7 @@ build_demographics_nonrelative_1980 <- function(CensusData){
         
         CensusData[ , nonrelative := as.numeric( v503>=7) ]
         
+        gc();Sys.sleep(.5);gc()
         CensusData
         
 }

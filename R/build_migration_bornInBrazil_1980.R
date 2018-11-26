@@ -5,13 +5,7 @@
 
 build_migration_bornInBrazil_1980 <- function(CensusData){
         
-        if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
-        }
-        
-        if(!is.data.table(CensusData)){
-                CensusData = as.data.table(CensusData)
-        }
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v511"))
         if(length(check_vars) > 0){
@@ -22,7 +16,7 @@ build_migration_bornInBrazil_1980 <- function(CensusData){
         CensusData[ , bornInBrazil := ifelse(v511 == 2, 1, 0)]
         CensusData[is.na(v511), bornInBrazil := NA]
         
-        gc()
+        gc();Sys.sleep(.5);gc()
         CensusData
 }
 

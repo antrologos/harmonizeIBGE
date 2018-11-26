@@ -5,18 +5,23 @@
 
 build_work_econActivity_2010 <- function(CensusData){ 
         
-        if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame") 
-        }
         
-        check_vars <- check_var_existence(CensusData, c("v0641", "v0642", "v0643", "v0644", "v0654", "v0655", "v0641","age"))
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        metadata   <- harmonizeIBGE:::get_metadata(CensusData)
+        
+        check_vars <- check_var_existence(CensusData, c("v0641", "v0642", "v0643", "v0644", "v0654", "v0655"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
         }
         
-        if(!is.data.table(CensusData)){
-                CensusData = as.data.table(CensusData)
+        # Building age
+        age_just_created <- FALSE
+        check_vars <- check_var_existence(CensusData, c("age"))
+        if(length(check_vars) > 0) {
+                CensusData <- eval(parse(text=paste0("build_demographics_age_", metadata$year, "(CensusData)")))
+                age_just_created <- TRUE
+                gc();Sys.sleep(.5);gc()
         }
         
         CensusData[ , econActivity := 0]
@@ -29,6 +34,11 @@ build_work_econActivity_2010 <- function(CensusData){
         
         CensusData[age < 10, econActivity := NA]
         gc()
+        
+        if(age_just_created == TRUE){
+                CensusData[ , age := NULL]
+                gc();Sys.sleep(.5);gc()
+        }
         
         CensusData
 }

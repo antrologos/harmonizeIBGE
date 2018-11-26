@@ -15,10 +15,12 @@ get_themes <- function(CensusData, themes = "all"){
         }
         
         function_df <- function_matrix %>%
-                data.table() %>%
-                setNames(c("funcType", "theme", "varName", "year", "other")) %>%
-                filter(funcType == "build")
+                data.table()
         
-       
-        function_df$theme %>% unique()
+        names(function_df)[1:4] <- c("funcType", "theme", "varName", "year")
+        
+        function_df %>%
+                filter(funcType == "build") %>%
+                .$theme %>%
+                unique()
 }

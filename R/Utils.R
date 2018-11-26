@@ -277,3 +277,103 @@ set_metadata <- function(Data, metadata){
         Data
 }
 
+
+
+list_originalVariables_to_drop <- function(year, themes = "all"){
+        
+        existing_themes <- harmonizeIBGE:::get_themes()
+        
+        if(themes=="all"){
+                themes = get_themes()
+        }
+        
+        if(any(!(themes %in% existing_themes))){
+                stop("This theme does not exist")
+        }
+        
+        
+        df_themes_vars <- get_original_variables_by_theme(year = year, themes = themes) %>%
+                as.data.table() %>%
+                setkey("theme", "varName")
+        
+        priorityList_location <- system.file("extdata",
+                                             "list_functions_priority.csv",
+                                             package = "harmonizeIBGE")
+        
+        #priorityList_location <- "E:/Google Drive/RCodes/PacotesR/harmonizeIBGE/inst/extdata/list_functions_priority.csv"
+        priorityList <- fread(priorityList_location)
+        priorityList <- priorityList[ ,list(theme, varName, ordem)] %>%
+                setkey("theme", "varName")
+        
+        df_themes_vars <- df_themes_vars[priorityList , ordem := ordem][order(ordem)]
+        
+        chosen_themes_ordered <- unique(df_themes_vars$theme)
+        
+        vars_to_delete <-list()
+        for(chosen_theme_i in chosen_themes_ordered){
+                vars_to_delete[[chosen_theme_i]] <- unique(df_themes_vars[theme == chosen_theme_i, variable])
+        }
+        
+        num_themes <- length(vars_to_delete)
+        
+        for(i in 1:(num_themes-1)){
+                for(j in (i+1):num_themes){
+                        vars_to_delete[[i]] <- setdiff(vars_to_delete[[i]] , vars_to_delete[[j]])
+                }
+        }
+        
+        vars_to_delete
+        
+}
+
+
+
+get_original_variables_by_theme <- function(year, themes = "all"){
+        
+        existing_themes <- harmonizeIBGE:::get_themes()
+        
+        if(length(themes) == 1){
+                
+                if(themes=="all"){
+                        themes = get_themes()
+                }
+        }
+        
+        if(any(!(themes %in% existing_themes))){
+                stop("This theme does not exist")
+        }
+        
+        
+        env <- environment()
+        #listOriginalVars_location <- "E:/Google Drive/RCodes/PacotesR/harmonizeIBGE/inst/extdata/list_of_originalVars.csv"
+        
+        listOriginalVars_location <- system.file("extdata",
+                                                 "list_of_originalVars.csv",
+                                                 package = "harmonizeIBGE")
+        
+        listOriginalVars <- fread(listOriginalVars_location)
+        listOriginalVars <- listOriginalVars[year == get("year", envir = env)]
+        listOriginalVars[ , year := NULL]
+        
+        df_themes_vars <- data.table(themes_vars = names(listOriginalVars)) %>% 
+                separate(col = themes_vars, sep = "_", into = c("theme", "varName")) %>%
+                .[!is.na(varName)]
+        
+        df_themes_vars[ , originalVars := as.character(listOriginalVars)]
+        df_themes_vars <- df_themes_vars[nchar(originalVars)>1]
+        
+        df_themes_vars <- df_themes_vars[theme %in% themes]
+        
+        
+        ncols <- max(str_count(df_themes_vars$originalVars, ";")) + 1
+        
+        df_themes_vars <- df_themes_vars %>% 
+                separate(col = originalVars, into = paste0("var_", 1:ncols), sep = ";") %>%
+                gather(key = "originalVar", value = "variable", paste0("var_", 1:ncols)) %>%
+                select(-originalVar) %>%
+                filter(complete.cases(.)) %>%
+                mutate(variable = tolower(variable)) %>%
+                arrange(theme, varName)
+        
+        df_themes_vars
+}

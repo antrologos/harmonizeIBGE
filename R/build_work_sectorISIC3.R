@@ -41,6 +41,7 @@ build_work_sectorISIC3 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- eval(parse(text = paste0("build_demographics_age_",metadata$year,"(CensusData)")))
                 age_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         econActivity_just_created = F
@@ -48,6 +49,7 @@ build_work_sectorISIC3 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- eval(parse(text = paste0("build_work_econActivity_", metadata$year,"(CensusData)")))
                 econActivity_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         occupationalStatus_just_created = F
@@ -55,6 +57,7 @@ build_work_sectorISIC3 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- eval(parse(text = paste0("build_work_occupationalStatus_", metadata$year,"(CensusData)")))
                 occupationalStatus_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         CensusData[ , sector_code := CensusData[[varName]] ]
@@ -79,6 +82,8 @@ build_work_sectorISIC3 <- function(CensusData){
         
         CensusData[ occupationalStatus == 1 & is.na(sectorISIC3), sectorISIC3 := 999]
         CensusData[ age < 10, sectorISIC3 := NA]
+        
+        gc();Sys.sleep(.5);gc()
         
         #if(just_created_vars_list_existedBefore == F){
         #        CensusData <- harmonizeIBGE:::erase_just_created_vars(CensusData)

@@ -9,7 +9,7 @@ build_identification_idhh_2000 <- function(CensusData){
                 stop("'CensusData' is not a data.frame")
         }
 
-        check_vars <- check_var_existence(CensusData, c("v0102"))
+        check_vars <- check_var_existence(CensusData, c("v0300"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -19,7 +19,7 @@ build_identification_idhh_2000 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
 
-        CensusData[, idhh := v0102]
+        CensusData[, idhh := v0300]
 
         CensusData
 

@@ -5,20 +5,14 @@
 
 build_migration_stateOfBirthMCA_1980 <- function(CensusData){
         
-        if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
-        }
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v512"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
         }
-        
-        if(!is.data.table(CensusData)){
-                CensusData = as.data.table(CensusData)
-        }
-        
+       
         metadata    <- harmonizeIBGE:::get_metadata(CensusData)
         
         bornInBrazil_just_created = F

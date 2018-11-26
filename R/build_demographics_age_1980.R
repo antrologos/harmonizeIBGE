@@ -22,8 +22,8 @@ build_demographics_age_1980 <- function(CensusData){
         #age
         CensusData[ , age := v606]
         CensusData[v606 == 999 , age := NA]
-        gc()
-
+        
+        gc();Sys.sleep(.5);gc()
         CensusData
 
 }

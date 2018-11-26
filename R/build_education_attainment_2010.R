@@ -9,7 +9,7 @@ build_education_attainment_2010 <- function(CensusData){
                 stop("'CensusData' is not a data.frame")
         }
 
-        check_vars <- check_var_existence(CensusData, c("age", "v0628", "v0629", "v0630", "v0631", "v0632", "v0633", "v0634"))
+        check_vars <- check_var_existence(CensusData, c("v0628", "v0629", "v0630", "v0631", "v0632", "v0633", "v0634"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))

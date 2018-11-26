@@ -5,13 +5,7 @@
 
 build_migration_bornSameMunicipality_1980 <- function(CensusData){
         
-        if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
-        }
-        
-        if(!is.data.table(CensusData)){
-                CensusData = as.data.table(CensusData)
-        }
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v513"))
         if(length(check_vars) > 0){
@@ -22,7 +16,7 @@ build_migration_bornSameMunicipality_1980 <- function(CensusData){
         CensusData[ , bornSameMunicipality := ifelse(v513 == 1, 1, 0)]
         CensusData[is.na(v513), bornSameMunicipality := NA] #non-dwellers are missing
         
-        gc()
+        gc();Sys.sleep(.5);gc()
         CensusData
 }
 

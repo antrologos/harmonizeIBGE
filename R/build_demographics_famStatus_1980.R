@@ -22,8 +22,7 @@ build_demographics_famStatus_1980 <- function(CensusData){
         CensusData[ v504 <= 3 , famStatus := v504 ]
         CensusData[ v504 >  3 , famStatus := 4 ]
         
-        gc()
-        
+        gc();Sys.sleep(.5);gc()
         CensusData
 }
 

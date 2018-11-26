@@ -21,6 +21,7 @@ build_demographics_male_1980 <- function(CensusData){
         
         CensusData[, male := as.numeric(v501 == 1)]
         
+        gc();Sys.sleep(.5);gc()
         CensusData
         
 }

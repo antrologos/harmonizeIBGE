@@ -35,10 +35,13 @@ build_education_literacy_1960 <- function(CensusData){
 
         # Ajuste para idade
         CensusData[age <= 4,  literacy := NA]
+        
         if(age_just_created == TRUE){
                 CensusData[ , age := NULL]
+                gc();Sys.sleep(.5);gc()
         }
 
+        gc()
         CensusData
 
 }

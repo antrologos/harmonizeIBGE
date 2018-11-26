@@ -69,6 +69,7 @@ build_work_isco88 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- eval(parse(text = paste0("build_demographics_age_",metadata$year,"(CensusData)")))
                 age_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         sectorISIC3_just_created = F
@@ -76,6 +77,7 @@ build_work_isco88 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- build_work_sectorISIC3(CensusData)
                 sectorISIC3_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         classWorker_just_created = F
@@ -83,6 +85,7 @@ build_work_isco88 <- function(CensusData){
         if(length(check_vars) > 0){
                 CensusData <- build_work_classWorker(CensusData)
                 classWorker_just_created = T
+                gc();Sys.sleep(.5);gc()
         }
         
         if(metadata$type == "census" & metadata$year == 1980){
@@ -92,9 +95,11 @@ build_work_isco88 <- function(CensusData){
                         select(-v530, -v542) %>%
                         select(ibge_code, everything()) %>%
                         as.data.table()
+                gc();Sys.sleep(.5);gc()
         }else{
                 banco_tmp <- CensusData %>% 
                         select(var_ocup, var_sector, "sectorISIC3", "classWorker")
+                gc();Sys.sleep(.5);gc()
         }
         
         setnames(banco_tmp, old = names(banco_tmp), new = c("ibge_code", "sector", "isic", "class_worker"))
@@ -140,6 +145,8 @@ build_work_isco88 <- function(CensusData){
         setkey(occ_conversao, "ibge_code")
         
         banco_tmp[occ_conversao, isco88_4digit := isco88_4digit]
+        gc();Sys.sleep(.5);gc()
+        
         
         banco_tmp$isco88_4digit[banco_tmp$isco88_4digit == 0]     <- NA
         banco_tmp$isco88_4digit[banco_tmp$isco88_4digit == -9999] <- NA
@@ -177,32 +184,32 @@ build_work_isco88 <- function(CensusData){
                 as.data.table()
         
         
-        
         if(nrow(sectoral_adjustments1) > 0){
                 setkey(banco_tmp, "isic", "ibge_code")
                 setkey(sectoral_adjustments1, "isic", "ibge_code")
                 
                 banco_tmp[sectoral_adjustments1, newISCO_sector1 := newISCO_sector1]
-                
+                gc();Sys.sleep(.1);gc()
         }
-        gc();Sys.sleep(.1);gc()
+        
         
         if(nrow(sectoral_adjustments2) > 0){
                 setkey(banco_tmp, "sector", "ibge_code")
                 setkey(sectoral_adjustments2, "sector", "ibge_code")
                 
                 banco_tmp[sectoral_adjustments2, newISCO_sector2 := newISCO_sector2]
+                gc();Sys.sleep(.1);gc()
         }
-        gc();Sys.sleep(.1);gc()
+        
         
         if(nrow(class_worker_adjustments1) > 0){
                 setkey(banco_tmp, "class_worker", "ibge_code")
                 setkey(class_worker_adjustments1, "class_worker", "ibge_code")
                 
                 banco_tmp[class_worker_adjustments1, newISCO_classWorker1 := newISCO_classWorker1]
-                
+                gc();Sys.sleep(.1);gc()        
         }
-        gc();Sys.sleep(.1);gc()
+        
         
         if(nrow(class_worker_adjustments2) > 0){
                 setkey(banco_tmp, "class_worker", "isco88_4digit")
@@ -211,9 +218,9 @@ build_work_isco88 <- function(CensusData){
                 setkey(class_worker_adjustments2, "class_worker", "isco88_4digit")
                 
                 banco_tmp[class_worker_adjustments2, newISCO_classWorker2 := newISCO_classWorker2]
-                
+                gc();Sys.sleep(.1);gc()        
         }
-        gc();Sys.sleep(.1);gc()        
+        
         
         if(is.null(banco_tmp$newISCO_sector1)){
                 banco_tmp[ , newISCO_sector1 := as.numeric(NA)]
@@ -238,6 +245,7 @@ build_work_isco88 <- function(CensusData){
         banco_tmp[!is.na(newISCO_sector2),      isco88_4digit := newISCO_sector2]
         banco_tmp[!is.na(newISCO_classWorker1), isco88_4digit := newISCO_classWorker1]
         banco_tmp[!is.na(newISCO_classWorker2), isco88_4digit := newISCO_classWorker2]
+        gc();Sys.sleep(.1);gc()        
         
         ######################################################
         # Ajustes adicionais
@@ -281,6 +289,9 @@ build_work_isco88 <- function(CensusData){
         }
         
         CensusData  <- harmonizeIBGE:::set_metadata(CensusData, metadata = metadata)
+        
+        gc();Sys.sleep(.5);gc()
+        
         CensusData
 }
 

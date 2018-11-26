@@ -6,13 +6,8 @@
 
 build_income_hhIncome2010Values <- function(CensusData){
 
-        if(!is.data.frame(CensusData)){
-                stop("'CensusData' is not a data.frame")
-        }
-
-        if(!is.data.table(CensusData)){
-                CensusData = as.data.table(CensusData)
-        }
+        CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
+        
 
         metadata <- harmonizeIBGE:::get_metadata(CensusData)
         
@@ -82,22 +77,27 @@ build_income_hhIncome2010Values <- function(CensusData){
         gc()
         
         CensusData[, totalIncome2010Values_tmp := NULL]
+        gc();Sys.sleep(.3);gc()
         
 
         if(idhh_just_created == T){
                 CensusData[, idhh := NULL] 
+                gc();Sys.sleep(.1);gc()
         }
         
         if(hhType_just_created == T){
                 CensusData[, hhType := NULL] 
+                gc();Sys.sleep(.1);gc()
         }
         
         if(nonrelative_just_created == T){
                 CensusData[, nonrelative := NULL] 
+                gc();Sys.sleep(.1);gc()
         }
         
         if(totalIncome2010Values_just_created == T){
                 CensusData[, totalIncome2010Values := NULL] 
+                gc();Sys.sleep(.1);gc()
         }
         
         

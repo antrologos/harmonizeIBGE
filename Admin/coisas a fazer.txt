@@ -1,0 +1,14 @@
+demographics_nonrelative
+demographics_famStatus
+
+
+attainment -> requires age
+
+levelattnd > pode ser mais desagregado
+
+anos de estudo
+
+
+
+top coding dos rendimentos em 2000
+Nota: se o rendimento mensal do trabalho principal ultrapassou o valor de R$ 999.998,00 (novecentos e noventa e nove mil, novecentos e noventa e oito reais), o valor registrado no campo será 999998.

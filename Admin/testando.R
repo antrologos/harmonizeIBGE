@@ -12,8 +12,6 @@ setwd("E:/Dropbox-Ro/Dropbox/Rogerio/Bancos_Dados/Censos")
 
 variaveis <- fread("E:/Google Drive/RCodes/PacotesR/harmonizeIBGE/Admin/variaveis_CENSOS.csv")
 
-
-
 getVarNames <- function(y){
         x <- variaveis %>% 
                 filter(year == y) %>%
@@ -28,12 +26,12 @@ getVarNames <- function(y){
                 .[!duplicated(.)]
 }
 
-i= 3
+#i= 1
 
-#n = 30000
+#n = 2000
 n = 30000000
 
-for(i in 4:6){
+for(i in 1:6){
         
         ano = variaveis$year[i]
         print(paste("===================================================================================", ano))
@@ -66,12 +64,7 @@ for(i in 4:6){
         }
         
         censo <- censo %>%
-                harmonize_themes(themes = "all") %>%
-                drop_originalVariables()
-        
-        #censo <- censo %>%
-        #        build_work_classWorker() %>%
-        #        drop_originalVariables()
+                        harmonize_themes(themes = "all", dropOriginalVariables = T) 
         
         Sys.sleep(.5);gc()
         
@@ -79,6 +72,8 @@ for(i in 4:6){
         
         rm(censo)
         gc();Sys.sleep(.5);gc()
-}        
+}
+
+
 
 
