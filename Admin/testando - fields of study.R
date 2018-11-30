@@ -75,9 +75,11 @@ if(read_harmonize_and_save == T){
                 print(ano)
                 assign(x = paste0("c_",ano), 
                        value = read_fst(path = paste0("censo_",ano,"_fieldsOfStudy.csv"),as.data.table = T) %>%
+                               select(-idhh, -idperson, -famStatus, -nonrelative, -levelattnd, -literacy) %>%
                                prepare_to_harmonize(type = "census", year = ano, state_var_name = "CEM005")
+                               
                        )
-                gc()
+                gc();Sys.sleep(.2);gc()
         }        
 }
 
@@ -85,11 +87,11 @@ c_1991[, wgtperson := wgtperson/(10^8)]
 
 #======================================================================================================
 
-labels_isced <- readxl::read_xlsx(crosswalk_location, sheet = "Fields_Codes_labels") %>%
-        select(isced_code_level3, isced_label_level3_en) %>%
-        rename(isced = isced_code_level3,
-               label = isced_label_level3_en) %>%
-        setDT(key = "isced")
+#labels_isced <- readxl::read_xlsx(crosswalk_location, sheet = "Fields_Codes_labels") %>%
+#        select(isced_code_level3, isced_label_level3_en) %>%
+#        rename(isced = isced_code_level3,
+#               label = isced_label_level3_en) %>%
+#        setDT(key = "isced")
 
 
 ano = 1960
@@ -136,7 +138,8 @@ for(ano in c(1980,1991,2000,2010)){
 }
 
 
-
+#c_1980[v525 == 85, fieldsOfStudy := 999]
+#c_1980[, freq(fieldsOfStudy)]
 
 freq_abs_isced_wide_aggreg <- freq_isced_aggreg %>%
         select(-freq_rel) %>%

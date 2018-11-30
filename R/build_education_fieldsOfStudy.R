@@ -1,8 +1,5 @@
 #' @export
 
-CensusData <- c_1960
-aggregated = T
-
 build_education_fieldsOfStudy <- function(CensusData, aggregated = T){
         
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
@@ -10,15 +7,9 @@ build_education_fieldsOfStudy <- function(CensusData, aggregated = T){
         
         just_created_vars_list_existedBefore <- exists(x = "just_created_vars", where = .GlobalEnv)
         
-        crosswalk_location <- system.file("extdata",
-                                          "crosswalk-fields-of-study.xlsx",
-                                          package = "harmonizeIBGE")
-        #crosswalk_location <- "C:/Users/Rogerio/desktop/crosswalk-fields-of-study.xlsx"
-        
         varList_location <- system.file("extdata",
                                         "list_of_originalVars.csv",
                                         package = "harmonizeIBGE")
-        #varList_location <- "C:/Users/Rogerio/Google Drive/RCodes/PacotesR/harmonizeIBGE/inst/extdata/list_of_originalVars.csv"
         
         varList   <- read.csv2(varList_location, stringsAsFactors = F) %>%
                 filter(year == metadata$year) %>%
@@ -29,24 +20,23 @@ build_education_fieldsOfStudy <- function(CensusData, aggregated = T){
                 tolower()
         
         if(aggregated == T){
-                crosswalk <- readxl::read_xlsx(crosswalk_location, sheet = "crosswalk_aggreg_1960_2010") %>%
-                        filter(year == metadata$year, !is.na(isced_level3)) %>%
-                        select(ibge_code, isced_level3, isced_level3_label_en) %>%
-                        as.data.table()
-                
+                crosswalk_location <- system.file("extdata",
+                                                  "crosswalk_fieldsOfStudy_1960_2010.csv",
+                                                  package = "harmonizeIBGE")
         }else{
-                
                 if(metadata$year %in% c(1960, 1970)){
                         message("It is not possible to built disaggregated fields of study for 1960 and 1970")
                         return(CensusData)
                 }
-                
-                crosswalk <- readxl::read_xlsx(crosswalk_location, sheet = "crosswalk_1980_2010") %>%
-                        filter(year == metadata$year, !is.na(isced_level3)) %>%
-                        select(ibge_code, isced_level3, isced_level3_label_en) %>%
-                        as.data.table()
+                crosswalk_location <- system.file("extdata",
+                                                  "crosswalk_fieldsOfStudy_1980_2010.csv",
+                                                  package = "harmonizeIBGE")
         }
         
+        crosswalk <-  read.csv2(crosswalk_location, stringsAsFactors = F) %>%
+                filter(year == metadata$year, !is.na(isced_level3)) %>%
+                select(ibge_code, isced_level3, isced_level3_label_en) %>%
+                as.data.table()
         
         harmonizeIBGE:::check_necessary_vars(CensusData, varList)
         
