@@ -1,10 +1,10 @@
-#' Builds a synthetic variable for education attainment - 1970
+#' Builds a synthetic variable for educationAttainment attainment - 1970
 #' @param data.frame
 #' @value data.frame
 #' @export
 
 
-build_education_attainment_1970 <- function(CensusData){
+build_education_educationAttainment_1970 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -41,83 +41,83 @@ build_education_attainment_1970 <- function(CensusData){
         # Se nunca frequentou a escola ou grau nao declarado
         # (todos os casos de serie sem declaracao sao dessas duas
         # categorias. Entao nao e preciso usar a variavel v037)
-        CensusData[v038 %in% c(0, 5), education := 1]
+        CensusData[v038 %in% c(0, 5), educationAttainment := 1]
 
         # Se cursou alfabetizacao de adultos
-        CensusData[v037 == 9, education := 1]
+        CensusData[v037 == 9, educationAttainment := 1]
 
         gc()
         ### Primario incompleto
         #######################
 
         # Se esta frequentando a primeira serie do primario
-        CensusData[v037 == 1, education := 2]
+        CensusData[v037 == 1, educationAttainment := 2]
 
         # Se concluiu a primeira serie do primario
-        CensusData[v037 == 2 & v038 == 1, education := 2]
+        CensusData[v037 == 2 & v038 == 1, educationAttainment := 2]
 
         # Se concluiu a segunda serie do primario
-        CensusData[v037 == 3 & v038 == 1, education := 2]
+        CensusData[v037 == 3 & v038 == 1, educationAttainment := 2]
 
         # Se concluiu a terceira serie do primario
-        CensusData[v037 == 4 & v038 == 1, education := 2]
+        CensusData[v037 == 4 & v038 == 1, educationAttainment := 2]
 
         gc()
         ### Primario completo
         #######################
 
         # Se concluiu a quarta serie do primario
-        CensusData[v037 == 5 & v038 == 1, education := 3]
+        CensusData[v037 == 5 & v038 == 1, educationAttainment := 3]
 
         # Se concluiu a quinta/sexta serie do primario
-        CensusData[v037 == 6 & v038 == 1, education := 3]
+        CensusData[v037 == 6 & v038 == 1, educationAttainment := 3]
 
         # Se concluiu a classe de admissao do prim?rio para o m?dio
-        CensusData[v037 == 7 & v038 == 1, education := 3]
+        CensusData[v037 == 7 & v038 == 1, educationAttainment := 3]
 
         # Se cursa alguma modalidade de ensino ? distancia ou esta
         # estudando para os exames de madureza para obtencao do
         # medio 1o ciclo
-        CensusData[v037 == 8 & v038 == 2, education := 3]
+        CensusData[v037 == 8 & v038 == 2, educationAttainment := 3]
 
         gc()
         ### Fundamental (ginasial) incompleto
         #######################
 
         # Se concluiu a primeira serie do medio 1o ciclo
-        CensusData[v037 == 2 & v038 == 2, education := 4]
+        CensusData[v037 == 2 & v038 == 2, educationAttainment := 4]
 
         # Se concluiu a segunda serie do medio 1o ciclo
-        CensusData[v037 == 3 & v038 == 2, education := 4]
+        CensusData[v037 == 3 & v038 == 2, educationAttainment := 4]
 
         # Se concluiu a terceira serie do medio 1o ciclo
-        CensusData[v037 == 4 & v038 == 2, education := 4]
+        CensusData[v037 == 4 & v038 == 2, educationAttainment := 4]
 
         gc()
         ### Fundamental (ginasial) completo
         #######################
 
         # Se concluiu a quarta serie do medio 1o ciclo
-        CensusData[v037 == 5 & v038 == 2, education := 5]
+        CensusData[v037 == 5 & v038 == 2, educationAttainment := 5]
 
         # Se concluiu a quinta/sexta serie do medio 1o ciclo
-        CensusData[v037 == 6 & v038 == 2, education := 5]
+        CensusData[v037 == 6 & v038 == 2, educationAttainment := 5]
 
 
         # Se cursa alguma modalidade de ensino ? distancia ou esta
         # estudando para os exames de madureza para obtencao do
         # medio 2o ciclo
-        CensusData[v037 == 8 & v038 == 3, education := 5]
+        CensusData[v037 == 8 & v038 == 3, educationAttainment := 5]
 
         gc()
         ### Medio (secundario/colegial) incompleto
         #######################
 
         # Se concluiu a primeira serie do medio 2o ciclo
-        CensusData[v037 == 2 & v038 == 3, education := 6]
+        CensusData[v037 == 2 & v038 == 3, educationAttainment := 6]
 
         # Se concluiu a segunda serie do medio 2o ciclo
-        CensusData[v037 == 3 & v038 == 3, education := 6]
+        CensusData[v037 == 3 & v038 == 3, educationAttainment := 6]
 
 
         gc()
@@ -125,18 +125,18 @@ build_education_attainment_1970 <- function(CensusData){
         #######################
 
         # Se concluiu a terceira serie do medio 2o ciclo
-        CensusData[v037 == 4 & v038 == 3, education := 7]
+        CensusData[v037 == 4 & v038 == 3, educationAttainment := 7]
 
         #nao ha casos de 4a  ou 5a/6a serie no medio 2o ciclo
 
         # Se cursa a admissao/vestibular
-        CensusData[v037 == 7 & v038 == 3, education := 7]
+        CensusData[v037 == 7 & v038 == 3, educationAttainment := 7]
 
         ### Superior incompleto
         #######################
 
         # Se concluiu da primeira at? a sexta serie do superior (mas nao sabemos se concluiu o curso)
-        CensusData[v038 == 4 & v037 %in% 2:6 , education := 8]
+        CensusData[v038 == 4 & v037 %in% 2:6 , educationAttainment := 8]
 
         gc()
         ### Superior completo
@@ -145,15 +145,15 @@ build_education_attainment_1970 <- function(CensusData){
         # Se cursou superior e informou algum curso concluido com c?digos entre 70 e 97 na v039
         # (c?digos abaixo de 70 informam cursos de prim?rio e m?dio, os c?digos 98 e 99 se referepe a cursos
         # de grau indeterminado ou nenhum grau)
-        CensusData[v038 == 4 & v039 %in% 70:97, education := 9]
+        CensusData[v038 == 4 & v039 %in% 70:97, educationAttainment := 9]
 
         # Ajuste para idade
-        CensusData[age <= 4,  education := NA]
+        CensusData[age <= 4,  educationAttainment := NA]
         if(age_just_created == TRUE){
                 CensusData[ , age := NULL]
         }
 
-        #education
+        #educationAttainment
         # 1 - Nenhum
         # 2 - Primario incompleto
         # 3 - Primario completo

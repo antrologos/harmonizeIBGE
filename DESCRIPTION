@@ -4,7 +4,7 @@ Title: harmonizeIBGE - harmonized variables for Brazilian Censuses (1960-2010)
 Version: 0.0.1
 Date: 2018-07-20
 Authors@R: as.person(c(
-    "Rogerio Jeronimo Barbosa <rogerio.barbosa@ipea.gov.br> [aut, cre]",
+    "Rogerio Jeronimo Barbosa <antrologos@yahoo.com.br> [aut, cre]",
     "Pedro Herculano Guimarães Ferreira de Souza <pedro.souza@ipea.gov.br> [ctb]"
     ))
 Description: harmonizeIBGE creates harmonized and comparable variables for the Brazilian 
@@ -13,7 +13,9 @@ Description: harmonizeIBGE creates harmonized and comparable variables for the B
 Depends: 
         R (>= 3.1.3),
         data.table,
-        dplyr
+        dplyr,
+        stringr,
+        tidyr
 Imports: 
         glue,
         zoo	

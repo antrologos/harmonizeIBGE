@@ -1,0 +1,1206 @@
+classification;sector_code;sector_label;sectorISIC3;sugestao;motivo
+ibge60;111;Cultura de agave ou sisal;10;;.
+ibge60;112;Cultura de algodão;10;;.
+ibge60;113;Cultura de arroz;10;;.
+ibge60;114;Cultura de banana;10;;.
+ibge60;115;Cultura de cacau;10;;.
+ibge60;116;Cultura de café;10;;.
+ibge60;117;Cultura de cana;10;;.
+ibge60;118;Cultura de fumo;10;;.
+ibge60;119;Cultura de trigo;10;;.
+ibge60;120;Outras culturas não compreendidas nas classes anteriores;10;;.
+ibge60;121;Fruticultura (exclusive banana);10;;.
+ibge60;122;Horticultura e floricultura;10;;.
+ibge60;123;Silvicultura;10;;.
+ibge60;129;Atividades agrícolas mal definidas;10;;.
+ibge60;151;Pecuária;10;;.
+ibge60;152;Avicultura e cunicultura;10;;.
+ibge60;153;Apicultura e sericicultura;10;;.
+ibge60;191;Agropecuária;10;;.
+ibge60;211;Extração de borracha e gomas não elásticas;10;;.
+ibge60;212;Extração de erva-mate;10;;.
+ibge60;213;Extração de plantas fibrosas;10;;.
+ibge60;214;Extração de frutos e sementes oleaginosas e caras;10;;.
+ibge60;215;Extração de madeiras;10;;.
+ibge60;216;Produção de carvão vegetal;10;;.
+ibge60;219;Atividades não compreendidas nas classes anteriores ou mal definidas;10;;.
+ibge60;251;Extração e beneficiamento de minerais metálicos e não metálicos (exclusive petróleo, gás natural e carvão de pedra);20;;.
+ibge60;252;Extração e aparelhamento de pedras e outros materiais de construção;20;;.
+ibge60;253;Extração de petróleo e gás natural;20;;.
+ibge60;254;Extração de carvão de pedra;20;;.
+ibge60;255;Exploração de salinas e fontes hidrominerais;20;;.
+ibge60;256;Faiscação e garimpagem;20;;.
+ibge60;259;Atividades não compreendidas nas classes anteriores ou mal definidas;20;;.
+ibge60;291;Caça;10;;.
+ibge60;292;Pesca e Piscicultura;10;;.
+ibge60;311;Indústrias metalúrgicas;30;;.
+ibge60;312;Indústrias mecânicas;30;;.
+ibge60;313;Indústrias de material elétrico e de material de comunicações;30;;.
+ibge60;314;Indústrias de material de transportes (construção e montagem);30;;.
+ibge60;315;Indústrias de minerais não metálicos (exclusive combustíveis minerais);30;;.
+ibge60;316;Indústrias da borracha;30;;.
+ibge60;317;Indústrias do fumo;30;;.
+ibge60;318;Indústrias de papel e papelão;30;;.
+ibge60;321;Indústrias do mobiliário (inclusive colchoarias);30;;.
+ibge60;322;Indústrias de madeira;30;;.
+ibge60;323;Indústrias de couro, peles e produtos similares (exclusive artigos do vestuário e calçados);30;;.
+ibge60;324;Indústrias farmacêuticas;30;;.
+ibge60;325;Indústrias de plásticos;30;;.
+ibge60;326;Indústrias químicas;30;;.
+ibge60;327;Indústrias de produtos derivados do petróleo e do carvão (exclusive produção de gás de iluminação);30;;.
+ibge60;328;Indústrias têxteis;30;;.
+ibge60;331;Indústrias domiciliárias têxteis;30;;.
+ibge60;332;Indústrias domiciliárias de artigos de palha;30;;.
+ibge60;333;indústrias do vestuário;30;;.
+ibge60;334;Indústrias do calçado;30;;.
+ibge60;335;Indústrias de produtos alimentares e estimulantes;30;;.
+ibge60;336;Indústrias de bebidas e álcoois;30;;.
+ibge60;337;Indústrias editoriais e gráficas;30;;.
+ibge60;339;Atividades não compreendidas nas classes anteriores ou mal definidas;30;;.
+ibge60;351;Construção civil;50;;.
+ibge60;391;Produção de energia elétrica e gás;40;;.
+ibge60;392;Abastecimento de água e serviços de esgoto;40;;.
+ibge60;411;Comércio de animais vivos e matérias-primas (exclusive aves para alimentação);60;;.
+ibge60;412;Comércio de géneros alimentícios, bebidas e estimulantes;60;;.
+ibge60;413;Comércio de tecidos e produtos afins, calçados, artigos do vestuário e armarinho;60;;.
+ibge60;414;Comércio de móveis, tapeçarias, objetos de arte e ornamentação;60;;.
+ibge60;415;Comércio de papel, impressos e artigos de escritório;60;;.
+ibge60;416;Comércio de ferragens, louças, materiais de construção e produtos metalúrgicos;60;;.
+ibge60;417;Comércio de máquinas, aparelhos, instrumentos, material elétrico, veículos e acessórios;60;;.
+ibge60;418;Comércio de produtos farmacêuticos;60;;.
+ibge60;421;Comércio de combustíveis e lubrificantes;60;;.
+ibge60;422;Comércio ambulante;60;;.
+ibge60;423;Feiras e mercados;60;;.
+ibge60;424;Atividades auxiliares do comércio;60;;.
+ibge60;429;Atividades não compreendidas nas classes anteriores ou mal definidas;60;;.
+ibge60;451;Comércio de imóveis;111;;.
+ibge60;452;Comércio de títulos e moedas;90;;.
+ibge60;453;Bancos e casas bancárias;90;;.
+ibge60;454;Caixas econômicas e cooperativas de credito;90;;.
+ibge60;455;Seguros e capitalização;90;;.
+ibge60;459;Atividades não compreendidas nas classes anteriores ou mal definidas;90;;.
+ibge60;511;Serviços de alojamento e de alimentação;70;;.
+ibge60;512;Serviços de higiene pessoal;114;;.
+ibge60;513;Serviços de confecção, conservação e reparação de artigos de uso pessoal;30;;.
+ibge60;514;Serviços de conservação, reparação e ornamentação de habitações e locais de trabalho;50;;.
+ibge60;515;Serviços de conservação, reparação e instalação de máquinas e veículos;60;;.
+ibge60;516;Serviços de diversões (espetáculos, radiodifusão, televisão e desportos);114;;.
+ibge60;517;Serviços domésticos remunerados;120;;.
+ibge60;518;Serviços de administração e conservação de edifícios;111;;.
+ibge60;519;Atividades não compreendidas nas classes anteriores ou mal definidas;111;;.
+ibge60;611;Transportes à tração e condução animal;80;;.
+ibge60;612;Transportes rodoviários por veículos motorizados;80;;.
+ibge60;613;Transportes urbanos de ferro-carril;80;;.
+ibge60;614;Transportes ferroviários;80;;.
+ibge60;615;Transportes marítimos, fluviais e lacustres;80;;.
+ibge60;616;Serviços portuários;80;;.
+ibge60;617;Transportes aéreos;80;;.
+ibge60;618;Serviços postais, telegráficos e de radiocomunicações;80;;.
+ibge60;621;Telefones;80;;.
+ibge60;622;Armazenagem;80;;.
+ibge60;629;Atividades não compreendidas nas classes anteriores ou mal definidas;80;;.
+ibge60;711;Ensino público;112;;.
+ibge60;712;Ensino particular;112;;.
+ibge60;713;Assistência médico-hospitalar pública;113;;.
+ibge60;714;Assistência médico-hospitalar particular;113;;.
+ibge60;715;Saneamento, abastecimento e melhoramentos urbanos (exclusive abastecimento de água e serviços de esgoto);114;;.
+ibge60;716;Previdencia Social;100;;.
+ibge60;717;Assistência e beneficência;113;;.
+ibge60;718;Culto e atividades auxiliares;114;;.
+ibge60;721;Instituições culturais;114;;.
+ibge60;722;Sindicatos e associações de classe;114;;.
+ibge60;729;Atividades não compreendidas nas classes anteriores ou mal definidas;114;;.
+ibge60;751;Advocacia e atividades auxiliares;111;;.
+ibge60;752;Engenharia, arquitetura e atividades auxiliares;111;;.
+ibge60;753;Odontologia e atividades auxiliares;113;;.
+ibge60;754;Agronomias, veterinária e atividades auxiliares;111;;.
+ibge60;755;Medicina e atividades auxiliares;113;;.
+ibge60;756;Ciências, letras, artes e atividades auxiliares;114;;.
+ibge60;757;Contabilidade e atividades auxiliares;111;;.
+ibge60;759;Atividades não compreendidas nas classes anteriores ou mal definidas;111;;.
+ibge60;811;Poder legislativo;100;;.
+ibge60;812;Justiça e atividades auxiliares;100;;.
+ibge60;813;Serviço administrativo federal;100;;.
+ibge60;814;Serviço administrativo estadual;100;;.
+ibge60;815;Serviço administrativo municipal;100;;.
+ibge60;816;Serviço administrativo autárquico;100;;.
+ibge60;819;Atividades não compreendidas nas classes anteriores ou mal definidas;100;;.
+ibge60;851;Exército;100;;.
+ibge60;852;Marinha de Guerra;100;;.
+ibge60;853;Aviação Militar;100;;.
+ibge60;854;Policia Militar;100;;.
+ibge60;855;Policia Civil;100;;.
+ibge60;856;Corpo de Bombeiros;100;;.
+ibge60;859;Outras organizações de segurança;100;;.
+ibge60;911;Representações estrangeiras;130;;.
+ibge60;912;Outras atividades não compreendidas nos demais ramos;999;;.
+ibge60;919;Atividades mal definidas ou não declaradas;999;;.
+ibge70;111;cultura de agave;10;;.
+ibge70;112;cultura de algodão;10;;.
+ibge70;113;cultura de arroz;10;;.
+ibge70;114;cultura de banana;10;;.
+ibge70;115;cultura de cacau;10;;.
+ibge70;116;cultura de café;10;;.
+ibge70;117;cultura de cana-de-açúcar;10;;.
+ibge70;118;cultura de fumo;10;;.
+ibge70;119;cultura de trigo;10;;.
+ibge70;120;horticultura e floricultura;10;;.
+ibge70;121;silvicultura;10;;.
+ibge70;122;outras culturas;10;;.
+ibge70;123;pecuária;10;;.
+ibge70;124;avicultura e cunicultura;10;;.
+ibge70;125;apicultura e sericultura;10;;.
+ibge70;126;outras classes e classe mal defefinida;10;;.
+ibge70;211;extração da borracha e goma elástica;10;;.
+ibge70;212;extração de erva-mate;10;;.
+ibge70;213;extração de plantas fibrosas;10;;.
+ibge70;214;extração de frutos e sementes oleagenosas e ceras;10;;.
+ibge70;215;extração de madeira;10;;.
+ibge70;216;produção de carvão vegetal;10;;.
+ibge70;217;outras classes e classe mal definida;10;;.
+ibge70;221;caça;10;;.
+ibge70;222;pesca e piscicultura;10;;.
+ibge70;223;frente de trabalho;10;;.
+ibge70;301;extração e aparelhamento de pedras e outros materiais de construção;20;;.
+ibge70;302;extração de petróleo e gás natural;20;;.
+ibge70;303;extração de carvão-de-pedra;20;;.
+ibge70;304;exploração de salinas e fontes hidrominerais;20;;.
+ibge70;305;faiscação e garimpagem;20;;.
+ibge70;306;extração e beneficiamento de outros minerais;20;;.
+ibge70;311;industria metalúrgica;30;;.
+ibge70;312;indústria mecânica;30;;.
+ibge70;313;indústria de material elétrico e de comunicações;30;;.
+ibge70;314;indústria de material de transporte, inclusive montagem e reparação;30;;.
+ibge70;315;indústria de minerais não metálicos, exclusive combustíveis minerais;30;;.
+ibge70;316;indústria da borracha;30;;.
+ibge70;317;indústria de fumo;30;;.
+ibge70;318;indústria de papel e papelão;30;;.
+ibge70;319;indústria de mobiliário;30;;.
+ibge70;320;indústria de madeira;30;;.
+ibge70;321;indústria de couro, peles e produtos similares, exclusive artigos do vestuário e calçados;30;;.
+ibge70;322;indústria de produtos farmacêuticos e medicinais;30;;.
+ibge70;323;indústria de materiais plásticos;30;;.
+ibge70;324;indústria química;30;;.
+ibge70;325;indústria de produtos derivados do petróleo e carvão, exclusive gás de iluminação;30;;.
+ibge70;326;indústria têxtil;30;;.
+ibge70;327;indústria domiciliárias têxteis;30;;.
+ibge70;328;indústria domiciliárias de artigos de palha;30;;.
+ibge70;329;indústria do vestuário;30;;.
+ibge70;330;indústria do calçado;30;;.
+ibge70;331;indústria de produtos alimentares;30;;.
+ibge70;332;indústria de bebidas e álcoois;30;;.
+ibge70;333;indústria editorial e gráfica;30;;.
+ibge70;334;outras classes e classe mal definida;30;;.
+ibge70;341;edificações;50;;.
+ibge70;342;rodo-ferrovias;50;;.
+ibge70;351;produção e distribuição de energia elétrica e gás;40;;.
+ibge70;352;abastecimento de água e serviço de esgoto;40;;.
+ibge70;411;comércio de produtos agropecuários e extrativos (exclusive aves para alimentação);60;;.
+ibge70;412;comércio de gêneros alimentícios e bebidas, sem alimentação;60;;.
+ibge70;413;comércio de gêneros alimentícios e bebidas, com alimentação;70;;.
+ibge70;414;comércio de tecidos e artefatos de tecidos, artigos do vestuário e armarinho;60;;.
+ibge70;415;comércio de móveis, tapeçarias, objetos de arte e ornamentação;60;;.
+ibge70;416;comércio de papel, impressos e artigos de escritório;60;;.
+ibge70;417;comércio de ferragens, louças, materiais de contrução e produtos metalúrgicos;60;;.
+ibge70;418;comércio de máquinas, aparelhos, instrumentos, material elétrico, veículos e acessórios;60;;.
+ibge70;419;comércio de produtos farmacêuticos e medicinais;60;;.
+ibge70;420;comércio de combustíveis e lubrificantes;60;;.
+ibge70;421;comércio ambulante;60;;.
+ibge70;422;feiras e mercados;60;;.
+ibge70;423;atividades auxiliares do comércio de mercadorias;60;;.
+ibge70;424;outras classes e classe mal definida;60;;.
+ibge70;511;serviço de alojamento;70;;.
+ibge70;512;serviço de alimentação;114;;.
+ibge70;513;serviço de higiene pessoal;30;;.
+ibge70;514;serviço de confecções sob medida, conservação e reparação de artigos do vestuário;60;;.
+ibge70;515;serviço de conservação, reparação e instalação de máquinas e veículos;114;;.
+ibge70;516;serviço de diversão;120;;.
+ibge70;517;serviço doméstico;111;;.
+ibge70;518;serviço de conservação de edifícios;111;;.
+ibge70;519;outras classes e classe mal definida;114;;.
+ibge70;611;transporte à tração e condução animal;80;;.
+ibge70;612;transporte rodoviário;80;;.
+ibge70;613;transporte ferroviário;80;;.
+ibge70;614;transporte marítimo, fluvial e lacustre;80;;.
+ibge70;615;serviço portuário;80;;.
+ibge70;616;transporte aéreo;80;;.
+ibge70;617;serviço postal, telegráfico e de radiocomunicação;80;;.
+ibge70;618;telefone;80;;.
+ibge70;619;armazenagem;80;;.
+ibge70;620;outras classes e classe mal definida;80;;.
+ibge70;711;ensino público;112;;.
+ibge70;712;ensino particular;112;;.
+ibge70;713;assistência médico-hospitalar pública;113;;.
+ibge70;714;assistência médico-hospitalar particular;113;;.
+ibge70;715;saneamento, abastecimento e melhoramentos urbanos, exclusive abastecimento de água, eletricidade, gás e serviço de esgoto;114;;.
+ibge70;716;previdência social;100;;.
+ibge70;717;assistência e beneficiência;113;;.
+ibge70;718;culto e atividades auxiliares;114;;.
+ibge70;719;instituições culturais;114;;.
+ibge70;720;sindicatos e associações de classe;114;;.
+ibge70;721;outras classes e classe mal definida;114;;.
+ibge70;811;poder legislativo;100;;.
+ibge70;812;justiça e atividades auxiliares;100;;.
+ibge70;813;serviço administrativo federal;100;;.
+ibge70;814;serviço administrativo estadual;100;;.
+ibge70;815;serviço administrativo municipal;100;;.
+ibge70;816;serviço administrativo autárquico;100;;.
+ibge70;817;outras classes e classe mal definida;100;;.
+ibge70;821;exército;100;;.
+ibge70;822;marinha de guerra;100;;.
+ibge70;823;aeronáutica;100;;.
+ibge70;824;polícia militar;100;;.
+ibge70;825;polícia civil;100;;.
+ibge70;826;corpo de bombeiros;100;;.
+ibge70;827;outras organizações de segurança;100;;.
+ibge70;911;comércio de imóveis;111;;.
+ibge70;912;comércio de títulos e moedas;90;;.
+ibge70;913;bancos e casas bancárias;90;;.
+ibge70;914;caixas econômicas e cooperativas de crédito;90;;.
+ibge70;915;seguros e capitalização;90;;.
+ibge70;916;outras classes e classe mal definida;90;;.
+ibge70;921;advocacia e atividades auxiliares;111;;.
+ibge70;922;engenharia, arquitetura e atividades auxiliares;111;;.
+ibge70;923;odontologia e atividades auxiliares;113;;.
+ibge70;924;agronomia, veterinária e atividades auxiliares;111;;.
+ibge70;925;medicina e atividades auxiliares;113;;.
+ibge70;926;ciências, letras, artes e atividades auxiliares;114;;.
+ibge70;927;contabilidade e atividades auxiliares;111;;.
+ibge70;928;outros profissionais liberais e atividades auxiliares;111;;.
+ibge70;931;representações estrangeiras;130;;.
+ibge70;932;outras atividades;999;;.
+ibge70;934;atividades mal definidas e atividades não declaradas;999;;.
+ibge80;11;CULTURA AGAVE;10;;.
+ibge80;12;CULTURA ALGODAO;10;;.
+ibge80;13;CULTURA ARROZ;10;;.
+ibge80;14;CULTURA BANANA;10;;.
+ibge80;15;CULTURA CACAU;10;;.
+ibge80;16;CULTURA CAFE;10;;.
+ibge80;17;CULT CANA-ACUCAR;10;;.
+ibge80;18;CULTURA FUMO;10;;.
+ibge80;19;CULTURA MANDIOCA;10;;.
+ibge80;20;CULTURA MILHO;10;;.
+ibge80;21;CULTURA SOJA;10;;.
+ibge80;22;CULTURA TRIGO;10;;.
+ibge80;23;HORTIC FLORICULT;10;;.
+ibge80;24;SILVICULTURA;10;;.
+ibge80;25;CULT NAO DISCRIM;10;;.
+ibge80;26;PECUARIA;10;;.
+ibge80;27;AVICULTURA;10;;.
+ibge80;28;APICULT SERICULT;10;;.
+ibge80;29;ATIV NAO DEFINID;10;;.
+ibge80;31;EXT BORRACHA;10;;.
+ibge80;32;EXT ERVA-MATE;10;;.
+ibge80;33;EXT PLANTAS FIBR;10;;.
+ibge80;34;EXT FRUTOS SEMEN;10;;.
+ibge80;35;EXT MADEIRAS;10;;.
+ibge80;36;PROD CARVAO VEG;10;;.
+ibge80;37;ATIV NAO DEFINID;10;;.
+ibge80;41;PESCA;10;;.
+ibge80;42;PISCICULTURA;10;;.
+ibge80;50;EXT APAR MAT CON;20;;.
+ibge80;51;EXT PETR GAS NAT;20;;.
+ibge80;52;EXT CARV PEDRA;20;;.
+ibge80;53;EXP SALINAS FONT;20;;.
+ibge80;54;FAIS GAR MIN NMET;20;;.
+ibge80;55;FAIS GAR MIN MET;20;;.
+ibge80;56;EXT MIN RADIOATIV;20;;.
+ibge80;57;EXT MIN NAO META;20;;.
+ibge80;58;EXT MIN METALICOS;20;;.
+ibge80;59;ATIV NAO DEFINIDA;20;;.
+ibge80;100;IND TRAN MIN NMET;30;;.
+ibge80;110;IND METALURGICAS;30;;.
+ibge80;120;IND MECANICAS;30;;.
+ibge80;130;IND MAT ELET COM;30;;.
+ibge80;140;IND MAT TRANSPOR;30;;.
+ibge80;150;IND MADEIRA;30;;.
+ibge80;151;IND DOMIC ART PAL;30;;.
+ibge80;160;IND MOBILIARIO;30;;.
+ibge80;170;IND PAPEL PAPELAO;30;;.
+ibge80;180;IND BORRACHA;30;;.
+ibge80;190;IND COUROS PELES;30;;.
+ibge80;200;IND QUIMICAS;30;;.
+ibge80;201;IND PROD PETROL;30;;.
+ibge80;210;IND FARMAC VETERI;30;;.
+ibge80;220;IND PERF SABAO VE;30;;.
+ibge80;230;IND PROD PLASTIC;30;;.
+ibge80;240;IND TEXTEIS;30;;.
+ibge80;241;IND DOMIC TEXTEIS;30;;.
+ibge80;250;IND VESTUARIO;30;;.
+ibge80;251;IND CALCADOS;30;;.
+ibge80;260;IND PROD ALIMENT;30;;.
+ibge80;270;IND BEBIDAS;30;;.
+ibge80;280;IND FUMO;30;;.
+ibge80;290;IND EDIT GRAFICAS;30;;.
+ibge80;300;ATIV NAO DEFINIDA;30;;.
+ibge80;340;IND CONSTRUCAO;50;;.
+ibge80;351;PROD DISTR EN EL;40;;.
+ibge80;352;PROD DIST GAS CA;40;;.
+ibge80;353;ABAST AGUA ETC;40;;.
+ibge80;354;LIMP PUBL REM LIX;114;;.
+ibge80;410;COM PROD AGROP EX;60;;.
+ibge80;411;COM GEN ALIMENTIC;60;;.
+ibge80;412;COM TEC ART TECID;60;;.
+ibge80;413;COM MOV TAPEC ART;60;;.
+ibge80;414;COM PAPEL IMPRESS;60;;.
+ibge80;415;COM FERRAGENS ETC;60;;.
+ibge80;416;COM MAQ APAREL IN;60;;.
+ibge80;417;COM VEICULOS ACES;60;;.
+ibge80;418;COM PROD QUIM FAR;60;;.
+ibge80;419;COM COMBUST LUBRI;60;;.
+ibge80;420;COM AMBULANTE;60;;.
+ibge80;421;FEIRAS;60;;.
+ibge80;422;SUPERMERCADOS;60;;.
+ibge80;423;LOJA DE DEPARTAME;60;;.
+ibge80;424;ATIV NAO DEFINIDA;60;;.
+ibge80;451;BANCOS FINANC ETC;90;;.
+ibge80;452;CAIXAS ECON COOP;90;;.
+ibge80;453;SEGUROS;90;;.
+ibge80;461;ADM COM INC IMOV;111;;.
+ibge80;462;COM TIT E MOEDAS;90;;.
+ibge80;463;CONC LOTERIAS ETC;114;;.
+ibge80;464;ORG CART CREDITO;90;;.
+ibge80;471;TRANS TRAC ANIMAL;80;;.
+ibge80;472;TRANS RODOV PASSA;80;;.
+ibge80;473;TRANS RODOV CARGA;80;;.
+ibge80;474;TRANS FERROVIARIO;80;;.
+ibge80;475;TRANS MARITIMO;80;;.
+ibge80;476;TRANSPORTE AEREO;80;;.
+ibge80;477;ATIV NAO DEFINIDA;80;;.
+ibge80;481;SERV POSTAIS;80;;.
+ibge80;482;COMUNIC TELEFONIC;80;;.
+ibge80;511;SERV ALOJAMENTO;70;;.
+ibge80;512;SERV ALIMENTACAO;70;;.
+ibge80;521;SERV REP ELETRIC;60;;.
+ibge80;522;SERV REP VEICULOS;60;;.
+ibge80;523;SERV REP MADEIRA;60;;.
+ibge80;524;SERV REP INSTALAC;50;;.
+ibge80;525;SERV REP NAO INCL;60;;.
+ibge80;531;SERV HIGIENE PESS;114;;.
+ibge80;532;SERV CONFECCAO;30;;.
+ibge80;533;SERV PESS N INCLU;111;;.
+ibge80;541;SERV CONS VESTUAR;114;;.
+ibge80;542;SERV LIMP CONSERV;111;;.
+ibge80;543;SERV VIG E GUARDA;111;;.
+ibge80;544;SER DOM REMUNERAD;120;;.
+ibge80;545;SER DOMIC N INCLU;10;;.
+ibge80;551;SERV DIV ARTIST;114;;.
+ibge80;552;SERV RADIODIFUSAO;114;;.
+ibge80;571;SERV JURIDICO;111;;.
+ibge80;572;SERV CONTAB AUDIT;111;;.
+ibge80;573;SERV ASSESSORIA;111;;.
+ibge80;574;SERV ENGEN ARQUI;111;;.
+ibge80;575;SERV PUBLIC PROP;111;;.
+ibge80;576;SERV TRADUCAO;111;;.
+ibge80;577;ESTUD DE PINTURA;114;;.
+ibge80;578;SERV TECN-PROFISS;114;;.
+ibge80;581;SERV AUX AGR PECU;10;;.
+ibge80;582;SERV AUX COM MERC;60;;.
+ibge80;583;SERV ARMAZENAGEM;80;;.
+ibge80;584;SERV AUX COM/INDU;111;;.
+ibge80;585;SERV AUX SEGUROS;90;;.
+ibge80;586;SERV TRANSP N ROD;80;;.
+ibge80;587;SERV AUX TRANS RO;80;;.
+ibge80;588;SERV AUX TRANS MA;80;;.
+ibge80;589;SERV AUX TOD ATIV;111;;.
+ibge80;610;ASSIST BENEFICEN;113;;.
+ibge80;611;PREV SOC PUBLICA;100;;.
+ibge80;612;PREV SOC PARTICUL;90;;.
+ibge80;613;SIND ASSOC CLASSE;114;;.
+ibge80;614;INST CIENT TECNOL;112;;.
+ibge80;615;INST FILOS CULTUR;114;;.
+ibge80;616;CULTO ATIV AUXILI;114;;.
+ibge80;617;ENT DESP RECREATI;114;;.
+ibge80;618;ORGANIZ CIV POLIT;114;;.
+ibge80;619;SERV COMUNIT SOC;114;;.
+ibge80;621;SERV MEDICOS PUBL;113;;.
+ibge80;622;SERV MEDICOS PART;113;;.
+ibge80;623;SERV ODONTOLOGICO;113;;.
+ibge80;624;SERV VETERINARIA;113;;.
+ibge80;631;ENSINO PUBLICO;112;;.
+ibge80;632;ENSINO PARTICULAR;112;;.
+ibge80;711;PODER LEGISLATIVO;100;;.
+ibge80;712;JUSTICA ATIV AUXI;100;;.
+ibge80;713;SERV ADM FEDERAIS;100;;.
+ibge80;714;SERV ADM ESTADUAI;100;;.
+ibge80;715;SERV ADM MUNICIPA;100;;.
+ibge80;716;SERV ADM AUTARQUI;100;;.
+ibge80;717;SERV ADM NAO DEFI;100;;.
+ibge80;721;EXERCITO;100;;.
+ibge80;722;MARINHA DE GUERRA;100;;.
+ibge80;723;AERONAUTICA;100;;.
+ibge80;724;POLICIA MILITAR;100;;.
+ibge80;725;POLICIA CIVIL;100;;.
+ibge80;726;CORPO BOMBEIROS;100;;.
+ibge80;727;OUTR ORG GOV SEGU;100;;.
+ibge80;801;ORG INTER REP EST;130;;.
+ibge80;901;OUT ATIV NAO DEFI;999;;.
+ibge80;902;ATIV MAL DEFINIDA;999;;.
+ibge80;998;;999;;.
+ibge91;11;Cultura de agave;10;;.
+ibge91;12;Cultura de algodão;10;;.
+ibge91;13;Cultura de arroz;10;;.
+ibge91;14;Cultura de banana;10;;.
+ibge91;15;Cultura de cacau;10;;.
+ibge91;16;Cultura de café;10;;.
+ibge91;17;Cultura de cana-de-açúcar;10;;.
+ibge91;18;Cultura de fumo;10;;.
+ibge91;19;Cultura de mandioca;10;;.
+ibge91;20;Cultura de milho;10;;.
+ibge91;21;Cultura de soja;10;;.
+ibge91;22;Cultura de trigo;10;;.
+ibge91;23;Horticultura e Floricultura;10;;.
+ibge91;24;Silvicultura;10;;.
+ibge91;25;Culturas não discriminadas anteriormente;10;;.
+ibge91;26;Pecuária;10;;.
+ibge91;27;Avicultura;10;;.
+ibge91;28;Apicultura e Sericicultura;10;;.
+ibge91;29;Atividades não compreendidas nas classes anteriores;10;;.
+ibge91;31;Extração de borracha e gomas elásticas;10;;.
+ibge91;32;Extração de erva-mate;10;;.
+ibge91;33;Extração de plantas fibrosas;10;;.
+ibge91;34;Extração de frutos, sementes oleaginosas e ceras;10;;.
+ibge91;35;Extração de madeiras;10;;.
+ibge91;36;Produção de carvão vegetal;10;;.
+ibge91;37;Atividades não compreendidas nas classes anteriores;10;;.
+ibge91;41;Pesca;10;;.
+ibge91;42;Piscicultura;10;;.
+ibge91;50;Extração e aparelhamento de pedras e outros materiais de construção;20;;.
+ibge91;51;Extração de petróleo e gás natural;20;;.
+ibge91;52;Extração de carvão de pedra;20;;.
+ibge91;53;Exploração de salinas e fontes hidrominerais;20;;.
+ibge91;54;Faiscação e garimpagem de minerais não metálicos;20;;.
+ibge91;55;Faiscação e garimpagem de minerais metálicos;20;;.
+ibge91;56;Extração de minerais radioativos;20;;.
+ibge91;57;Extração de minerais não metálicos (exceto os de outras classes);20;;.
+ibge91;58;Extração de minerais metálicos (exceto os de outras classes);20;;.
+ibge91;59;Atividades não compreendidas nas classes anteriores ou mal definidas;20;;.
+ibge91;100;Indústria de transformação de minerais não metálicos (exclusive combustíveis minerais);30;;.
+ibge91;110;Indústrias metalúrgicas;30;;.
+ibge91;120;Indústrias mecânicas;30;;.
+ibge91;130;Indústrias de material elétrico e de comunicações;30;;.
+ibge91;140;Indústrias de material de transportes;30;;.
+ibge91;150;Indústrias de madeira;30;;.
+ibge91;151;Indústrias domiciliares de artigos de palha;30;;.
+ibge91;160;Indústrias do mobiliário;30;;.
+ibge91;170;Indústrias do papel e papelão;30;;.
+ibge91;180;Indústrias da borracha;30;;.
+ibge91;190;Indústrias de couros, peles e similares (exclusive vestuário e calçados);30;;.
+ibge91;200;Indústrias químicas (inclusive produção de álcool);30;;.
+ibge91;201;Indústrias de produtos da destilação do petróleo e do carvão;30;;.
+ibge91;202;Indústrias químicas de matérias primas para produção de material plástico, borracha, etc.;30;;.
+ibge91;210;Indústrias de produtos farmacêuticos e veterinários;30;;.
+ibge91;220;Indústrias de perfumaria, sabões e velas;30;;.
+ibge91;230;Indústrias de produtos de matérias plásticas;30;;.
+ibge91;240;Indústrias têxteis;30;;.
+ibge91;241;Indústrias domiciliares têxteis;30;;.
+ibge91;250;Indústrias do vestuário;30;;.
+ibge91;251;Indústrias do calçado;30;;.
+ibge91;260;Indústrias de produtos alimentares;30;;.
+ibge91;261;Indústrias domiciliares de produtos alimentares;30;;.
+ibge91;270;Indústrias de bebidas (exclusive produção de álcool);30;;.
+ibge91;280;Indústrias do fumo;30;;.
+ibge91;290;Indústrias editoriais e gráficas;30;;.
+ibge91;300;Atividades não compreendidas nas classes anteriores ou mal definidas;30;;.
+ibge91;340;Indústrias da construção;50;;.
+ibge91;351;Produção e distribuição de energia elétrica;40;;.
+ibge91;352;Produção e distribuição de gás canalizado;40;;.
+ibge91;353;Abastecimento de água e serviço de esgoto;40;;.
+ibge91;354;Limpeza pública e remoção de lixo;114;;.
+ibge91;410;Comércio de produtos agropecuários e extrativos (exclusive aves para alimentação);60;;.
+ibge91;411;Comércio de gêneros alimentícios, bebidas e estimulantes;60;;.
+ibge91;412;Comércio de tecidos, artigos do vestuário e armarinho;60;;.
+ibge91;413;Comércio de móveis, tapeçarias, objetos de arte e ornamentação;60;;.
+ibge91;414;Comércio de papel, impressos e artigos de escritório;60;;.
+ibge91;415;Comércio de ferragens, louças, materiais de construção e produtos metalúrgicos;60;;.
+ibge91;416;Comércio de máquinas, aparelhos, instrumentos e material elétrico;60;;.
+ibge91;417;Comércio de veículos e acessórios;60;;.
+ibge91;418;Comércio de produtos químicos e farmacêuticos;60;;.
+ibge91;419;Comércio de combustíveis e lubrificantes;60;;.
+ibge91;420;Comércio ambulante;60;;.
+ibge91;421;Feiras;60;;.
+ibge91;422;Supermercados;60;;.
+ibge91;423;Lojas de Departamentos;60;;.
+ibge91;424;Atividades não compreendidas nas classes anteriores ou mal definidas;60;;.
+ibge91;451;Banco, financeiras e capitalização;90;;.
+ibge91;452;Caixas econômicas e cooperativas de crédito;90;;.
+ibge91;453;Seguros;90;;.
+ibge91;461;Administração, comércio e incorporação de imóveis;111;;.
+ibge91;462;Comércio de títulos e moedas;90;;.
+ibge91;463;Concessionários de loterias (exclusive agências lotéricas);114;;.
+ibge91;464;Organização de cartões de crédito, consórcios, clubes de mercadorias, etc.;90;;.
+ibge91;471;Transportes a tração e condução animal;80;;.
+ibge91;472;Transportes rodoviários de passageiros;80;;.
+ibge91;473;Transportes rodoviários de cargas;80;;.
+ibge91;474;Transportes ferroviários;80;;.
+ibge91;475;Transportes marítimos fluviais e lacustres;80;;.
+ibge91;476;Transportes aéreos;80;;.
+ibge91;477;Atividades não compreendidas acima ou mal definidas;80;;.
+ibge91;481;Serviços postais, telegráficos e de rádiocomunicações;80;;.
+ibge91;482;Comunicações telefônicas;80;;.
+ibge91;511;Serviços de alojamento;70;;.
+ibge91;512;Serviços de alimentação;70;;.
+ibge91;521;Serviços de reparação e conservação de  máquinas e aparelhos elétricos ou não (uso doméstico);60;;.
+ibge91;522;Serviços de reparação e manutenção de veículos (exclusive trens e máquinas de terraplenagem);60;;.
+ibge91;523;Serviços de reparação de artigos de madeira e do mobiliário;60;;.
+ibge91;524;Serviços de reparação de instalações elétricas, hidráulicas e de gás;50;;.
+ibge91;525;Serviços de reparação não incluídos nas classes anteriores ou mal definidos;60;;.
+ibge91;531;Serviços de higiene pessoal;114;;.
+ibge91;532;Serviços de confecção sob medida e reparação de artigos do vestuários;30;;.
+ibge91;533;Serviços pessoais não incluídos anterioremente ou mal definidos;111;;.
+ibge91;541;Serviços de conservação de artigos do vestuário e de outros artigos e tecidos;114;;.
+ibge91;542;Serviços de limpeza e conservação de casas, escritórios, lojas e edifícios;111;;.
+ibge91;543;Serviços de vigilância e guarda;111;;.
+ibge91;544;Serviços domésticos remunerados;120;;.
+ibge91;545;Serviços domiciliares não incluídos anteriormente ou mal definidos;10;;.
+ibge91;551;Serviços de diversões e promoção de espetáculos artísticos;114;;.
+ibge91;552;Serviços radiofusão e televisão;114;;.
+ibge91;571;Serviços jurídicos;111;;.
+ibge91;572;Serviços de contabilidade e auditoria;111;;.
+ibge91;573;Serviços de assessoria, consultoria, pesquisa, análise e processamento de dados;111;;.
+ibge91;574;Serviços de engenharia e arquitetura;111;;.
+ibge91;575;Serviços de publicidade e propaganda;111;;.
+ibge91;576;Serviços de tradução, reprodução e documentação;111;;.
+ibge91;577;Serviços de pintura, desenho, escultura e serviço de decoração;114;;.
+ibge91;578;Serviços técnico-profissionais não incluídos anteriormente ou mal definidos;114;;.
+ibge91;581;Serviços auxiliares da agricultura e da pecuária;10;;.
+ibge91;582;Serviços auxiliares do comércio de mercadorias;60;;.
+ibge91;583;Serviços auxiliares de armazenagem;80;;.
+ibge91;584;Serviços auxiliares do comércio e da indústria em geral;60;;.
+ibge91;585;Serviços auxiliares das atividades de seguros, finanças e valores;90;;.
+ibge91;586;Serviços auxiliares dos transportes (exclusive rodoviário e marítimo);80;;.
+ibge91;587;Serviços auxiliares dos transportes rodoviários;80;;.
+ibge91;588;Serviços auxiliares dos transportes marítimos;80;;.
+ibge91;589;Serviços auxiliares das atividades econômicas em geral;111;;.
+ibge91;610;Assistência e beneficiência;113;;.
+ibge91;611;Previdência Social Pública;100;;.
+ibge91;612;Previdência Social Particular;90;;.
+ibge91;613;Sindicatos e associações de classe;114;;.
+ibge91;614;Instituições científicas e tecnológicas;112;;.
+ibge91;615;Instituições filosofícas e culturais;114;;.
+ibge91;616;Culto e atividades auxiliares;114;;.
+ibge91;617;Entidades desportivas e recreativas;114;;.
+ibge91;618;Organizações cívicas e políticas;114;;.
+ibge91;619;Serviços comunitários e sociais não incluídos anteriormente ou mal definidos;114;;.
+ibge91;621;Serviços médicos públicos;113;;.
+ibge91;622;Serviços médicos particulares;113;;.
+ibge91;623;Serviços odontológicos;113;;.
+ibge91;624;Serviços de veterinária;113;;.
+ibge91;631;Ensino público;112;;.
+ibge91;632;Ensino particular;112;;.
+ibge91;711;Poder Legislativo;100;;.
+ibge91;712;Justiça e atividades auxiliares;100;;.
+ibge91;713;Serviços administrativos federais;100;;.
+ibge91;714;Serviços administrativos estaduais;100;;.
+ibge91;715;Serviços administrativos municipais;100;;.
+ibge91;716;Serviços administrativos autárquicos;100;;.
+ibge91;717;Serviços administrativos públicos não incluídos anteriormente ou mal definidos;100;;.
+ibge91;721;Exército;100;;.
+ibge91;722;Marinha de Guerra;100;;.
+ibge91;723;Aeronáutica;100;;.
+ibge91;724;Polícia Militar;100;;.
+ibge91;725;Polícia Civil;100;;.
+ibge91;726;Corpo de Bombeiros;100;;.
+ibge91;727;Outras organizações governamentais de segurança;100;;.
+ibge91;801;Organizações internacionais e representações estrangeiras;130;;.
+ibge91;901;Outras ativdades não compreendidas nos demais ramos;999;;.
+ibge91;902;Atividades mal definidas;999;;.
+ibge91;903;Atividade não declarada;999;;.
+ibge91;999;Pessoa menor de 10 anos ou (VAR0345) = 3;0;;.
+cboDom;0;Atividades mal especificadas;999;;.
+cboDom;1101;Cultivo de arroz;10;;.
+cboDom;1102;Cultivo de milho;10;;.
+cboDom;1103;Cultivo de outros cereais para grãos;10;;.
+cboDom;1104;Cultivo de algodão herbáceo;10;;.
+cboDom;1105;Cultivo de cana-de-açúcar;10;;.
+cboDom;1106;Cultivo de fumo;10;;.
+cboDom;1107;Cultivo de soja;10;;.
+cboDom;1108;Cultivo de mandioca;10;;.
+cboDom;1109;Cultivo de outros produtos de lavoura temporária;10;;.
+cboDom;1110;Cultivo de hortaliças, legumes e outros produtos da horticultura ;10;;.
+cboDom;1111;Cultivo de flores, plantas ornamentais e produtos de viveiro;10;;.
+cboDom;1112;Cultivo de frutas cítricas;10;;.
+cboDom;1113;Cultivo de café;10;;.
+cboDom;1114;Cultivo de cacau;10;;.
+cboDom;1115;Cultivo de uva;10;;.
+cboDom;1116;Cultivo de banana;10;;.
+cboDom;1117;Cultivo de outros produtos de lavoura permanente;10;;.
+cboDom;1118;Cultivos agrícolas mal especificados;10;;.
+cboDom;1201;Criação de bovinos;10;;.
+cboDom;1202;Criação de outros animais de grande porte;10;;.
+cboDom;1203;Criação de ovinos;10;;.
+cboDom;1204;Criação de suinos;10;;.
+cboDom;1205;Criação de aves;10;;.
+cboDom;1206;Apicultura;10;;.
+cboDom;1207;Sericicultura;10;;.
+cboDom;1208;Criação de outros animais;10;;.
+cboDom;1209;Criação de animais mal especificados;10;;.
+cboDom;1300;Produção mista: lavoura e pecuária;10;;.
+cboDom;1401;Atividades de serviços relacionados com a agricultura;10;;.
+cboDom;1402;Atividades de serviços relacionados com a pecuária - exceto atividades veterinárias;10;;.
+cboDom;1500;Caça, repovoamento ciegético e serviços relacionados;10;;.
+cboDom;2001;Silvicultura e exploração florestal ;10;;.
+cboDom;2002;Atividades de serviços relacionados com a silvicultura e a exploração florestal;10;;.
+cboDom;5001;Pesca e serviços relacionados;10;;.
+cboDom;5002;Aquicultura e serviços relacionados;10;;.
+cboDom;10000;Extração de carvão mineral;20;;.
+cboDom;11000;Extração de petróleo e gás natural e serviços relacionados;20;;.
+cboDom;12000;Extração de minerais radioativos;20;;.
+cboDom;13001;Extração de minérios de metais preciosos;20;;.
+cboDom;13002;Extração de minerais metálicos - exceto metais preciosos e radioativos;20;;.
+cboDom;14001;Extração de pedras e outros materiais para construção;20;;.
+cboDom;14002;Extração de pedras preciosas e semi-preciosas;20;;.
+cboDom;14003;Extração de outros minerais não-metálicos;20;;.
+cboDom;14004;Extração de minerais mal especificados;20;;.
+cboDom;15010;Abate e preparação de carne e pescado;30;;.
+cboDom;15021;Produção de conservas de frutas, legumes e outros vegetais;30;;.
+cboDom;15022;Produção de gorduras e óleos vegetais;30;;.
+cboDom;15030;Fabricação de produtos do laticínio;30;;.
+cboDom;15041;Fabricação e refino do açúcar;30;;.
+cboDom;15042;Torrefação e moagem de café;30;;.
+cboDom;15043;Fabricação de outros  produtos alimentícios ;30;;.
+cboDom;15050;Fabricação de bebidas;30;;.
+cboDom;16000;Fabricação de produtos do fumo;30;;.
+cboDom;17001;Beneficiamento de fibras, fiação e tecelagem;30;;.
+cboDom;17002;Fabricação de artefatos têxteis a partir de tecidos - exceto vestuário;30;;.
+cboDom;18001;Confecção de artigos do vestuário e acessórios - exceto sob medida;30;;.
+cboDom;18002;Confecção sob medida de artigos do vestuário e acessórios;30;;.
+cboDom;18999;Confecção de artigos do vestuário e acessórios sob medida ou não;30;;.
+cboDom;19011;Curtimento e outras preparações de couro;30;;.
+cboDom;19012;Fabricação de artefatos de couro;30;;.
+cboDom;19020;Fabricação de calçados;30;;.
+cboDom;20000;Fabricação de produtos de madeira;30;;.
+cboDom;21001;Fabricação de celulose,   papel e papelão liso, cartolina e cartão;30;;.
+cboDom;21002;Fabricação de papelão corrugado e de embalagens e artefatos de papel e papelão;30;;.
+cboDom;22000;Edição, impressão e reprodução de gravações;30;;.
+cboDom;23010;Coquerias;30;;.
+cboDom;23020;Fabricação de produtos do refino do petróleo;30;;.
+cboDom;23030;Elaboração de combustíveis nucleares;30;;.
+cboDom;23400;Produção de álcool;30;;.
+cboDom;24010;Fabricação de tintas, vernizes, esmaltes e lacas;30;;.
+cboDom;24020;Fabricação de produtos farmacêuticos;30;;.
+cboDom;24030;Fabricação de sabões, detergentes, produtos de limpeza e perfumaria;30;;.
+cboDom;24090;Fabricação de produtos químicos diversos;30;;.
+cboDom;25010;Fabricação de produtos de borracha;30;;.
+cboDom;25020;Fabricação de produtos de plástico;30;;.
+cboDom;26010;Fabricação de vidro e produtos de vidro;30;;.
+cboDom;26091;Fabricação de produtos cerâmicos;30;;.
+cboDom;26092;Fabricação de produtos diversos de minerais não-metálicos;30;;.
+cboDom;27001;Fabricação de produtos siderúrgicos;30;;.
+cboDom;27002;Metalurgia dos metais não-ferrosos;30;;.
+cboDom;27003;Fundição;30;;.
+cboDom;28001;Fabricação de produtos de metal - exceto máquinas e equipamentos;30;;.
+cboDom;28002;Forjaria, estamparia, metalurgia do pó e serviços de tratamento de metais;30;;.
+cboDom;29001;Fabricação de máquinas e equipamentos - exceto eletrodomésticos;30;;.
+cboDom;29002;Fabricação de eletrodomésticos;30;;.
+cboDom;30000;Fabricação de máquinas de escritório e equipamentos de informática;30;;.
+cboDom;31001;Fabricação de máquinas, aparelhos e materiais elétricos diversos - exceto para veículos;30;;.
+cboDom;31002;Fabricação de material elétrico para veículos;30;;.
+cboDom;32000;Fabricação de material eletrônico e de aparelhos e equipamentos de comunicação;30;;.
+cboDom;33001;Fabricação de aparelhos e equipamentos médico-hospitalares;30;;.
+cboDom;33002;Fabricação de aparelhos e instrumentos de medida, teste e controle - exceto para controle de processos industriais;30;;.
+cboDom;33003;Fabricação de máquinas, aparelhos e equipamentos de sistemas eletrônicos dedicados a automação industrial e controle do processo produtivo;30;;.
+cboDom;33004;Fabricação de aparelhos, instrumentos e materiais ópticos, fotográficos e cinematográficos;30;;.
+cboDom;33005;Fabricação de cronômetros e relógios;30;;.
+cboDom;34001;Fabricação e montagem de veículos automotores;30;;.
+cboDom;34002;Fabricação de cabines, carrocerias, reboques  e peças para veículos automotores;30;;.
+cboDom;34003;Recondicionamento ou recuperação de motores de veículos automotores;30;;.
+cboDom;35010;Construção e reparação de embarcações;30;;.
+cboDom;35020;Construção e montagem de locomotivas, vagões e outros materiais rodantes;30;;.
+cboDom;35030;Construção, montagem e reparação de aeronaves;30;;.
+cboDom;35090;Fabricação de equipamentos de transporte diversos;30;;.
+cboDom;36010;Fabricação de artigos do mobiliário;30;;.
+cboDom;36090;Fabricação de produtos diversos ;30;;.
+cboDom;37000;Reciclagem;114;;.
+cboDom;40010;Produção e distribuição de energia elétrica;40;;.
+cboDom;40020;Produção e distribuição de gás através de tubulações;40;;.
+cboDom;41000;Captação, tratamento e distribuição de água;40;;.
+cboDom;45001;Preparação do terreno ;50;;.
+cboDom;45002;Construção de edifícios e obras de engenharia civil;50;;.
+cboDom;45003;Obras de instalações;50;;.
+cboDom;45004;Obras de acabamento ;50;;.
+cboDom;45005;Aluguel de equipamentos de construção e demolição com operários;50;;.
+cboDom;45999;Atividades de construção - especialidade não definida;50;;.
+cboDom;50010;Comércio de veículos automotores;60;;.
+cboDom;50020;Serviços de reparação e manutenção de veículos automotores;60;;.
+cboDom;50030;Comércio de peças e acessórios para veículos automotores;60;;.
+cboDom;50040;Comércio, manutenção e reparação de motocicletas;60;;.
+cboDom;50050;Posto de combustíveis;60;;.
+cboDom;53010;Representantes comerciais e agentes do comércio;60;;.
+cboDom;53020;Comércio de produtos agropecuários;60;;.
+cboDom;53030;Comércio de produtos alimentícios, bebidas e fumo;60;;.
+cboDom;53041;Comércio de fios têxteis, tecidos, artefatos de tecidos e armarinho;60;;.
+cboDom;53042;Comércio de artigos do vestuário, complementos e calçados;60;;.
+cboDom;53050;Comércio de madeira, material de construção, ferragens e ferramentas;60;;.
+cboDom;53061;Comércio de eletrodomésticos, móveis e outros artigos de residência;60;;.
+cboDom;53062;Comércio de livros, jornais, revistas e papelaria;60;;.
+cboDom;53063;Comércio de produtos farmacêuticos, médicos, ortopédicos, odontológicos, cosméticos e de perfumaria;60;;.
+cboDom;53064;Comércio de máquinas, aparelhos e equipamentos - exceto eletrodomésticos;60;;.
+cboDom;53065;Comércio de combustíveis - exceto posto de combustíveis ;60;;.
+cboDom;53066;Comércio de resíduos e sucatas;60;;.
+cboDom;53067;Comércio de produtos extrativos de origem mineral;60;;.
+cboDom;53068;Comércio de mercadorias em geral - inclusive mercadorias usadas;60;;.
+cboDom;53070;Supermercado e Hipermercado;60;;.
+cboDom;53080;Lojas de departamento e outros comércios não especializados, sem predominância de produtos alimentícios;60;;.
+cboDom;53090;Comércio varejista de artigos em geral por catálogo, televisão, internet e outros meios de comunicação;60;;.
+cboDom;53101;Comércio varejista realizado em postos móveis, instalados em vias públicas ou em mercados;60;;.
+cboDom;53102;Outros tipos de comércio varejista, não realizado em lojas ;60;;.
+cboDom;53111;Reparação e manutenção de eletrodomésticos;60;;.
+cboDom;53112;Reparação de calçados ;60;;.
+cboDom;53113;Reparação de objetos pessoais e domésticos - exceto de eletrodomésticos e calçados;60;;.
+cboDom;53999;Atividades de comércio não especificadas;60;;.
+cboDom;55010;Alojamento;70;;.
+cboDom;55020;Ambulantes de alimentação;60;;.
+cboDom;55030;Outros serviços de alimentação - exceto ambulantes;70;;.
+cboDom;55999;Atividades de alojamento e/ou alimentação não especificadas;70;;.
+cboDom;60010;Transporte ferroviário;80;;.
+cboDom;60020;Transporte metroviário;80;;.
+cboDom;60031;Transporte rodoviário de cargas - exceto de mudanças ;80;;.
+cboDom;60032;Transporte rodoviário de mudanças;80;;.
+cboDom;60040;Transporte rodoviário de passageiros;80;;.
+cboDom;60091;Transporte em bondes, funiculares, teleféricos ou trens próprios para exploração de pontos turísticos;80;;.
+cboDom;60092;Transporte dutoviário;80;;.
+cboDom;60999;Transporte terrestre - modalidade não especificada;80;;.
+cboDom;61000;Transporte aquaviário;80;;.
+cboDom;62000;Transporte aéreo;80;;.
+cboDom;63010;Carga e descarga, armazenamento e depósitos;80;;.
+cboDom;63021;Atividades auxiliares aos transportes;80;;.
+cboDom;63022;Organização do transporte de cargas;80;;.
+cboDom;63030;Agências de viagens e organizadores de viagens;80;;.
+cboDom;64010;Atividades de correio;80;;.
+cboDom;64020;Telecomunicações;80;;.
+cboDom;65000;Intermediação Financeira;90;;.
+cboDom;66000;Seguros e previdência privada;90;;.
+cboDom;67010;Atividades auxiliares da intermediação financeira;90;;.
+cboDom;67020;Atividades auxiliares dos seguros e da previdência privada;90;;.
+cboDom;70001;Atividades imobiliárias - exceto condomínios prediais;111;;.
+cboDom;70002;Condomínios prediais;111;;.
+cboDom;71010;Aluguel de veículos;111;;.
+cboDom;71020;Aluguel de máquinas e equipamentos;111;;.
+cboDom;71030;Aluguel de objetos pessoais e domésticos;111;;.
+cboDom;72010;Atividades de informática;111;;.
+cboDom;72020;Manutenção e reparação de máquinas de escritório e de informática;111;;.
+cboDom;73000;Pesquisa e desenvolvimento;111;;.
+cboDom;74011;"Atividades jurídicas; de contabilidade; e de pesquisas de mercado e opinião pública";111;;.
+cboDom;74012;Atividades de assessoria em gestão empresarial;111;;.
+cboDom;74021;Serviços de arquitetura e engenharia e de assessoramento técnico especializado;111;;.
+cboDom;74022;"Ensaios de materiais e de produtos; análise de qualidade";111;;.
+cboDom;74030;Publicidade;111;;.
+cboDom;74040;Seleção, agenciamento e locação de mão-de-obra ;111;;.
+cboDom;74050;Investigação, vigilância e segurança;111;;.
+cboDom;74060;Atividades de imunização, higienização e de limpeza em prédios e em domicílios;111;;.
+cboDom;74090;Outros serviços prestados às empresas;111;;.
+cboDom;75011;Administração do Estado e da política econômica e social - Federal;100;;.
+cboDom;75012;Administração do Estado e da política econômica e social - Estadual;100;;.
+cboDom;75013;Administração do Estado e da política econômica e social - Municipal;100;;.
+cboDom;75014;Forças Armadas;100;;.
+cboDom;75015;Outros serviços coletivos prestados pela administração pública - Federal;100;;.
+cboDom;75016;Outros serviços coletivos prestados pela administração pública - Estadual;100;;.
+cboDom;75017;Outros serviços coletivos prestados pela administração pública - Municipal;100;;.
+cboDom;75020;Seguridade social;100;;.
+cboDom;75999;Administração pública, esfera de governo não especificada;100;;.
+cboDom;80011;Educação regular, supletiva e especial pública;112;;.
+cboDom;80012;Educação regular, supletiva e especial particular;112;;.
+cboDom;80090;Outras atividades de ensino;112;;.
+cboDom;80999;Atividades de ensino não especificadas;112;;.
+cboDom;85011;Saúde pública;113;;.
+cboDom;85012; Saúde  particular;113;;.
+cboDom;85013;Outras atividades de saúde;113;;.
+cboDom;85020;Serviços veterinários;113;;.
+cboDom;85030;Serviços sociais;113;;.
+cboDom;85999;Atividades de saúde não especificadas;113;;.
+cboDom;90000;"Limpeza urbana e esgoto; e atividades conexas";114;;.
+cboDom;91010;Atividades de organizações sindicais;114;;.
+cboDom;91020;Atividades de organizações empresariais, patronais e profissionais;114;;.
+cboDom;91091;Atividades de organizações religiosas e filosóficas;114;;.
+cboDom;91092;Outras atividades associativas;114;;.
+cboDom;92011;Produção de filmes cinematográficos e fitas de vídeo;114;;.
+cboDom;92012;Distribuição e projeção de filmes e de vídeos;114;;.
+cboDom;92013;Atividades de rádio;114;;.
+cboDom;92014;Atividades de televisão;114;;.
+cboDom;92015;Outras atividades artísticas e de espetáculos;114;;.
+cboDom;92020;Atividades de agências de notícias;114;;.
+cboDom;92030;Bibliotecas, arquivos, museus e outras atividades culturais;114;;.
+cboDom;92040;Atividades desportivas e outras relacionadas ao lazer;114;;.
+cboDom;93010;Lavanderias e tinturarias;114;;.
+cboDom;93020;Cabeleireiros e outros tratamentos de beleza;114;;.
+cboDom;93030;Atividades funerárias ;114;;.
+cboDom;93091;Atividades de manutenção do físico corporal;114;;.
+cboDom;93092;Outras atividades de serviços pessoais;114;;.
+cboDom;95000;Serviços domésticos ;120;;.
+cboDom;99000;Organismos internacionais e outras instituições extraterritoriais;130;;.
+cboDom;99999;;999;;.
+cod2010;0;ATIVIDADES MALDEFINIDAS ;999;;.
+cod2010;1101;CULTIVO DE ARROZ;10;;.
+cod2010;1102;CULTIVO DE MILHO;10;;.
+cod2010;1103;CULTIVO DE OUTROS CEREAIS;10;;.
+cod2010;1104;CULTIVO DE ALGODÃO;10;;.
+cod2010;1105;CULTIVO DE CANA-DE-AÇÚCAR;10;;.
+cod2010;1106;CULTIVO DE FUMO;10;;.
+cod2010;1107;CULTIVO DE SOJA;10;;.
+cod2010;1108;CULTIVO DE MANDIOCA;10;;.
+cod2010;1109;CULTIVO DE OUTRAS LAVOURAS TEMPORÁRIAS NÃO ESPECIFICADAS ANTERIORMENTE;10;;.
+cod2010;1110;HORTICULTURA;10;;.
+cod2010;1111;CULTIVO DE FLORES E PLANTAS ORNAMENTAIS;10;;.
+cod2010;1112;CULTIVO DE FRUTAS CÍTRICAS;10;;.
+cod2010;1113;CULTIVO DE CAFÉ;10;;.
+cod2010;1114;CULTIVO DE CACAU;10;;.
+cod2010;1115;CULTIVO DE UVA;10;;.
+cod2010;1116;CULTIVO DE BANANA;10;;.
+cod2010;1117;CULTIVO DE OUTRAS PLANTAS E FRUTAS DE LAVOURA PERMANENTE NÃO ESPECIFICADAS ANTERIORMENTE;10;;.
+cod2010;1118;PRODUÇÃO DE SEMENTES E MUDAS CERTIFICADAS;10;;.
+cod2010;1119;LAVOURA NÃO ESPECIFICADA;10;;.
+cod2010;1201;CRIAÇÃO DE BOVINOS;10;;.
+cod2010;1202;CRIAÇÃO DE OUTROS ANIMAIS DE GRANDE PORTE NÃO ESPECIFICADOS ANTERIORMENTE;10;;.
+cod2010;1203;CRIAÇÃO DE CAPRINOS E OVINOS;10;;.
+cod2010;1204;CRIAÇÃO DE SUÍNOS;10;;.
+cod2010;1205;CRIAÇÃO DE AVES;10;;.
+cod2010;1206;APICULTURA;10;;.
+cod2010;1207;SERICICULTURA;10;;.
+cod2010;1208;CRIAÇÃO DE OUTROS ANIMAIS NÃO ESPECIFICADOS ANTERIORMENTE ;10;;.
+cod2010;1209;PECUÁRIA NÃO ESPECIFICADA;10;;.
+cod2010;1401;ATIVIDADES DE APOIO À AGRICULTURA E PÓS-COLHEITA;10;;.
+cod2010;1402;ATIVIDADES DE APOIO À PECUÁRIA ;10;;.
+cod2010;1500;CAÇA E SERVIÇOS RELACIONADOS;10;;.
+cod2010;1999;AGROPECUÁRIA;10;;.
+cod2010;2000;PRODUÇÃO FLORESTAL ;10;;.
+cod2010;3001;PESCA;10;;.
+cod2010;3002;AQUICULTURA;10;;.
+cod2010;5000;EXTRAÇÃO DE CARVÃO MINERAL;20;;.
+cod2010;6000;EXTRAÇÃO DE PETRÓLEO E GÁS NATURAL ;20;;.
+cod2010;7001;EXTRAÇÃO DE MINÉRIOS DE METAIS PRECIOSOS;20;;.
+cod2010;7002;EXTRAÇÃO DE MINERAIS METÁLICOS NÃO ESPECIFICADOS ANTERIORMENTE ;20;;.
+cod2010;8001;EXTRAÇÃO DE PEDRAS, AREIA E ARGILA;20;;.
+cod2010;8002;EXTRAÇÃO DE GEMAS (PEDRAS PRECIOSAS E SEMIPRECIOSAS);20;;.
+cod2010;8009;EXTRAÇÃO DE MINERAIS NÃO METÁLICOS NÃO ESPECIFICADOS ANTERIORMENTE ;20;;.
+cod2010;8999;EXTRAÇÃO DE MINERAIS NÃO ESPECIFICADOS;20;;.
+cod2010;9000;ATIVIDADES DE APOIO À EXTRAÇÃO DE MINERAIS;20;;.
+cod2010;10010;ABATE E FABRICAÇÃO DE PRODUTOS DE CARNE E PESCADO ;30;;.
+cod2010;10021;FABRICAÇÃO DE CONSERVAS DE FRUTAS, LEGUMES E OUTROS VEGETAIS;30;;.
+cod2010;10022;FABRICAÇÃO DE ÓLEOS VEGETAIS E GORDURAS VEGETAIS E ANIMAIS;30;;.
+cod2010;10030;LATICÍNIOS;30;;.
+cod2010;10091;MOAGEM, FABRICAÇÃO DE PRODUTOS AMILÁCEOS E DE ALIMENTOS PARA ANIMAIS;30;;.
+cod2010;10092;FABRICAÇÃO E REFINO DO AÇÚCAR;30;;.
+cod2010;10093;TORREFAÇÃO E MOAGEM DE CAFÉ;30;;.
+cod2010;10099;FABRICAÇÃO DE OUTROS PRODUTOS ALIMENTÍCIOS;30;;.
+cod2010;10999;FABRICAÇÃO DE PRODUTOS ALIMENTÍCIOS NÃO ESPECIFICADOS;30;;.
+cod2010;11000;FABRICAÇÃO DE BEBIDAS;30;;.
+cod2010;12000;PROCESSAMENTO INDUSTRIAL E FABRICAÇÃO DE PRODUTOS DO FUMO;30;;.
+cod2010;13001;PREPARAÇÃO DE FIBRAS, FIAÇÃO E TECELAGEM;30;;.
+cod2010;13002;FABRICAÇÃO DE ARTEFATOS TÊXTEIS, EXCETO VESTUÁRIO;30;;.
+cod2010;13999;INDUSTRIA TÊXTIL - ATIVIDADES NÃO ESPECIFICADAS;30;;.
+cod2010;14001;CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS, EXCETO SOB MEDIDA;30;;.
+cod2010;14002;CONFECÇÃO, SOB MEDIDA, DE ARTIGOS DO VESTUÁRIO;30;;.
+cod2010;14999;CONFECÇÃO DE ARTIGOS DO VESTUÁRIO E ACESSÓRIOS, SOB MEDIDA OU NÃO;30;;.
+cod2010;15011;CURTIMENTO E OUTRAS PREPARAÇÕES DE COURO;30;;.
+cod2010;15012;FABRICAÇÃO DE ARTIGOS DE VIAGEM E DE ARTEFATOS DIVERSOS DE COURO;30;;.
+cod2010;15020;FABRICAÇÃO DE CALÇADOS E PARTES PARA CALÇADOS, DE QUALQUER MATERIAL;30;;.
+cod2010;16001;SERRARIAS;30;;.
+cod2010;16002;FABRICAÇÃO DE PRODUTOS DE MADEIRA, CORTIÇA E MATERIAL TRANÇADO, EXCETO MÓVEIS;30;;.
+cod2010;17001;FABRICAÇÃO DE CELULOSE, PAPEL, CARTOLINA E PAPEL-CARTÃO;30;;.
+cod2010;17002;FABRICAÇÃO DE EMBALAGENS E DE PRODUTOS DIVERSOS DE PAPEL, CARTOLINA, PAPEL-CARTÃO E PAPELÃO ONDULADO;30;;.
+cod2010;17999;FABRICAÇÃO DE PAPEL E ARTEFATOS - ATIVIDADES NÃO ESPECIFICADAS;30;;.
+cod2010;18000;IMPRESSÃO E REPRODUÇÃO DE GRAVAÇÕES;30;;.
+cod2010;19010;COQUERIAS;30;;.
+cod2010;19020;FABRICAÇÃO DE PRODUTOS DERIVADOS DO PETRÓLEO;30;;.
+cod2010;19030;PRODUÇÃO DE BIOCOMBUSTÍVEIS;30;;.
+cod2010;20010;FABRICAÇÃO DE TINTAS, VERNIZES, ESMALTES, LACAS E PRODUTOS AFINS;30;;.
+cod2010;20020;FABRICAÇÃO DE SABÕES, DETERGENTES, PRODUTOS DE LIMPEZA, COSMÉTICOS, PRODUTOS DE PERFUMARIA E DE HIGIENE PESSOAL;30;;.
+cod2010;20090;FABRICAÇÃO DE OUTROS PRODUTOS QUÍMICOS NÃO ESPECIFICADOS ANTERIORMENTE;30;;.
+cod2010;20999;INDÚSTRIA QUÍMICA - ATIVIDADES NÃO ESPECIFICADAS;30;;.
+cod2010;21000;FABRICAÇÃO DE PRODUTOS FARMOQUÍMICOS E FARMACÊUTICOS;30;;.
+cod2010;22010;FABRICAÇÃO DE PRODUTOS DE BORRACHA;30;;.
+cod2010;22020;FABRICAÇÃO DE PRODUTOS DE MATERIAL PLÁSTICO;30;;.
+cod2010;23010;FABRICAÇÃO DE VIDRO E PRODUTOS DE VIDRO;30;;.
+cod2010;23091;FABRICAÇÃO DE PRODUTOS CERÂMICOS;30;;.
+cod2010;23099;FABRICAÇÃO DE OUTROS PRODUTOS DE MINERAIS NÃO METÁLICOS NÃO ESPECIFICADOS ANTERIORMENTE;30;;.
+cod2010;24001;FABRICAÇÃO DE PRODUTOS SIDERÚRGICOS;30;;.
+cod2010;24002;METALURGIA DOS METAIS NÃO FERROSOS;30;;.
+cod2010;24003;FUNDIÇÃO;30;;.
+cod2010;24999;FABRICAÇÃO DE PRODUTOS DE METALURGIA NÃO ESPECIFICADOS ;30;;.
+cod2010;25001;FABRICAÇÃO DE PRODUTOS DE METAL, EXCETO MÁQUINAS E EQUIPAMENTOS;30;;.
+cod2010;25002;FORJARIA, ESTAMPARIA, METALURGIA DO PÓ E SERVIÇOS DE TRATAMENTO DE METAIS;30;;.
+cod2010;26010;FABRICAÇÃO DE COMPONENTES ELETRÔNICOS;30;;.
+cod2010;26020;FABRICAÇÃO DE EQUIPAMENTOS DE INFORMÁTICA E PERIFÉRICOS;30;;.
+cod2010;26030;FABRICAÇÃO DE EQUIPAMENTOS DE COMUNICAÇÃO E DE APARELHOS DE RECEPÇÃO, REPRODUÇÃO, GRAVAÇÃO E AMPLIFICAÇÃO DE ÁUDIO E VÍDEO;30;;.
+cod2010;26041;"FABRICAÇÃO DE APARELHOS E INSTRUMENTOS DE MEDIDA, TESTE E CONTROLE; CRONÔMETROS E RELÓGIOS E DE APARELHOS ELETROMÉDICOS E ELETROTERAPÊUTICOS";30;;.
+cod2010;26042;FABRICAÇÃO DE EQUIPAMENTOS E INSTRUMENTOS ÓPTICOS, FOTOGRÁFICOS E CINEMATOGRÁFICOS E DE MÍDIAS VIRGENS, MAGNÉTICAS E ÓPTICAS;30;;.
+cod2010;26999;FABRICAÇÃO DE PRODUTOS ELETRÔNICOS NÃO ESPECIFICADOS;30;;.
+cod2010;27010;FABRICAÇÃO DE ELETRODOMÉSTICOS;30;;.
+cod2010;27090;FABRICAÇÃO DE MÁQUINAS, APARELHOS E MATERIAIS ELÉTRICOS DIVERSOS, EXCETO ELETRODOMÉSTICOS;30;;.
+cod2010;27999;FABRICAÇÃO DE PRODUTOS ELÉTRICOS NÃO ESPECIFICADOS;30;;.
+cod2010;28000;FABRICAÇÃO DE MÁQUINAS E EQUIPAMENTOS;30;;.
+cod2010;29001;FABRICAÇÃO E MONTAGEM DE VEÍCULOS AUTOMOTORES;30;;.
+cod2010;29002;FABRICAÇÃO DE CABINES, CARROCERIAS, REBOQUES E PEÇAS PARA VEÍCULOS AUTOMOTORES;30;;.
+cod2010;29003;RECONSTRUÇÃO, EM FÁBRICA, DE MOTORES DE VEÍCULOS AUTOMOTORES;30;;.
+cod2010;30010;CONSTRUÇÃO DE EMBARCAÇÕES ;30;;.
+cod2010;30020;FABRICAÇÃO DE VEÍCULOS FERROVIÁRIOS;30;;.
+cod2010;30030;FABRICAÇÃO DE AERONAVES;30;;.
+cod2010;30090;FABRICAÇÃO DE OUTROS EQUIPAMENTOS DE TRANSPORTE NÃO ESPECIFICADOS ANTERIORMENTE;30;;.
+cod2010;30999;FABRICAÇÃO DE EQUIPAMENTOS DE TRANSPORTE NÃO ESPECIFICADOS;30;;.
+cod2010;31000;FABRICAÇÃO DE MÓVEIS;30;;.
+cod2010;32001;FABRICAÇÃO DE ARTIGOS DE JOALHERIA, BIJUTERIA E SEMELHANTES;30;;.
+cod2010;32002;FABRICAÇÃO DE INSTRUMENTOS MUSICAIS;30;;.
+cod2010;32003;FABRICAÇÃO DE ARTEFATOS PARA PESCA E ESPORTE E DE BRINQUEDOS E JOGOS RECREATIVOS;30;;.
+cod2010;32009;FABRICAÇÃO DE PRODUTOS DIVERSOS;30;;.
+cod2010;32999;FABRICAÇÃO DE PRODUTOS INDUSTRIAIS NÃO ESPECIFICADOS;30;;.
+cod2010;33001;MANUTENÇÃO E REPARAÇÃO DE MÁQUINAS E EQUIPAMENTOS;30;;.
+cod2010;33002;INSTALAÇÃO DE MÁQUINAS E EQUIPAMENTOS;30;;.
+cod2010;35010;GERAÇÃO, TRANSMISSÃO E DISTRIBUIÇÃO DE ENERGIA ELÉTRICA;40;;.
+cod2010;35021;PRODUÇÃO E DISTRIBUIÇÃO DE COMBUSTÍVEIS GASOSOS POR REDES URBANAS;40;;.
+cod2010;35022;PRODUÇÃO E DISTRIBUIÇÃO DE VAPOR, ÁGUA QUENTE E AR CONDICIONADO;40;;.
+cod2010;36000;CAPTAÇÃO, TRATAMENTO E DISTRIBUIÇÃO DE ÁGUA;40;;.
+cod2010;37000;ESGOTO E ATIVIDADES RELACIONADAS;114;;.
+cod2010;38000;"COLETA, TRATAMENTO E DISPOSIÇÃO DE RESÍDUOS; RECUPERAÇÃO DE MATERIAIS";114;;.
+cod2010;39000;DESCONTAMINAÇÃO E OUTROS SERVIÇOS DE GESTÃO DE RESÍDUOS;114;;.
+cod2010;41000;CONSTRUÇÃO DE EDIFÍCIOS;50;;.
+cod2010;42000;CONSTRUÇÃO DE OBRAS DE INFRAESTRUTURA;50;;.
+cod2010;43000;SERVIÇOS ESPECIALIZADOS PARA CONSTRUÇÃO;50;;.
+cod2010;43999;ATIVIDADES DE CONSTRUÇÃO NÃO ESPECIFICADAS;50;;.
+cod2010;45010;COMÉRCIO DE VEÍCULOS AUTOMOTORES;60;;.
+cod2010;45020;MANUTENÇÃO E REPARAÇÃO DE VEÍCULOS AUTOMOTORES;60;;.
+cod2010;45030;COMÉRCIO DE PEÇAS E ACESSÓRIOS PARA VEÍCULOS AUTOMOTORES;60;;.
+cod2010;45040;COMÉRCIO, MANUTENÇÃO E REPARAÇÃO DE MOTOCICLETAS, PEÇAS E ACESSÓRIOS;60;;.
+cod2010;48010;REPRESENTANTES COMERCIAIS E AGENTES DO COMÉRCIO, EXCETO DE VEÍCULOS AUTOMOTORES E MOTOCICLETAS;60;;.
+cod2010;48020;COMÉRCIO DE MATÉRIAS-PRIMAS AGRÍCOLAS E ANIMAIS VIVOS;60;;.
+cod2010;48030;COMÉRCIO DE PRODUTOS ALIMENTÍCIOS, BEBIDAS E FUMO;60;;.
+cod2010;48041;COMÉRCIO DE TECIDOS, ARTEFATOS DE TECIDOS E ARMARINHO;60;;.
+cod2010;48042;COMÉRCIO DE ARTIGOS DO VESTUÁRIO, COMPLEMENTOS, CALÇADOS E ARTIGOS DE VIAGEM;60;;.
+cod2010;48050;COMÉRCIO DE MADEIRA, MATERIAL DE CONSTRUÇÃO, FERRAGENS E FERRAMENTAS;60;;.
+cod2010;48060;COMÉRCIO DE COMBUSTÍVEIS PARA VEÍCULOS AUTOMOTORES;60;;.
+cod2010;48071;COMÉRCIO DE PRODUTOS FARMACÊUTICOS, MÉDICOS, ORTOPÉDICOS, ODONTOLÓGICOS E DE COSMÉTICOS E PERFUMARIA;60;;.
+cod2010;48072;"COMÉRCIO DE ARTIGOS DE ESCRITÓRIO E DE PAPELARIA; LIVROS, JORNAIS E OUTRAS PUBLICAÇÕES";60;;.
+cod2010;48073;COMÉRCIO DE ELETRODOMÉSTICOS, MÓVEIS E OUTROS ARTIGOS DE RESIDÊNCIA;60;;.
+cod2010;48074;COMÉRCIO DE EQUIPAMENTOS E PRODUTOS DE TECNOLOGIAS DE INFORMAÇÃO E COMUNICAÇÃO;60;;.
+cod2010;48075;COMÉRCIO DE MÁQUINAS, APARELHOS E EQUIPAMENTOS, EXCETO ELETRODOMÉSTICOS ;60;;.
+cod2010;48076;COMÉRCIO DE COMBUSTÍVEIS SÓLIDOS, LÍQUIDOS E GASOSOS, EXCETO PARA VEÍCULOS AUTOMOTORES;60;;.
+cod2010;48077;COMÉRCIO DE PRODUTOS USADOS;60;;.
+cod2010;48078;COMERCIO DE RESÍDUOS E SUCATAS;60;;.
+cod2010;48079;COMÉRCIO DE PRODUTOS NOVOS NÃO ESPECIFICADOS ANTERIORMENTE;60;;.
+cod2010;48080;SUPERMERCADO E HIPERMERCADO;60;;.
+cod2010;48090;LOJAS DE DEPARTAMENTO E OUTROS COMÉRCIOS NÃO ESPECIALIZADOS, SEM PREDOMINÂNCIA DE PRODUTOS ALIMENTÍCIOS;60;;.
+cod2010;48100;COMÉRCIO AMBULANTE E FEIRAS;60;;.
+cod2010;48999;ATIVIDADES DE COMÉRCIO NÃO ESPECIFICADAS;60;;.
+cod2010;49010;TRANSPORTE FERROVIÁRIO E METROFERROVIÁRIO;80;;.
+cod2010;49030;TRANSPORTE RODOVIÁRIO DE PASSAGEIROS;80;;.
+cod2010;49040;TRANSPORTE RODOVIÁRIO DE CARGA;80;;.
+cod2010;49090;OUTROS TRANSPORTES TERRESTRES;80;;.
+cod2010;49999;ATIVIDADES DE TRANSPORTE NÃO ESPECIFICADAS;80;;.
+cod2010;50000;TRANSPORTE AQUAVIÁRIO;80;;.
+cod2010;51000;TRANSPORTE AÉREO;80;;.
+cod2010;52010;ARMAZENAMENTO, CARGA E DESCARGA;80;;.
+cod2010;52020;ATIVIDADES AUXILIARES DOS TRANSPORTES E ATIVIDADES RELACIONADAS À ORGANIZAÇÃO DO TRANSPORTE DE CARGA ;80;;.
+cod2010;53001;ATIVIDADES DE CORREIO;80;;.
+cod2010;53002;ATIVIDADES DE MALOTE E DE ENTREGA;80;;.
+cod2010;55000;ALOJAMENTO;70;;.
+cod2010;56011;RESTAURANTES E OUTROS ESTABELECIMENTOS DE SERVIÇOS DE ALIMENTAÇÃO E BEBIDAS;70;;.
+cod2010;56012;SERVIÇOS DE CATERING, BUFÊ E OUTROS SERVIÇOS DE COMIDA PREPARADA;70;;.
+cod2010;56020;SERVIÇOS AMBULANTES DE ALIMENTAÇÃO;60;;.
+cod2010;56999;ATIVIDADES DE ALIMENTAÇÃO NÃO ESPECIFICADAS;70;;.
+cod2010;58000;EDIÇÃO E EDIÇÃO INTEGRADA À IMPRESSÃO ;30;;.
+cod2010;59000;ATIVIDADES CINEMATOGRÁFICAS, PRODUÇÃO DE VÍDEOS E DE PROGRAMAS DE TELEVISÃO, GRAVAÇÃO DE SOM E DE MÚSICA;114;;.
+cod2010;60001;ATIVIDADES DE RÁDIO;114;;.
+cod2010;60002;ATIVIDADES DE TELEVISÃO;114;;.
+cod2010;61000;TELECOMUNICAÇÕES;80;;.
+cod2010;62000;ATIVIDADES DOS SERVIÇOS DE TECNOLOGIA DA INFORMAÇÃO;111;;.
+cod2010;63000;ATIVIDADES DE PRESTAÇÃO DE SERVIÇOS DE INFORMAÇÃO;114;;.
+cod2010;64000;SERVIÇOS FINANCEIROS;90;;.
+cod2010;65000;SEGUROS E PREVIDÊNCIA PRIVADA;90;;.
+cod2010;66001;ATIVIDADES AUXILIARES DOS SERVIÇOS FINANCEIROS;90;;.
+cod2010;66002;ATIVIDADES AUXILIARES DOS SEGUROS, DA PREVIDÊNCIA COMPLEMENTAR E DOS PLANOS DE SAÚDE;90;;.
+cod2010;68000;ATIVIDADES IMOBILIÁRIAS;111;;.
+cod2010;69000;ATIVIDADES JURÍDICAS, DE CONTABILIDADE E DE AUDITORIA ;111;;.
+cod2010;70000;ATIVIDADES DE CONSULTORIA EM GESTÃO EMPRESARIAL;111;;.
+cod2010;71000;"SERVIÇOS DE ARQUITETURA E ENGENHARIA E ATIVIDADES TÉCNICAS RELACIONADAS; TESTES E ANÁLISES TÉCNICAS";111;;.
+cod2010;72000;PESQUISA E DESENVOLVIMENTO CIENTÍFICO;111;;.
+cod2010;73010;PUBLICIDADE;111;;.
+cod2010;73020;PESQUISAS DE MERCADO E OPINIÃO PÚBLICA;111;;.
+cod2010;74000;OUTRAS ATIVIDADES PROFISSIONAIS, CIENTÍFICAS E TÉCNICAS NÃO ESPECIFICADAS ANTERIORMENTE;111;;.
+cod2010;75000;ATIVIDADES VETERINÁRIAS;113;;.
+cod2010;77010;ALUGUEL DE OBJETOS PESSOAIS E DOMÉSTICOS;111;;.
+cod2010;77020;ALUGUEL DE MEIOS DE TRANSPORTES, MAQUINAS E EQUIPAMENTOS SEM OPERADOR E GESTÃO DE ATIVOS INTANGÍVEIS NÃO FINANCEIROS;111;;.
+cod2010;78000;SELEÇÃO, AGENCIAMENTO E LOCAÇÃO DE MÃO-DE-OBRA;111;;.
+cod2010;79000;AGÊNCIAS DE VIAGENS, OPERADORES TURÍSTICOS E SERVIÇOS DE RESERVAS;80;;.
+cod2010;80000;ATIVIDADES DE VIGILÂNCIA, SEGURANÇA, TRANSPORTE DE VALORES E INVESTIGAÇÃO;111;;.
+cod2010;81011;SERVIÇOS DE LIMPEZA E DE APOIO A EDIFÍCIOS, EXCETO CONDOMÍNIOS PREDIAIS;111;;.
+cod2010;81012;CONDOMÍNIOS PREDIAIS;111;;.
+cod2010;81020;ATIVIDADES PAISAGÍSTICAS;111;;.
+cod2010;82001;SERVIÇOS DE ESCRITÓRIO E APOIO ADMINISTRATIVO;111;;.
+cod2010;82002;ATIVIDADES DE TELEATENDIMENTO;111;;.
+cod2010;82003;ATIVIDADES DE ORGANIZAÇÃO DE EVENTOS, EXCETO CULTURAIS E ESPORTIVOS;111;;.
+cod2010;82009;OUTRAS ATIVIDADES DE SERVIÇOS PRESTADOS PRINCIPALMENTE ÀS EMPRESAS;111;;.
+cod2010;84011;ADMINISTRAÇÃO PUBLICA E REGULAÇÃO DA POLÍTICA ECONÔMICA E SOCIAL - FEDERAL;100;;.
+cod2010;84012;ADMINISTRAÇÃO PUBLICA E REGULAÇÃO DA POLÍTICA ECONÔMICA E SOCIAL - ESTADUAL;100;;.
+cod2010;84013;ADMINISTRAÇÃO PUBLICA E REGULAÇÃO DA POLÍTICA ECONÔMICA E SOCIAL - MUNICIPAL;100;;.
+cod2010;84014;DEFESA;100;;.
+cod2010;84015;OUTROS SERVIÇOS COLETIVOS PRESTADOS PELA ADMINISTRAÇÃO PÚBLICA - FEDERAL;100;;.
+cod2010;84016;OUTROS SERVIÇOS COLETIVOS PRESTADOS PELA ADMINISTRAÇÃO PÚBLICA - ESTADUAL;100;;.
+cod2010;84017;OUTROS SERVIÇOS COLETIVOS PRESTADOS PELA ADMINISTRAÇÃO PÚBLICA - MUNICIPAL;100;;.
+cod2010;84020;SEGURIDADE SOCIAL OBRIGATÓRIA;100;;.
+cod2010;84999;ADMINISTRAÇÃO PÚBLICA - ESFERA NÃO ESPECIFICADA;100;;.
+cod2010;85011;CRECHE;113;;.
+cod2010;85012;PRÉ-ESCOLA E ENSINO FUNDAMENTAL;112;;.
+cod2010;85013;ENSINO MÉDIO;112;;.
+cod2010;85014;EDUCAÇÃO SUPERIOR;112;;.
+cod2010;85021;SERVIÇOS AUXILIARES À EDUCAÇÃO;112;;.
+cod2010;85029;OUTRAS ATIVIDADES DE ENSINO;112;;.
+cod2010;85999;ATIVIDADES DE EDUCAÇÃO NÃO ESPECIFICADAS;112;;.
+cod2010;86001;ATIVIDADES DE ATENDIMENTO HOSPITALAR;113;;.
+cod2010;86002;ATIVIDADES DE ATENÇÃO AMBULATORIAL EXECUTADAS POR MÉDICOS E ODONTÓLOGOS;113;;.
+cod2010;86003;ATIVIDADES DE SERVIÇOS DE COMPLEMENTAÇÃO DIAGNÓSTICA E TERAPÊUTICA;113;;.
+cod2010;86004;ATIVIDADES DE PROFISSIONAIS DA ÁREA DE SAÚDE, EXCETO MÉDICOS E ODONTÓLOGOS;113;;.
+cod2010;86009;ATIVIDADES DE ATENÇÃO À SAÚDE HUMANA NÃO ESPECIFICADAS ANTERIORMENTE;113;;.
+cod2010;86999;ATIVIDADES DE SAÚDE NÃO ESPECIFICADAS;113;;.
+cod2010;87000;ATIVIDADES DE ASSISTÊNCIA À SAÚDE HUMANA INTEGRADAS COM ASSISTÊNCIA SOCIAL, INCLUSIVE PRESTADAS EM RESIDENCIAS;113;;.
+cod2010;88000;SERVIÇOS DE ASSISTÊNCIA SOCIAL SEM ALOJAMENTO;113;;.
+cod2010;90000;ATIVIDADES ARTÍSTICAS, CRIATIVAS E DE ESPETÁCULOS;114;;.
+cod2010;91000;ATIVIDADES LIGADAS AO PATRIMÔNIO CULTURAL E AMBIENTAL;114;;.
+cod2010;92000;ATIVIDADES DE EXPLORAÇÃO DE JOGOS DE AZAR E APOSTAS;114;;.
+cod2010;93011;ATIVIDADES ESPORTIVAS;114;;.
+cod2010;93012;ATIVIDADES DE CONDICIONAMENTO FÍSICO;114;;.
+cod2010;93020;ATIVIDADES DE RECREAÇÃO E LAZER;114;;.
+cod2010;94010;ATIVIDADES DE ORGANIZAÇÕES ASSOCIATIVAS PATRONAIS, EMPRESARIAIS E PROFISSIONAIS;114;;.
+cod2010;94020;ATIVIDADES DE ORGANIZAÇÕES SINDICAIS;114;;.
+cod2010;94091;ATIVIDADES DE ORGANIZAÇÕES RELIGIOSAS E FILOSÓFICAS;114;;.
+cod2010;94099;OUTRAS ATIVIDADES ASSOCIATIVAS NÃO ESPECIFICADAS ANTERIORMENTE ;114;;.
+cod2010;95010;REPARAÇÃO E MANUTENÇÃO DE EQUIPAMENTOS DE INFORMÁTICA E COMUNICAÇÃO;111;;.
+cod2010;95030;REPARAÇÃO E MANUTENÇÃO DE OBJETOS E EQUIPAMENTOS PESSOAIS E DOMÉSTICOS;60;;.
+cod2010;96010;LAVANDERIAS, TINTURARIAS E TOALHEIROS;114;;.
+cod2010;96020;CABELEIREIROS E OUTRAS ATIVIDADES DE TRATAMENTO DE BELEZA;114;;.
+cod2010;96030;ATIVIDADES FUNERÁRIAS E SERVIÇOS RELACIONADOS ;114;;.
+cod2010;96090;OUTRAS ATIVIDADES DE SERVIÇOS PESSOAIS;114;;.
+cod2010;97000;SERVIÇOS DOMÉSTICOS;120;;.
+cod2010;99000;ORGANISMOS INTERNACIONAIS E OUTRAS INSTITUIÇÕES EXTRATERRITORIAIS;130;;.
+cod2010;99999;;999;;.
+pnads76_79;813;PROCURANDO TRAB.PRIM.VEZ;0;;.
+pnads76_79;11;AGRICULT/SILVICULTURA;10;;.
+pnads76_79;12;CRIAÇÃO ANIMAIS;10;;.
+pnads76_79;21;COLETAS PROD.VEGETAIS;10;;.
+pnads76_79;22;EXTRAÇÃO MADEIRA;10;;.
+pnads76_79;35;PESCA;10;;.
+pnads76_79;36;AQUICULTURA;10;;.
+pnads76_79;51;EXTR.MIN.METALICOS;20;;.
+pnads76_79;52;EXTR.MIN.N/METALICOS;20;;.
+pnads76_79;53;EXTR.COMB.MINERAIS;20;;.
+pnads76_79;54;EXTR.MINERAIS RADIOT;20;;.
+pnads76_79;100;PROD.MIN.N/METALICOS;30;;.
+pnads76_79;110;METALURGICA;30;;.
+pnads76_79;120;MECANICA;30;;.
+pnads76_79;130;MAT.ELET.COMUNICAÇÕES;30;;.
+pnads76_79;140;MAT.TRANSPORTE;30;;.
+pnads76_79;150;MADEIRA;30;;.
+pnads76_79;160;MOBILIARIO;30;;.
+pnads76_79;170;PAPEL E PAPELÃO;30;;.
+pnads76_79;180;BORRACHA;30;;.
+pnads76_79;190;COUROS PELES PROD.SIMIL;30;;.
+pnads76_79;200;QUIMICA;30;;.
+pnads76_79;210;PROD.FARM.VETERINARIOS;30;;.
+pnads76_79;220;PERFUMARIA,SABÕES,VELAS;30;;.
+pnads76_79;230;PROD.MAT.PLASTICAS;30;;.
+pnads76_79;240;TEXTIL;30;;.
+pnads76_79;250;VEST.CALçADOS/ART.TECIDOS;30;;.
+pnads76_79;260;PROD.ALIMENTARES;30;;.
+pnads76_79;270;BEBIDAS ALCOOL ETILICO;30;;.
+pnads76_79;280;FUMO;30;;.
+pnads76_79;290;EDITORIAL E GRAFICA;30;;.
+pnads76_79;300;DIVERSAS;30;;.
+pnads76_79;351;PROD.DIST.ENERGIA ELETRICA;40;;.
+pnads76_79;352;PROD.DIST.GAS ENCANADO;40;;.
+pnads76_79;353;ABAST.AGUA SERV.ESGOTO;40;;.
+pnads76_79;340;CONST.CIVIL;50;;.
+pnads76_79;420;PROD.AGROP.EXT.VEGETAL;60;;.
+pnads76_79;421;FER.PROD.METAL.ART.SAN.MAT.CONST;60;;.
+pnads76_79;422;MAQ.APAR.MAT.EL.MAQ.COST.ESCREVER;60;;.
+pnads76_79;423;VEICULOS E ACESSORIOS;60;;.
+pnads76_79;424;MOVEIS E ARTIGOS DE DECORAÇÃO;60;;.
+pnads76_79;425;PAPEL,IMP.ART.ESC.LIVR.PAPEL;60;;.
+pnads76_79;426;PROD.QUIM.FARM.PERFUMARIA;60;;.
+pnads76_79;427;COMBUSTIVEIS E LUBRIFICANTES;60;;.
+pnads76_79;428;TECIDOS E ARTEF.TECIDOS;60;;.
+pnads76_79;429;PROD.ALIM.BEB.FUMO ESTIMULANTES;60;;.
+pnads76_79;430;MERC.GERAL,PROD.ALIMENTICIOS;60;;.
+pnads76_79;431;MERC.GERAL,INC.PROD ALIMENTICIOS;60;;.
+pnads76_79;432;COMERCIO AMBULANTE;60;;.
+pnads76_79;433;FEIRAS;60;;.
+pnads76_79;434;OUTROS OU DIVERSOS;60;;.
+pnads76_79;511;ALOJAMENTO;70;;.
+pnads76_79;512;ALIMENTAÇÃO;70;;.
+pnads76_79;471;RODOVIARIO;80;;.
+pnads76_79;472;FERROVIARIO;80;;.
+pnads76_79;473;POR VEICULO TRAÇÃO ANIMAL;80;;.
+pnads76_79;475;MARITIMO,FLUVIAL LACUSTRE;80;;.
+pnads76_79;476;AEREO;80;;.
+pnads76_79;479;OUTROS;80;;.
+pnads76_79;481;CORREIOS E TELEGRAFOS;80;;.
+pnads76_79;483;COMUNICAÇÕES TELEFONICAS;80;;.
+pnads76_79;552;RADIODIFUSÃO TELEVISÃO;80;;.
+pnads76_79;582;SERV.AUX.TRANSPORTE;80;;.
+pnads76_79;589;SERV.AUX.ATIV.ECON.GERAL;80;;.
+pnads76_79;451;CREDITO E INVESTIMENTOS;90;;.
+pnads76_79;452;FINANC.BANCOS DE DESENVOLVIMENTO;90;;.
+pnads76_79;453;SEGUROS E RESSEGUROS;90;;.
+pnads76_79;454;CAPITALIZAÇÃO;90;;.
+pnads76_79;464;BOLSAS DE VALORES COM.TITULOS;90;;.
+pnads76_79;465;CONCESSIONARIOS DE LOTERIAS;90;;.
+pnads76_79;466;ORGANIZAÇÕES DE CARTÃO DE CREDITO;90;;.
+pnads76_79;584;SERV.AUX.ATIV.SEGUROS,FIN.VALORES;90;;.
+pnads76_79;612;PREVIDENCIA SOCIAL;100;;.
+pnads76_79;711;PODER LEGISLATIVO;100;;.
+pnads76_79;712;JUST.ATIV.AUXILIARES;100;;.
+pnads76_79;713;SERV.ADM.FEDERAIS;100;;.
+pnads76_79;714;SERV.ADM.ESTADUAIS;100;;.
+pnads76_79;715;SERV.ADM.MUNICIPAIS;100;;.
+pnads76_79;718;SERV.ADM.AUTARQUICOS;100;;.
+pnads76_79;721;EXERCITO;100;;.
+pnads76_79;722;MARINHA DE GUERRA;100;;.
+pnads76_79;723;AERONAUTICA;100;;.
+pnads76_79;724;POLICIA MILITAR;100;;.
+pnads76_79;725;POLICIA CIVIL;100;;.
+pnads76_79;726;CORPO DE BOMBEIROS;100;;.
+pnads76_79;729;OUT.ORGAN.GOVERN.SEGURANÇA;100;;.
+pnads76_79;461;AD.LOCAÇÃO DE IMOVEIS;111;;.
+pnads76_79;462;COMPRA E VENDA IMOVEIS;111;;.
+pnads76_79;463;INCORP.IMOVEIS;111;;.
+pnads76_79;527;INST.ELET.HIDRAULICO E GAS;111;50;assumo equivalencia com codigo 524 em 1980, 90% é eletricista ou encanador em 1976
+pnads76_79;542;SERV.LIMP.CONS.CASAS,ESC.EDIFICIOS;111;;.
+pnads76_79;546;SERV.VIGILANCIA GUARDA;111;;.
+pnads76_79;571;JURIDICOS,DESP.PROCURADOR;111;;.
+pnads76_79;572;CONTABILIDADE E AUDITORIA;111;;.
+pnads76_79;573;ASSES.CONS.PESQ.ANAL.PROC.DADOS;111;;.
+pnads76_79;574;ENG.GEO.DEOD.CART.AER.TOP.ARQ.URB.PAIS;111;;.
+pnads76_79;575;PUB.PROP.ORG.PROM.CONG.EXP.FEIRAS;111;;.
+pnads76_79;576;PROD.REP.DOCUMENTAÇÃO;111;;.
+pnads76_79;577;PINT.DESENHO ESC.SERV.DECORAÇÃO;111;114;equivalencia com o que fizemos nos censos
+pnads76_79;578;INVESTIGAÇÃO PARTICULAR;111;;.
+pnads76_79;579;OUT.SERV.TEC.PROF.NÃO ESPECIFICADOS;111;;.
+pnads76_79;581;SERVIÇOS AUX.AGRIC.CRIAÇÃO ANIMAIS;111;10;equivalencia com o que fizemos nos censos
+pnads76_79;583;SERV.AUX.COMERCIO/INDUSTRIA;111;60;muitos representates comerciais em 1976
+pnads76_79;614;INST.CIENT.TECNOLOGICAS;112;;.
+pnads76_79;615;INST.FILOSOFICAS CULTURAIS;112;114;equivalencia com o que fizemos nos censos
+pnads76_79;631;ENSINO PUBLICO;112;;.
+pnads76_79;632;ENSINO PARTICULAR;112;;.
+pnads76_79;611;ASSIST.SOC.ASSOC.BENEFICIENTES;113;;.
+pnads76_79;621;SERVIÇOS MEDICOS;113;;.
+pnads76_79;622;SERV.ODONTOLOGICOS;113;;.
+pnads76_79;623;SERV.VETERINARIA;113;;.
+pnads76_79;354;LIMPEZA PUB.REMOÇÃO LIXO;114;;.
+pnads76_79;521;MAQ.APAR.ELET.USO PESSOAL;114;60;assumo equivalencia com codigo 521 em 1980
+pnads76_79;522;VEICULOS;114;60;assumo equivalencia com codigo 522 em 1980
+pnads76_79;523;ART.MADEIRA MOBILIARIO;114;60;assumo equivalencia com codigo 525 em 1980
+pnads76_79;528;ARTIGOS DIVERSOS;114;60;assumo equivalencia com codigo 523 em 1980
+pnads76_79;531;HIGIENE EMB.PESSOAL;114;;.
+pnads76_79;532;CONF.SOB MEDIDA REP.ART.VEST;114;30;assumo equivalencia com codigo 532 em 1980
+pnads76_79;539;OUTROS SERV.PESSOAIS;114;111;muitos fotografos, equivalencia com censos
+pnads76_79;541;TINTURARIAS LAVANDERIAS;114;;.
+pnads76_79;551;DIV.PROM.ESPETACULOS;114;;.
+pnads76_79;613;ENTIDADES CLASSE SINDICAIS;114;;.
+pnads76_79;616;INST.RELIGIOSAS;114;;.
+pnads76_79;617;ENT.DESPORTIVAS E RECREATIVAS;114;;.
+pnads76_79;618;ORG.CIVICAS E POLITICAS;114;;.
+pnads76_79;619;OUT.SERVIÇOS COM.SOCIAIS;114;;.
+pnads76_79;811;REPRES.ESTRANGEIRAS;114;130;equivalencia censos
+pnads76_79;547;SERV.DOMESTICOS/REMUNERADOS;120;;.
+pnads76_79;549;OUTROS SERV.DOMICILIARES;120;;.
+pnads76_79;812;OUTR.ATIV.N/COMP.CLASSES;999;;.
+pnads76_79;814;ATIV.MAL DEF OU N/DECLARADAS;999;;.
+;;;;;

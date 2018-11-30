@@ -21,8 +21,12 @@ build_identification_wgtperson_1991 <- function(CensusData){
 
         #Weight
         CensusData[ , wgtperson := v7301]
+        
+        if( CensusData[ , mean(wgtperson, na.rm = T)] > 1000){
+                CensusData[ , wgtperson := wgtperson/(10^8)]
+        }
 
-
+        gc()
         CensusData
 
 }

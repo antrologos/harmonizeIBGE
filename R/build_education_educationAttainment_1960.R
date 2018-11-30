@@ -1,10 +1,10 @@
-#' Builds a synthetic variable for education attainment - 1960 
+#' Builds a synthetic variable for educationAttainment attainment - 1960 
 #' @param data.frame
 #' @value data.frame
 #' @export
 
 
-build_education_attainment_1960 <- function(CensusData){
+build_education_educationAttainment_1960 <- function(CensusData){
 
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -124,13 +124,13 @@ build_education_attainment_1960 <- function(CensusData){
         # Utilizando a informacao sobre ultimo grau e serie concluidos com aprovacao
 
         # nunca frequentou escola
-        CensusData[graus == 98, education_tmp1 := 1]
+        CensusData[graus == 98, educationAttainment_tmp1 := 1]
 
         # Cursa a primeira serie do elementar
-        CensusData[graus == 0, education_tmp1 := 1]
+        CensusData[graus == 0, educationAttainment_tmp1 := 1]
 
         # Cursou PRIMARIO, 1a a 3a serie
-        CensusData[graus == 1 & series %in% 1:3, education_tmp1 := 2]
+        CensusData[graus == 1 & series %in% 1:3, educationAttainment_tmp1 := 2]
 
         # Cursou PRIMARIO, concluiu 4a, 5a ou 6a serie
         # O primario regulamentar possuia 4 anos. A quinta serie era o
@@ -139,22 +139,22 @@ build_education_attainment_1960 <- function(CensusData){
         # do medio 1o ciclo
         # O sexto ano (registrado apenas para dois individuos) poderia ser
         # tambem um complementar ou classe preparatoria
-        CensusData[graus == 1 & series %in% 4:6, education_tmp1 := 3]
+        CensusData[graus == 1 & series %in% 4:6, educationAttainment_tmp1 := 3]
 
         # Cursou MEDIO 1o Ciclo, 1a a 4a serie (sem informacao sobre conclusao)
-        CensusData[graus == 2 & series %in% 1:4, education_tmp1 := 4] # vai receber ajuste mais abaixo
+        CensusData[graus == 2 & series %in% 1:4, educationAttainment_tmp1 := 4] # vai receber ajuste mais abaixo
 
         # Cursou MEDIO 1o Ciclo, 5a serie
-        CensusData[graus == 2 & series %in% 5, education_tmp1 := 5]
+        CensusData[graus == 2 & series %in% 5, educationAttainment_tmp1 := 5]
 
         # Cursou MEDIO 2o Ciclo, 1o ou 2o ano (sem informacao sobre conclusao)
-        CensusData[graus == 3 & series %in% 1:2, education_tmp1 := 6]
+        CensusData[graus == 3 & series %in% 1:2, educationAttainment_tmp1 := 6]
 
         # Cursou MEDIO 2o Ciclo, 3o ano
-        CensusData[graus == 3 & series %in% 3, education_tmp1 := 7]
+        CensusData[graus == 3 & series %in% 3, educationAttainment_tmp1 := 7]
 
         # Cursou Superior
-        CensusData[graus == 4, education_tmp1 := 8] # superior completo sera ajustado a partir da informacao sobre curso completo
+        CensusData[graus == 4, educationAttainment_tmp1 := 8] # superior completo sera ajustado a partir da informacao sobre curso completo
 
 
         gc()
@@ -165,16 +165,16 @@ build_education_attainment_1960 <- function(CensusData){
         # ====================
 
         # Frequentam primario - serie indefinida
-        CensusData[graus == 1 & series == 99 & schoolattnd == 1, education_tmp2 := 2]
+        CensusData[graus == 1 & series == 99 & schoolattnd == 1, educationAttainment_tmp2 := 2]
 
         # Frequentam medio 1o ciclo - serie indefinida
-        CensusData[graus == 2 & series == 99 & schoolattnd == 1, education_tmp2 := 4]
+        CensusData[graus == 2 & series == 99 & schoolattnd == 1, educationAttainment_tmp2 := 4]
 
         # Frequentam medio 2o ciclo - serie indefinida
-        CensusData[graus == 3 & series == 99 & schoolattnd == 1, education_tmp2 := 6]
+        CensusData[graus == 3 & series == 99 & schoolattnd == 1, educationAttainment_tmp2 := 6]
 
         # Frequentam superior - serie indefinida
-        CensusData[graus == 4 & series == 99 & schoolattnd == 1, education_tmp2 := 8]
+        CensusData[graus == 4 & series == 99 & schoolattnd == 1, educationAttainment_tmp2 := 8]
 
         gc()
 
@@ -182,16 +182,16 @@ build_education_attainment_1960 <- function(CensusData){
         # ====================
 
         # Frequentou primario - serie indefinida
-        CensusData[graus == 1 & series == 99 & schoolattnd == 0, education_tmp2 := 2]
+        CensusData[graus == 1 & series == 99 & schoolattnd == 0, educationAttainment_tmp2 := 2]
 
         # Frequentou medio 1o ciclo - serie indefinida
-        CensusData[graus == 2 & series == 99 & schoolattnd == 0, education_tmp2 := 4]
+        CensusData[graus == 2 & series == 99 & schoolattnd == 0, educationAttainment_tmp2 := 4]
 
         # Frequentou medio 2o ciclo - serie indefinida
-        CensusData[graus == 3 & series == 99 & schoolattnd == 0, education_tmp2 := 6]
+        CensusData[graus == 3 & series == 99 & schoolattnd == 0, educationAttainment_tmp2 := 6]
 
         # Frequentou superior - serie indefinida
-        CensusData[graus == 4 & series == 99 & schoolattnd == 0, education_tmp2 := 8]
+        CensusData[graus == 4 & series == 99 & schoolattnd == 0, educationAttainment_tmp2 := 8]
 
 
         gc()
@@ -199,19 +199,19 @@ build_education_attainment_1960 <- function(CensusData){
         # Considerando o curso concluido
 
         # Cursou primario (e outros elementares) e concluiu
-        CensusData[v214 %in% 0, education_tmp3 := 1]
+        CensusData[v214 %in% 0, educationAttainment_tmp3 := 1]
 
         # Cursou primario (e outros elementares) e concluiu
-        CensusData[v214 %in% 10:19, education_tmp3 := 3]
+        CensusData[v214 %in% 10:19, educationAttainment_tmp3 := 3]
 
         # Cursou medio 1o ciclo e concluiu
-        CensusData[v214 %in% 20:39, education_tmp3 := 5]
+        CensusData[v214 %in% 20:39, educationAttainment_tmp3 := 5]
 
         # Cursou medio 2o ciclo e concluiu
-        CensusData[v214 %in% 40:49, education_tmp3 := 7]
+        CensusData[v214 %in% 40:49, educationAttainment_tmp3 := 7]
 
         # Cursou superior e concluiu
-        CensusData[v214 %in% 50:79, education_tmp3 := 9]
+        CensusData[v214 %in% 50:79, educationAttainment_tmp3 := 9]
 
 
 
@@ -220,33 +220,33 @@ build_education_attainment_1960 <- function(CensusData){
         # variavel final
 
         # Substituindo missings por -1 -- para fins computacionais
-        CensusData[is.na(education_tmp1), education_tmp1 := -1]
-        CensusData[is.na(education_tmp2), education_tmp2 := -1]
-        CensusData[is.na(education_tmp3), education_tmp3 := -1]
+        CensusData[is.na(educationAttainment_tmp1), educationAttainment_tmp1 := -1]
+        CensusData[is.na(educationAttainment_tmp2), educationAttainment_tmp2 := -1]
+        CensusData[is.na(educationAttainment_tmp3), educationAttainment_tmp3 := -1]
 
-        CensusData[, education := as.numeric(NA)]
+        CensusData[, educationAttainment := as.numeric(NA)]
 
         # Regra de desambiguacao: o sujeito tera o maior nivel de ensino
         # dentre os captados pelas 3 variaveis auxiliares.
-        CensusData[, education := apply(cbind(education_tmp1,
-                                              education_tmp2,
-                                              education_tmp3),
+        CensusData[, educationAttainment := apply(cbind(educationAttainment_tmp1,
+                                              educationAttainment_tmp2,
+                                              educationAttainment_tmp3),
                                         1, max)]
 
 
         # Levando os valores -1 de volta para NA
-        CensusData[education < 1,  education := NA]
+        CensusData[educationAttainment < 1,  educationAttainment := NA]
 
         # Ajuste para idade
-        CensusData[age <= 4,  education := NA]
+        CensusData[age <= 4,  educationAttainment := NA]
         if(age_just_created == TRUE){
                 CensusData[ , age := NULL]
         }
 
 
-        CensusData[ , education_tmp1 := NULL]
-        CensusData[ , education_tmp2 := NULL]
-        CensusData[ , education_tmp3 := NULL]
+        CensusData[ , educationAttainment_tmp1 := NULL]
+        CensusData[ , educationAttainment_tmp2 := NULL]
+        CensusData[ , educationAttainment_tmp3 := NULL]
 
         CensusData[ , graus  := NULL]
         CensusData[ , series := NULL]
@@ -256,7 +256,7 @@ build_education_attainment_1960 <- function(CensusData){
                 CensusData[ , schoolattnd := NULL]
         }
         
-        #education
+        #educationAttainment
         # 1 - Nenhum
         # 2 - Primario incompleto
         # 3 - Primario completo

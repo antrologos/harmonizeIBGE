@@ -1,10 +1,10 @@
 check_Data_frame_convert_to_data_table <- function(Data){
         if(!is.data.frame(Data)){
-                stop("'Data' is not a Data.frame")
+                stop("'Data' is not a data.frame")
         }
         
         if(!is.data.table(Data)){
-                as.data.table(Data)
+                setDT(Data)
         }else{
                 Data
         }
@@ -211,7 +211,7 @@ build_onTheFly <- function(Data, var_name, general_or_specific){
         call <- paste0(f,"(Data)")
         Data <- eval(parse(text = call))
         gc(); Sys.sleep(.5); gc()
-        
+        f
         just_created_vars <<- c(just_created_vars, var_name)
         
         Data
@@ -293,7 +293,7 @@ list_originalVariables_to_drop <- function(year, themes = "all"){
         
         
         df_themes_vars <- get_original_variables_by_theme(year = year, themes = themes) %>%
-                as.data.table() %>%
+                setDT() %>%
                 setkey("theme", "varName")
         
         priorityList_location <- system.file("extdata",
