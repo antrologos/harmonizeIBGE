@@ -3,7 +3,7 @@
 #' @value data.frame
 #' @export
 
-build_geography_stateMiniumComparable_1970 <- function(CensusData){
+build_geography_stateMinimumComparable_1970 <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -29,14 +29,14 @@ build_geography_stateMiniumComparable_1970 <- function(CensusData){
                 filter(year == 1970 & variable == "state") %>%
                 select(original_code, semi_harmonized_code) %>%
                 rename(stateCurrent          = original_code,
-                       stateMiniumComparable = semi_harmonized_code)%>%
+                       stateMinimumComparable = semi_harmonized_code)%>%
                 as.data.table() %>%
                 setkey("stateCurrent")
         
         setkey(CensusData, "stateCurrent")
         gc(); Sys.sleep(.5); gc()
         
-        CensusData[crosswalk_states_tmp, stateMiniumComparable:= stateMiniumComparable]
+        CensusData[crosswalk_states_tmp, stateMinimumComparable:= stateMinimumComparable]
 
         Sys.sleep(.5);gc()
         

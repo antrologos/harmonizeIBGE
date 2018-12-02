@@ -13,11 +13,11 @@ build_migration_bornSameStateMCA_1970 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        stateMiniumComparable_just_created <- F
-        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMiniumComparable"))
+        stateMinimumComparable_just_created <- F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMinimumComparable"))
         if(length(check_vars) > 0){
-                CensusData <- build_geography_stateMiniumComparable_1970(CensusData)
-                stateMiniumComparable_just_created <- T
+                CensusData <- build_geography_stateMinimumComparable_1970(CensusData)
+                stateMinimumComparable_just_created <- T
                 gc()
         }
         
@@ -29,7 +29,7 @@ build_migration_bornSameStateMCA_1970 <- function(CensusData){
                 gc()
         }
         
-        CensusData[ , bornSameStateMCA := as.numeric(stateMiniumComparable == stateOfBirthMCA)]
+        CensusData[ , bornSameStateMCA := as.numeric(stateMinimumComparable == stateOfBirthMCA)]
         
         # Unknown state will be NA
         CensusData[stateOfBirthMCA == 99, bornSameStateMCA := NA]
@@ -39,7 +39,7 @@ build_migration_bornSameStateMCA_1970 <- function(CensusData){
         
         gc()
         
-        if(stateMiniumComparable_just_created == T){
+        if(stateMinimumComparable_just_created == T){
                 CensusData[, stateCurrent := NULL]
         }
         

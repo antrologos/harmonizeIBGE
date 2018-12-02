@@ -60,7 +60,7 @@ build_income_labourIncome2010Values <- function(CensusData){
                 
                 CensusData[ , labourIncome2010Values := rowSums(
                         CensusData[, lapply(.SD, replace_NA_and_zeros), .SDcols=colNumbers], 
-                        na.rm = TRUE)/9.091145084]
+                        na.rm = TRUE)/9.0911450843074]
                 gc(); Sys.sleep(1); gc()
                 
                 CensusData[income_NAs == length(colNumbers), labourIncome2010Values := NA ]
@@ -99,7 +99,7 @@ build_income_labourIncome2010Values <- function(CensusData){
                 
                 CensusData[ , labourIncome2010Values := rowSums(
                         CensusData[, lapply(.SD, replace_NA_and_zeros), .SDcols=colNumbers], 
-                        na.rm = TRUE)/106.3629622]
+                        na.rm = TRUE)/106.362962177897]
                 gc(); Sys.sleep(1); gc()
                 
                 CensusData[income_NAs == length(colNumbers), labourIncome2010Values := NA ]
@@ -119,7 +119,7 @@ build_income_labourIncome2010Values <- function(CensusData){
                              paste(check_vars, collapse = ", "))
                 }
                 
-                CensusData[ , labourIncome2010Values := v4525/0.512271399]
+                CensusData[ , labourIncome2010Values := v4525/0.512271398527793]
                 gc(); Sys.sleep(1); gc()
         }
         

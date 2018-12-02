@@ -1,6 +1,6 @@
 #' @export
 
-build_education_fieldsOfStudy <- function(CensusData){
+build_education_fieldsOfStudyAggreg <- function(CensusData){
         
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         metadata   <- harmonizeIBGE:::get_metadata(CensusData)
@@ -19,14 +19,9 @@ build_education_fieldsOfStudy <- function(CensusData){
                 unlist() %>%
                 tolower()
         
-        if(metadata$year %in% c(1960, 1970)){
-                return(CensusData)
-        }
-        
         crosswalk_location <- system.file("extdata",
-                                          "crosswalk_fieldsOfStudy_1980_2010.csv",
-                                          package = "harmonizeIBGE")
-        
+                                                  "crosswalk_fieldsOfStudy_1960_2010.csv",
+                                                  package = "harmonizeIBGE")
         
         crosswalk <-  read.csv2(crosswalk_location, stringsAsFactors = F) %>%
                 filter(year == metadata$year, !is.na(isced_level3)) %>%
@@ -57,7 +52,7 @@ build_education_fieldsOfStudy <- function(CensusData){
         setkey(crosswalk, "ibge_code")
         
         # efficient join using CensusData.table sintax:
-        CensusData = CensusData[crosswalk, fieldsOfStudy := isced_level3] # this causes loss of the metadata
+        CensusData = CensusData[crosswalk, fieldsOfStudyAggreg := isced_level3] # this causes loss of the metadata
         gc(); Sys.sleep(.3);gc()
         
         #CensusData = CensusData[crosswalk, label_fieldsOfStudy := isced_level3_label_en] # this causes loss of the metadata
@@ -66,8 +61,8 @@ build_education_fieldsOfStudy <- function(CensusData){
         CensusData <- CensusData %>%
                 select(-ibge_code)
         
-        CensusData[educationAttainment != 9, fieldsOfStudy := NA]
-        CensusData[educationAttainment == 9 & is.na(fieldsOfStudy), fieldsOfStudy := 999]
+        CensusData[educationAttainment != 9, fieldsOfStudyAggreg := NA]
+        CensusData[educationAttainment == 9 & is.na(fieldsOfStudyAggreg), fieldsOfStudyAggreg := 999]
         
         
         gc();Sys.sleep(.5);gc()

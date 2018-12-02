@@ -12,7 +12,6 @@ build_income_hhIncome2010Values <- function(CensusData){
         metadata <- harmonizeIBGE:::get_metadata(CensusData)
         
         if(metadata$year == 1960){
-                CensusData[, hhIncome2010Values := NA]
                 return(CensusData)
         }
         

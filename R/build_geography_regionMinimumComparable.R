@@ -3,7 +3,7 @@
 #' @value data.frame
 #' @export
 
-build_geography_regionMiniumComparable <- function(CensusData){
+build_geography_regionMinimumComparable <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -26,17 +26,17 @@ build_geography_regionMiniumComparable <- function(CensusData){
         gc();Sys.sleep(.5);gc()
         
         
-        stateMiniumComparable_just_created = F
-        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMiniumComparable"))
+        stateMinimumComparable_just_created = F
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("stateMinimumComparable"))
         if(length(check_vars) > 0){
-                CensusData <- eval(parse(text = paste0("build_geography_stateMiniumComparable_",metadata$year,"(CensusData)")))
-                stateMiniumComparable_just_created = T
+                CensusData <- eval(parse(text = paste0("build_geography_stateMinimumComparable_",metadata$year,"(CensusData)")))
+                stateMinimumComparable_just_created = T
                 gc()
         }
         gc();Sys.sleep(.5);gc()
         
         
-        CensusData[ , regionMiniumComparable := trunc(stateMiniumComparable/10)]
+        CensusData[ , regionMinimumComparable := trunc(stateMinimumComparable/10)]
         
         
         
@@ -45,8 +45,8 @@ build_geography_regionMiniumComparable <- function(CensusData){
         }
         
         
-        if(stateMiniumComparable_just_created == TRUE){
-                CensusData[ , stateMiniumComparable := NULL]
+        if(stateMinimumComparable_just_created == TRUE){
+                CensusData[ , stateMinimumComparable := NULL]
         }
         
         

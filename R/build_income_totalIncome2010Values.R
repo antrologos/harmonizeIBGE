@@ -20,7 +20,7 @@ build_income_totalIncome2010Values <- function(CensusData){
         
         
         if(year == 1960){
-                CensusData[, totalIncome2010Values := as.numeric(NA)]
+                return(CensusData)
         }
         
         if(year == 1970){
@@ -32,7 +32,7 @@ build_income_totalIncome2010Values <- function(CensusData){
                 
                 CensusData[,             totalIncome2010Values := as.numeric(NA)]
                 CensusData[v041 == 9999, totalIncome2010Values := 0]
-                CensusData[v041 < 9998,  totalIncome2010Values := v041/0.416904849]
+                CensusData[v041 < 9998,  totalIncome2010Values := v041/0.416904848930426]
                 
                 gc(); Sys.sleep(1); gc()
         }
@@ -65,7 +65,7 @@ build_income_totalIncome2010Values <- function(CensusData){
                 
                 CensusData[ , totalIncome2010Values := rowSums(
                         CensusData[, lapply(.SD, replace_NA_and_zeros), .SDcols=colNumbers], 
-                        na.rm = TRUE)/9.091145084]
+                        na.rm = TRUE)/9.0911450843074]
                 gc(); Sys.sleep(1); gc()
                 
                 CensusData[income_NAs == length(colNumbers), totalIncome2010Values := NA ]
@@ -86,7 +86,7 @@ build_income_totalIncome2010Values <- function(CensusData){
                 
                 CensusData[                  , totalIncome2010Values := v3561]
                 CensusData[v3561 == 99999999 , totalIncome2010Values := NA] 
-                CensusData[                  , totalIncome2010Values := totalIncome2010Values/106.3629622]
+                CensusData[                  , totalIncome2010Values := totalIncome2010Values/106.362962177897]
                 
                 gc(); Sys.sleep(1); gc()
         }
@@ -100,7 +100,7 @@ build_income_totalIncome2010Values <- function(CensusData){
                              paste(check_vars, collapse = ", "))
                 }
                 
-                CensusData[ , totalIncome2010Values := v4614/0.512271399]
+                CensusData[ , totalIncome2010Values := v4614/0.512271398527793]
                 gc(); Sys.sleep(1); gc()
         }
         

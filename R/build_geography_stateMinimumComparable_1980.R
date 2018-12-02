@@ -3,7 +3,7 @@
 #' @value data.frame
 #' @export
 
-build_geography_stateMiniumComparable_1980 <- function(CensusData){
+build_geography_stateMinimumComparable_1980 <- function(CensusData){
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame")
@@ -21,12 +21,12 @@ build_geography_stateMiniumComparable_1980 <- function(CensusData){
                 gc()
         }
         
-        CensusData[ , stateMiniumComparable := stateCurrent]
+        CensusData[ , stateMinimumComparable := stateCurrent]
         
-        CensusData[stateCurrent == 20, stateMiniumComparable := 26]
-        CensusData[stateCurrent == 34, stateMiniumComparable := 33]
-        CensusData[stateCurrent == 17, stateMiniumComparable := 52]
-        CensusData[stateCurrent == 50, stateMiniumComparable := 51]
+        CensusData[stateCurrent == 20, stateMinimumComparable := 26]
+        CensusData[stateCurrent == 34, stateMinimumComparable := 33]
+        CensusData[stateCurrent == 17, stateMinimumComparable := 52]
+        CensusData[stateCurrent == 50, stateMinimumComparable := 51]
         
         gc()
         

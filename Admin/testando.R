@@ -26,9 +26,9 @@ getVarNames <- function(y){
                 .[!duplicated(.)]
 }
 
-#i= 1
+#i= 6
 
-#n = 2000
+#n = 2000000
 n = 30000000
 
 for(i in 1:6){
@@ -64,9 +64,15 @@ for(i in 1:6){
         }
         
         censo <- censo %>%
-                        harmonize_themes(themes = "all", dropOriginalVariables = T) 
+                        harmonize_themes(themes = c("identification", "demographics",
+                                                    "household", "geography", "migration"), 
+                                         dropOriginalVariables = T) 
+        gc();Sys.sleep(.5);gc()
         
-        Sys.sleep(.5);gc()
+        censo <- censo %>%
+                harmonize_themes(themes = c("education", "work","income"), 
+                                 dropOriginalVariables = T) 
+        
         
         write_fst(censo, path = paste0("e:/censos_tmp/censo_harmonizado_", ano, ".fst"))
         
@@ -74,6 +80,25 @@ for(i in 1:6){
         gc();Sys.sleep(.5);gc()
 }
 
+#===============================================================================================
+rm(list=ls());gc();Sys.sleep(.5);gc()
+anos = c(1960, 1970, 1980, 1991, 2000, 2010)
+
+for(ano in anos){
+        
+        print(ano)
+        
+        assign(paste0("c_",ano), 
+               value = read_fst(path = paste0("e:/censos_tmp/censo_harmonizado_", ano, ".fst"),
+                                as.data.table = T
+                                ))
+}
 
 
+summary(c_1960)
+summary(c_1970)
+summary(c_1980)
+summary(c_1991)
+summary(c_2000)
+summary(c_2010)
 
