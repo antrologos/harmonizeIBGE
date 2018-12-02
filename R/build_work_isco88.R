@@ -238,8 +238,7 @@ build_work_isco88 <- function(CensusData){
                 banco_tmp[ , newISCO_classWorker2 := as.numeric(NA)]
         }
         
-        banco_tmp = data.table(banco_tmp)
-        gc(); Sys.sleep(1); gc()
+        setDT(banco_tmp)
         
         banco_tmp[!is.na(newISCO_sector1),      isco88_4digit := newISCO_sector1]
         banco_tmp[!is.na(newISCO_sector2),      isco88_4digit := newISCO_sector2]
