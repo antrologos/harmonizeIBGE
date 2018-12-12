@@ -146,10 +146,11 @@ build_work_classWorker <- function(CensusData){
         # 1 "employee"
         # 2 "employer"
         # 3 "self-employed, urban"
-        # 4 "self-employed/unpaid, rural"
+        # 4 "self-employed, rural"
         # 5 "unpaid, urban"
+        # 6 "unpaid, rural"
         
-        CensusData[classWorker == 6, classWorker := 4]
+        #CensusData[classWorker == 6, classWorker := 4]
         
         gc(); Sys.sleep(.5);gc()
         

@@ -65,13 +65,13 @@ ajust_work_variables <- function(CensusData){
         }else{
                 for(i in 1:2){ # repete duas vezes a operacao porque as variaveis se modificam
                         CensusData[ is.na(occupationalStatus) | occupationalStatus == 0,                                      classWorker := NA]
-                        CensusData[ is.na(at_least_15hours_work) &  classWorker %in% 3:4 & econActivity == 1,                 econActivity := 0]
-                        CensusData[ is.na(at_least_15hours_work) &  classWorker %in% 3:4 & occupationalStatus == 1, occupationalStatus    := NA]
+                        CensusData[ is.na(at_least_15hours_work) &  classWorker %in% 5:6 & econActivity == 1,                 econActivity := 0]
+                        CensusData[ is.na(at_least_15hours_work) &  classWorker %in% 5:6 & occupationalStatus == 1, occupationalStatus    := NA]
                         gc();Sys.sleep(.5);gc()
                 }        
         }
         
-        CensusData[ is.na(occupationalStatus) | occupationalStatus ==0,    isco88     := NA]
+        CensusData[ is.na(occupationalStatus) | occupationalStatus ==0,    isco88      := NA]
         CensusData[ is.na(occupationalStatus) | occupationalStatus ==0,    sectorISIC3 := NA]
         
         if(!(year %in% c(1960, 1970))){

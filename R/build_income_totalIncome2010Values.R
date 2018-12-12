@@ -30,9 +30,10 @@ build_income_totalIncome2010Values <- function(CensusData){
                              paste(check_vars, collapse = ", "))
                 }
                 
-                CensusData[,             totalIncome2010Values := as.numeric(NA)]
-                CensusData[v041 == 9999, totalIncome2010Values := 0]
-                CensusData[v041 < 9998,  totalIncome2010Values := v041/0.416904848930426]
+                CensusData[,             totalIncome2010Values  := as.numeric(NA)]
+                CensusData[v041 == 9999, totalIncome2010Values  := 0]
+                CensusData[v041 <= 9998,  totalIncome2010Values := v041/0.416904848930426]
+                CensusData[v041 == 0,  totalIncome2010Values    := NA]
                 
                 gc(); Sys.sleep(1); gc()
         }

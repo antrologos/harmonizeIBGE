@@ -27,11 +27,11 @@ build;migration;bornInBrazil;migration;25
 build;migration;bornSameMunicipality;migration;26
 build;migration;stateOfBirthMCA;migration;27
 build;migration;bornSameStateMCA;migration;28
-build;education;levelattnd;education;29
-build;education;literacy;education;30
-build;education;schoolattnd;education;31
-build;education;educationAttainment;education;32
-build;education;yearOfSchooling;education;33
+build;education;literacy;education;29
+build;education;schoolattnd;education;30
+build;education;educationAttainment;education;31
+build;education;yearOfSchooling;education;32
+build;education;levelattnd;education;33
 build;education;fieldsOfStudyAggreg;education;34
 build;education;fieldsOfStudy;education;35
 build;education;fieldsIBGECode;education;36

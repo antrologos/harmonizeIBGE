@@ -32,7 +32,7 @@ build_education_schoolattnd_2000 <- function(CensusData){
         CensusData[, schoolattnd := as.numeric(NA)]
         CensusData[v0429 %in% c(3, 4), schoolattnd := 0]
         CensusData[v0430<=3 , schoolattnd := 0]
-        #CensusData[v0430==11 , schoolattnd := 0]        #desativar essa linha faz incluir o vestibular
+        CensusData[v0430==11 , schoolattnd := 0]        #desativar essa linha faz incluir o vestibular
         CensusData[v0429 %in% c(1, 2), schoolattnd := 1]
 
         # Ajuste para idade

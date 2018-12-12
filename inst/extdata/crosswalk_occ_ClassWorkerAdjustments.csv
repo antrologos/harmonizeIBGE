@@ -27,10 +27,12 @@ year;class_worker;class_worker_label;ibge_code;ibge_label;oldISCO;oldISCO_label;
 2000;2;employer;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
 2000;3;self-employed, urban;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
 2000;1;employee;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
-2000;4;self-employed/unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2000;4;self-employed, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2000;6;unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
 2000;5;unpaid, urban;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
 2010;2;employer;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
 2010;3;self-employed, urban;;;5220;Shop salespersons and demonstrators;1314;General managers in wholesale and retail trade
 2010;1;employee;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
-2010;4;self-employed/unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2010;4;self-employed, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
+2010;6;unpaid, rural;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators
 2010;5;unpaid, urban;;;1314;General managers in wholesale and retail trade;5220;Shop salespersons and demonstrators

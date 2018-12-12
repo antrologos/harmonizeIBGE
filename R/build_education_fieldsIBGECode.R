@@ -17,10 +17,6 @@ build_education_fieldsIBGECode <- function(CensusData){
                 unlist() %>%
                 tolower()
         
-        if(metadata$year %in% c(1960, 1970)){
-                return(CensusData)
-        }
-        
         harmonizeIBGE:::check_necessary_vars(CensusData, varList)
 
         

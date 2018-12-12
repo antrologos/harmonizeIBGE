@@ -31,7 +31,7 @@ build_education_schoolattnd_1991 <- function(CensusData){
         # School Attendance
         CensusData[, schoolattnd := 0]
         CensusData[v0325 != 0, schoolattnd := 1]
-        CensusData[v0326 %in% c(2:4, 5, 6), schoolattnd := 1] # esta incluindo vestibular (opcao 5)
+        CensusData[v0326 %in% c(2:4, 6), schoolattnd := 1] # esta excluindo vestibular (opcao 5)
 
         CensusData[is.na(v0325) | is.na(v0326), schoolattnd := NA]
 
