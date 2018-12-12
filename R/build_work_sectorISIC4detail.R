@@ -19,7 +19,8 @@ build_work_sectorISIC4detail <- function(CensusData){
         
         crosswalk <- read.csv2(crosswalk_location, stringsAsFactors = F) %>%
                 filter(classification == sulfix) %>%
-                mutate(sectorISIC4detail = ifelse(is.na(sectorISIC4_detail), sectorISIC4, sectorISIC4_detail)) %>%
+                mutate(sectorISIC4_detail = ifelse(is.na(sectorISIC4_detail), 0, sectorISIC4_detail),
+                        sectorISIC4detail = sectorISIC4*10^7 + sectorISIC4_detail) %>%
                 select(sector_code, sectorISIC4detail) %>%
                 as.data.table()
         
@@ -81,7 +82,7 @@ build_work_sectorISIC4detail <- function(CensusData){
         CensusData[is.na(occupationalStatus) | occupationalStatus == 0, sectorISIC4detail := NA]
         CensusData[is.na(econActivity)       | econActivity == 0      , sectorISIC4detail := NA]
         
-        CensusData[ occupationalStatus == 1 & is.na(sectorISIC4detail), sectorISIC4detail := 999]
+        CensusData[ occupationalStatus == 1 & is.na(sectorISIC4detail), sectorISIC4detail := 999*10^7]
         CensusData[ age < 10, sectorISIC4detail := NA]
         
         gc();Sys.sleep(.5);gc()
