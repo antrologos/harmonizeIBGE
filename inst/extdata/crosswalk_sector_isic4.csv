@@ -1,4 +1,4 @@
-year;classification;sector_code;sector_label;isic4_1d;isic4_level1;isic4_level1_label;sectorISIC4_detail;isic4_level2;isic4_level2_label;observacoes
+year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_level1_label;sectorISIC4_detail;isic4_level2;isic4_level2_label;observacoes
 1960;ibge60;111;Cultura de agave ou sisal;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1960;ibge60;112;Cultura de algodão;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1960;ibge60;113;Cultura de arroz;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
