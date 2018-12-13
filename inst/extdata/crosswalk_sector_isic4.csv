@@ -133,8 +133,8 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 1960;ibge60;856;Corpo de Bombeiros;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1960;ibge60;859;Outras organizações de segurança;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1960;ibge60;911;Representações estrangeiras;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-1960;ibge60;912;Outras atividades não compreendidas nos demais ramos;-999;-Unknown-;Unknown;;;; - 
-1960;ibge60;919;Atividades mal definidas ou não declaradas;-999;-Unknown-;Unknown;;;; - 
+1960;ibge60;912;Outras atividades não compreendidas nos demais ramos;999;-Unknown-;Unknown;;;; - 
+1960;ibge60;919;Atividades mal definidas ou não declaradas;999;-Unknown-;Unknown;;;; - 
 1970;ibge70;111;cultura de agave;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1970;ibge70;112;cultura de algodão;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1970;ibge70;113;cultura de arroz;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
@@ -268,8 +268,8 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 1970;ibge70;927;contabilidade e atividades auxiliares;13;M;Professional, scientific and technical activities ;;;; - 
 1970;ibge70;928;outros profissionais liberais e atividades auxiliares;13;M;Professional, scientific and technical activities ;;;; - 
 1970;ibge70;931;representações estrangeiras;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-1970;ibge70;932;outras atividades;-999;-Unknown-;Unknown;;;; - 
-1970;ibge70;934;atividades mal definidas e atividades não declaradas;-999;-Unknown-;Unknown;;;; - 
+1970;ibge70;932;outras atividades;999;-Unknown-;Unknown;;;; - 
+1970;ibge70;934;atividades mal definidas e atividades não declaradas;999;-Unknown-;Unknown;;;; - 
 1976;pnads76_79;11;AGRICULT/SILVICULTURA;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - .
 1976;pnads76_79;12;CRIAÇÃO ANIMAIS;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - .
 1976;pnads76_79;21;COLETAS PROD.VEGETAIS;1;A;Agriculture, forestry and fishing ;2;;Forestry and logging; - .
@@ -398,9 +398,9 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 1976;pnads76_79;726;CORPO DE BOMBEIROS;15;O;"Public administration and defence; compulsory social security ";;;; - .
 1976;pnads76_79;729;OUT.ORGAN.GOVERN.SEGURANÇA;15;O;"Public administration and defence; compulsory social security ";;;; - .
 1976;pnads76_79;811;REPRES.ESTRANGEIRAS;21;U;Activities of extraterritorial organizations and bodies ;;;;130 - equivalencia censos
-1976;pnads76_79;812;OUTR.ATIV.N/COMP.CLASSES;-999;-Unknown-;Unknown;;;; - .
+1976;pnads76_79;812;OUTR.ATIV.N/COMP.CLASSES;999;-Unknown-;Unknown;;;; - .
 1976;pnads76_79;813;PROCURANDO TRAB.PRIM.VEZ;-99;-NIU-;Not in universe;;;; - .
-1976;pnads76_79;814;ATIV.MAL DEF OU N/DECLARADAS;-999;-Unknown-;Unknown;;;; - .
+1976;pnads76_79;814;ATIV.MAL DEF OU N/DECLARADAS;999;-Unknown-;Unknown;;;; - .
 1980;ibge80;11;CULTURA AGAVE;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1980;ibge80;12;CULTURA ALGODAO;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1980;ibge80;13;CULTURA ARROZ;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
@@ -565,9 +565,9 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 1980;ibge80;726;CORPO BOMBEIROS;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1980;ibge80;727;OUTR ORG GOV SEGU;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1980;ibge80;801;ORG INTER REP EST;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-1980;ibge80;901;OUT ATIV NAO DEFI;-999;-Unknown-;Unknown;;;; - 
-1980;ibge80;902;ATIV MAL DEFINIDA;-999;-Unknown-;Unknown;;;; - 
-1980;ibge80;998;0;-999;-Unknown-;Unknown;;;; - 
+1980;ibge80;901;OUT ATIV NAO DEFI;999;-Unknown-;Unknown;;;; - 
+1980;ibge80;902;ATIV MAL DEFINIDA;999;-Unknown-;Unknown;;;; - 
+1980;ibge80;998;0;999;-Unknown-;Unknown;;;; - 
 1991;ibge91;11;Cultura de agave;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1991;ibge91;12;Cultura de algodão;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 1991;ibge91;13;Cultura de arroz;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
@@ -734,11 +734,11 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 1991;ibge91;726;Corpo de Bombeiros;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1991;ibge91;727;Outras organizações governamentais de segurança;15;O;"Public administration and defence; compulsory social security ";;;; - 
 1991;ibge91;801;Organizações internacionais e representações estrangeiras;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-1991;ibge91;901;Outras ativdades não compreendidas nos demais ramos;-999;-Unknown-;Unknown;;;; - 
-1991;ibge91;902;Atividades mal definidas;-999;-Unknown-;Unknown;;;; - 
-1991;ibge91;903;Atividade não declarada;-999;-Unknown-;Unknown;;;; - 
+1991;ibge91;901;Outras ativdades não compreendidas nos demais ramos;999;-Unknown-;Unknown;;;; - 
+1991;ibge91;902;Atividades mal definidas;999;-Unknown-;Unknown;;;; - 
+1991;ibge91;903;Atividade não declarada;999;-Unknown-;Unknown;;;; - 
 1991;ibge91;999;Pessoa menor de 10 anos ou (VAR0345) = 3;-99;-NIU-;Not in universe;;;; - 
-2000;cboDom;0;Atividades mal especificadas;-999;-Unknown-;Unknown;;;; - 
+2000;cboDom;0;Atividades mal especificadas;999;-Unknown-;Unknown;;;; - 
 2000;cboDom;1101;Cultivo de arroz;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 2000;cboDom;1102;Cultivo de milho;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 2000;cboDom;1103;Cultivo de outros cereais para grãos;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
@@ -960,8 +960,8 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 2000;cboDom;93092;Outras atividades de serviços pessoais;19;S;Other service activities ;;;; - 
 2000;cboDom;95000;Serviços domésticos ;20;T;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use ";;;; - 
 2000;cboDom;99000;Organismos internacionais e outras instituições extraterritoriais;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-2000;cboDom;99999;0;-999;-Unknown-;Unknown;;;; - 
-2010;cod2010;0;ATIVIDADES MALDEFINIDAS ;-999;-Unknown-;Unknown;;;; - 
+2000;cboDom;99999;0;999;-Unknown-;Unknown;;;; - 
+2010;cod2010;0;ATIVIDADES MALDEFINIDAS ;999;-Unknown-;Unknown;;;; - 
 2010;cod2010;1101;CULTIVO DE ARROZ;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 2010;cod2010;1102;CULTIVO DE MILHO;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
 2010;cod2010;1103;CULTIVO DE OUTROS CEREAIS;1;A;Agriculture, forestry and fishing ;1;;Crop and animal production, hunting and related service activities; - 
@@ -1202,4 +1202,4 @@ year;classification;sector_code;sector_label;sectorISIC4;isic4_level1;isic4_leve
 2010;cod2010;96090;OUTRAS ATIVIDADES DE SERVIÇOS PESSOAIS;19;S;Other service activities ;;;; - 
 2010;cod2010;97000;SERVIÇOS DOMÉSTICOS;20;T;"Activities of households as employers; undifferentiated goods- and services-producing activities of households for own use ";;;; - 
 2010;cod2010;99000;ORGANISMOS INTERNACIONAIS E OUTRAS INSTITUIÇÕES EXTRATERRITORIAIS;21;U;Activities of extraterritorial organizations and bodies ;;;; - 
-2010;cod2010;99999;0;-999;-Unknown-;Unknown;;;; - 
+2010;cod2010;99999;0;999;-Unknown-;Unknown;;;; - 
