@@ -1,5 +1,8 @@
 #' @export
 
+#CensusData = censo
+#dropOriginalVariables = T
+
 harmonize_themes <- function(CensusData, themes = "all", dropOriginalVariables = F, ajustWorkVariables = T){
 
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
@@ -10,14 +13,13 @@ harmonize_themes <- function(CensusData, themes = "all", dropOriginalVariables =
         if(length(themes) == 1){
                 
                 if(themes=="all"){
-                        themes = get_themes()
+                        themes = harmonizeIBGE:::get_themes()
                 }
         }
         
         if(any(!(themes %in% existing_themes))){
                 stop("This theme does not exist")
         }
-        
         
         functions <- lsf.str("package:harmonizeIBGE") %>%
                 as.character()
@@ -40,7 +42,7 @@ harmonize_themes <- function(CensusData, themes = "all", dropOriginalVariables =
                                         "list_functions_priority.csv",
                                         package = "harmonizeIBGE")
         
-        #priorityList <- fread("E:/Google Drive/RCodes/PacotesR/harmonizeIBGE/inst/extdata/list_functions_priority.csv")
+        #priorityList <- fread("c:/users/rogerio/Google Drive/PacotesR/harmonizeIBGE/inst/extdata/list_functions_priority.csv")
         priorityList <- fread(priorityList_location)
         priorityList <- priorityList[ ,list(funcType, theme, varName, ordem)] %>%
                 setkey("funcType", "theme", "varName")
@@ -61,7 +63,6 @@ harmonize_themes <- function(CensusData, themes = "all", dropOriginalVariables =
         
         function_df <- function_df %>% 
                 filter(theme %in% themes)
-        
         
         function_df <- function_df %>% 
                 filter(is.na(year) |  year == metadata$year) %>%
@@ -89,7 +90,6 @@ harmonize_themes <- function(CensusData, themes = "all", dropOriginalVariables =
                 mutate(count_by_theme = as.numeric(theme))
         
         function_df$diff_count = ifelse(c(diff(function_df$count_by_theme), 1)==0,0,1)
-        
         
         for(i in 1:nrow(function_df)){
                    

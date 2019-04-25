@@ -15,14 +15,14 @@ check_prepared_to_harmonize <- function(Data){
         test <- attributes(Data)$readyToHarmonize
         
         if(is.null(test)){
-                stop("The data was not prepared to be harmonized. Use 'prepare_to_harmonize()' to make it ready to use with harmonizePNAD")
+                stop("The data was not prepared to be harmonized. Use 'prepare_to_harmonize()' to make it ready to use with harmonizeIBGE")
         }
         
         if(test == FALSE){
                 stop("The data could not prepared to be harmonized. There was some kind of error when your ran 'prepare_to_harmonize()'")
         }
         
-        harmonizePNAD:::check_Data_frame_convert_to_data_table(Data)
+        harmonizeIBGE:::check_Data_frame_convert_to_data_table(Data)
 }
 
 
@@ -53,7 +53,7 @@ find_sulfix <- function(Data, general_or_specific){
                 stop("'general_or_specific' must be equal to 'general' or 'specific'")
         }
         
-        metadata <- harmonizePNAD:::get_metadata(Data)
+        metadata <- harmonizeIBGE:::get_metadata(Data)
         
         if(general_or_specific == "general"){
                 
@@ -97,7 +97,7 @@ find_sulfix <- function(Data, general_or_specific){
 
 find_sulfixforOccSectors <- function(Data){
         
-        metadata <- harmonizePNAD:::get_metadata(Data)
+        metadata <- harmonizeIBGE:::get_metadata(Data)
         
         if(metadata$type == "census" & metadata$year == 1960){
                 sulfix = "ibge60"
@@ -138,7 +138,7 @@ find_sulfixforOccSectors <- function(Data){
 
 find_function <- function(Data, pattern, general_or_specific){
         
-        existing_functions <- unclass(lsf.str(envir = asNamespace("harmonizePNAD"), all = T))
+        existing_functions <- unclass(lsf.str(envir = asNamespace("harmonizeIBGE"), all = T))
         relevant_functions <- existing_functions[grep(pattern = pattern, x = existing_functions)]
         
         f_parts <- strsplit(relevant_functions, split = "_")
@@ -147,7 +147,7 @@ find_function <- function(Data, pattern, general_or_specific){
         f_parts <- f_parts[sapply(f_parts, function(x) x[3] == pattern)]
         
         if(!is.na(general_or_specific)){
-                sulfix  <- harmonizePNAD:::find_sulfix(Data, general_or_specific = general_or_specific)
+                sulfix  <- harmonizeIBGE:::find_sulfix(Data, general_or_specific = general_or_specific)
                 f_parts <- f_parts[sapply(f_parts, function(x) x[4] == sulfix)]
                 f_parts <- f_parts[!sapply(f_parts, is.null)]
                 
@@ -180,7 +180,7 @@ check_var_existence <- function(Data, var_names){
 
 check_necessary_vars <-function(Data, var_names){
         
-        check_vars <- harmonizePNAD:::check_var_existence(Data, var_names)
+        check_vars <- harmonizeIBGE:::check_var_existence(Data, var_names)
         
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the Data: ",
@@ -204,9 +204,9 @@ build_onTheFly <- function(Data, var_name, general_or_specific){
                 stop("'var_name' must be a one-valued character vector")
         }
         
-        harmonizePNAD:::just_created_vars_list()
+        harmonizeIBGE:::just_created_vars_list()
         
-        f    <- harmonizePNAD:::find_function(Data, var_name, general_or_specific)
+        f    <- harmonizeIBGE:::find_function(Data, var_name, general_or_specific)
         
         call <- paste0(f,"(Data)")
         Data <- eval(parse(text = call))
@@ -219,10 +219,10 @@ build_onTheFly <- function(Data, var_name, general_or_specific){
 
 check_and_build_onTheFly <- function(Data, var_name, general_or_specific){
         
-        test <- harmonizePNAD:::check_var_existence(Data = Data, var_names = var_name)
+        test <- harmonizeIBGE:::check_var_existence(Data = Data, var_names = var_name)
         
         if(length(test) == 1){
-                Data <- harmonizePNAD:::build_onTheFly(Data = Data,
+                Data <- harmonizeIBGE:::build_onTheFly(Data = Data,
                                                        var_name = var_name,
                                                        general_or_specific = general_or_specific)
         }
@@ -246,7 +246,7 @@ erase_just_created_vars <- function(Data){
 
 
 list_available_harmonizations <- function(x){
-        objects <- ls("package:harmonizePNAD")
+        objects <- ls("package:harmonizeIBGE")
         objects <- objects[grep(x = objects, pattern = x)]
         objects <- objects[!(objects == paste0("harmonize_",x))]
         
@@ -292,7 +292,7 @@ list_originalVariables_to_drop <- function(year, themes = "all"){
         }
         
         
-        df_themes_vars <- get_original_variables_by_theme(year = year, themes = themes) %>%
+        df_themes_vars <- harmonizeIBGE:::get_original_variables_by_theme(year = year, themes = themes) %>%
                 setDT() %>%
                 setkey("theme", "varName")
         
@@ -316,10 +316,12 @@ list_originalVariables_to_drop <- function(year, themes = "all"){
         
         num_themes <- length(vars_to_delete)
         
-        for(i in 1:(num_themes-1)){
-                for(j in (i+1):num_themes){
-                        vars_to_delete[[i]] <- setdiff(vars_to_delete[[i]] , vars_to_delete[[j]])
-                }
+        if(num_themes > 1){
+                for(i in 1:(num_themes-1)){
+                        for(j in (i+1):num_themes){
+                                vars_to_delete[[i]] <- setdiff(vars_to_delete[[i]] , vars_to_delete[[j]])
+                        }
+                }        
         }
         
         vars_to_delete
@@ -368,7 +370,7 @@ get_original_variables_by_theme <- function(year, themes = "all"){
         ncols <- max(str_count(df_themes_vars$originalVars, ";")) + 1
         
         df_themes_vars <- df_themes_vars %>% 
-                separate(col = originalVars, into = paste0("var_", 1:ncols), sep = ";") %>%
+                separate(col = originalVars, into = paste0("var_", 1:ncols), sep = ";", fill = "right") %>%
                 gather(key = "originalVar", value = "variable", paste0("var_", 1:ncols)) %>%
                 select(-originalVar) %>%
                 filter(complete.cases(.)) %>%

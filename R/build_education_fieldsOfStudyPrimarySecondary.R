@@ -1,6 +1,6 @@
 #' @export
 
-build_education_fieldsOfStudyAggreg <- function(CensusData){
+build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
         
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         metadata   <- harmonizeIBGE:::get_metadata(CensusData)
@@ -20,12 +20,12 @@ build_education_fieldsOfStudyAggreg <- function(CensusData){
                 tolower()
         
         crosswalk_location <- system.file("extdata",
-                                          "crosswalk_fieldsOfStudy_1960_2010.csv",
+                                          "crosswalk_fieldsOfStudy_PrimarySecondary_1960_1991.csv",
                                           package = "harmonizeIBGE")
         
         crosswalk <-  read.csv2(crosswalk_location, stringsAsFactors = F) %>%
-                filter(year == metadata$year, !is.na(isced_level3)) %>%
-                select(ibge_code, isced_level3, isced_level3_label_en) %>%
+                filter(year == metadata$year, !is.na(field_code)) %>%
+                select(ibge_code, field_code, field_label) %>%
                 as.data.table()
         
         harmonizeIBGE:::check_necessary_vars(CensusData, varList)
@@ -40,10 +40,8 @@ build_education_fieldsOfStudyAggreg <- function(CensusData){
         }
         
         
-        if(metadata$year == 2010){
-                CensusData[ , ibge_code := CensusData[ , varList[1], with = F ] ]
-                CensusData[is.na(ibge_code), ibge_code := CensusData[is.na(ibge_code), varList[2], with = F ] ] 
-                CensusData[is.na(ibge_code), ibge_code := CensusData[is.na(ibge_code), varList[3], with = F ] ] 
+        if(metadata$year %in% c(2000, 2010)){
+                CensusData[ , ibge_code := NA ]
         }else{
                 CensusData[ , ibge_code := CensusData[[varList]] ]        
         }
@@ -52,17 +50,17 @@ build_education_fieldsOfStudyAggreg <- function(CensusData){
         setkey(crosswalk, "ibge_code")
         
         # efficient join using CensusData.table sintax:
-        CensusData = CensusData[crosswalk, fieldsOfStudyAggreg := isced_level3] # this causes loss of the metadata
+        CensusData = CensusData[crosswalk, fieldsOfStudyPrimarySecondary := field_code] # this causes loss of the metadata
         gc(); Sys.sleep(.3);gc()
         
-        #CensusData = CensusData[crosswalk, label_fieldsOfStudy := isced_level3_label_en] # this causes loss of the metadata
         #gc(); Sys.sleep(.3);gc()
         
         CensusData <- CensusData %>%
                 select(-ibge_code)
         
-        CensusData[educationAttainment != 9, fieldsOfStudyAggreg := NA]
-        CensusData[educationAttainment == 9 & is.na(fieldsOfStudyAggreg), fieldsOfStudyAggreg := 999]
+        
+        CensusData[educationAttainment %in% c(1,2,9, 99), fieldsOfStudyPrimarySecondary := NA]
+        CensusData[educationAttainment %in% 3:8 & is.na(fieldsOfStudyPrimarySecondary), fieldsOfStudyPrimarySecondary := 90]
         
         
         gc();Sys.sleep(.5);gc()

@@ -8,7 +8,7 @@ build_education_levelattnd <- function(CensusData){
         year = metadata$year
         
         # Building age
-        check_vars <- check_var_existence(CensusData, c("age"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
         age_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- eval(parse(text=paste0("build_demographics_age_",metadata$year,"(CensusData)")))
@@ -17,7 +17,7 @@ build_education_levelattnd <- function(CensusData){
         }
 
         # Building educationAttainment
-        check_vars <- check_var_existence(CensusData, c("schoolattnd"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("schoolattnd"))
         schoolattnd_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- eval(parse(text=paste0("build_education_schoolattnd_",metadata$year,"(CensusData)")))
@@ -27,7 +27,7 @@ build_education_levelattnd <- function(CensusData){
         
         
         # Building educationAttainment
-        check_vars <- check_var_existence(CensusData, c("educationAttainment"))
+        check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("educationAttainment"))
         educationAttainment_just_created <- FALSE
         if(length(check_vars) > 0) {
                 CensusData <- eval(parse(text=paste0("build_education_educationAttainment_",metadata$year,"(CensusData)")))
@@ -38,19 +38,19 @@ build_education_levelattnd <- function(CensusData){
         if(year == 1960){
                 
                 # Building educationAttainment
-                check_vars <- check_var_existence(CensusData, c("yearsOfSchooling"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("yearsOfSchooling"))
                 yearsOfSchooling_just_created <- FALSE
                 if(length(check_vars) > 0) {
-                        CensusData <- build_education_yearsOfSchooling(CensusData)
+                        CensusData <- build_education_yearsOfSchooling_1960(CensusData)
                         yearsOfSchooling_just_created <- TRUE
                         gc();Sys.sleep(.5);gc()
                 }
                 
-                CensusData[schoolattnd == 1 & yearOfSchooling %in% 0:3,   levelattnd := 1]
-                CensusData[schoolattnd == 1 & yearOfSchooling %in% 4:7,   levelattnd := 2]
-                CensusData[schoolattnd == 1 & yearOfSchooling %in% 8:10,  levelattnd := 3]
-                CensusData[schoolattnd == 1 & yearOfSchooling %in% 11:15, levelattnd := 4]
-                CensusData[schoolattnd == 1 & is.na(yearOfSchooling),     levelattnd := 99]
+                CensusData[schoolattnd == 1 & yearsOfSchooling %in% 0:3,   levelattnd := 1]
+                CensusData[schoolattnd == 1 & yearsOfSchooling %in% 4:7,   levelattnd := 2]
+                CensusData[schoolattnd == 1 & yearsOfSchooling %in% 8:10,  levelattnd := 3]
+                CensusData[schoolattnd == 1 & yearsOfSchooling %in% 11:15, levelattnd := 4]
+                CensusData[schoolattnd == 1 & is.na(yearsOfSchooling),     levelattnd := 99]
                 
                 if(yearsOfSchooling_just_created == TRUE){
                         CensusData[ , yearsOfSchooling := NULL]
@@ -61,7 +61,7 @@ build_education_levelattnd <- function(CensusData){
 
         if(year == 1970){
                 
-                check_vars <- check_var_existence(CensusData, c("v036"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v036"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -84,7 +84,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==1980){
                 
-                check_vars <- check_var_existence(CensusData, c("v520", "v521"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v520", "v521"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -107,7 +107,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==1991){
                 
-                check_vars <- check_var_existence(CensusData, c("v0324", "v0325", "v0326"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0324", "v0325", "v0326"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -125,7 +125,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==2000){
                 
-                check_vars <- check_var_existence(CensusData, c("v0430", "v0431", "v4752"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0430", "v0431", "v4752"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -145,7 +145,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==2010){
                 
-                check_vars <- check_var_existence(CensusData, c("v0629", "v0630", "v6036"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0629", "v0630", "v6036"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
