@@ -125,7 +125,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==2000){
                 
-                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0430", "v0431", "v4752"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0430", "v0431"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -134,10 +134,10 @@ build_education_levelattnd <- function(CensusData){
                 CensusData[schoolattnd!=1,                        levelattnd := 99] 
                 CensusData[v0430 %in% 1:4,                        levelattnd := 99] 
                 CensusData[v0430 %in% 5:7 & v0431 %in% 1:4 ,      levelattnd := 1] 
-                CensusData[v0430 == 6 & v0431 == 9 & v4752 <= 10, levelattnd := 1] 
+                CensusData[v0430 == 6 & v0431 == 9 & age <= 10, levelattnd := 1] 
                 CensusData[v0430 == 7 & v0431 == 9 ,              levelattnd := 1] 
                 CensusData[v0430 %in% 5:7 & v0431 %in% 5:8 ,      levelattnd := 2] 
-                CensusData[v0430 == 6 & v0431 == 9 & v4752 >= 11, levelattnd := 2] 
+                CensusData[v0430 == 6 & v0431 == 9 & age >= 11, levelattnd := 2] 
                 CensusData[v0430 %in% 8:10,                       levelattnd := 3] 
                 CensusData[v0430 == 11 ,                          levelattnd := 3] 
                 CensusData[v0430 %in% c(12,13),                   levelattnd := 4]
@@ -145,7 +145,7 @@ build_education_levelattnd <- function(CensusData){
         
         if(year ==2010){
                 
-                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0629", "v0630", "v6036"))
+                check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("v0629", "v0630"))
                 if(length(check_vars) > 0){
                         stop("The following variables are missing from the data: ",
                              paste(check_vars, collapse = ", "))
@@ -155,9 +155,9 @@ build_education_levelattnd <- function(CensusData){
                 CensusData[v0629 %in% 1:4,                          levelattnd := 99]
                 CensusData[v0629 == 5 & v0630 %in% 1:5,             levelattnd := 1]
                 CensusData[v0629 == 6,                              levelattnd := 1]
-                CensusData[v0629 == 5 & v0630 == 10 & v6036 <= 10,  levelattnd := 1]
+                CensusData[v0629 == 5 & v0630 == 10 & age <= 10,  levelattnd := 1]
                 CensusData[v0629 == 5 & v0630 %in% 6:9,             levelattnd := 2]
-                CensusData[v0629 == 5 & v0630 == 10 & v6036 >= 11,  levelattnd := 2]
+                CensusData[v0629 == 5 & v0630 == 10 & age >= 11,  levelattnd := 2]
                 CensusData[v0629 %in% 7:8,                          levelattnd := 3]
                 CensusData[v0629 %in% 9:12,                         levelattnd := 4]
         }
