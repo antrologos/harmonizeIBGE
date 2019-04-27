@@ -5,6 +5,11 @@ build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         metadata   <- harmonizeIBGE:::get_metadata(CensusData)
         
+        if(metadata$year > 1991){
+                warning(paste("'fieldsOfStudyPrimarySecondary' is not available for the year", metadata$year))
+                return(CensusData)
+        }
+        
         just_created_vars_list_existedBefore <- exists(x = "just_created_vars", where = .GlobalEnv)
         
         varList_location <- system.file("extdata",
