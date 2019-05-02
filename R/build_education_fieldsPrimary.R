@@ -1,12 +1,12 @@
 #' @export
 
-build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
+build_education_fieldsPrimary <- function(CensusData){
         
         CensusData <- harmonizeIBGE:::check_prepared_to_harmonize(CensusData)
         metadata   <- harmonizeIBGE:::get_metadata(CensusData)
         
         if(metadata$year > 1991){
-                warning(paste("'fieldsOfStudyPrimarySecondary' is not available for the year", metadata$year))
+                warning(paste("'fieldsPrimary' is not available for the year", metadata$year))
                 return(CensusData)
         }
         
@@ -27,9 +27,10 @@ build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
         crosswalk_location <- system.file("extdata",
                                           "crosswalk_fieldsOfStudy_PrimarySecondary_1960_1991.csv",
                                           package = "harmonizeIBGE")
-        
+
         crosswalk <-  read.csv2(crosswalk_location, stringsAsFactors = F) %>%
                 filter(year == metadata$year, !is.na(field_code)) %>%
+                filter(level == "primary") %>%
                 select(ibge_code, field_code, field_label) %>%
                 as.data.table()
         
@@ -44,18 +45,13 @@ build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
                 gc();Sys.sleep(.5);gc()
         }
         
-        
-        if(metadata$year %in% c(2000, 2010)){
-                CensusData[ , ibge_code := NA ]
-        }else{
-                CensusData[ , ibge_code := CensusData[[varList]] ]        
-        }
+        CensusData[ , ibge_code := CensusData[[varList]] ]
         
         setkey(CensusData, "ibge_code")
         setkey(crosswalk, "ibge_code")
         
         # efficient join using CensusData.table sintax:
-        CensusData = CensusData[crosswalk, fieldsOfStudyPrimarySecondary := field_code] # this causes loss of the metadata
+        CensusData = CensusData[crosswalk, fieldsPrimary := field_code] # this causes loss of the metadata
         gc(); Sys.sleep(.3);gc()
         
         #gc(); Sys.sleep(.3);gc()
@@ -64,8 +60,8 @@ build_education_fieldsOfStudyPrimarySecondary <- function(CensusData){
                 select(-ibge_code)
         
         
-        CensusData[educationAttainment %in% c(1,2,9, 99), fieldsOfStudyPrimarySecondary := NA]
-        CensusData[educationAttainment %in% 3:8 & is.na(fieldsOfStudyPrimarySecondary), fieldsOfStudyPrimarySecondary := 90]
+        CensusData[educationAttainment %in% c(1,2,9, 99), fieldsPrimary := NA]
+        CensusData[educationAttainment %in% 3:8 & is.na(fieldsPrimary), fieldsPrimary := 90]
         
         
         gc();Sys.sleep(.5);gc()
