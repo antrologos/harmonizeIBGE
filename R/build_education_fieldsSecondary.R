@@ -25,7 +25,7 @@ build_education_fieldsSecondary <- function(CensusData){
                 tolower()
         
         crosswalk_location <- system.file("extdata",
-                                          "crosswalk_fieldsOfStudy_SecondarySecondary_1960_1991.csv",
+                                          "crosswalk_fieldsOfStudy_PrimarySecondary_1960_1991.csv",
                                           package = "harmonizeIBGE")
         
         crosswalk <-  read.csv2(crosswalk_location, stringsAsFactors = F) %>%

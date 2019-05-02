@@ -66,7 +66,7 @@ build_education_fieldsPrimary <- function(CensusData){
         
         gc();Sys.sleep(.5);gc()
         
-        #if(just_created_vars_list_existedBefore == F){
+        #if(just_created_vars_list_existedBefore == F ){
         #        CensusData <- harmonizeIBGE:::erase_just_created_vars(CensusData)
         #}
         
