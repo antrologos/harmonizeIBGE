@@ -18,7 +18,7 @@ build_income_MainJobIncome2010Values <- function(CensusData){
         age_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("age"))
         if(length(check_vars) > 0){
-                CensusData <- eval(parse(text = paste0("build_demographics_age_",metadata$year,"(CensusData)")))
+                CensusData <- eval(parse(text = paste0("harmonizeIBGE:::build_demographics_age_",metadata$year,"(CensusData)")))
                 age_just_created = T
                 gc();Sys.sleep(.5);gc()
         }
@@ -26,7 +26,7 @@ build_income_MainJobIncome2010Values <- function(CensusData){
         occupationalStatus_just_created = F
         check_vars <- harmonizeIBGE:::check_var_existence(CensusData, c("occupationalStatus"))
         if(length(check_vars) > 0){
-                CensusData <- eval(parse(text = paste0("build_work_occupationalStatus_",metadata$year,"(CensusData)")))
+                CensusData <- eval(parse(text = paste0("harmonizeIBGE:::build_work_occupationalStatus_",metadata$year,"(CensusData)")))
                 occupationalStatus_just_created = T
                 gc();Sys.sleep(.5);gc()
         }
@@ -78,9 +78,9 @@ build_income_MainJobIncome2010Values <- function(CensusData){
                              paste(check_vars, collapse = ", "))
                 }
                 
-                CensusData[                  , MainJobIncome2010Values := v0356]
-                CensusData[v0356 == 99999999 , MainJobIncome2010Values := NA] 
-                CensusData[                  , MainJobIncome2010Values := MainJobIncome2010Values/106.3629622]
+                CensusData[                 , MainJobIncome2010Values := v0356]
+                CensusData[v0356 == 9999999 , MainJobIncome2010Values := NA] 
+                CensusData[                 , MainJobIncome2010Values := MainJobIncome2010Values/106.3629622]
                 gc(); Sys.sleep(1); gc()
         }
         

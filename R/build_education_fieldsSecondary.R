@@ -59,9 +59,8 @@ build_education_fieldsSecondary <- function(CensusData){
         CensusData <- CensusData %>%
                 select(-ibge_code)
         
-        
-        CensusData[educationAttainment %in% c(1,2,9, 99), fieldsSecondary := NA]
-        CensusData[educationAttainment %in% 3:8 & is.na(fieldsSecondary), fieldsSecondary := 90]
+        CensusData[!(educationAttainment %in% 7:8), fieldsSecondary := NA]
+        CensusData[educationAttainment %in% 7:8 & is.na(fieldsSecondary), fieldsSecondary := 90]
         
         
         gc();Sys.sleep(.5);gc()

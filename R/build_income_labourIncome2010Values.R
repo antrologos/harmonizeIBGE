@@ -81,12 +81,12 @@ build_income_labourIncome2010Values <- function(CensusData){
                 }
                 
                 identify_NA = function(x){
-                        x == 99999999
+                        x == 9999999
                 }
                 
                 replace_NA_and_zeros = function(x){
                         x[is.na(x)] <- 0
-                        x[x == 99999999] <- NA
+                        x[x == 9999999] <- NA
                         x
                 }
                 

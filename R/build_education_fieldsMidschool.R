@@ -60,8 +60,8 @@ build_education_fieldsMidschool <- function(CensusData){
                 select(-ibge_code)
         
         
-        CensusData[educationAttainment %in% c(1,2,9, 99), fieldsMidschool := NA]
-        CensusData[educationAttainment %in% 3:8 & is.na(fieldsMidschool), fieldsMidschool := 90]
+        CensusData[!(educationAttainment %in% 5:6), fieldsMidschool := NA]
+        CensusData[educationAttainment %in% 5:6 & is.na(fieldsMidschool), fieldsMidschool := 90]
         
         
         gc();Sys.sleep(.5);gc()
