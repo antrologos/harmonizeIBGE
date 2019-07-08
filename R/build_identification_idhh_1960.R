@@ -16,7 +16,13 @@ build_identification_idhh_1960 <- function(CensusData){
                      paste(check_vars, collapse = ", "))
         }
 
-        warning("===================================================================================\nThis function assumes you are working with the 1.27% sample of the 1960 Census,\nas prepared and consisted by the Center for Metropolitan Studies (Centro de Estudos\nda Metropole - USP/Brazil).\n\nEvery individual will be given the same sample weight, equal to the inverse of the\nsample fraction: 1/0.0127\n\nDownload available at: http://200.144.244.241:3003/\nMore information at: http://web.fflch.usp.br/centrodametropole/\n===================================================================================")
+        warning(paste("===================================================================================",
+                      "This function assumes you are working with the Compiled Sample of the 1960 Census, as",
+                      "prepared and consisted by the Center for Metropolitan Studies (Centro de Estudos da", 
+                      "Metropole - USP/Brazil).",
+                      "More information at: http://web.fflch.usp.br/centrodametropole/",
+                      "===================================================================================", 
+                      sep = "\n"))
 
         if(!is.data.table(CensusData)){
                 CensusData = as.data.table(CensusData)
