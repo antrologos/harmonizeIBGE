@@ -1,4 +1,4 @@
-#' Builds a synthetic variable for age - 1960
+#' Builds household dweller status for 1960
 #' @param data.frame
 #' @value data.frame
 #' @export

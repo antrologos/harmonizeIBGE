@@ -4,8 +4,14 @@
 \alias{prepare_to_harmonize}
 \title{Builds a synthetic variable for age - 1960}
 \usage{
-prepare_to_harmonize(Data, type, year, pnadc_freq = NULL,
-  quarter = NULL, state_var_name = NULL)
+prepare_to_harmonize(
+  Data,
+  type,
+  year,
+  pnadc_freq = NULL,
+  quarter = NULL,
+  state_var_name = NULL
+)
 }
 \description{
 Builds a synthetic variable for age - 1960

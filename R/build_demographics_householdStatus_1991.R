@@ -1,4 +1,4 @@
-#' 1991
+#' Builds household dweller status for 1991
 #' @param data.frame
 #' @value data.frame
 #' @export
