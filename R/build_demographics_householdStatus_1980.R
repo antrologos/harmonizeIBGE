@@ -1,15 +1,15 @@
-#' Builds a synthetic variable for age - 1960
+#' 1980
 #' @param data.frame
 #' @value data.frame
 #' @export
 
-build_demographics_famStatus_1991 <- function(CensusData){ 
+build_demographics_householdStatus_1980 <- function(CensusData){ 
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame") 
         }
         
-        check_vars <- check_var_existence(CensusData, c("v0303"))
+        check_vars <- check_var_existence(CensusData, c("v503"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -19,13 +19,14 @@ build_demographics_famStatus_1991 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData[ v0303<=3               , famStatus := v0303 ]
-        CensusData[ v0303==20              , famStatus := 1 ]
-        CensusData[ !(v0303<=3 | v0303==20), famStatus := 4 ]
+        CensusData[ v503 <= 3 , householdStatus := v503 ]
+        CensusData[ v503 >  3 , householdStatus := 4 ]
+        CensusData[ v503 == 0 , householdStatus := 1 ]
         
-        gc()
         
+        gc();Sys.sleep(.5);gc()
         CensusData
 }
+
 
 

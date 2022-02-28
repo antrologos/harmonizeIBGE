@@ -3,7 +3,7 @@
 #' @value data.frame
 #' @export
 
-build_demographics_famStatus_2010 <- function(CensusData){ 
+build_demographics_householdStatus_2010 <- function(CensusData){ 
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame") 
@@ -19,10 +19,10 @@ build_demographics_famStatus_2010 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData[ v0502 == 1     , famStatus := 1 ]
-        CensusData[ v0502 %in% 2:3 , famStatus := 2 ]
-        CensusData[ v0502 %in% 4:6 , famStatus := 3 ]
-        CensusData[ v0502 %in% 7:20, famStatus := 4 ]
+        CensusData[ v0502 %in% 1   , householdStatus := 1 ]
+        CensusData[ v0502 %in% 2:3 , householdStatus := 2 ]
+        CensusData[ v0502 %in% 4:6 , householdStatus := 3 ]
+        CensusData[ v0502 %in% 7:19, householdStatus := 4 ]
         
         
         gc()

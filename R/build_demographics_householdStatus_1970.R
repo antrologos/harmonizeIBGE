@@ -3,13 +3,13 @@
 #' @value data.frame
 #' @export
 
-build_demographics_famStatus_1980 <- function(CensusData){ 
+build_demographics_householdStatus_1970 <- function(CensusData){ 
         
         if(!is.data.frame(CensusData)){
                 stop("'CensusData' is not a data.frame") 
         }
         
-        check_vars <- check_var_existence(CensusData, c("v504"))
+        check_vars <- check_var_existence(CensusData, c("v025"))
         if(length(check_vars) > 0){
                 stop("The following variables are missing from the data: ",
                      paste(check_vars, collapse = ", "))
@@ -19,12 +19,11 @@ build_demographics_famStatus_1980 <- function(CensusData){
                 CensusData = as.data.table(CensusData)
         }
         
-        CensusData[ v504 <= 3 , famStatus := v504 ]
-        CensusData[ v504 >  3 , famStatus := 4 ]
+        CensusData[ v025 <= 3 , householdStatus := v025 ]
+        CensusData[ v025 >  3 , householdStatus := 4 ]
         
-        gc();Sys.sleep(.5);gc()
+        gc()
+        
         CensusData
 }
-
-
 
